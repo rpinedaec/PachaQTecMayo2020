@@ -124,27 +124,39 @@ ______
 #### MÓDULO 1: INTRODUCCIÓN AL DESARROLLO Y AL ENTORNO DE TRABAJO
 ##### SEMANAS: 1 (1)
 <a name="s1"></a>
+
 ##### SEMANA 1: INTRODUCCIÓN AL DESARROLLO Y CONFIGURACIÓN DE NUESTRO ENTORNO DE TRABAJO
 <a name="s1s1"></a>
+
 ##### Lección 1 semana 1: Introducción al Frontend y al Backend
+
 **Logro de aprendizaje:** el estudiante identifica los lenguajes de programación en tendencias dentro del mundo de Fron-tend y Back-end, como también las diferencias entre ambos.
+
 **Temario:**
+
 - Stacks tecnológicos
 - Lenguajes de programación
 - Aportes de los lenguajes de programación
 - Principales tendencias visuales en el desarrollo web
 <a name="s1s2"></a>
+
 ##### Lección 2 semana 1: Introducción a los IDE's y los editores de código
+
 **Logro de aprendizaje:** el estudiante comprende las diferencias entre un editor de código e IDE’s y realiza la configuración correcta de su entorno de trabajo.
+
 **Temario:**
 - IDE´S y editores de código (Visual Studio Code)
 - Configuración del entorno de trabajo
 <a name="s1s3"></a>
+
 ##### Lección 3 semana 1: Introducción a Git y el manejo en nuestros proyectos
+
 **Logro de aprendizaje:** el estudiante gestiona las versiones del código con GIT según el lenguaje utilizado.
+
 **Temario:**
 - GIT (control de versiones)
 <a name="s1h"></a>
+
 ##### Hackathon semana 1:
 Los docentes crean un repositorio sobre el cual los alumnos, podrán practicar conceptos de trabajo en git (creación de un nuevo repositorio, branches, pull-requests y merge).
 ____
@@ -152,56 +164,80 @@ ____
 #### MÓDULO 2: FUNDAMENTOS DE PROGRAMACIÓN E INTRODUCCIÓN A PYTHON
 ##### SEMANAS: 2 (2, 3)
 <a name="s2"></a>
+
 ##### SEMANA 2: CÓDIGO A PSEUDOCÓDIGO + TERMINAL
 <a name="s2s1"></a>
+
 ##### Lección 1 semana 2: Uso de los comandos de Terminales de Windows, Linux o MacOS
+
 **Logro de aprendizaje:** el estudiante aprenderá a utilizar git en un proyecto, así como comandos básicos con un terminal (Linux o Windows) y a subir proyectos hacia nuestro repositorio
+
 ##### Temario:
 - Uso del terminal
 - Git bash
 - CMD
 - Termius
 <a name="s2s2"></a>
+
 ##### Lección 2 semana 2: Algoritmo y Pseudocódigo
+
 **Logro de aprendizaje:** el estudiante entenderá los conceptos de algoritmos y pseudocodigo. Además, creará algoritmos usando pseudocódigos y/o un lenguaje base para dar solución a un problema.
+
 ##### Temario:
 - Algoritmos
 - Pseudocódigo
 <a name="s2s3"></a>
+
 ##### Lección 3 semana 2: Introducción a Python y las buenas prácticas en el desarrollo
+
 **Logro de aprendizaje:** el estudiante entenderá la importancia del uso de entornos virtuales para aislar sus aplicaciones y conocerá el modo de instalar librerias, haciendo uso de la herramienta pip.
+
 ##### Temario:
 - Introducción a Python
 - Gestión de paquetes PIP
 - Virtualenv
 - PEP8
 <a name="s2h"></a>
+
 ##### Hackathon semana 2:
 El estudiante podrá administrar virtualenv para los proyectos de Python. Además, reforzará sus conocimientos de lógica y de algoritmos.
 <a name="s3"></a>
+
 ##### SEMANA 3: PYTHON
 <a name="s3s1"></a>
+
 ##### Lección 1 semana 3: Traducción del pseudocódigo al lenguaje Python
+
 **Logro de aprendizaje:** el estudiante entenderá los distintos tipos de variables en Python, así como los operadores logicos y matematicos. Además, comprenderá qué es una función y cómo invocarla.
+
 ##### Temario:
 - Variables
 - Operadores lógicos y matemáticos
 - Funciones
+
 <a name="s3s2"></a>
+
 ##### Lección 2 semana 3: Estructura de datos y manejo de módulos con Python
+
 **Logro de aprendizaje:** el estudiante aprenderá sobre las distintas estructuras de datos que puede usar en Python, así como el manejo de módulos.
+
 ##### Temario:
 - Estructuras de datos
 - Listas
 - Tuplas
 - Diccionarios
 - Módulos
+
 <a name="s3s3"></a>
+
 ##### Lección 3 semana 3: Operadores y control de flujo con Python
+
 **Logro de aprendizaje:** el estudiante aprenderá sobre el manejo de operadores, el control de flujos y el uso de excepciones en Python.
+
 ##### Temario:
 - Condicionales y ciclos o bucles
 - Excepciones con Python
 <a name="s3h"></a>
+
 ##### Hackathon semana 3:
 El estudiante crea un software aplicando lo aprendido respecto a la estructura de datos, operadores y excepciones.
