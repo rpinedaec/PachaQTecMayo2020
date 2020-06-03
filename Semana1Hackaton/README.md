@@ -3,4 +3,4 @@
 
 #### desde el mismo proyecto
 
-![Imagen del su-3](/images/su-34-858.jpg)
+![Imagen del su-3](images/su-34-858.jpg)
