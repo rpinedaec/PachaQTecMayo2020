@@ -3,9 +3,13 @@ Curso de Especialización de Programación BackEnd PachaQtec Mayo 2020
 ## DESARROLLO BACK-END
 ### INFORMACIÓN GENERAL
 **Experiencia de aprendizaje:** Programa de Especialización en Desarrollo Back-End
+
 **Semanas**: 18
+
 **Módulos**: 5
+
 **Formato**: virtual
+
 #### DESCRIPCIÓN
 El programa de especialización en Desarrollo Back-End, enseñará a los estudiantes cómo desarrollar aplicaciones web Back-End que exponen APIs, usando el lenguaje Python y técnicas de desarrollo y seguridad adecuadas.
 #### INFRAESTRUCTURA
@@ -46,7 +50,7 @@ ______
 	- [ ] [Sesión 3](#s3s3)
 	- [ ] [Hackaton Semanal](#s3h)
 - [ ] Semana 4
-	- [ ] Sesión 1
+	- [ ] [Sesión 1](#ejemplo)
 	- [ ] Sesión 2
 	- [ ] Sesión 3
 	- [ ] Hackaton Semanal
@@ -180,6 +184,8 @@ ____
 <a name="s2s2"></a>
 
 ##### Lección 2 semana 2: Algoritmo y Pseudocódigo
+
+<a name="ejemplo"></a>
 
 **Logro de aprendizaje:** el estudiante entenderá los conceptos de algoritmos y pseudocodigo. Además, creará algoritmos usando pseudocódigos y/o un lenguaje base para dar solución a un problema.
 
