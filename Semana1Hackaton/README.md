@@ -6,7 +6,7 @@ sequenceDiagram
     Note right of Backend: Reto Completado Exitosamente.
 ```
 
-```mermaid
+
 sequenceDiagram
 Alice ->> Bob: Hello Bob, how are you?
 Bob-->>John: How about you John?
@@ -16,6 +16,6 @@ Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text d
 
 Bob-->Alice: Checking with John...
 Alice->John: Yes... John, how are you?
-```
+
 
 ### NOTA: No me salió el codigo de sequence ↑↑↑
