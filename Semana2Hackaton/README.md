@@ -9,3 +9,5 @@ Mi aporte.
 Este es un texto escrito en VS Code durante la Hackathon en la semana 2
 
 ## Ricardo Avellaneda 123
+## Ricardo Avellaneda
+## jacqueline barreto
