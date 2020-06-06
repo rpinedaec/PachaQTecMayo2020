@@ -1,4 +1,2 @@
-##### Hackaton semana2:
-Mi aporte
-##### Hackathon semana 2:
-El estudiante podrá administrar virtualenv para los proyectos de Python. Además, reforzará sus conocimientos de lógica y de algoritmos.
+## Hackaton semana 2
+mi aporte
