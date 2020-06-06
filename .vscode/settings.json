@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "python.pythonPath": "C:\\Users\\CARLOS\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
 =======
 <<<<<<< HEAD
@@ -7,6 +8,9 @@
 =======
     "python.pythonPath": "C:\\Users\\Paola\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
 >>>>>>> upstream/develop
+>>>>>>> upstream/develop
+=======
+    "python.pythonPath": "C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
 >>>>>>> upstream/develop
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
