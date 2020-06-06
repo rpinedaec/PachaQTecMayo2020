@@ -1,8 +1,6 @@
 import os
 import array
 
-import os, array
-
 print("hola desde python")
 
 if(1==1):
