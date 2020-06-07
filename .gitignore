@@ -1,4 +1,3 @@
-.vscode
 .Python
 [Bb]in
 [Ii]nclude
@@ -9,3 +8,4 @@
 pyvenv.cfg
 .venv
 pip-selfcheck.json
+.vscode
