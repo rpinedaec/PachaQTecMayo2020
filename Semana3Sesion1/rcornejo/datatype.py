@@ -55,7 +55,12 @@ strparte2 = strdni[9]
 #print (strparte2)
 
 a = int(strdni[0]) * 3
-b = int(strdni[1]) * 2
+b = int(strdni[1]) * #programa para verificar dni
+
+strDNI = "46247351"
+tplDNI = tuple(strDNI)
+
+print (strDNI)2
 c = int(strdni[2]) * 7
 d = int(strdni[3]) * 6
 e = int(strdni[4]) * 5
