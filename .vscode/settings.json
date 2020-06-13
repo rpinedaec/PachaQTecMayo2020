@@ -1,17 +1,3 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "python.pythonPath": "C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-=======
-<<<<<<< HEAD
-    "python.pythonPath": "C:\\Users\\hugoo\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-=======
-    "python.pythonPath": "C:\\Users\\Paola\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
->>>>>>> upstream/develop
->>>>>>> upstream/develop
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
-=======
-    "python.pythonPath": "/Users/aldosamaniego/.pyenv/versions/3.7.6/bin/python"
->>>>>>> upstream/develop
+    "python.pythonPath": "C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
 }
