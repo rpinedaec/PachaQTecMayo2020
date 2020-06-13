@@ -47,7 +47,6 @@ def delProducto():
             print("bye")
             break
 
-
 def showInventario():
     print("Entro a showInventario")
 
