@@ -1,8 +1,8 @@
 # PachaQTecMayo2020
 Curso de Especialización de Programación BackEnd PachaQtec Mayo 2020
-## DESARROLLO BACK-END
+## INVENTORYS SOFTWARE
 ### Hackaton Semana 3
-#### Inventario by BPORRAS
+#### Develop by BPORRAS
 
  - El programa permite:
 	 - Agregar Productos
@@ -24,8 +24,7 @@ Curso de Especialización de Programación BackEnd PachaQtec Mayo 2020
 	 - Try
 	 - Except
 	 - Finally
-#### Extras
+## Extras para el 20
  - El programa muestra los resultados en tablas ordenadas.
  - El programa identifica si un producta ya existe y te consulta si deseas reemplazarlo.
  - Para eliminar un producto solo se necesita indicar el Item del producto.
-## Mucha suerte
