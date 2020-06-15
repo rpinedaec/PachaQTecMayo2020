@@ -168,7 +168,8 @@ def Calculadora():
         print("")
         precio=float(input("Ingresa el precio : "))
         descuento=float(input("Ingresa el descuento : "))
-        subtotal=float(precio-(precio*(descuento/100.00)))
+        preciocond=float(precio*(descuento/100.00))
+        subtotal=float(precio-preciocond)
         print(f"El Subtotal es S/{subtotal}")
         IGV=subtotal*1.18
         print(f"El precio con IGV es S/{IGV}")
