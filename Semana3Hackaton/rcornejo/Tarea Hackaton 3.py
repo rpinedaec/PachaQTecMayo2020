@@ -1,13 +1,5 @@
-#Programa de inventario
-# Acciones:
-# 1.- Agregar Productos
-#   1.1.-Menu para agregar productos o salir
-# 2.- Quitar Producto
-#   2.1.-Menu para quitar producto o salir
-# 3.- Inventario
-#   3.1.-Menu para Ejecutar el Inventario o salir
-# 4.- Lista de productos.
-#    4.1.- Menú para mostrar la lista o salir
+#Programa de inventario - Hackaton 3
+#Alumno : Ricardo Cornejo
 
 dicProducto={}
 lstProductos=[{"Producto":"Silla","Precio S/":50,"Stock":10},
