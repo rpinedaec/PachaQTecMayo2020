@@ -101,9 +101,9 @@ def showInventario():
     fltTotal=0.0
     for p in lstProductos:
         for (key, value) in p.items():
-            flttxttotprod = p['Cantidad del Producto'] * p['Valor del Producto']
+            fltTotal = p['Cantidad del Producto'] * p['Valor del Producto']
         fltTotal += flttxttotprod
-    print(fltTotal)
+    print("El valor total es: ", fltTotal)
 
 #Lista de Productos
 def listProducto():
@@ -114,7 +114,7 @@ def listProducto():
     for p in lstProductos:
       for (key, value) in p.items():
          print(key,":",value) 
-            
+    
 #Menú Principal
 def MenuPrincipal():
     while True:
