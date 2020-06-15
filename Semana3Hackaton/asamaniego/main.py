@@ -106,7 +106,7 @@ def quitar_productos():
 
 def contar_productos():
     totprod = 0
-    print("-------Lista de productos --------")
+    print("------- Lista de productos --------")
     print(" ")
     print("-- Código ---- Descripción ---- Precio ----")
     for key in productos:
