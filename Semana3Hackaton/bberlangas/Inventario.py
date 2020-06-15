@@ -21,56 +21,59 @@ class color:
 
 #Modulo_1: Menu
 def M1_menu():
-    print(" ")
-    print(color.BLUE+"::::::::::BIENVENIDO. CÚAL ACCIÓN DESEA REALIZAR?::::::::::"+color.END)
-    print(" ")
-    print("Agregar producto    : ingrese A")
-    print("Realizar consulta   : ingrese C")
-    print("Modificar Inventario: ingrese M")
-    print("Salir del sistema   : ingrese S")
-    print("-----------------------------------------------------------")
-    respuesta=input(color.YELLOW+"Respuesta:"+color.END)
-    print("    ")
-    if (respuesta.upper()=="A"):
-        M2_agregarproducto()
-    elif (respuesta.upper()=="C"):
-        print(color.BLUE+"::::::::::::::::::::MÓDULO DE CONSULTA:::::::::::::::::::::"+color.END)
-        print(" ")
-        print("Cúal consulta desea realizar?:")
-        print(" ")
-        print("Buscar producto    : ingrese B")
-        print("Calcular inventario: ingrese I")
-        print("-----------------------------------------------------------")
-        respuesta=input(color.YELLOW+"Respuesta:"+color.END)
-        print(" ")
-        if(respuesta.upper()=="B"):
-            M3_buscprodct()
-        elif(respuesta.upper()=="I"):
-            M3_calinvent()
-        else:
+    Keep=True
+    while Keep:
+        try:
+            print(" ")
+            print(color.BLUE+"::::::::::BIENVENIDO. CÚAL ACCIÓN DESEA REALIZAR?::::::::::"+color.END)
+            print(" ")
+            print("Agregar producto    : ingrese A")
+            print("Realizar consulta   : ingrese C")
+            print("Modificar Inventario: ingrese M")
+            print("Salir del sistema   : ingrese S")
+            print("-----------------------------------------------------------")
+            respuesta=input(color.YELLOW+"Respuesta:"+color.END)
+            print("    ")
+            if (respuesta.upper()=="A"):
+                M2_agregarproducto()
+            elif (respuesta.upper()=="C"):
+                print(color.BLUE+"::::::::::::::::::::MÓDULO DE CONSULTA:::::::::::::::::::::"+color.END)
+                print(" ")
+                print("Cúal consulta desea realizar?:")
+                print(" ")
+                print("Buscar producto    : ingrese B")
+                print("Calcular inventario: ingrese I")
+                print("-----------------------------------------------------------")
+                respuesta=input(color.YELLOW+"Respuesta:"+color.END)
+                print(" ")
+                if(respuesta.upper()=="B"):
+                    M3_buscprodct()
+                elif(respuesta.upper()=="I"):
+                    M3_calinvent()
+                else:
+                    print(color.RED+"(!) Ingresó una opción no valida, devuelta al menu principal"+color.END)
+                    M1_menu()
+            elif (respuesta.upper()=="M"):
+                print(color.BLUE+":::::::::::::::::MÓDULO PARA MODIFICACIPNES::::::::::::::::"+color.END)
+                print(" ")
+                print("Cúal modificación desea realizar? Elija una opción:")
+                print(" ")
+                print("Remover información: ingrese R")
+                print("Cambiar información: ingrese K")
+                print("-----------------------------------------------------------")
+                respuesta=input(color.YELLOW+"Respuesta:"+color.END)
+                if (respuesta.upper()=="K"):
+                    M4_modf()
+                elif(respuesta.upper()=="R"):
+                    M4_remv()
+                else:
+                    print(color.RED+"(!) Ingresó una opción no valida, devuelta al menu principal"+color.END)
+                    M1_menu()
+            elif (respuesta.upper()=="S"):
+                quit()
+        except ValueError:
             print(color.RED+"(!) Ingresó una opción no valida, devuelta al menu principal"+color.END)
-            M1_menu()        
-    elif (respuesta.upper()=="M"):
-        print(color.BLUE+":::::::::::::::::MÓDULO PARA MODIFICACIPNES::::::::::::::::"+color.END)
-        print(" ")
-        print("Cúal modificación desea realizar? Elija una opción:")
-        print(" ")
-        print("Remover información: ingrese R")
-        print("Cambiar información: ingrese K")
-        print("-----------------------------------------------------------")
-        respuesta=input(color.YELLOW+"Respuesta:"+color.END)
-        if (respuesta.upper()=="K"):
-            M4_modf()
-        elif(respuesta.upper()=="R"):
-            M4_remv()
-        else:
-            print(color.RED+"(!) Ingresó una opción no valida, devuelta al menu principal"+color.END)
-            M1_menu()
-    elif (respuesta.upper()=="S"):
-        quit()
-    else:
-        print(color.RED+"(!) Ingresó una opción no valida, devuelta al menu principal"+color.END)
-        M1_menu()
+            M1_menu()   
 
 #Módulo_2: Agregar Producto
 Lista_producto=[]
