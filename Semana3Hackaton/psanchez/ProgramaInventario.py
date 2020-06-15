@@ -40,7 +40,7 @@ def AgregarProd():
             print("")
             print("1: Ver Inventario")
             print("2: Agregar Producto")
-            print("3: Salir del programa")
+            print("3: Menu Princiapl")
             print("")
             strMenuAgregar=input("Opción número : ")
             if(strMenuAgregar=="1"):
@@ -48,7 +48,7 @@ def AgregarProd():
             elif(strMenuAgregar=="2"):
                 AgregarProd()
             elif(strMenuAgregar=="3"):
-                print("Saliendo del programa. Hasta luego!")
+                MenuPrincipal()
     
         else:
             blApmenu=False
@@ -83,15 +83,13 @@ def QuitarPro():
                                 print("PRODUCTO ELIMINADO")
                 print("")
                 print("1: Ver Inventario")
-                print("2: Salir del programa")
+                print("2: Menu Principal")
                 print("")
                 strMenuQuitar=input("Opción número : ")
                 if(strMenuQuitar=="1"):
                     ListInv()
                 elif(strMenuQuitar=="2"):
-                    print("")
-                    print("Saliendo del programa. Hasta luego!")    
-
+                    MenuPrincipal()   
                 else:
                     print("No ingreso una opción válida. Intente nuevamente")
                     QuitarPro()
@@ -111,7 +109,7 @@ def ListInv():
     print("")
     print("1: Agregar Producto")
     print("2: Quitar Producto")
-    print("3: Salir del programa")
+    print("3: Menu Principal")
     print("")
     strMenuInv=input("Opción número : ")
     if(strMenuInv=="1"):
@@ -119,7 +117,7 @@ def ListInv():
     elif(strMenuInv=="2"):
         QuitarPro()
     elif(strMenuInv=="3"):
-        print("Saliendo del programa. Hasta luego!")
+        MenuPrincipal()
 
 #Detalles del Inventario
 def ValorInv():
@@ -142,7 +140,7 @@ def ValorInv():
     print("")
     print("1: Agregar Producto")
     print("2: Quitar Producto")
-    print("3: Salir del programa")
+    print("3: Menu Principal")
     print("")
     strMenuValor=input("Opción número : ")
     if(strMenuValor=="1"):
@@ -150,8 +148,41 @@ def ValorInv():
     elif(strMenuValor=="2"):
         QuitarPro()
     elif(strMenuValor=="3"):
-        print("Saliendo del programa. Hasta luego!")
+        MenuPrincipal()
 
+#Calculadora
+def Calculadora():
+    while True:
+        print("")
+        print("---------------------------------------")
+        print("CALCULADORA")
+        print("---------------------------------------")
+        print("")
+        print("Escribe el nombre del producto a consultar: ")
+        strConsulta = input()
+        for p in lstInventario:
+            for (key, value) in p.items():
+                if(value == strConsulta):
+                    print(key,":",value)
+        print("Ahora calculemos: ")
+        print("")
+        precio=float(input("Ingresa el precio : "))
+        descuento=float(input("Ingresa el descuento : "))
+        subtotal=float(precio-(precio*(descuento/100.00)))
+        print(f"El Subtotal es S/{subtotal}")
+        IGV=subtotal*1.18
+        print(f"El precio con IGV es S/{IGV}")
+        print("")
+        print("1: Ver Inventario")
+        print("2: Menu Principal")
+        print("")
+        strMenuCalc=input("Opción número : ")
+        if(strMenuCalc=="1"):
+            ListInv()
+        elif(strMenuCalc=="2"):
+            MenuPrincipal()
+        else:
+            print("No ingreso una opción válida. Intente nuevamente")
 #Menu Principal
 def MenuPrincipal():
     while True:
@@ -166,6 +197,9 @@ def MenuPrincipal():
         print("2 : Agregar Producto")
         print("3 : Quitar un producto")
         print("4 : Salir del Programa")
+        print("***")
+        print("Otras opciones : ")
+        print("8 : Calcular Precio + IGV")
         print("9 : Ver Detalle del Inventario")
         print("")
         strMenuPrincipal=input("Opción número : ")
@@ -178,7 +212,9 @@ def MenuPrincipal():
             QuitarPro()
         elif(strMenuPrincipal=="4"):
             print("Saliendo del programa. Hasta luego!")
-            break
+            exit()
+        elif(strMenuPrincipal=="8"):
+            Calculadora()
         elif(strMenuPrincipal=="9"):
             ValorInv()
         else:
