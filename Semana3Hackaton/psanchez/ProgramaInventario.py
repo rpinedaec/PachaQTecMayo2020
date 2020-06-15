@@ -163,6 +163,7 @@ def Calculadora():
         for p in lstInventario:
             for (key, value) in p.items():
                 if(value == strConsulta):
+                    lstInventario.index(p)
                     print(key,":",value)
         print("Ahora calculemos: ")
         print("")
