@@ -164,7 +164,8 @@ def Calculadora():
             for (key, value) in p.items():
                 if(value == strConsulta):
                     lstInventario.index(p)
-                    print(key,":",value)
+                    print(p)
+        print("")
         print("Ahora calculemos: ")
         print("")
         precio=float(input("Ingresa el precio : "))
