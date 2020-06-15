@@ -2,7 +2,7 @@
 import sys
 import time
 
-# aldo samaniego
+# aldo samaniego pimentel
 
 
 productos = {}
@@ -66,7 +66,7 @@ def agregar_productos():
             print("este código de producto ya existe")
             time.sleep(3)  
     except ValueError:
-            print("El código es numerico")     
+            print("El código  es numerico")     
         
     
         
