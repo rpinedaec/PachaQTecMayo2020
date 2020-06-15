@@ -143,10 +143,14 @@ def M3_buscprodct():
 def M3_calinvent():
     print(color.BLUE+"::::::::::::::::::::MÓDULO DE CONSULTA:::::::::::::::::::::"+color.END)
     print(" ")
-    Total_inv=0
+    Total_val_inv=0
+    Total_cant_inv=0
     for x in Lista_producto:
-        Total_inv=Total_inv+float(x["Precio unitario"])
-    print(color.GREEN+f"El total del valor del inventario es de {Total_inv}"+color.END)
+        Total_val_inv=Total_val_inv+float(x["Precio unitario"])
+        Total_cant_inv=Total_cant_inv+1
+    print(color.GREEN+f"El total del valor del inventario es de {Total_val_inv}"+color.END)
+    print(color.GREEN+f"La cantidad total de productos es de {Total_cant_inv}"+color.END)
+
     print("Deseas calcular otra vez? si/no: ")
     print("-----------------------------------------------------------")
     respuesta=input(color.YELLOW+"Respuesta:"+color.END)
