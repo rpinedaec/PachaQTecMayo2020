@@ -1,12 +1,12 @@
 # SISTEMA 1.0
 # Ricardo Avellaneda
-
+print('\x1b[6;30;42m' + "__________________________________________________" + '\x1b[0m')
 print('\x1b[6;30;42m' + "  ____  _                           _     _       " + '\x1b[0m')
 print('\x1b[6;30;42m' + " | __ )(_) ___ _ ____   _____ _ __ (_) __| | ___  " + '\x1b[0m')
 print('\x1b[6;30;42m' + " |  _ \| |/ _ \ '_ \ \ / / _ \ '_ \| |/ _` |/ _ \ " + '\x1b[0m')
 print('\x1b[6;30;42m' + " | |_) | |  __/ | | \ V /  __/ | | | | (_| | (_) |" + '\x1b[0m')
 print('\x1b[6;30;42m' + " |____/|_|\___|_| |_|\_/ \___|_| |_|_|\__,_|\___/ " + '\x1b[0m')
-print('\x1b[6;30;42m' + "--------------------------------------------------" + '\x1b[0m')
+print('\x1b[6;30;42m' + "__________________________________________________" + '\x1b[0m')
 
 # pmName = input('extras.py')
 # pm = __import__(pmName)
@@ -39,7 +39,7 @@ def addProducto():
         else:
             print("Hasta Pronto")
             blMenuProducto = False
-print("*************FIN**************")
+    print("*************FIN**************")
 
 #FUNCION DE ELIMINAR PRODUCTO
 def delProducto():
@@ -85,8 +85,8 @@ def valueInventario():
         costoTotal = product['Precio: '] * product['Cantidad: ']
         print('\033[0;32m' + f"Hay {costoTotal} soles en {product['Producto: ']}s" + '\033[0m')
         totalSoles += costoTotal
-    print('\033[1;31m' + "El total en Soles de todo el inventario es:" + '\033[0m')
-    print(totalSoles)
+        print('\033[1;31m' + "El total en Soles de todo el inventario es:" + '\033[0m')
+        print(totalSoles)
     print("*************FIN**************")
 
 # MENU PARA INTEACTUAR CON LAS FUNCIONES
@@ -116,4 +116,3 @@ while True:
         if(opcionSalir == "s"):
             break
    
-
