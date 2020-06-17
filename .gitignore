@@ -9,5 +9,5 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 /settings.json
-/*.log
+*.log
 *.pyc
