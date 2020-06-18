@@ -2,6 +2,7 @@ import os
 import utils
 from time import sleep
 
+
 class Persona:
     __estado = True
 
@@ -54,6 +55,11 @@ class Producto:
         self.cantidadProducto = cantidadProducto
         self.costoProducto = costoProducto
 
+    def __str__(self):
+        return """\
+Codigo: {}
+Nombre: {}""".format(self.codProducto, self.nombreProducto)
+
     def costearProducto(self):
         print("Costeando producto")
         print("Producto costeado")
@@ -72,35 +78,31 @@ class Menu:
         while(opSalir):
             self.limpiarPantalla()
             print("\033[1;34m" +
-                ":::::::::::::EMPRESA PACHAQTEC::::::::::::::"+'\033[0;m')
+                  ":::::::::::::EMPRESA PACHAQTEC::::::::::::::"+'\033[0;m')
             print("\033[1;34m"+":::::::::::::" +
-                self.nombreMenu + "::::::::::::::"+'\033[0;m')
+                  self.nombreMenu + "::::::::::::::"+'\033[0;m')
             #print(f"Empresa Roberto \n {self.nombreMenu}")
             self.log.debug('Esto es un debug')
             for (key, value) in self.listaOpciones.items():
                 print(key, " :: ", value)
                 self.log.debug(f"{key}, {value}")
             print("Salir :: 9")
-            opcion = 100 
+            opcion = 100
             try:
                 print("Escoge tu opcion")
                 opcion = int(input())
             except ValueError:
                 print("Opcion invalida deben ser numeros de 0 - 9")
-            
+            contOpciones = 0
             for (key, value) in self.listaOpciones.items():
                 if(opcion == int(value)):
-                    opSalir = False
-                    break
-                elif(opcion != int(value)):
-                    if(opcion == 9):
-                        opSalir = False
-                        break
-                    else:
-                       print("Escoge una opcion valida")
-                       sleep(5)  
-                       break
-        
+                   contOpciones += 1
+            if(contOpciones == 0):
+                print("Escoge una opcion valida")
+                sleep(5)
+            else:
+                opSalir = False
+
         return opcion
 
     def limpiarPantalla(self):
@@ -116,7 +118,7 @@ lstProductos = []
 
 
 if(opcionMenuPrincipal == 9):
-    opcionMenuPrincipal = menuPrincipal.mostrarMenu()    
+    opcionMenuPrincipal = menuPrincipal.mostrarMenu()
 
 elif(opcionMenuPrincipal == 1):
     dicOpcionesCliente = {"Comprar": 1, "Devolver": 2}
@@ -124,7 +126,8 @@ elif(opcionMenuPrincipal == 1):
     res = menuCliente.mostrarMenu()
     print(res)
 elif(opcionMenuPrincipal == 2):
-    dicOpcionesEmpleado = {"Marcar Ingreso": 1, "Marcar Salida":2, "Cargar Inventario":3}
+    dicOpcionesEmpleado = {"Marcar Ingreso": 1,
+                           "Marcar Salida": 2, "Cargar Inventario": 3}
     menuEmpleado = Menu("Menu del Empleado", dicOpcionesEmpleado)
     res = menuEmpleado.mostrarMenu()
     print(res)
@@ -137,15 +140,17 @@ elif(opcionMenuPrincipal == 2):
         cantProducto = input()
         print("Digita costo del Producto")
         costProducto = input()
-        producto = Producto(codProducto,nomProducto,cantProducto,costProducto)
+        producto = Producto(codProducto, nomProducto,
+                            cantProducto, costProducto)
+
+        print("Haz creado el producto: ", producto)
         lstProductos.append(producto)
-        print(lstProductos)
 
 
 
-# 
-# 
-# 
+#
+#
+#
 
 # menuPrincipal.mostrarMenu()
 
