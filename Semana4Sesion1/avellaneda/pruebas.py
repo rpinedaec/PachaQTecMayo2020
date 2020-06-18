@@ -71,19 +71,33 @@ class Menu:
         self.listaOpciones = listaOpciones
     #FUNCION PROPIA DEL MENU
     def mostrarMenu(self):
-        print(f"Empresa Roberto \n {self.nombreMenu}")
-        for (key, value) in self.listaOpciones.items():
-                    print(key, "::", value)
+        print(f"EMPRESAS CAPITALISTAS LES SALUDA \n {self.nombreMenu}")
+        acceder = input("(e) Para empleado || (c) Para Cliente --> ")
+        if(acceder == "e"):
+            for (key, value) in self.listaOpciones.items():
+                        print(key, ":", value)
+        elif(acceder == "c"):
+            for (key, value) in self.listaOpciones.items():
+                        print(key, ":", value)
+        else:
+            print("Gracias por nada")
+            print("*************FIN**************")
 
+            
     #FUNCION PARA LIMPIAR LA PANTALLA (OPCIONAL E IMPORTANDO DESDE ARRIBA)
-    def limpiarPantalla(self):
-        clear = lambda: os.system('clear')
-        clear()
+    # def limpiarPantalla(self):
+    #     clear = lambda: os.system('clear')
+    #     clear()
 
 #OPCION DE MENU PARA MENÚ PRINCIPAL
 dicOpcionesMenuPrincipal = {"Cliente":1,"Empleado":2, "Salir":0}
 menuPrincipal = Menu("Menu de inicio", dicOpcionesMenuPrincipal)
 menuPrincipal.mostrarMenu()
+
+#OPCION MENU PARA MENU DE EMPLEADOS
+dicOpcionesEmpleado = {"Marcar Entrada": 1, "Marcar Refrigerio": 2, "Marcar Salida":3}
+menuEmpleado = Menu("Menu del empleado", dicOpcionesEmpleado)
+menuEmpleado.mostrarMenu()
 
 #OPCION MENU PARA MENU DE CLIENTES
 dicOpcionesCliente = {"Comprar":1, "Devolver":2, "Salir":0}
