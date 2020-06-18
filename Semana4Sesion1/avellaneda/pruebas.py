@@ -31,7 +31,7 @@ class Persona:
         print("La personas se ha desregistrado")
 
 
-#CONTRUCTOR DE CLASE
+#CONTRUCTOR DE LA CLASE CLIENTE
 class Cliente(Persona):
     def __init__(self, dni, nombre, apellido, edad, codCliente):
         super().__init__(dni, nombre, apellido, edad)
@@ -41,7 +41,7 @@ class Cliente(Persona):
         print("El cliente está comprando")
         print("El cliente terminó de comprar")
     
-#CONTRUCTOR DE CLASE
+#CONTRUCTOR DE LA CLASE EMPLEADO
 class Empleado(Persona):
     def __init__(self, dni, nombre, apellido, edad, codEmpleado):
         super().__init__(dni, nombre, apellido, edad)
@@ -51,7 +51,7 @@ class Empleado(Persona):
         print("El empleado esta marcando su ingreso")
         print("El empleado marcó su ingreso")
 
-#CONTRUCTOR DE CLASE
+#CONTRUCTOR DE LA CLASE PRODUCTO
 class Producto:
     def __init__(self, codProducto, nombreProducto, cantidadProducto, costoProducto):
         self.codProducto = codProducto
@@ -63,7 +63,7 @@ class Producto:
         print("Costeando producto")
         print("Producto costeado")
     
-#CONTRUCTOR DE CLASE
+#CONTRUCTOR DE LA CLASE MENU
 #UNA SOLA ESTRUCTURA DE MENU PARA DIVERSAS OPCIONES
 class Menu:
     def __init__(self, nombreMenu, listaOpciones):
@@ -89,6 +89,7 @@ class Menu:
     #     clear = lambda: os.system('clear')
     #     clear()
 
+#DIVERSOS TIPOS DE MENU
 #OPCION DE MENU PARA MENÚ PRINCIPAL
 dicOpcionesMenuPrincipal = {"Cliente":1,"Empleado":2, "Salir":0}
 menuPrincipal = Menu("Menu de inicio", dicOpcionesMenuPrincipal)
