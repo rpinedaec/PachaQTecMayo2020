@@ -1,14 +1,20 @@
 import os
+import utils
+
+
 class Persona:
     __estado = True
+
     def __init__(self, dni, nombre, apellido, edad):
         self.dni = dni
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
+
     @property
     def estado(self):
         return self.__estado
+
     @estado.setter
     def estado(self, nuevoEstado):
         __estado = nuevoEstado
@@ -16,15 +22,16 @@ class Persona:
     def registro(self):
         self.estado = True
         print("La Persona se ha registrado")
-    
+
     def desresgistro(self):
         self.estado = False
-    
+
+
 class Cliente(Persona):
     def __init__(self, dni, nombre, apellido, edad, codCliente):
-        super().__init__(dni,nombre,apellido,edad)
-        self.codCliente = codCliente 
-    
+        super().__init__(dni, nombre, apellido, edad)
+        self.codCliente = codCliente
+
     def compar(self):
         print("El Cliente esta comprando")
         print("El Cliente terminó de comprar")
@@ -32,12 +39,13 @@ class Cliente(Persona):
 
 class Empleado(Persona):
     def __init__(self, dni, nombre, apellido, edad, codEmpleado):
-        super().__init__(dni,nombre,apellido,edad)
+        super().__init__(dni, nombre, apellido, edad)
         self.codEmpleado = codEmpleado
 
     def marcarIngreso(self):
         print("El empleado esta marcando su ingreso")
         print("El empleado marcó su ingreso")
+
 
 class Producto:
     def __init__(self, codProducto, nombreProducto, cantidadProducto, costoProducto):
@@ -50,25 +58,32 @@ class Producto:
         print("Costeando producto")
         print("Producto costeado")
 
+
 class Menu:
+    log = utils.log("Menu")
+
     def __init__(self, nombreMenu, listaOpciones):
         self.nombreMenu = nombreMenu
         self.listaOpciones = listaOpciones
 
     def mostrarMenu(self):
         self.limpiarPantalla()
-        print("\033[1;34m"+":::::::::::::EMPRESA PACHAQTEC::::::::::::::"+'\033[0;m')
-        print("\033[1;34m"+":::::::::::::"+ self.nombreMenu +"::::::::::::::"+'\033[0;m')
+        print("\033[1;34m" +
+              ":::::::::::::EMPRESA PACHAQTEC::::::::::::::"+'\033[0;m')
+        print("\033[1;34m"+":::::::::::::" +
+              self.nombreMenu + "::::::::::::::"+'\033[0;m')
         #print(f"Empresa Roberto \n {self.nombreMenu}")
+        self.log.debug('This message should go to the log file')
         for (key, value) in self.listaOpciones.items():
-                    print(key , " :: ", value )
-    
+            print(key, " :: ", value)
+
     def limpiarPantalla(self):
-        clear = lambda: os.system('cls')
+        def clear(): return os.system('cls')
         #clear = lambda: os.system('clear')
         clear()
 
-dicOpcionesMenuPrincipal = {"Cliente":1,"Empleado":2,"Salir":0}
+
+dicOpcionesMenuPrincipal = {"Cliente": 1, "Empleado": 2, "Salir": 0}
 menuPrincipal = Menu("Menu de Inicio", dicOpcionesMenuPrincipal)
 menuPrincipal.mostrarMenu()
 
@@ -85,6 +100,3 @@ menuPrincipal.mostrarMenu()
 #     print("bienvenido Empleado")
 # else:
 #     print("Deseas Salir ?? ")
-
-
-
