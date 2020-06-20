@@ -1,6 +1,7 @@
 import logging
 import os.path
 
+
 class log:
     def __init__(self, nombreLogger):
         # create logger
@@ -46,6 +47,18 @@ class fileManager:
         except Exception as e:
             return e
         
+
+    def borrarArchivo(self):
+        directorioActual = os.getcwd()
+        path = directorioActual+"\\"+self.nombreArchivo
+        self.logD.debug(path)
+        if(os.path.isfile(path)):
+            try:
+                os.remove(path)
+                self.logD.debug("removiendo archivo")
+
+            except Exception as error:
+                self.logD.error(error)
 
     def escribirArchivo(self, linea):
         try:
