@@ -124,6 +124,8 @@ lstProductos = []
 dicOpcionesCrearProducto = {"Crear otro": 1, "Mostrar todos": 2}
 menuProducto = Menu("Menu Producto", dicOpcionesCrearProducto)
 
+fileProducto = utils.fileManager("Productos")
+
 if(opcionMenuPrincipal == 9):
     opcionMenuPrincipal = menuPrincipal.mostrarMenu()
 
@@ -151,6 +153,7 @@ elif(opcionMenuPrincipal == 2):
                                 cantProducto, costProducto)
 
             print("Haz creado el producto: ", producto)
+            fileProducto.escribirArchivo(producto.nombreProducto)
             lstProductos.append(producto)
             resMenuProducto = menuProducto.mostrarMenu()
             if(resMenuProducto == 1):
