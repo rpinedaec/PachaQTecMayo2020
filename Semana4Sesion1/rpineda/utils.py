@@ -1,5 +1,5 @@
 import logging
-
+import os.path
 
 class log:
     def __init__(self, nombreLogger):
@@ -32,3 +32,39 @@ class log:
 
     def critical(self, mensaje):
         self.logger.critical(mensaje)
+
+class fileManager:
+    logD = log("fileManager")
+
+    def __init__(self, nombreArchivo):
+        self.nombreArchivo = nombreArchivo
+
+    def leerArchivo(self):
+        try:
+            file = open(self.nombreArchivo,'r')
+            return file.read()
+        except Exception as e:
+            return e
+        
+
+    def escribirArchivo(self, linea):
+        try:
+            directorioActual = os.getcwd()
+            path = directorioActual+"\\"+self.nombreArchivo
+            self.logD.debug(path)
+            if(os.path.isfile(path)):
+                try:
+                    #escribir el archiv
+                    file = open(self.nombreArchivo, 'a')
+                    file.write(linea + "\n")
+                except Exception as e:
+                    self.logD.error(e)
+                finally:
+                    file.close()
+            else:
+                file = open(self.nombreArchivo, 'w')
+                file.close()
+                file = open(self.nombreArchivo, 'a')
+                file.write(linea + "\n")
+        except Exception as error:
+            self.logD.error(error)
