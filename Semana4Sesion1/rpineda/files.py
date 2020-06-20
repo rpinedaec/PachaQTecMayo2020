@@ -15,13 +15,13 @@ import shutil
 # shutil.copy(archivoACopiar,directorioDestino)
 
 try:
-    file = open("archivoNuevo.txt",'r')
+    file = open("archivoNuevo.txt", 'r')
     print(file.read())
 except Exception as e:
     print(e)
 
 try:
-    file = open("archivoNuevo.txt",'r')
+    file = open("archivoNuevo.txt", 'r')
     for lineas in file.readlines():
         print(f"Linea {lineas}")
 except Exception as e:
@@ -34,8 +34,8 @@ except Exception as e:
 #     print(e)
 
 try:
-    file = open("archivoNuevo.txt",'a')
-    for i in range(1,10,1):
+    file = open("archivoNuevo.txt", 'a')
+    for i in range(1, 10, 1):
         file.write(f"Nueva linea desde for {i} con append de nuevo \n")
 
 except Exception as e:
