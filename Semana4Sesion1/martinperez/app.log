@@ -1,0 +1,17 @@
+2020-06-19 20:56:09,195 - Producto - INFO - Se creo un producto
+2020-06-19 20:56:09,203 - FileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Sesion1\martinperez
+2020-06-19 20:56:12,348 - Menu - DEBUG - No escoje opion
+2020-06-19 20:56:24,829 - Menu - DEBUG - No escoje opion
+2020-06-19 20:56:33,142 - Menu - DEBUG - No escoje opion
+2020-06-19 20:56:41,555 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-19 20:57:16,714 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Sesion1/martinperez/init.py'
+2020-06-19 20:57:16,715 - Menu - DEBUG - No escoje opion
+2020-06-19 20:57:45,223 - Producto - INFO - Se creo un producto
+2020-06-19 20:57:45,223 - FileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Sesion1\martinperez
+2020-06-19 20:57:47,971 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-19 20:57:58,148 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-19 20:57:58,149 - Menu - DEBUG - No escoje opion
+2020-06-19 20:58:04,947 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-19 20:58:04,953 - Menu - DEBUG - No escoje opion
+2020-06-19 20:58:10,998 - Menu - DEBUG - No escoje opion
+2020-06-19 20:58:17,972 - INIT - DEBUG - ingreso a la opcion 1
