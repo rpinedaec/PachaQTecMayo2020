@@ -1,0 +1,1 @@
+[{"codProducto": "d", "nombreProducto": "d", "cantidadProducto": "d", "costoProducto": "d"}]
