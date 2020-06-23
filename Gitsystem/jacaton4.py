@@ -1,44 +1,56 @@
+#GETPASS ES PARA CONTRASEÑAS
 import getpass
-
+#OS ES DEL SISTEMA MISMO
+import os
+#GLOBAL declaración simple que permite modificar la variable fuera del alcance actual. 
+# Se utiliza para crear una variable global y realizar cambios en la variable en un contexto local.
 global listaEmpleados
 listaEmpleados = list()
 global listaUsuarios
 listaUsuarios = list()
+global listaProductos
+listaProductos = list()
 
+from time import sleep
 
+#CLASE EMPLEADO VACÍA PARA QUE SE LLENE DESPUÉS
 class Empleado:
 	idEmpleado = ""
 	apellidoP = ""
-	apellidoM = ""
 	nombres = ""
 	salario = ""
 
-
+#CLASE USUARIO VACÍA PARA QUE SE LLENE DESPUÉS
 class Usuario:
 	usuario = ""
 	contraseña = ""
 
+class Producto:
+	idProducto = ""
+	nombreP = ""
+	cantidad = ""
 
+#FUNCIÓN DE REGISTRAR EMPLEADO
 def registrarEmpleado():
+	#SE LE DA "e" PORQUE SE LE PUEDE DAR CUALQUIER VARIABLE
 	e = Empleado()
+	#TÍTULO
+	titulo = " \u2749 REGISTRAR NUEVO EMPLEADO \u2749 "
+	print("\n" + titulo.center(30, "═"))
 
-	cadena = "REGISTRAR NUEVO EMPLEADO"
-	print("\n" + cadena.center(60, "═"))
-	e.idEmpleado = input("Ingrese Numero de Id: ")
-	e.nombres = input("Nombre(s): ")
-	e.apellidoP = input("Apellido Paterno: ")
-	e.apellidoM = input("Apellido Materno: ")
-	e.salario = input("Salario Minimo: ")
+	e.idEmpleado = input("Ingrese Numero de Id:✎ ")
+	e.nombres = input("Nombre:✎ ")
+	e.apellidoP = input("Apellido Paterno:✎ ")
+	e.salario = input("Salario Minimo:✎ ")
 
 	listaEmpleados.append(e)
 
-
 def borrarEmpleado():
-
-	cadena = "BORRAR EMPLEADO"
-	print("\n" + cadena.center(60, "═"))
+	titulo = " \u2749 ELIMINAR EMPLEADO \u2749 "
+	print("\n" + titulo.center(30, "═"))
 	i = 1
 	for e in listaEmpleados:
+		#SE USA EL METODO .upper() PARA TRANSFORMAR EL string A MAYÚSCULAS
 		print(i, ".-  |ID:", e.idEmpleado, "-", e.apellidoP.upper(), " ",
 		      e.apellidoM.upper(), ",", e.nombres.upper(), "-->$", e.salario)
 		i += 1
@@ -54,15 +66,15 @@ def borrarEmpleado():
 
 
 def actualizarDatos():
-	cadena = "ACTUALIZAR DATOS"
-	print("\n" + cadena.center(60, "═"))
+	titulo = " \u2749 ACTUALIZAR DATOS \u2749 "
+	print("\n" + titulo.center(30, "═"))
 	i = 1
 	for e in listaEmpleados:
 		print(i, ".-  |ID:", e.idEmpleado, "-", e.apellidoP.upper(), " ",
 		      e.apellidoM.upper(), ",", e.nombres.upper(), "-->$", e.salario)
 		i += 1
 
-	opc = int(input("\n►►►►►Num de empleado a actualizar: "))
+	opc = int(input("\n✎✎✎✎Num de empleado a actualizar: "))
 
 	print("")
 	listaEmpleados[opc-1].idEmpleado = input("Ingrese Nuevo Numero de Id: ")
@@ -80,8 +92,8 @@ def actualizarDatos():
 
 
 def listarEmpleado():
-	cadena = "LISTA DE EMPLEADOS"
-	print("\n" + cadena.center(60, "═"))
+	titulo = " \u2749 LISTA DE EMPLEADOS \u2749 "
+	print("\n" + titulo.center(30, "═"))
 	i = 1
 	for e in listaEmpleados:
 		print(i, ".-  |ID:", e.idEmpleado, "-", e.apellidoP.upper(), " ",
@@ -90,12 +102,12 @@ def listarEmpleado():
 
 
 def buscarEmpleado():
-	cadena = "BUSCAR EMPLEADO"
-	print("\n" + cadena.center(60, "═"))
+	titulo = " \u2749 BUSCAR EMPLEADO \u2749 "
+	print("\n" + titulo.center(30, "═"))
 
 	bandera = 0
 
-	filtro = input("Ingrese Nombre o Apellido Paterno: ")
+	filtro = input("✎✎✎✎ Ingrese Nombre o Apellido Paterno: ")
 
 	for e in listaEmpleados:
 		if e.apellidoP == filtro or e.nombres == filtro:
@@ -124,8 +136,8 @@ def buscarEmpleado():
 
 
 def totalNomina():
-	cadena = "NOMINA"
-	print("\n" + cadena.center(60, "═"))
+	titulo = " \u2749 NOMINA \u2749 "
+	print("\n" + titulo.center(30, "═"))
 	suma = 0
 
 	for e in listaEmpleados:
@@ -133,26 +145,94 @@ def totalNomina():
 
 	print("El total de la nomina es: $", suma*12)
 
+def registrarCompra():
+	p = Producto()
+	titulo = " \u2749 COMPRAR \u2749 "
+	print("\n" + titulo.center(30, "═"))
+
+	p.idProducto = input("Ingrese Numero de Id:✎ ")
+	p.nombreP = input("Nombre:✎ ")
+	p.cantidad = input("Cuántos vas a comprar?:✎ ")
+
+	listaProductos.append(p)
+	#QUERÍA QUE SE MUESTRE LOS DATOS INGRESADOS COMO RESUMEN:
+	# i = 1
+	# for p in listaProductos:
+	# 	print(i, ".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+	# 	i += 1
+
+def eliminarCompra():
+	titulo = " \u2749 ELIMINAR COMPRA \u2749 "
+	print("\n" + titulo.center(30, "═"))
+	i = 1
+	for p in listaProductos:
+		#SE USA EL METODO .upper() PARA TRANSFORMAR EL string A MAYÚSCULAS
+		print(i, ".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+		i += 1
+
+	opc = int(input("\nID de producto a borrar: "))
+	del listaProductos[opc-1]
+	print("\nResultado:")
+	i = 1
+	for p in listaProductos:
+		print(i, ".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+		i += 1
+
+def buscarProducto():
+	titulo = " \u2749 BUSCAR PRODUCTO \u2749 "
+	print("\n" + titulo.center(30, "═"))
+
+	bandera = 0
+
+	filtro = input("✎✎✎✎ Ingrese Nombre del Producto: ")
+
+	for p in listaProductos:
+		if p.idProducto == filtro or p.nombreP == filtro:
+			print("\nResultado de Busqueda: ")
+			print(".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+			bandera = 1
+		elif p.idProducto == filtro.upper() or p.nombreP == filtro.upper():
+			print("\nResultado de Busqueda: ")
+			print(".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+			bandera = 1
+		elif p.idProducto == filtro.lower() or p.nombreP == filtro.lower():
+			print("\nResultado de Busqueda: ")
+			print(".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+			bandera = 1
+		elif p.idProducto == filtro.capitalize() or p.nombreP == filtro.capitalize():
+			print("\nResultado de Busqueda: ")
+			print(".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+			bandera = 1
+
+	if bandera == 0:
+		print("Producto no encontrado...")
+
 
 def salir():
-	print("\nSaliendo del sistema►►►")
+	print("\nSaliendo del sistema 🍕 🍕 🍕")
 
 
 def menu():
-	opcion = 0
+	limpiarPantalla()
+	opcion = {}
 
-	while opcion != 7:
-		#Mostrar Menú
-		cadena = "MENU"
-		print("\n" + cadena.center(60, "═"))
-		print("1.- Registrar empleado")
-		print("2.- Eliminar empleado")
-		print("3.- Actualizar datos de empleado")
-		print("4.- Mostrar todos los empleados en la lista")
-		print("5.- Buscar Empleado")
-		print("6.- Calcular monto total de la nomina")
-		print("7.- Salir")
-		opcion = int(input("►►►►►Elija una opcion: "))
+	while opcion != 0:
+		#MOSTRAR EL MENU
+		titulo = " \u2749 MENU \u2749 "
+		print("\n" + titulo.center(60, "═"))
+		print(":::::PARA EMPLEADOS:::::")
+		print("	1.- Registrar empleado")
+		print("	2.- Eliminar empleado")
+		print("	3.- Actualizar datos de empleado")
+		print("	4.- Mostrar todos los empleados en la lista")
+		print("	5.- Buscar Empleado")
+		print("	6.- Calcular monto total de la nomina")
+		print(":::::PARA CLIENTES:::::")
+		print("	7.- Comprar")
+		print("	8.- Eliminar compra")
+		print("	9.- Buscar producto")
+		print("	0.- Salir")
+		opcion = int(input("✎✎✎✎ Elija una opcion: "))
 
 		if opcion == 1:
 			registrarEmpleado()
@@ -167,7 +247,18 @@ def menu():
 		elif opcion == 6:
 			totalNomina()
 		elif opcion == 7:
+			registrarCompra()
+		elif opcion == 8:
+			eliminarCompra()
+		elif opcion == 9:
+			buscarProducto()
+		elif opcion == 0:
 			salir()
+	
+def limpiarPantalla():
+    def clear():
+    	return os.system('clear')
+    clear()
 
 
 def archivoUsuarios():
@@ -213,7 +304,7 @@ def main():
 	archivoUsuarios()
 	archivoEmpleados()
 	print("---------------------")
-	print("|        LOGIN      |")
+	print("|       ACCESO      |")
 	print("---------------------")
 
 	contador = 0

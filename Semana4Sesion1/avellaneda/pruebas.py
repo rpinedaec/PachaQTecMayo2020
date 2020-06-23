@@ -1,13 +1,13 @@
 import os
 
-# print('\033[1;91m' + "   (                                        (         " + '\033[0m')
-# print('\033[1;91m' + " ( )\ (     (          )      (        (    )\ )      " + '\033[0m')
-# print('\033[1;91m' + " )((_))\   ))\  (     /((    ))\  (    )\  (()/(  (   " + '\033[0m')
-# print('\033[1;91m' + "((_)_((_) /((_) )\ ) (_))\  /((_) )\ )((_)  ((_)) )\  " + '\033[0m')
-# print('\033[1;91m' + " | _ )(_)(_))  _(_/( _)((_)(_))  _(_/( (_)  _| | ((_) " + '\033[0m')
-# print('\033[1;91m' + " | _ \| |/ -_)| ' \))\ V / / -_)| ' \))| |/ _` |/ _ \ " + '\033[0m')
-# print('\033[1;91m' + " |___/|_|\___||_||_|  \_/  \___||_||_| |_|\__,_|\___/ " + '\033[0m')
-# print('\033[1;96m' + "******************************************************" + '\033[0m')
+print('\033[1;91m' + "   (                                        (         " + '\033[0m')
+print('\033[1;91m' + " ( )\ (     (          )      (        (    )\ )      " + '\033[0m')
+print('\033[1;91m' + " )((_))\   ))\  (     /((    ))\  (    )\  (()/(  (   " + '\033[0m')
+print('\033[1;91m' + "((_)_((_) /((_) )\ ) (_))\  /((_) )\ )((_)  ((_)) )\  " + '\033[0m')
+print('\033[1;91m' + " | _ )(_)(_))  _(_/( _)((_)(_))  _(_/( (_)  _| | ((_) " + '\033[0m')
+print('\033[1;91m' + " | _ \| |/ -_)| ' \))\ V / / -_)| ' \))| |/ _` |/ _ \ " + '\033[0m')
+print('\033[1;91m' + " |___/|_|\___||_||_|  \_/  \___||_||_| |_|\__,_|\___/ " + '\033[0m')
+print('\033[1;96m' + "******************************************************" + '\033[0m')
 
 #CONTRUCTOR DE CLASE
 class Persona:
@@ -65,11 +65,13 @@ class Producto:
     
 #CONTRUCTOR DE LA CLASE MENU
 #UNA SOLA ESTRUCTURA DE MENU PARA DIVERSAS OPCIONES
+
 class Menu:
     def __init__(self, nombreMenu, listaOpciones):
         self.nombreMenu = nombreMenu
         self.listaOpciones = listaOpciones
     #FUNCION PROPIA DEL MENU
+    
     def mostrarMenu(self):
         print(f"EMPRESAS CAPITALISTAS LES SALUDA \n {self.nombreMenu}")
         acceder = input("(e) Para empleado || (c) Para Cliente --> ")

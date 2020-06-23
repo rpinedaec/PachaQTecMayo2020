@@ -92,7 +92,6 @@ class Menu:
                   ":::::::::::::EMPRESA PACHAQTEC::::::::::::::"+'\033[0;m')
             print("\033[1;34m"+":::::::::::::" +
                   self.nombreMenu + "::::::::::::::"+'\033[0;m')
-            #print(f"Empresa Roberto \n {self.nombreMenu}")
             for (key, value) in self.listaOpciones.items():
                 print(key, " :: ", value)
             print("Salir :: 9")
@@ -113,7 +112,6 @@ class Menu:
                 sleep(5)
             else:
                 opSalir = False
-
         return opcion
 
     def limpiarPantalla(self):
