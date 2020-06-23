@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Reyner Loza</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="https://www.instagram.com/hreloza/" class="fa fa-instagram"></a>
+
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="eliminar" placeholder="eliminar" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Eliminar</button>
+    </form> -->
+
+  </nav>
+  
+    <div class="d-flex">
+      <div class="card m-5 p-5" style="width: 18rem;" > 
+        <form action='/' method='POST'>
+          <div class="form-group">
+            <label for="ingresoProducto" class="font-weight-bold">Nombre del Producto</label>
+            <input type="text" class="form-control" name="ingresoProducto" id="ingresoProducto" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="ingresoValorProducto" class="font-weight-bold">Valor del Producto</label>
+            <input type="number" class="form-control" name="ingresoValorProducto" id="ingresoValorProducto"  min= "0" step="0.01">
+          </div>
+          <div class="form-group font-weight-bold" >
+            <label for="exam">Cantidad del Producto</label>
+            <input type="number" class="form-control" name ="ingresoCantidad" id="ingresoCantidad" min= "0">
+          </div>
+
+          <div class="form-group font-weight-bold" >
+            <label for="exam">Ubicacion del Porducto</label>
+            <input type="text" class="form-control" name ="ubicacionProducto" id="ubicacionProducto">
+          </div>
+      
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+  
+
+      <div class="card m-5 p-5 flex-fill">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Valor</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            {% for key, val in products.items() %}
+            <tr>
+            <th scope="row">{{key}}</th>
+            <td>{{ val["value"] }}</td>
+            <td>{{ val["quantity"] }}</td>
+            <td>{{ val["location"] }}</td>
+            </tr>
+            {% endfor %}
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Valor Total del Inventario es {{ totalInventario }} soles. </h1>
+        
+      </div>
+    </div>
+
+    
+</body>
+</html>

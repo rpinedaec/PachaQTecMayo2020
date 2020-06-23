@@ -80,4 +80,5 @@ class fileManager:
                 file = open(self.nombreArchivo, 'a')
                 file.write(linea + "\n")
         except Exception as error:
-            self.logD.error(error)      
+            self.logD.error(error)
+
