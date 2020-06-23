@@ -2,8 +2,8 @@ import os
 import random
 from time import sleep
 
-dicUsuario={}
-dicTrabajador={}
+dictUsuario={}
+dictTrabajador={}
 lstUsuario=[]
 lstTrabajador=[]
 
@@ -40,7 +40,18 @@ class Trabajador(Usuario):
         super().__init__(nombre,apellido,dni,usuario,password,email)
         self.codTrabajador = codTrabajador
         # self.log.info("Se creo un nuevo trabajador")
-
+    def dictTrabajador(self):    
+        d = {
+            'nombre': self.nombre,
+            'apellido': self.apellido,
+            'dni': self.dni,
+            'usuario': self.usuario,
+            'password': self.password,
+            'email': self.email,
+            'codTrabajador': self.codTrabajador,
+        }
+        return d
+    
 class Menu:
     def __init__(self, nombreMenu, listaOpciones):
         self.nombreMenu = "MENU"
@@ -136,5 +147,4 @@ if (opcionMenuPrincipal == 1):
             print("Tu nuevo código de trabajador es:")
             print(codTrabajador)
             print("")
-            sleep(0.5)
 
