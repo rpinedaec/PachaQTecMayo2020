@@ -21,7 +21,7 @@ class Menu:
         print("9 :: Salir")
         while True:
             try:
-                self.OptionSelect = int(input("Ingres su opción: "))
+                self.OptionSelect = int(input("Ingrese su opción: "))
                 if self.OptionSelect > 0 and self.OptionSelect<len(self.lstOpciones)+1:
                     return self.OptionSelect
                 elif self.OptionSelect == 9:
@@ -54,7 +54,7 @@ class Empleado(Persona):
     def __str__(self):
         return (f'El empleado "{self.nombre} {self.apellido}" con codigo "{self.codEmpleado}" se ha registrado')
 class Producto:
-    def __init__(self, codProducto=None, nombreProducto=None, cantProducto=None, costoProducto=None):
+    def __init__(self, codProducto:int=None, nombreProducto:str=None, cantProducto:int=None, costoProducto:int=None):
         self.codProducto = codProducto
         self.nombreProducto = nombreProducto
         self.cantProducto = cantProducto
@@ -108,6 +108,8 @@ while True:
                     elif strExiste == "N":
                         c=input("El registro del cliente se ah descartado, ingrese cualquier tecla para continuar: ")
                         break
+                    else:
+                        print("Error!: El registro del cliente se ah descartado")
                 else:
                     lstClientes.append(newclient)
                     print(newclient)
@@ -144,8 +146,10 @@ while True:
                                 print(newempleado)    
                                 save("empleado",lstEmpleados)    
                     elif strExiste == "N":
-                        c=input("El registro del emplado se ah descartado, pulse cualquier tecla para continuar: ")
+                        c=input("El registro del emplado se ha descartado, pulse cualquier tecla para continuar: ")
                         break
+                    else:
+                        print("Error!: El registro del cliente se ah descartado")
                 else:
                     lstEmpleados.append(newempleado)
                     save("empleado",lstEmpleados)    
@@ -173,7 +177,7 @@ while True:
             intOptionSelect = MenuProducto.show()
             if intOptionSelect == 1:        #Menu Agregar producto
                 newproduct = addProducto(lstProductos,Producto)
-                if search(getattr(newproduct,"codProducto"),"codProducto",lstProductos):
+                if search(getattr(newproduct,"codProducto"),"codProducto", lstProductos):
                     strExiste = input ("El producto ya existe, ¿Desea reemplazarlo? S/N: ")
                     if strExiste == "S":
                         for i,x in enumerate(lstProductos):
@@ -182,8 +186,10 @@ while True:
                                 print(newproduct)    
                                 save("producto",lstProductos)    
                     elif strExiste == "N":
-                        c=input("El registro del producto se ah descartado, pulse cualquier tecla para continuar: ")
+                        c=input("El registro del producto se ha descartado, pulse cualquier tecla para continuar: ")
                         break
+                    else: 
+                        print("Error!: El registro del producto se ha descartado")
                 else:
                     lstProductos.append(newproduct)
                     print(newproduct)

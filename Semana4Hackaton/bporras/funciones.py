@@ -3,11 +3,14 @@ import pickle
 #funcion para buscar un objeto ya registrado segun atributo de clase y lista donde se almacena
 def search(item,identify,lst):
     if len(lst) > 0:
+        r=0
         for i in lst:
             if getattr(i,identify) == item:
-                return True
-            else:
-                return False
+                r +=1
+        if r > 0  :
+            return True
+        else:
+            return False
     else:
         return False
 #funciones para añadir nuevos elementos

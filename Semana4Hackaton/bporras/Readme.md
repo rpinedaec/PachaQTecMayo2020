@@ -5,7 +5,7 @@ Curso de Especialización de Programación BackEnd PachaQtec Mayo 2020
 #### Developed by BPORRAS
 
 ## Extras para el 20
- - El programa se ah realizado desde cero, sin usar la base realizada en clase.
+ - El programa se ha realizado desde cero, sin usar la base realizada en clase.
  ![Placer](images/paramasplacer.jpg)
  - El programa muestra los resultados en tablas ordenadas.
  - El programa identifica si un producto/cliente/empleado ya existe y te consulta si deseas reemplazarlo.
