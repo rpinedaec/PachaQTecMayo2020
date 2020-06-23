@@ -39,34 +39,26 @@ class fileManager:
 
     def __init__(self, nombreArchivo):
         self.nombreArchivo = nombreArchivo
-    
-    def CrearArchivo(self):
-        try:
-            directorioActual = os.getcwd()
-            path = directorioActual+"\\"+self.nombreArchivo
-            if os.path.isfile(path):
-                pass
-            else:
-                file = open(self.nombreArchivo,'w')
-                file.write("[]")
-        except Exception as e:
-            return e
 
     def leerArchivo(self):
         try:
-            directorioActual = os.getcwd()
-            path = directorioActual+"\\"+self.nombreArchivo
-            self.logD.debug(path)
-            if os.path.isfile(path):
-                file = open(self.nombreArchivo,'r')
-                return file.read()
-            else:
-                file = open(self.nombreArchivo,'w')
-                file.close()
-                file = open(self.nombreArchivo, 'a')
-                file.write("[]")
+            file = open(self.nombreArchivo,'r')
+            return file.read()
         except Exception as e:
             return e
+        
+
+    def borrarArchivo(self):
+        directorioActual = os.getcwd()
+        path = directorioActual+"\\"+self.nombreArchivo
+        self.logD.debug(path)
+        if(os.path.isfile(path)):
+            try:
+                os.remove(path)
+                self.logD.debug("removiendo archivo")
+
+            except Exception as error:
+                self.logD.error(error)
 
     def escribirArchivo(self, linea):
         try:
@@ -76,7 +68,7 @@ class fileManager:
             if(os.path.isfile(path)):
                 try:
                     #escribir el archiv
-                    file = open(self.nombreArchivo, 'w')
+                    file = open(self.nombreArchivo, 'a')
                     file.write(linea + "\n")
                 except Exception as e:
                     self.logD.error(e)
@@ -88,4 +80,4 @@ class fileManager:
                 file = open(self.nombreArchivo, 'a')
                 file.write(linea + "\n")
         except Exception as error:
-            self.logD.error(error)
+            self.logD.error(error)      
