@@ -1,0 +1,1 @@
+[{"codigo": 1, "nombre": "UN"}, {"codigo": 2, "nombre": "KG"}, {"codigo": 3, "nombre": "LT"}, {"codigo": 4, "nombre": "TON"}, {"codigo": 5, "nombre": "MG"}, {"codigo": 6, "nombre": "ML"}, {"codigo": 7, "nombre": "KTON"}]

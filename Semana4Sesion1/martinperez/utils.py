@@ -1,5 +1,6 @@
 import logging
 import os.path
+from os import remove
 
 
 class log:
@@ -34,50 +35,52 @@ class log:
     def critical(self, mensaje):
         self.logger.critical(mensaje)
 
-class fileManager:
-    logD = log("fileManager")
 
+
+class fileManager:
+    logD = log("FileManager")
     def __init__(self, nombreArchivo):
         self.nombreArchivo = nombreArchivo
-
+    
     def leerArchivo(self):
         try:
             file = open(self.nombreArchivo,'r')
-            return file.read()
+            return file.read()    
         except Exception as e:
             return e
-        
-
-    def borrarArchivo(self):
-        directorioActual = os.getcwd()
-        path = directorioActual+"\\"+self.nombreArchivo
-        self.logD.debug(path)
-        if(os.path.isfile(path)):
-            try:
-                os.remove(path)
-                self.logD.debug("removiendo archivo")
-
-            except Exception as error:
-                self.logD.error(error)
-
+    
     def escribirArchivo(self, linea):
         try:
-            directorioActual = os.getcwd()
-            path = directorioActual+"\\"+self.nombreArchivo
+            path = os.getcwd()
             self.logD.debug(path)
-            if(os.path.isfile(path)):
+
+            if(os.path.isfile(path+"\\"+self.nombreArchivo)):
+                # Grabar
                 try:
-                    #escribir el archiv
-                    file = open(self.nombreArchivo, 'a')
-                    file.write(linea + "\n")
+                    #Escribir en el archivo
+                    file = open(self.nombreArchivo,'a')
+                    file.write(linea+"\n")
                 except Exception as e:
-                    self.logD.error(e)
+                    self.logD.debug(e)
+                    print(e)
                 finally:
                     file.close()
             else:
-                file = open(self.nombreArchivo, 'w')
+                file = open(self.nombreArchivo,'w') 
                 file.close()
-                file = open(self.nombreArchivo, 'a')
-                file.write(linea + "\n")
-        except Exception as error:
-            self.logD.error(error)      
+                file = open(self.nombreArchivo,'a')
+                file.write(linea+"\n")
+                
+        except Exception as e:
+            self.logD.debug(e)
+            return e
+
+    def borrarArchivo(self):
+        path = os.getcwd()
+        nombre = self.nombreArchivo
+        if path.exists(path+"\\"+nombre):
+            try:
+                remove(path+"\\"+nombre)
+            except Exception as error:
+                self.logD.error(error)
+

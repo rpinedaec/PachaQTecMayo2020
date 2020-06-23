@@ -6,8 +6,7 @@ from time import sleep
 class Persona:
     __estado = True
 
-    def __init__(self,idPersona, dni, nombre, apellido, edad):
-        self.idPersona = idPersona
+    def __init__(self, dni, nombre, apellido, edad):
         self.dni = dni
         self.nombre = nombre
         self.apellido = apellido
@@ -50,18 +49,16 @@ class Empleado(Persona):
 
 
 class Producto:
-    log = utils.log("Producto")
-
     def __init__(self, codProducto, nombreProducto, cantidadProducto, costoProducto):
         self.codProducto = codProducto
         self.nombreProducto = nombreProducto
         self.cantidadProducto = cantidadProducto
         self.costoProducto = costoProducto
-        self.unidadMedida = unidadMedida
-        self.log.info("Se creo un producto")
 
     def __str__(self):
-        return """Codigo: {} \nNombre: {}""".format(self.codProducto, self.nombreProducto)
+        return """\
+Codigo: {}
+Nombre: {}""".format(self.codProducto, self.nombreProducto)
 
     def costearProducto(self):
         print("Costeando producto")
@@ -84,15 +81,17 @@ class Menu:
                   ":::::::::::::EMPRESA PACHAQTEC::::::::::::::"+'\033[0;m')
             print("\033[1;34m"+":::::::::::::" +
                   self.nombreMenu + "::::::::::::::"+'\033[0;m')
+            #print(f"Empresa Roberto \n {self.nombreMenu}")
+            self.log.debug('Esto es un debug')
             for (key, value) in self.listaOpciones.items():
                 print(key, " :: ", value)
+                self.log.debug(f"{key}, {value}")
             print("Salir :: 9")
             opcion = 100
             try:
                 print("Escoge tu opcion")
                 opcion = int(input())
-            except ValueError as error:
-                self.log.error(error)
+            except ValueError:
                 print("Opcion invalida deben ser numeros de 0 - 9")
             contOpciones = 0
             for (key, value) in self.listaOpciones.items():
@@ -100,20 +99,16 @@ class Menu:
                    contOpciones += 1
             if(contOpciones == 0):
                 print("Escoge una opcion valida")
-                self.log.debug("No escoje opion")
                 sleep(5)
             else:
                 opSalir = False
+
         return opcion
 
     def limpiarPantalla(self):
-        def clear():
-            #return os.system('cls')
-            return os.system('clear')
+        def clear(): return os.system('cls')
+        #clear = lambda: os.system('clear')
         clear()
-
-
-log = utils.log("INIT")
 
 
 dicOpcionesMenuPrincipal = {"Cliente": 1, "Empleado": 2}
@@ -121,10 +116,6 @@ menuPrincipal = Menu("Menu de Inicio", dicOpcionesMenuPrincipal)
 opcionMenuPrincipal = menuPrincipal.mostrarMenu()
 lstProductos = []
 
-dicOpcionesCrearProducto = {"Crear otro": 1, "Mostrar todos": 2}
-menuProducto = Menu("Menu Producto", dicOpcionesCrearProducto)
-
-fileProducto = utils.fileManager("Productos")
 
 if(opcionMenuPrincipal == 9):
     opcionMenuPrincipal = menuPrincipal.mostrarMenu()
@@ -133,49 +124,40 @@ elif(opcionMenuPrincipal == 1):
     dicOpcionesCliente = {"Comprar": 1, "Devolver": 2}
     menuCliente = Menu("Menu de Cliente", dicOpcionesCliente)
     res = menuCliente.mostrarMenu()
-    if(res == 1):
-        log.info("escogio la opcion 1")
-    if(res == 9):
-        log.info("escogio la opcion de salir")
-        
+    print(res)
 elif(opcionMenuPrincipal == 2):
     dicOpcionesEmpleado = {"Marcar Ingreso": 1,
                            "Marcar Salida": 2, "Cargar Inventario": 3}
     menuEmpleado = Menu("Menu del Empleado", dicOpcionesEmpleado)
     res = menuEmpleado.mostrarMenu()
-    salirCreacionProducto = True
-    while salirCreacionProducto:
-        if(res == 3):
-            print("Digita el Codigo del Producto")
-            codProducto = input()
-            print("Digita el Nombre del Producto")
-            nomProducto = input()
-            print("Digita la Cantidad del Producto")
-            cantProducto = input()
-            print("Digita costo del Producto")
-            costProducto = input()
-            producto = Producto(codProducto, nomProducto,
-                                cantProducto, costProducto)
+    print(res)
+    if(res == 3):
+        print("Digita el Codigo del Producto")
+        codProducto = input()
+        print("Digita el Nombre del Producto")
+        nomProducto = input()
+        print("Digita la Cantidad del Producto")
+        cantProducto = input()
+        print("Digita costo del Producto")
+        costProducto = input()
+        producto = Producto(codProducto, nomProducto,
+                            cantProducto, costProducto)
 
-            print("Haz creado el producto: ", producto)
-            fileProducto.borrarArchivo()
-            lstProductos.append(producto.__init__)
-            fileProducto.escribirArchivo(producto.nombreProducto)
-            lstProductos.append(producto)
-            resMenuProducto = menuProducto.mostrarMenu()
-            if(resMenuProducto == 1):
-                log.debug("ingreso a la opcion 1 de menuProducto")
-            elif(resMenuProducto == 2):
-                log.debug("ingreso a la opcion 2 de menuProducto")
-                for objProducto in lstProductos:
-                    print(
-                        f"|{objProducto.nombreProducto} | {objProducto.codProducto} | {objProducto.cantidadProducto} | {objProducto.costoProducto} |")
-                sleep(10)
-                res = menuEmpleado.mostrarMenu()
-                if(res == 1):
-                    log.debug(f"ingreso a la opcion {res}")
-            else:
-                log.debug(
-                    f"ingreso a la opcion {resMenuProducto} de menuProducto")
-                salirCreacionProducto = False
-                break
+        print("Haz creado el producto: ", producto)
+        lstProductos.append(producto)
+
+
+
+#
+#
+#
+
+# menuPrincipal.mostrarMenu()
+
+# # opcionMenuPrincipal = input("Seleccione una opcion \n")
+# # if(opcionMenuPrincipal == "1"):
+# #     print("bienvenido cliente")
+# # elif(opcionMenuPrincipal == "2"):
+# #     print("bienvenido Empleado")
+# # else:
+# #     print("Deseas Salir ?? ")
