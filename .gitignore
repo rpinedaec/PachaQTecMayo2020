@@ -11,4 +11,7 @@ pip-selfcheck.json
 /settings.json
 *.log
 *.pyc
+<<<<<<< HEAD
 .vscode
+=======
+>>>>>>> upstream/master
