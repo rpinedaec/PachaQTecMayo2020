@@ -1,0 +1,1 @@
+{"12312": {"codeProduct": "12312", "nameProduct": "Reyner", "typeProduct": "Madera", "entryDateProduct": "12/12/12", "priceProduct": 123.3, "quantityProduct": 12}}
