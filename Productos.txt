@@ -1,0 +1,1 @@
+[{"codProducto": "0001", "nombreProducto": "silla", "cantidadProducto": "20", "costoProducto": "30"}, {"codProducto": "0002", "nombreProducto": "mesa", "cantidadProducto": "5", "costoProducto": "50"}, {"codProducto": "asdasd", "nombreProducto": "asdasd", "cantidadProducto": "asdasd", "costoProducto": "asdasd"}]
