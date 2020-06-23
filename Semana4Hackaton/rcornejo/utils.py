@@ -1,4 +1,4 @@
-import logging
+import logging 
 import os.path
 
 
@@ -49,7 +49,7 @@ class fileManager:
         
 
     def borrarArchivo(self):
-        directorioActual = os.getcwd()
+        directorioActual = os.getcwd() #DIRECTORIA ACTUAL
         path = directorioActual+"\\"+self.nombreArchivo
         self.logD.debug(path)
         if(os.path.isfile(path)):
@@ -67,7 +67,7 @@ class fileManager:
             self.logD.debug(path)
             if(os.path.isfile(path)):
                 try:
-                    #escribir el archiv
+                    #escribir el archivo
                     file = open(self.nombreArchivo, 'a')
                     file.write(linea + "\n")
                 except Exception as e:
@@ -81,3 +81,9 @@ class fileManager:
                 file.write(linea + "\n")
         except Exception as error:
             self.logD.error(error)
+            
+            
+            
+            
+            
+            

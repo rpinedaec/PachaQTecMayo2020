@@ -3,7 +3,7 @@
 import os
 import utils
 from time import sleep
-import json 
+#import json 
 
 #Creación de clases
 class Persona:
@@ -193,61 +193,11 @@ elif(opcionMenuPrincipal == 2): #Menu empleado
             producto = Producto(codProducto, nomProducto,
                                 cantProducto, costProducto)
 
-            print("¡Haz creado el producto: ", producto, "!")
+            print("Haz creado el producto: ", producto)
             fileProducto.borrarArchivo()
             lstProductosDic.append(producto.dictProducto())
             lstProductos.append(producto)
-            jsonStr = json.dumps(lstProductosDic)
-            fileProducto.escribirArchivo(jsonStr)
-            resMenuProducto = menuProducto.mostrarMenu()
-            if(resMenuProducto == 1):
-                log.debug("ingreso a la opcion 1 de menuProducto")
-            elif(resMenuProducto == 2):
-                log.debug("ingreso a la opcion 2 de menuProducto")
-                for objProducto in lstProductos:
-                    print(
-                        f"|{objProducto.nombreProducto} | {objProducto.codProducto} | {objProducto.cantidadProducto} | {objProducto.costoProducto} |")
-                sleep(10)
-                res = menuEmpleado.mostrarMenu()
-                if(res == 1):
-                    log.debug(f"ingreso a la opcion {res}")
-            else:
-                log.debug(
-                    f"ingreso a la opcion {resMenuProducto} de menuProducto")
-                salirCreacionProducto = False
-                break
-
-
-elif(opcionMenuPrincipal == 2): #Menu empleado
-    dicOpcionesEmpleado = {"\t- Marcar ingreso": 1,
-                           "\t- Marcar salida": 2, "\t- Cargar inventario": 3, "\t- Eliminar producto": 4, "\t- Ver productos": 5}
-    menuEmpleado = Menu("Menu Empleado", dicOpcionesEmpleado)
-    res = menuEmpleado.mostrarMenu()
-
-    delproducto = True #Quitar producto
-    while delproducto: 
-        if(res == 4):
-            print("\033[1;34m"+"...................................................."+'\033[0;m')
-            print("Digita el código del producto:")
-            codProducto = input()
-            print("\033[1;34m"+"...................................................."+'\033[0;m')
-            print("Digita el nombre del producto:")
-            nomProducto = input()
-            print("\033[1;34m"+"...................................................."+'\033[0;m')
-            print("Digita la cantidad del producto")
-            cantProducto = input()
-            print("\033[1;34m"+"...................................................."+'\033[0;m')
-            print("Digita el costo del producto (S/)")
-            costProducto = input()
-            print("\033[1;34m"+"...................................................."+'\033[0;m')
-            producto = Producto(codProducto, nomProducto,
-                                cantProducto, costProducto)
-
-            print("¡Haz creado el producto: ", producto, "!")
-            fileProducto.borrarArchivo()
-            lstProductosDic.append(producto.dictProducto())
-            lstProductos.append(producto)
-            jsonStr = json.dumps(lstProductosDic)
+            #jsonStr = json.dumps(lstProductosDic)
             fileProducto.escribirArchivo(jsonStr)
             resMenuProducto = menuProducto.mostrarMenu()
             if(resMenuProducto == 1):
@@ -266,39 +216,3 @@ elif(opcionMenuPrincipal == 2): #Menu empleado
                     f"ingreso a la opcion {resMenuProducto} de menuProducto")
                 salirCreacionProducto = False
                 break        
-    
-    # while delproducto: 
-    #     if(res == 4):
-    #          print("..........................................")
-    # print("\033[;35m""Escogiste: Quitar producto")
-    # print("..........................................")
-    # while True:
-    #     menuProducto = input("¿Qué deseas hacer? q = Quitar producto | s = Salir :")
-    #     if(menuProducto == "q"):
-    #         print("..........................................")
-    #         print("Busca en la lista el producto que deseas quitar")
-    #         print("..........................................")
-    #         for p in lstProductos:
-    #             for (key, value) in p.items():
-    #                 print(key , "  \t:  ", value )
-    #         print("..........................................")
-    #         print("Escribe debajo el nombre del producto que quieres quitar:")
-    #         print("..........................................")
-    #         strNombreEliminar = input()
-    #         print("..........................................")
-    #         for p in lstProductos:
-    #             for (key, value) in p.items():
-    #                 print(key , "  \t:  ", value )
-    #                 if(value == strNombreEliminar):
-    #                     lstProductos.remove(p)
-    #                     print("..........................................")
-    #                     print(f"Acabas de borrar {value}")
-    #                     opcionSalir = input("¿Desea regresar al menú? s = SI | n = NO ")
-    #                     if(opcionSalir == "s"):
-    #                         break            
-
-    #     else:
-    #         print("..........................................")
-    #         print("*******¡GRACIAS, HASTA LUEGO!********")
-    #         break
-            
