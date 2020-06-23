@@ -1,0 +1,871 @@
+2020-06-19 20:56:09,195 - Producto - INFO - Se creo un producto
+2020-06-19 20:56:09,203 - FileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Sesion1\martinperez
+2020-06-19 20:56:12,348 - Menu - DEBUG - No escoje opion
+2020-06-19 20:56:24,829 - Menu - DEBUG - No escoje opion
+2020-06-19 20:56:33,142 - Menu - DEBUG - No escoje opion
+2020-06-19 20:56:41,555 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-19 20:57:16,714 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Sesion1/martinperez/init.py'
+2020-06-19 20:57:16,715 - Menu - DEBUG - No escoje opion
+2020-06-19 20:57:45,223 - Producto - INFO - Se creo un producto
+2020-06-19 20:57:45,223 - FileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Sesion1\martinperez
+2020-06-19 20:57:47,971 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-19 20:57:58,148 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-19 20:57:58,149 - Menu - DEBUG - No escoje opion
+2020-06-19 20:58:04,947 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-19 20:58:04,953 - Menu - DEBUG - No escoje opion
+2020-06-19 20:58:10,998 - Menu - DEBUG - No escoje opion
+2020-06-19 20:58:17,972 - INIT - DEBUG - ingreso a la opcion 1
+2020-06-21 22:00:22,263 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:00:22,345 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:00:22,345 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:00:28,795 - Menu - DEBUG - No escoje opion
+2020-06-21 22:02:04,121 - Menu - DEBUG - No escoje opion
+2020-06-21 22:04:50,111 - Menu - DEBUG - No escoje opion
+2020-06-21 22:05:00,763 - Menu - DEBUG - No escoje opion
+2020-06-21 22:29:33,641 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:29:33,641 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:29:33,643 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:29:46,123 - Producto - INFO - Se creo un producto
+2020-06-21 22:29:46,123 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 22:29:46,124 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 22:29:46,127 - INIT - ERROR - 'Producto' object is not iterable
+2020-06-21 22:30:32,973 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:30:32,973 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:30:32,973 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:31:19,211 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:31:19,211 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:31:19,212 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:31:52,973 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
+2020-06-21 22:31:52,974 - Menu - DEBUG - No escoje opion
+2020-06-21 22:32:15,884 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:32:15,884 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:32:15,884 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:32:47,003 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:32:47,003 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:32:47,004 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:33:55,233 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
+2020-06-21 22:33:55,233 - Menu - DEBUG - No escoje opion
+2020-06-21 22:34:01,322 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:34:01,322 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:34:01,322 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:34:20,215 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:34:20,215 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:34:20,215 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:35:15,448 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:35:15,449 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:35:15,449 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:35:18,707 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:35:55,350 - Producto - INFO - Se creo un producto
+2020-06-21 22:35:55,350 - INIT - DEBUG - [{'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}]
+2020-06-21 22:35:55,350 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:35:55,351 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:35:57,387 - Producto - INFO - Se creo un producto
+2020-06-21 22:35:57,388 - INIT - DEBUG - [{'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}, {'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}]
+2020-06-21 22:37:48,207 - Producto - INFO - Se creo un producto
+2020-06-21 22:37:48,207 - INIT - DEBUG - [{'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}]
+2020-06-21 22:37:48,207 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:37:48,207 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:38:46,732 - Producto - INFO - Se creo un producto
+2020-06-21 22:38:46,732 - INIT - DEBUG - [{'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}]
+2020-06-21 22:38:46,732 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:38:46,732 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:39:15,547 - Producto - INFO - Se creo un producto
+2020-06-21 22:39:15,548 - INIT - DEBUG - [{'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}]
+2020-06-21 22:39:15,548 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:39:15,548 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:48:35,995 - Producto - INFO - Se creo un producto
+2020-06-21 22:48:35,996 - INIT - DEBUG - [{'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}]
+2020-06-21 22:48:35,996 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:48:35,996 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:49:58,065 - Producto - INFO - Se creo un producto
+2020-06-21 22:49:58,065 - INIT - DEBUG - [{'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}]
+2020-06-21 22:49:58,065 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:49:58,067 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:00:45,126 - Producto - INFO - Se creo un producto
+2020-06-21 23:00:45,126 - INIT - DEBUG - [{'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}]
+2020-06-21 23:00:45,126 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:00:45,126 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:01:11,299 - Producto - INFO - Se creo un producto
+2020-06-21 23:01:11,299 - INIT - DEBUG - [{'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}]
+2020-06-21 23:01:11,299 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:01:11,299 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:02:13,746 - Producto - INFO - Se creo un producto
+2020-06-21 23:02:13,747 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:02:13,748 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:02:13,748 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:03:52,844 - Producto - INFO - Se creo un producto
+2020-06-21 23:03:52,844 - Producto - INFO - Se creo un producto
+2020-06-21 23:03:52,844 - INIT - DEBUG - [{'codProducto': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}, {'codProducto': 1, 'nombre': 'PERA', 'cantidadProducto': 1250.0, 'costoProducto': 1.5}]
+2020-06-21 23:03:52,844 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:03:52,844 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:11:04,934 - Producto - INFO - Se creo un producto
+2020-06-21 23:11:04,934 - Producto - INFO - Se creo un producto
+2020-06-21 23:11:04,934 - INIT - DEBUG - [{'codigo': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}, {'codigo': 1, 'nombre': 'PERA', 'cantidadProducto': 1250.0, 'costoProducto': 1.5}]
+2020-06-21 23:11:04,935 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:11:04,935 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:11:40,663 - Producto - INFO - Se creo un producto
+2020-06-21 23:11:40,664 - Producto - INFO - Se creo un producto
+2020-06-21 23:11:40,664 - INIT - DEBUG - [{'codigo': '001', 'nombre': 'MANZANA', 'cantidadProducto': '1528', 'costoProducto': '1.5'}, {'codigo': 1, 'nombre': 'PERA', 'cantidadProducto': 1250.0, 'costoProducto': 1.5}]
+2020-06-21 23:11:40,664 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:11:40,664 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:12:02,041 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:12:02,041 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:12:02,041 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:12:27,363 - Producto - INFO - Se creo un producto
+2020-06-21 23:12:27,363 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:12:27,364 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:12:39,847 - Producto - INFO - Se creo un producto
+2020-06-21 23:12:39,847 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:12:39,848 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:12:39,848 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:13:28,676 - Producto - INFO - Se creo un producto
+2020-06-21 23:13:28,676 - Producto - INFO - Se creo un producto
+2020-06-21 23:13:28,676 - INIT - DEBUG - [{'codigo': 1, 'nombre': 'SANDIA', 'cantidadProducto': 12500.0, 'costoProducto': 20.0}, {'codigo': 2, 'nombre': 'PERA', 'cantidadProducto': 2500.0, 'costoProducto': 1.5}]
+2020-06-21 23:13:28,676 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:13:28,676 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:13:43,394 - Producto - INFO - Se creo un producto
+2020-06-21 23:13:43,394 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:13:43,395 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:13:43,395 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:13:47,371 - Menu - DEBUG - No escoje opion
+2020-06-21 23:36:27,967 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:36:27,967 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:36:27,967 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:36:44,980 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:36:44,982 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:36:44,982 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:36:44,982 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:37:30,891 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:37:30,891 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:37:30,891 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:37:30,891 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:38:27,103 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:38:27,103 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:38:27,103 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:38:27,103 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:38:45,648 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:38:45,648 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:38:45,648 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:38:45,649 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:40:04,479 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
+2020-06-21 23:40:04,480 - Menu - DEBUG - No escoje opion
+2020-06-21 23:40:08,984 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:41:31,473 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:41:31,473 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:41:31,475 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:41:31,475 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:41:31,475 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:41:31,476 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:41:31,476 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:41:31,476 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:41:31,476 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:41:31,476 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:42:45,200 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
+2020-06-21 23:42:45,200 - Menu - DEBUG - No escoje opion
+2020-06-21 23:42:49,627 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:42:49,628 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,628 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,628 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,628 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:42:49,628 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,631 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,631 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:42:49,631 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,631 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,631 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:42:49,631 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,632 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,632 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:42:49,632 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,633 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,633 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:42:49,633 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:42:49,634 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:42:49,634 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:42:49,634 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:43:04,419 - INIT - ERROR - 'UnidadMedidad' object is not subscriptable
+2020-06-21 23:43:04,419 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,420 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:43:04,420 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,421 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,421 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:43:04,421 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,425 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,425 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:43:04,425 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,427 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,427 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:43:04,427 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,431 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,431 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:43:04,431 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,432 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,432 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:43:04,432 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:43:04,433 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:43:04,433 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:43:04,433 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:45:18,790 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,790 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,792 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,793 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:45:18,793 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,795 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,795 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:45:18,795 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,796 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,796 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:45:18,796 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,799 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,799 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:45:18,799 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,800 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,801 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:45:18,801 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-21 23:45:18,802 - INIT - ERROR - local variable 'lstUnidadMedida' referenced before assignment
+2020-06-21 23:45:18,802 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:45:18,802 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:45:18,802 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:45:39,372 - INIT - ERROR - 'UnidadMedidad' object is not subscriptable
+2020-06-21 23:45:39,372 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:45:39,372 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:45:39,372 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:48:19,907 - INIT - ERROR - 'UnidadMedidad' object is not subscriptable
+2020-06-21 23:48:19,907 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:48:19,908 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:48:19,908 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:48:36,814 - Producto - INFO - Se creo un producto
+2020-06-21 23:48:36,814 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:48:36,815 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:50:44,404 - INIT - ERROR - 'UnidadMedidad' object is not subscriptable
+2020-06-21 23:50:44,450 - INIT - ERROR - 'total'
+2020-06-21 23:50:44,450 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:50:44,450 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:52:32,112 - Menu - DEBUG - No escoje opion
+2020-06-21 23:52:35,863 - INIT - ERROR - 'UnidadMedidad' object is not subscriptable
+2020-06-21 23:52:35,863 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:52:35,863 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:52:35,863 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:52:47,457 - Producto - INFO - Se creo un producto
+2020-06-21 23:52:47,457 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:52:47,459 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:53:10,755 - Producto - INFO - Se creo un producto
+2020-06-21 23:53:10,755 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:53:10,756 - fileManager - DEBUG - removiendo archivo
+2020-06-21 23:53:10,756 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-21 23:53:54,858 - INIT - ERROR - 'UnidadMedidad' object is not subscriptable
+2020-06-21 23:53:54,858 - Producto - INFO - Se creo un producto
+2020-06-21 23:53:54,858 - Producto - INFO - Se creo un producto
+2020-06-21 23:53:54,859 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:53:54,859 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:57:51,766 - INIT - ERROR - 'UnidadMedidad' object is not subscriptable
+2020-06-21 23:57:51,766 - Producto - INFO - Se creo un producto
+2020-06-21 23:57:51,766 - Producto - INFO - Se creo un producto
+2020-06-21 23:57:51,766 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 23:57:51,766 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:00:21,942 - Producto - INFO - Se creo un producto
+2020-06-22 00:00:21,943 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:00:21,943 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:00:21,944 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:00:35,944 - INIT - ERROR - 'UnidadMedidad' object is not subscriptable
+2020-06-22 00:00:35,944 - Producto - INFO - Se creo un producto
+2020-06-22 00:00:35,944 - Producto - INFO - Se creo un producto
+2020-06-22 00:00:35,944 - Producto - INFO - Se creo un producto
+2020-06-22 00:00:35,944 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:00:35,944 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:01:07,036 - Producto - INFO - Se creo un producto
+2020-06-22 00:01:07,036 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:01:07,038 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:01:07,038 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:02:52,696 - INIT - ERROR - 'UnidadMedidad' object is not subscriptable
+2020-06-22 00:02:52,699 - Producto - INFO - Se creo un producto
+2020-06-22 00:02:52,699 - Producto - INFO - Se creo un producto
+2020-06-22 00:02:52,699 - Producto - INFO - Se creo un producto
+2020-06-22 00:02:52,699 - Producto - INFO - Se creo un producto
+2020-06-22 00:02:52,699 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:02:52,700 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:03:15,907 - Producto - INFO - Se creo un producto
+2020-06-22 00:03:15,907 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:03:15,908 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:03:15,908 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:06:51,858 - INIT - ERROR - 'UnidadMedidad' object is not subscriptable
+2020-06-22 00:06:51,858 - Producto - INFO - Se creo un producto
+2020-06-22 00:06:51,858 - Producto - INFO - Se creo un producto
+2020-06-22 00:06:51,858 - Producto - INFO - Se creo un producto
+2020-06-22 00:06:51,858 - Producto - INFO - Se creo un producto
+2020-06-22 00:06:51,858 - Producto - INFO - Se creo un producto
+2020-06-22 00:06:51,859 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:06:51,859 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:07:56,048 - Producto - INFO - Se creo un producto
+2020-06-22 00:07:56,048 - Producto - INFO - Se creo un producto
+2020-06-22 00:07:56,048 - Producto - INFO - Se creo un producto
+2020-06-22 00:07:56,048 - Producto - INFO - Se creo un producto
+2020-06-22 00:07:56,048 - Producto - INFO - Se creo un producto
+2020-06-22 00:07:56,048 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:07:56,049 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:08:17,987 - Producto - INFO - Se creo un producto
+2020-06-22 00:08:17,988 - Producto - INFO - Se creo un producto
+2020-06-22 00:08:17,988 - Producto - INFO - Se creo un producto
+2020-06-22 00:08:17,988 - Producto - INFO - Se creo un producto
+2020-06-22 00:08:17,990 - Producto - INFO - Se creo un producto
+2020-06-22 00:08:17,990 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:08:17,991 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:09:33,960 - Producto - INFO - Se creo un producto
+2020-06-22 00:09:33,960 - Producto - INFO - Se creo un producto
+2020-06-22 00:09:33,960 - Producto - INFO - Se creo un producto
+2020-06-22 00:09:33,960 - Producto - INFO - Se creo un producto
+2020-06-22 00:09:33,960 - Producto - INFO - Se creo un producto
+2020-06-22 00:09:33,995 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:09:33,995 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:09:52,323 - Producto - INFO - Se creo un producto
+2020-06-22 00:09:52,323 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:09:52,325 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:09:52,326 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:12:06,903 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,904 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,904 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,904 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:12:06,904 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,905 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,905 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:12:06,905 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,907 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,907 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:12:06,907 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,907 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,907 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:12:06,907 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,908 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,908 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:12:06,908 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:12:06,910 - INIT - ERROR - local variable 'lstUnidadMedidaTemp' referenced before assignment
+2020-06-22 00:12:06,910 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:12:06,910 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:12:06,910 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:12:31,987 - Producto - INFO - Se creo un producto
+2020-06-22 00:12:31,988 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:12:31,988 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:14:15,210 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,211 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,211 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,212 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:14:15,212 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,214 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,215 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:14:15,215 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,216 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,216 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:14:15,216 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,217 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,217 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:14:15,217 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,217 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,217 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:14:15,217 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:14:15,219 - INIT - ERROR - local variable 'lstUnidadMedidaTemp' referenced before assignment
+2020-06-22 00:14:15,219 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:14:15,219 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:14:15,219 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:15:13,492 - Producto - INFO - Se creo un producto
+2020-06-22 00:15:13,492 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:15:13,493 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:16:21,351 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,353 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,356 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,356 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:16:21,356 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,414 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,414 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:16:21,414 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,415 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,415 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:16:21,415 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,416 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,416 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:16:21,416 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,417 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:21,417 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:16:21,417 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:16:41,423 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:16:41,423 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:16:41,423 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:17:01,345 - Producto - INFO - Se creo un producto
+2020-06-22 00:17:01,347 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:17:01,347 - INIT - ERROR - Object of type UnidadMedidad is not JSON serializable
+2020-06-22 00:35:00,438 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:35:00,439 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:35:00,439 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:35:57,657 - Producto - INFO - Se creo un producto
+2020-06-22 00:35:57,659 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:35:57,659 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:36:41,337 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:36:41,338 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:36:41,339 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\UnidadMedida.txt
+2020-06-22 00:36:43,942 - Producto - INFO - Se creo un producto
+2020-06-22 00:36:43,942 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:36:43,943 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:36:43,944 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:38:03,789 - Producto - INFO - Se creo un producto
+2020-06-22 00:38:03,789 - Producto - INFO - Se creo un producto
+2020-06-22 00:38:03,789 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:38:03,789 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:38:34,960 - Producto - INFO - Se creo un producto
+2020-06-22 00:38:34,960 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:38:34,960 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:38:34,960 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:41:35,755 - Producto - INFO - Se creo un producto
+2020-06-22 00:41:35,756 - Producto - INFO - Se creo un producto
+2020-06-22 00:41:35,756 - Producto - INFO - Se creo un producto
+2020-06-22 00:41:35,756 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:41:35,756 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:41:57,873 - Producto - INFO - Se creo un producto
+2020-06-22 00:41:57,875 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:41:57,875 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:41:57,875 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:41:57,878 - INIT - ERROR - 'Producto' object is not iterable
+2020-06-22 00:42:19,131 - Producto - INFO - Se creo un producto
+2020-06-22 00:42:19,131 - Producto - INFO - Se creo un producto
+2020-06-22 00:42:19,131 - Producto - INFO - Se creo un producto
+2020-06-22 00:42:19,131 - Producto - INFO - Se creo un producto
+2020-06-22 00:42:19,132 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:42:19,132 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:42:38,553 - Producto - INFO - Se creo un producto
+2020-06-22 00:42:38,555 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:42:38,555 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:42:38,555 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:42:38,558 - INIT - ERROR - 'Producto' object is not iterable
+2020-06-22 00:45:13,550 - Producto - INFO - Se creo un producto
+2020-06-22 00:45:13,550 - Producto - INFO - Se creo un producto
+2020-06-22 00:45:13,550 - Producto - INFO - Se creo un producto
+2020-06-22 00:45:13,550 - Producto - INFO - Se creo un producto
+2020-06-22 00:45:13,550 - Producto - INFO - Se creo un producto
+2020-06-22 00:45:13,550 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:45:13,550 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:45:35,345 - Producto - INFO - Se creo un producto
+2020-06-22 00:45:35,347 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:45:35,348 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:45:35,348 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:48:20,011 - Producto - INFO - Se creo un producto
+2020-06-22 00:48:20,012 - Producto - INFO - Se creo un producto
+2020-06-22 00:48:20,012 - Producto - INFO - Se creo un producto
+2020-06-22 00:48:20,012 - Producto - INFO - Se creo un producto
+2020-06-22 00:48:20,012 - Producto - INFO - Se creo un producto
+2020-06-22 00:48:20,012 - Producto - INFO - Se creo un producto
+2020-06-22 00:48:20,012 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:48:20,012 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:48:51,569 - Producto - INFO - Se creo un producto
+2020-06-22 00:48:51,571 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:48:51,572 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:48:51,572 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:49:15,094 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-22 00:49:15,094 - Menu - DEBUG - No escoje opion
+2020-06-22 00:49:18,911 - Producto - INFO - Se creo un producto
+2020-06-22 00:49:18,911 - Producto - INFO - Se creo un producto
+2020-06-22 00:49:18,911 - Producto - INFO - Se creo un producto
+2020-06-22 00:49:18,912 - Producto - INFO - Se creo un producto
+2020-06-22 00:49:18,912 - Producto - INFO - Se creo un producto
+2020-06-22 00:49:18,912 - Producto - INFO - Se creo un producto
+2020-06-22 00:49:18,912 - Producto - INFO - Se creo un producto
+2020-06-22 00:49:18,912 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:49:18,912 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:49:36,435 - Producto - INFO - Se creo un producto
+2020-06-22 00:49:36,436 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:49:36,437 - fileManager - DEBUG - removiendo archivo
+2020-06-22 00:49:36,437 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 00:51:54,716 - Producto - INFO - Se creo un producto
+2020-06-22 00:51:54,716 - Producto - INFO - Se creo un producto
+2020-06-22 00:51:54,716 - Producto - INFO - Se creo un producto
+2020-06-22 00:51:54,716 - Producto - INFO - Se creo un producto
+2020-06-22 00:51:54,716 - Producto - INFO - Se creo un producto
+2020-06-22 00:51:54,716 - Producto - INFO - Se creo un producto
+2020-06-22 00:51:54,716 - Producto - INFO - Se creo un producto
+2020-06-22 00:51:54,716 - Producto - INFO - Se creo un producto
+2020-06-22 00:51:54,719 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 00:51:54,719 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:05:44,528 - Producto - INFO - Se creo un producto
+2020-06-22 01:05:44,528 - Producto - INFO - Se creo un producto
+2020-06-22 01:05:44,528 - Producto - INFO - Se creo un producto
+2020-06-22 01:05:44,528 - Producto - INFO - Se creo un producto
+2020-06-22 01:05:44,529 - Producto - INFO - Se creo un producto
+2020-06-22 01:05:44,529 - Producto - INFO - Se creo un producto
+2020-06-22 01:05:44,529 - Producto - INFO - Se creo un producto
+2020-06-22 01:05:44,529 - Producto - INFO - Se creo un producto
+2020-06-22 01:05:44,529 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:05:44,529 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:05:53,280 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:05:53,280 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:05:53,280 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:16:14,344 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:14,344 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:14,344 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:14,344 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:14,344 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:14,344 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:14,344 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:14,344 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:14,344 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:16:14,345 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:16:35,651 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:35,651 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:35,651 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:35,651 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:35,652 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:35,652 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:35,652 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:35,652 - Producto - INFO - Se creo un producto
+2020-06-22 01:16:35,654 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:16:35,654 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:16:35,654 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:17:26,225 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:26,225 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:26,225 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:26,225 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:26,225 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:26,225 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:26,226 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:17:26,226 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:17:26,226 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:17:55,787 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:55,787 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:55,787 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:55,787 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:55,788 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:55,788 - Producto - INFO - Se creo un producto
+2020-06-22 01:17:55,788 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:17:55,788 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:18:20,845 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:20,846 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:20,847 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:20,848 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:20,849 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:20,851 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:20,851 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:18:20,851 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:18:20,852 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:18:35,483 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:35,486 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:35,486 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:35,487 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:35,489 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:35,491 - Producto - INFO - Se creo un producto
+2020-06-22 01:18:35,492 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:18:35,492 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:18:35,493 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:19:21,516 - Producto - INFO - Se creo un producto
+2020-06-22 01:19:21,518 - Producto - INFO - Se creo un producto
+2020-06-22 01:19:21,519 - Producto - INFO - Se creo un producto
+2020-06-22 01:19:21,520 - Producto - INFO - Se creo un producto
+2020-06-22 01:19:21,521 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:19:21,523 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:19:21,523 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:19:38,080 - Producto - INFO - Se creo un producto
+2020-06-22 01:19:38,080 - Producto - INFO - Se creo un producto
+2020-06-22 01:19:38,080 - Producto - INFO - Se creo un producto
+2020-06-22 01:19:38,080 - Producto - INFO - Se creo un producto
+2020-06-22 01:19:38,080 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:19:38,080 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:23:03,230 - Producto - INFO - Se creo un producto
+2020-06-22 01:23:03,232 - Producto - INFO - Se creo un producto
+2020-06-22 01:23:03,232 - Producto - INFO - Se creo un producto
+2020-06-22 01:23:03,232 - Producto - INFO - Se creo un producto
+2020-06-22 01:23:03,233 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:23:03,233 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:23:18,684 - Producto - INFO - Se creo un producto
+2020-06-22 01:23:18,686 - Producto - INFO - Se creo un producto
+2020-06-22 01:23:18,687 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:23:18,687 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:23:18,687 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:24:47,535 - Producto - INFO - Se creo un producto
+2020-06-22 01:24:47,535 - Producto - INFO - Se creo un producto
+2020-06-22 01:24:47,535 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:24:47,535 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:25:09,789 - Producto - INFO - Se creo un producto
+2020-06-22 01:25:09,789 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:25:09,789 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:25:09,790 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:26:15,044 - Producto - INFO - Se creo un producto
+2020-06-22 01:26:15,044 - Producto - INFO - Se creo un producto
+2020-06-22 01:26:15,044 - Producto - INFO - Se creo un producto
+2020-06-22 01:26:15,044 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:26:15,044 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:26:34,832 - Producto - INFO - Se creo un producto
+2020-06-22 01:26:34,832 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:26:34,832 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:26:34,832 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:27:12,076 - Producto - INFO - Se creo un producto
+2020-06-22 01:27:12,076 - Producto - INFO - Se creo un producto
+2020-06-22 01:27:12,076 - Producto - INFO - Se creo un producto
+2020-06-22 01:27:12,076 - Producto - INFO - Se creo un producto
+2020-06-22 01:27:12,076 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:27:12,076 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:27:29,042 - Producto - INFO - Se creo un producto
+2020-06-22 01:27:29,042 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:27:29,043 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:27:29,043 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:28:00,184 - Producto - INFO - Se creo un producto
+2020-06-22 01:28:00,184 - Producto - INFO - Se creo un producto
+2020-06-22 01:28:00,184 - Producto - INFO - Se creo un producto
+2020-06-22 01:28:00,184 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:28:00,184 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:28:00,184 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:29:49,078 - Producto - INFO - Se creo un producto
+2020-06-22 01:29:49,078 - Producto - INFO - Se creo un producto
+2020-06-22 01:29:49,078 - Producto - INFO - Se creo un producto
+2020-06-22 01:29:49,078 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:29:49,078 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:34:28,203 - Producto - INFO - Se creo un producto
+2020-06-22 01:34:28,203 - Producto - INFO - Se creo un producto
+2020-06-22 01:34:28,203 - Producto - INFO - Se creo un producto
+2020-06-22 01:34:28,203 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:34:28,203 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:34:41,243 - Producto - INFO - Se creo un producto
+2020-06-22 01:34:41,243 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:34:41,243 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:34:41,243 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:34:51,704 - Producto - INFO - Se creo un producto
+2020-06-22 01:34:51,705 - Producto - INFO - Se creo un producto
+2020-06-22 01:34:51,705 - Producto - INFO - Se creo un producto
+2020-06-22 01:34:51,705 - Producto - INFO - Se creo un producto
+2020-06-22 01:34:51,705 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:34:51,705 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:34:51,705 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:36:56,592 - Producto - INFO - Se creo un producto
+2020-06-22 01:36:56,592 - Producto - INFO - Se creo un producto
+2020-06-22 01:36:56,592 - Producto - INFO - Se creo un producto
+2020-06-22 01:36:56,592 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:36:56,592 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:37:15,321 - Producto - INFO - Se creo un producto
+2020-06-22 01:37:15,322 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:37:15,323 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:37:15,323 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:37:21,129 - Producto - INFO - Se creo un producto
+2020-06-22 01:37:21,131 - Producto - INFO - Se creo un producto
+2020-06-22 01:37:21,131 - Producto - INFO - Se creo un producto
+2020-06-22 01:37:21,131 - Producto - INFO - Se creo un producto
+2020-06-22 01:37:21,131 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:37:21,132 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:37:21,132 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:40:14,924 - Producto - INFO - Se creo un producto
+2020-06-22 01:40:14,924 - Producto - INFO - Se creo un producto
+2020-06-22 01:40:14,924 - Producto - INFO - Se creo un producto
+2020-06-22 01:40:14,924 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:40:14,924 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:40:26,154 - Producto - INFO - Se creo un producto
+2020-06-22 01:40:26,154 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:40:26,155 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:40:26,155 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:40:33,651 - Producto - INFO - Se creo un producto
+2020-06-22 01:40:33,651 - Producto - INFO - Se creo un producto
+2020-06-22 01:40:33,651 - Producto - INFO - Se creo un producto
+2020-06-22 01:40:33,651 - Producto - INFO - Se creo un producto
+2020-06-22 01:40:33,651 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:40:33,652 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:40:33,652 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:42:53,447 - Producto - INFO - Se creo un producto
+2020-06-22 01:42:53,447 - Producto - INFO - Se creo un producto
+2020-06-22 01:42:53,447 - Producto - INFO - Se creo un producto
+2020-06-22 01:42:53,447 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:42:53,448 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:43:03,858 - Producto - INFO - Se creo un producto
+2020-06-22 01:43:03,859 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:43:03,860 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:43:03,860 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:43:09,896 - Producto - INFO - Se creo un producto
+2020-06-22 01:43:09,896 - Producto - INFO - Se creo un producto
+2020-06-22 01:43:09,896 - Producto - INFO - Se creo un producto
+2020-06-22 01:43:09,896 - Producto - INFO - Se creo un producto
+2020-06-22 01:43:09,896 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:43:09,897 - fileManager - DEBUG - removiendo archivo
+2020-06-22 01:43:09,897 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Productos.txt
+2020-06-22 01:44:22,190 - Producto - INFO - Se creo un producto
+2020-06-22 01:44:22,190 - Producto - INFO - Se creo un producto
+2020-06-22 01:44:22,190 - Producto - INFO - Se creo un producto
+2020-06-22 01:44:22,190 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 01:44:22,190 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:01:30,780 - Producto - INFO - Se creo un producto
+2020-06-22 02:01:30,780 - Producto - INFO - Se creo un producto
+2020-06-22 02:01:30,780 - Producto - INFO - Se creo un producto
+2020-06-22 02:01:30,780 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:01:30,780 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:02:27,113 - Producto - INFO - Se creo un producto
+2020-06-22 02:02:27,115 - Producto - INFO - Se creo un producto
+2020-06-22 02:02:27,115 - Producto - INFO - Se creo un producto
+2020-06-22 02:02:27,115 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:02:27,115 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:02:51,615 - Producto - INFO - Se creo un producto
+2020-06-22 02:02:51,615 - Producto - INFO - Se creo un producto
+2020-06-22 02:02:51,615 - Producto - INFO - Se creo un producto
+2020-06-22 02:02:51,615 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:02:51,615 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:03:02,664 - Producto - INFO - Se creo un producto
+2020-06-22 02:03:02,664 - Producto - INFO - Se creo un producto
+2020-06-22 02:03:02,664 - Producto - INFO - Se creo un producto
+2020-06-22 02:03:02,664 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:03:02,664 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:03:21,707 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:03:21,707 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:03:21,716 - INIT - ERROR - 'Empleado' object has no attribute 'cantidadProducto'
+2020-06-22 02:03:51,945 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:03:51,947 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:03:51,947 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:03:51,950 - INIT - ERROR - 'Empleado' object has no attribute 'cantidadProducto'
+2020-06-22 02:04:30,905 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:04:30,907 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:04:30,907 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:04:30,910 - INIT - ERROR - 'Empleado' object has no attribute 'cantidadProducto'
+2020-06-22 02:04:52,929 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:04:52,930 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:04:52,931 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:04:52,934 - INIT - ERROR - 'Empleado' object has no attribute 'cantidadProducto'
+2020-06-22 02:05:27,743 - Producto - INFO - Se creo un producto
+2020-06-22 02:05:27,743 - Producto - INFO - Se creo un producto
+2020-06-22 02:05:27,743 - Producto - INFO - Se creo un producto
+2020-06-22 02:05:27,743 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:05:27,743 - INIT - ERROR - 'Empleado' object is not subscriptable
+2020-06-22 02:07:42,936 - Producto - INFO - Se creo un producto
+2020-06-22 02:07:42,936 - Producto - INFO - Se creo un producto
+2020-06-22 02:07:42,936 - Producto - INFO - Se creo un producto
+2020-06-22 02:07:42,936 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:07:42,937 - INIT - ERROR - 'Empleado' object is not subscriptable
+2020-06-22 02:07:54,521 - Producto - INFO - Se creo un producto
+2020-06-22 02:07:54,523 - Producto - INFO - Se creo un producto
+2020-06-22 02:07:54,523 - Producto - INFO - Se creo un producto
+2020-06-22 02:07:54,523 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:07:54,523 - INIT - ERROR - 'Empleado' object is not subscriptable
+2020-06-22 02:10:02,199 - Producto - INFO - Se creo un producto
+2020-06-22 02:10:02,199 - Producto - INFO - Se creo un producto
+2020-06-22 02:10:02,199 - Producto - INFO - Se creo un producto
+2020-06-22 02:10:02,199 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:10:02,199 - INIT - ERROR - 'Empleado' object is not subscriptable
+2020-06-22 02:12:41,771 - Producto - INFO - Se creo un producto
+2020-06-22 02:12:41,771 - Producto - INFO - Se creo un producto
+2020-06-22 02:12:41,771 - Producto - INFO - Se creo un producto
+2020-06-22 02:12:41,771 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:12:41,772 - INIT - ERROR - 'Empleado' object is not subscriptable
+2020-06-22 02:13:51,745 - Producto - INFO - Se creo un producto
+2020-06-22 02:13:51,746 - Producto - INFO - Se creo un producto
+2020-06-22 02:13:51,746 - Producto - INFO - Se creo un producto
+2020-06-22 02:13:51,746 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:13:51,746 - INIT - ERROR - 'Empleado' object is not subscriptable
+2020-06-22 02:15:19,910 - Producto - INFO - Se creo un producto
+2020-06-22 02:15:19,910 - Producto - INFO - Se creo un producto
+2020-06-22 02:15:19,910 - Producto - INFO - Se creo un producto
+2020-06-22 02:15:19,911 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:15:45,312 - Producto - INFO - Se creo un producto
+2020-06-22 02:15:45,312 - Producto - INFO - Se creo un producto
+2020-06-22 02:15:45,312 - Producto - INFO - Se creo un producto
+2020-06-22 02:15:45,312 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:21:28,970 - Producto - INFO - Se creo un producto
+2020-06-22 02:21:28,970 - Producto - INFO - Se creo un producto
+2020-06-22 02:21:28,970 - Producto - INFO - Se creo un producto
+2020-06-22 02:21:28,970 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:21:52,185 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:21:52,187 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:21:52,187 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:21:52,190 - INIT - ERROR - 'Empleado' object has no attribute 'cantidadProducto'
+2020-06-22 02:22:49,057 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:22:49,059 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:22:49,059 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:22:49,062 - INIT - ERROR - 'Empleado' object has no attribute 'cantidadProducto'
+2020-06-22 02:23:52,712 - Producto - INFO - Se creo un producto
+2020-06-22 02:23:52,712 - Producto - INFO - Se creo un producto
+2020-06-22 02:23:52,712 - Producto - INFO - Se creo un producto
+2020-06-22 02:23:52,712 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:24:12,473 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:24:12,475 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:24:12,476 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:24:12,478 - INIT - ERROR - 'Empleado' object has no attribute 'cantidadProducto'
+2020-06-22 02:24:52,088 - Producto - INFO - Se creo un producto
+2020-06-22 02:24:52,088 - Producto - INFO - Se creo un producto
+2020-06-22 02:24:52,088 - Producto - INFO - Se creo un producto
+2020-06-22 02:24:52,088 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:25:11,697 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:25:11,699 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:25:11,700 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:26:17,351 - Producto - INFO - Se creo un producto
+2020-06-22 02:26:17,351 - Producto - INFO - Se creo un producto
+2020-06-22 02:26:17,351 - Producto - INFO - Se creo un producto
+2020-06-22 02:26:17,352 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:26:45,793 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:26:45,796 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:26:45,796 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:29:04,281 - Producto - INFO - Se creo un producto
+2020-06-22 02:29:04,281 - Producto - INFO - Se creo un producto
+2020-06-22 02:29:04,281 - Producto - INFO - Se creo un producto
+2020-06-22 02:29:04,281 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:29:33,299 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
+2020-06-22 02:29:33,299 - Menu - DEBUG - No escoje opion
+2020-06-22 02:29:38,200 - Producto - INFO - Se creo un producto
+2020-06-22 02:29:38,200 - Producto - INFO - Se creo un producto
+2020-06-22 02:29:38,200 - Producto - INFO - Se creo un producto
+2020-06-22 02:29:38,200 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:29:57,553 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:29:57,555 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:29:57,555 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:30:14,297 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:30:14,299 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:30:14,299 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:30:21,001 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:30:21,003 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:30:21,003 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:30:41,723 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:30:41,723 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:30:41,724 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:30:52,683 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:30:52,684 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:30:52,684 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:39:38,835 - Producto - INFO - Se creo un producto
+2020-06-22 02:39:38,835 - Producto - INFO - Se creo un producto
+2020-06-22 02:39:38,835 - Producto - INFO - Se creo un producto
+2020-06-22 02:39:38,835 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:40:16,884 - Producto - INFO - Se creo un producto
+2020-06-22 02:40:16,884 - Producto - INFO - Se creo un producto
+2020-06-22 02:40:16,884 - Producto - INFO - Se creo un producto
+2020-06-22 02:40:16,884 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-22 02:40:43,769 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:40:43,771 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:40:58,075 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:40:58,075 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:40:58,075 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:41:55,585 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:41:55,585 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:41:55,585 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:42:19,787 - Producto - INFO - Se creo un producto
+2020-06-22 02:42:19,787 - Producto - INFO - Se creo un producto
+2020-06-22 02:42:19,787 - Producto - INFO - Se creo un producto
+2020-06-22 02:42:43,473 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:42:43,475 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:42:43,476 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:43:01,969 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:43:01,970 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:43:01,971 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:43:14,171 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:43:14,171 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:43:14,172 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:43:30,697 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:43:30,699 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:43:30,700 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:43:44,009 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:43:44,011 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:43:44,012 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:44:10,256 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:44:10,257 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:44:10,257 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:44:21,492 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:44:21,493 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:44:21,493 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:44:47,012 - Producto - INFO - Se creo un producto
+2020-06-22 02:44:47,012 - Producto - INFO - Se creo un producto
+2020-06-22 02:44:47,012 - Producto - INFO - Se creo un producto
+2020-06-22 02:44:58,305 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:44:58,307 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:44:58,308 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:45:07,659 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:45:07,660 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:45:07,660 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:45:40,585 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:45:40,587 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:45:40,588 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Clientes.txt
+2020-06-22 02:46:10,595 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
+2020-06-22 02:46:10,595 - fileManager - DEBUG - removiendo archivo
+2020-06-22 02:46:10,595 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Semana4Hackaton\martinperez\Empleados.txt
