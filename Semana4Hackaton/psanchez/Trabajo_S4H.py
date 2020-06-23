@@ -1,8 +1,11 @@
 import os
+import random
 from time import sleep
 
 dicUsuario={}
+dicTrabajador={}
 lstUsuario=[]
+lstTrabajador=[]
 
 class Usuario:
     # log = utils.log("Usuario")
@@ -68,6 +71,7 @@ class Menu:
                         contOpciones += 1
                     if(contOpciones == 0):
                         print("Escoge una opcion valida. \n Ingresa numeros del 0 - 9.")
+                        sleep(0.5)
             else:
                 salirMenu = False
         return opcion
@@ -90,7 +94,6 @@ if (opcionMenuPrincipal == 1):
     salirNuevoRegistro = True
     while (salirNuevoRegistro):
         if(res == 1):
-            sleep(0.5)
             print("")
             print("NUEVO REGISTRO")
             print("Ingresa los siguientes datos:")
@@ -109,11 +112,29 @@ if (opcionMenuPrincipal == 1):
             print("ÉXITO!")
             print("Tu Usuario ha sido creado")
             print("")
-            print("Tu usuario y contrasena son:")
-            for i in lstUsuario:
-                print(f"Usuario: {usuario} \n Contrasena: {password}")
+            sleep(0.5)
 
-
-elif (opcionMenuPrincipal == 2):
-    print ("Ingresa tu usuario y contrasena:")
+        elif (opcionMenuPrincipal == 2):
+            print("")
+            print("NUEVO REGISTRO")
+            print("Ingresa los siguientes datos:")
+            print("")
+            nombre = input("Nombre :")
+            apellido = input("Apellido :")
+            dni = input("DNI :")
+            usuario = input("Escribe tu usuario :")
+            password = input("Escribe tu contrasena :")
+            email = input("Ingresa tu email :")
+            codTrabajador = random.randint(1000,2000)
+            trabajador_nuevo = Trabajador(nombre,apellido,dni,usuario,password,email,codTrabajador)
+            lstTrabajador.append(trabajador_nuevo.dictTrabajador())
+            lstTrabajador.append(trabajador_nuevo)
+            sleep (2)
+            print("************")
+            print("ÉXITO!")
+            print("Tu Usuario ha sido creado")
+            print("Tu nuevo código de trabajador es:")
+            print(codTrabajador)
+            print("")
+            sleep(0.5)
 
