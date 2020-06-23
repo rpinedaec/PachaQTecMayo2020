@@ -1,0 +1,59 @@
+2020-06-18 20:26:09,131 - Menu - DEBUG - Esto es un debug
+2020-06-18 20:26:09,140 - Menu - DEBUG - Cliente, 1
+2020-06-18 20:26:09,140 - Menu - DEBUG - Empleado, 2
+2020-06-18 20:27:57,147 - Menu - DEBUG - Esto es un debug
+2020-06-18 20:27:57,147 - Menu - DEBUG - Comprar, 1
+2020-06-18 20:27:57,147 - Menu - DEBUG - Devolver, 2
+2020-06-21 19:47:56,966 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
+2020-06-21 19:47:57,055 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 19:48:17,724 - Producto - INFO - Se creo un producto
+2020-06-21 19:48:17,726 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 19:48:17,726 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 19:48:21,779 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-21 19:48:34,464 - Menu - DEBUG - No escoje opion
+2020-06-21 19:48:40,195 - Menu - DEBUG - No escoje opion
+2020-06-21 19:49:27,967 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
+2020-06-21 19:49:27,967 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 19:49:35,188 - Menu - DEBUG - No escoje opion
+2020-06-21 19:49:49,400 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
+2020-06-21 19:49:49,403 - Menu - DEBUG - No escoje opion
+2020-06-21 22:06:51,519 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:06:51,519 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:06:51,519 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:08:43,903 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:08:43,903 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:08:43,903 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:08:58,985 - Producto - INFO - Se creo un producto
+2020-06-21 22:08:58,986 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:08:58,986 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:08:58,988 - INIT - ERROR - 'Producto' object is not iterable
+2020-06-21 22:09:39,864 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
+2020-06-21 22:09:39,864 - Menu - DEBUG - No escoje opion
+2020-06-21 22:09:46,009 - Menu - ERROR - invalid literal for int() with base 10: 'das'
+2020-06-21 22:09:46,011 - Menu - DEBUG - No escoje opion
+2020-06-21 22:09:57,601 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:09:57,601 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:09:57,603 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:10:46,942 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:10:46,942 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:10:46,942 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:11:19,065 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:11:19,067 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:11:19,067 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:12:09,752 - Producto - INFO - Se creo un producto
+2020-06-21 22:12:09,752 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:12:09,752 - fileManager - DEBUG - removiendo archivo
+2020-06-21 22:12:09,753 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:12:09,753 - INIT - ERROR - 'Producto' object is not iterable
+2020-06-21 22:12:39,558 - Menu - DEBUG - No escoje opion
+2020-06-21 22:13:29,222 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:13:29,223 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:13:29,223 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:13:57,983 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:13:57,983 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:13:57,983 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:14:10,683 - Producto - INFO - Se creo un producto
+2020-06-21 22:14:10,684 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:14:10,684 - fileManager - DEBUG - removiendo archivo
+2020-06-21 22:14:10,684 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:14:10,688 - INIT - ERROR - 'Producto' object is not iterable

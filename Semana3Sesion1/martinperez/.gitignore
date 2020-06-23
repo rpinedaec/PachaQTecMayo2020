@@ -8,10 +8,4 @@
 pyvenv.cfg
 .venv
 pip-selfcheck.json
-<<<<<<< HEAD
-/settings.json
-*.log
-*.pyc
-=======
 .vscode
->>>>>>> e332a339f9876cbec44e26ca2aed379a27b3cd73
