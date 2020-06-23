@@ -7,7 +7,8 @@ import json
 class Persona:
     __estado = True
 
-    def __init__(self, dni, nombre, apellido, edad):
+    def __init__(self,idPersona, dni, nombre, apellido, edad):
+        self.idPersona = idPersona
         self.dni = dni
         self.nombre = nombre
         self.apellido = apellido
@@ -57,6 +58,7 @@ class Producto:
         self.nombreProducto = nombreProducto
         self.cantidadProducto = cantidadProducto
         self.costoProducto = costoProducto
+        self.unidadMedida = unidadMedida
         self.log.info("Se creo un producto")
 
     def __str__(self):
@@ -166,6 +168,11 @@ elif(opcionMenuPrincipal == 1):
     dicOpcionesCliente = {"Comprar": 1, "Devolver": 2}
     menuCliente = Menu("Menu de Cliente", dicOpcionesCliente)
     res = menuCliente.mostrarMenu()
+    if(res == 1):
+        log.info("escogio la opcion 1")
+    if(res == 9):
+        log.info("escogio la opcion de salir")
+        
 elif(opcionMenuPrincipal == 2):
     dicOpcionesEmpleado = {"Marcar Ingreso": 1,
                            "Marcar Salida": 2, "Cargar Inventario": 3}
