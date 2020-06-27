@@ -39,9 +39,28 @@ class Trabajador(Personas):
         self.EdadPersona = EdadPersona
         self.CodigoTrabajador = CodigoTrabajador
     
-    def MarcarIngreso(self, HoraIngreso):
-        print("Trabajador: ")
-
+    def MarcarSalida(self):
+        CodTrabajSal = input("Ingresa tu código de trabajador: ")
+        HoraSalida = datetime.now()
+        formatHoraSalida = HoraSalida.strftime('Horas: %H, Minutos: %M, del %d/%m/%Y')
+        print(f"El trabajador {self.CodigoTrabajador} marcó salida a las {formatHoraSalida}")
+        time.sleep(2)
+        os.system('clear')
+        ExistArch = os.path.isfile("HorariosTB.txt")
+        if(ExistArch == True):
+                fileAdd = open("HorariosTB.txt","a")
+                fileAdd.write(f"Trabajador: {CodTrabajSal} Salida: {formatHoraSalida} \n")
+        else:
+                open("HorariosTB.txt","w")
+    
+    def toDic(self):
+        d={
+            "NombrePersona":self.NombrePersona,
+            "ApellidoPersona":self.ApellidoPersona,
+            "EdadPersona":self.EdadPersona,
+            "CodigoTrabajador":self.CodigoTrabajador 
+        }
+        return d
 class Productos:
     def __init__(self, NombreProducto, CodigoProducto, PrecioProducto, CostoProducto):
         self.NombreProducto = NombreProducto
@@ -196,7 +215,8 @@ def UsuarioAntiguo():
     time.sleep(2)
     os.system('clear')
     
-
+lstTrabajadorDic = []
+lstTrabajador = []
 Usuarios = []
 lstProd = []
 bucle = True
@@ -230,7 +250,28 @@ while(bucle == True):
             MenuTrabajador.MostrarMenu()
             OpElegirTrabajador = input("Trabajador, elije Opción: ")
             if(OpElegirTrabajador == "1"):
-                MarcarIngreso()
+                print("no se encontro trabajador")
+                print("desea crearlo?")
+                print("Ingrese el codigo")
+                CodigoTrabajador = input()
+                print("Ingrese el Nombre Persona")
+                NombrePersona = input()
+                print("Ingrese el Apellido Persona")
+                ApellidoPersona = input()
+                print("Ingrese la edad ")
+                EdadPersona = input()
+                trabajador = Trabajador(NombrePersona, ApellidoPersona, EdadPersona, CodigoTrabajador)
+                lstTrabajador.append(trabajador)
+                lstTrabajadorDic.append(trabajador.toDic())
+                codTrabajador = input()
+                for dicTrabajador in lstTrabajadorDic:
+                    if dicTrabajador["CodigoTrabajador"] == codTrabajador:
+                        print("Trabajador encontrado")
+                        break;
+                    else:
+                        pass
+                        #NombrePersona, ApellidoPersona, EdadPersona, CodigoTrabajador
+                #MarcarIngreso()
             elif(OpElegirTrabajador == "2"):
                 MarcarSalida()
             elif(OpElegirTrabajador =="3"):

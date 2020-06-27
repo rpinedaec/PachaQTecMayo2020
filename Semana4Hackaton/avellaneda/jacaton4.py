@@ -260,7 +260,6 @@ def limpiarPantalla():
     	return os.system('clear')
     clear()
 
-
 def archivoUsuarios():
 
 	with open('usuarios.txt') as arch:
@@ -277,7 +276,6 @@ def archivoUsuarios():
 		h.contraseña = dicUsuarios[j][1]
 		listaUsuarios.append(h)
 		j += 1
-
 
 def archivoEmpleados():
 
@@ -298,7 +296,6 @@ def archivoEmpleados():
 		o.salario = dicEmpleados[j][4]
 		listaEmpleados.append(o)
 		j += 1
-
 
 def main():
 	archivoUsuarios()
@@ -337,6 +334,5 @@ def main():
 			else:
 				print("\n▬▬Usuario Invalido▬▬")
 				print("Quedan", i, "de 3 intento(s)...")
-
 
 menu()

@@ -366,3 +366,14 @@
 2020-06-20 11:41:17,146 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
 2020-06-20 11:41:17,146 - INIT - DEBUG - [<__main__.Producto object at 0x000001B329A9FB88>, <__main__.Producto object at 0x000001B329A9FBC8>, <__main__.Producto object at 0x000001B329A9FC48>]
 >>>>>>> upstream/develop
+2020-06-25 21:18:18,806 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:18:18,807 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:18:58,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:18:58,616 - fileManager - DEBUG - removiendo archivo
+2020-06-25 21:18:58,616 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:32:36,880 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:32:36,882 - fileManager - DEBUG - removiendo archivo
+2020-06-25 21:32:36,882 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:33:10,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:33:10,615 - fileManager - DEBUG - removiendo archivo
+2020-06-25 21:33:10,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
