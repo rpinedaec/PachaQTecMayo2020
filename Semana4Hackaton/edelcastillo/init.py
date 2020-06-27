@@ -425,8 +425,6 @@ elif(opcionMenuPrincipal == 2):
                                             if(value == strNombreEliminar):
                                                 print(f"Borrar {value}???")
                                                 lstProductos.remove(p)
-                                                print(
-                                                    "Haz creado el producto: ", producto)
                                     fileProducto.borrarArchivo()
                                     lstProductosDic.append(producto.dictProducto())
                                     lstProductos.append(producto)
