@@ -23,7 +23,7 @@ class cliente (persona):
     #Iniciando la función de guardar datos de cliente nuevo.
     def crearCliente (self):
         #Abriendo el archivo Json en modo lectura
-        with open('clientes.json','r') as f:
+        with open('Semana4Hackaton\jwilian\clientes.json','r') as f:
             #Descargando como Lista
             listaDescargada = json.load(f)
             #Asignando las entradas a la lista "datos"
@@ -31,7 +31,7 @@ class cliente (persona):
             #Añadiendo la lista "datos" a la lista descargada
             listaDescargada.append(datos)
             #Abriendo el archivo Json en modo de escritura
-            with open('clientes.json','w') as f:
+            with open('Semana4Hackaton\jwilian\clientes.json','w') as f:
                 #Agregando la cadena datos en forma de cadena Json en el archivo Json:
                 json.dump(listaDescargada,f)
         
@@ -41,7 +41,7 @@ class cliente (persona):
     def eliminarCliente (self):
         
         #Abriendo el archivo Json en modo lectura
-        with open('clientes.json','r') as f:
+        with open('Semana4Hackaton\jwilian\clientes.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             #Inicio del contador, para recorrer la lista con la sentencia while
@@ -56,7 +56,7 @@ class cliente (persona):
                     #Conversion de la variable "i", que indicara el final de la sentencia While
                     i=True
                     #Abriendo el archivo Json en modo de escritura
-                    with open('clientes.json','w') as f:
+                    with open('Semana4Hackaton\jwilian\clientes.json','w') as f:
                     #Agregando la cadena datos en forma de cadena Json en el archivo Json:
                         json.dump(ListaDescargada,f)
                 else:
@@ -66,7 +66,7 @@ class cliente (persona):
     #Función para validar la existencia de un cliente
     def validarCliente (self):
         #Abriendo el archivo Json en modo lectura
-        with open('clientes.json','r') as f:
+        with open('Semana4Hackaton\jwilian\clientes.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             j = 0
@@ -78,11 +78,11 @@ class cliente (persona):
                     print("El cliente: ",ListaDescargada[j]["Nombre"]+" "+ListaDescargada[j]["Apellidos"]," ,se encuentra registrado en el sistema")
                 else:
                     j+=1
-    
+
     #Función para ver los datos de un cliente existente
     def verCliente (self):
         #Abriendo el archivo Json en modo lectura
-        with open('clientes.json','r') as f:
+        with open('Semana4Hackaton\jwilian\clientes.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             j = 0
@@ -106,7 +106,7 @@ class empleado (persona):
     #Iniciando la función de guardar datos
     def crearEmpleado (self):
         #Abriendo el archivo Json en modo lectura
-        with open('empleados.json','r') as f:
+        with open('Semana4Hackaton\jwilian\empleados.json','r') as f:
             #Descargando como Lista
             listaDescargada = json.load(f)
             #Asignando las entradas a la lista "datos"
@@ -114,14 +114,14 @@ class empleado (persona):
             #Añadiendo la lista "datos" a la lista descargada
             listaDescargada.append(datos)
             #Abriendo el archivo Json en modo de escritura
-            with open('empleados.json','w') as f:
+            with open('Semana4Hackaton\jwilian\empleados.json','w') as f:
                 #Agregando la cadena datos en forma de cadena Json en el archivo Json:
                 json.dump(listaDescargada,f)
     
     #Iniciando la función de borrar datos
     def eliminarEmpleado (self):
         #Abriendo el archivo Json en modo lectura
-        with open('empleados.json','r') as f:
+        with open('Semana4Hackaton\jwilian\empleados.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             j = 0
@@ -132,7 +132,7 @@ class empleado (persona):
                     ListaDescargada.pop(j)
                     i=True
                     #Abriendo el archivo Json en modo de escritura
-                    with open('empleados.json','w') as f:
+                    with open('Semana4Hackaton\jwilian\empleados.json','w') as f:
                     #Agregando la cadena datos en forma de cadena Json en el archivo Json:
                         json.dump(ListaDescargada,f)
                 else:
@@ -141,7 +141,7 @@ class empleado (persona):
     #Función para validar la existencia de un empleado.
     def validarEmpleado (self):
         #Abriendo el archivo Json en modo lectura
-        with open('empleados.json','r') as f:
+        with open('Semana4Hackaton\jwilian\empleados.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             j = 0
@@ -157,7 +157,7 @@ class empleado (persona):
 
     def verEmpleado (self):
         #Abriendo el archivo Json en modo lectura
-        with open('empleados.json','r') as f:
+        with open('Semana4Hackaton\jwilian\empleados.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             j = 0
@@ -184,7 +184,7 @@ class producto ():
     #Iniciando la función de guardar datos
     def addProduct (self):
         #Abriendo el archivo Json en modo lectura
-        with open('productos.json','r') as f:
+        with open('Semana4Hackaton\jwilian\productos.json','r') as f:
             #Descargando como Lista
             listaDescargada = json.load(f)
             #Asignando las entradas a la lista "datos"
@@ -192,14 +192,14 @@ class producto ():
             #Añadiendo la lista "datos" a la lista descargada
             listaDescargada.append(datos)
             #Abriendo el archivo Json en modo de escritura
-            with open('productos.json','w') as f:
+            with open('Semana4Hackaton\jwilian\productos.json','w') as f:
                 #Agregando la cadena datos en forma de cadena Json en el archivo Json:
                 json.dump(listaDescargada,f)
 
     #Iniciando la función para validar productos
     def validarProduct (self):
         #Abriendo el archivo Json en modo lectura
-        with open('productos.json','r') as f:
+        with open('Semana4Hackaton\jwilian\productos.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             j = 0
@@ -216,7 +216,7 @@ class producto ():
     #Iniciando la función para eliminar productos
     def delProduct (self):
         #Abriendo el archivo Json en modo lectura
-        with open('productos.json','r') as f:
+        with open('Semana4Hackaton\jwilian\productos.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             j = 0
@@ -227,7 +227,7 @@ class producto ():
                     ListaDescargada.pop(j)
                     i=True
                     #Abriendo el archivo Json en modo de escritura
-                    with open('productos.json','w') as f:
+                    with open('Semana4Hackaton\jwilian\productos.json','w') as f:
                     #Agregando la cadena datos en forma de cadena Json en el archivo Json:
                         json.dump(ListaDescargada,f)
                 else:
@@ -236,7 +236,7 @@ class producto ():
     #Iniciando la función para listar los productos
     def listProduct (self):
         #Abriendo el archivo Json en modo lectura
-        with open('productos.json','r') as f:
+        with open('Semana4Hackaton\jwilian\productos.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             #Imprimiendo en pantalla la lista descargada
@@ -245,7 +245,7 @@ class producto ():
     #Iniciando la función para contar productos
     def countProduct (self):
         #Abriendo el archivo Json en modo lectura
-        with open('productos.json','r') as f:
+        with open('Semana4Hackaton\jwilian\productos.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             j = 0
@@ -261,7 +261,7 @@ class producto ():
     #Iniciando la función para contar productos
     def valueProduct (self):
         #Abriendo el archivo Json en modo lectura
-        with open('productos.json','r') as f:
+        with open('Semana4Hackaton\jwilian\productos.json','r') as f:
             #Descargando como Lista
             ListaDescargada = json.load(f)
             j = 0
