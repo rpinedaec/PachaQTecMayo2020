@@ -18,6 +18,7 @@ class log:
         ch.setFormatter(formatter)
         # add ch to logger
         self.logger.addHandler(ch)
+        
 
     def debug(self, mensaje):
         self.logger.debug(mensaje)
