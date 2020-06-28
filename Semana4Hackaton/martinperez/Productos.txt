@@ -1,0 +1,1 @@
+[{"codigo": 3, "nombre": "SANDIA", "cantidadProducto": 1500.0, "unidad": "UN", "costoProducto": 15.0, "total": 22500.0}, {"codigo": 4, "nombre": "KIWI", "cantidadProducto": 3500.0, "unidad": "KG", "costoProducto": 9.5, "total": 33250.0}, {"codigo": 5, "nombre": "MANZANA", "cantidadProducto": 3500.0, "unidad": "UN", "costoProducto": 0.5, "total": 1750.0}]

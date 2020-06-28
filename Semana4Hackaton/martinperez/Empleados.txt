@@ -1,0 +1,1 @@
+[{"codigo": 1, "dni": 45788965, "nombre": "MARTIN", "apellido": "PEREZ", "edad": 32, "codEmpleado": 1}, {"codigo": 2, "dni": 545851, "nombre": "DFWTEWR", "apellido": "QWEQGV", "edad": 28, "codEmpleado": 2}, {"codigo": 2, "dni": 89685967, "nombre": "ANDRES", "apellido": "CACERES", "edad": 37, "codEmpleado": 2}]

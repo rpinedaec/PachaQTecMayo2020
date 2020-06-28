@@ -1,4 +1,4 @@
-class Productos:
+class Producto:
     def __init__(self, codigo, marca, peso, modelo, almacen):
         self.codigo = codigo
         self.marca = marca
@@ -7,14 +7,19 @@ class Productos:
         self.almacen = almacen
 
 
-cemento = Productos("A001", "Sol", 20, "Premier", 10)
-print(cemento.peso)
-cemento.peso = 30
-print(cemento.peso)
+
+Cemento = Producto("A001","Sol",20,"Premier",10)
+
+print(Cemento.peso)
+Cemento.peso = 300
+print(Cemento.peso)
+
+pos = Producto("1","SITPEY", 0.2002,'Standar',11)
 
 
-pos = Productos("1", "SITPEY", 0.200, "Smart", "Urbano")
 
 print(pos.marca)
-pos.marca = "AAAAAA"
+pos.marca = "PERUANO"
 print(pos.marca)
+
+

@@ -1,0 +1,1 @@
+[{"codigo": 2, "dni": 25252563, "nombre": "abel", "apellido": "CONTRERAS", "edad": 27, "codCliente": 2}, {"codigo": 3, "dni": 45858585, "nombre": "MARTIN", "apellido": "PEREZ", "edad": 32, "codCliente": 3}]

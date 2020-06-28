@@ -11,3 +11,4 @@ pip-selfcheck.json
 /settings.json
 *.log
 *.pyc
+*.stackdump
