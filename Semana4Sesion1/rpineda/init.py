@@ -29,44 +29,44 @@ class Persona:
         self.estado = False
 
 
-class Cliente(Persona):
-    def __init__(self, dni, nombre, apellido, edad, codCliente):
-        super().__init__(dni, nombre, apellido, edad)
-        self.codCliente = codCliente
-
-    def compar(self):
-        print("El Cliente esta comprando")
-        print("El Cliente terminó de comprar")
 
 
 class Empleado(Persona):
     def __init__(self, dni, nombre, apellido, edad, codEmpleado):
         super().__init__(dni, nombre, apellido, edad)
         self.codEmpleado = codEmpleado
-
     def marcarIngreso(self):
         print("El empleado esta marcando su ingreso")
         print("El empleado marcó su ingreso")
 
 
+
+class Cliente(Persona):
+    def __init__(self, dni, nombre, apellido, edad, codCliente):
+        super().__init__(dni, nombre, apellido, edad)
+        self.codCliente = codCliente
+    def compar(self):
+        print("El Cliente esta comprando")
+        print("El Cliente terminó de comprar")
+
+
+
+
 class Producto:
     log = utils.log("Producto")
-
     def __init__(self, codProducto, nombreProducto, cantidadProducto, costoProducto):
         self.codProducto = codProducto
         self.nombreProducto = nombreProducto
         self.cantidadProducto = cantidadProducto
         self.costoProducto = costoProducto
-        self.unidadMedida = unidadMedida
+        # self.unidadMedida = unidadMedida
         self.log.info("Se creo un producto")
-
     def __str__(self):
         return """Codigo: {} \nNombre: {}""".format(self.codProducto, self.nombreProducto)
 
     def costearProducto(self):
         print("Costeando producto")
         print("Producto costeado")
-
 
 class Menu:
     log = utils.log("Menu")
@@ -137,7 +137,7 @@ elif(opcionMenuPrincipal == 1):
         log.info("escogio la opcion 1")
     if(res == 9):
         log.info("escogio la opcion de salir")
-        
+
 elif(opcionMenuPrincipal == 2):
     dicOpcionesEmpleado = {"Marcar Ingreso": 1,
                            "Marcar Salida": 2, "Cargar Inventario": 3}

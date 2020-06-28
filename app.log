@@ -366,3 +366,8 @@
 2020-06-20 11:41:17,146 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
 2020-06-20 11:41:17,146 - INIT - DEBUG - [<__main__.Producto object at 0x000001B329A9FB88>, <__main__.Producto object at 0x000001B329A9FBC8>, <__main__.Producto object at 0x000001B329A9FC48>]
 >>>>>>> upstream/develop
+2020-06-26 15:10:02,850 - Menu - ERROR - invalid literal for int() with base 10: '/usr/bin/python3.7 /home/ricardo/Escritorio/Pacha-Q-Tec/PachaQTecMayo2020/Semana4Sesion1/rpineda/init.py'
+2020-06-26 15:10:02,851 - Menu - DEBUG - No escoje opion
+2020-06-26 15:10:07,865 - Menu - DEBUG - No escoje opion
+2020-06-26 15:10:12,878 - Menu - DEBUG - No escoje opion
+2020-06-26 15:10:17,889 - Menu - DEBUG - No escoje opion
