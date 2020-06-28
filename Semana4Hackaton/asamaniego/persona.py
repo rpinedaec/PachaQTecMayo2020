@@ -7,6 +7,15 @@ class Persona:
         self.apellido = apellido
         self.edad = edad
 
+    def toDic(self):
+        dicPersona = {
+            "dni" : self.dni,
+            "nombre" : self.nombre,
+            "apellido" : self.apellido,
+            "edad" : self.edad
+        }
+        return dicPersona
+
     @property
     def estado(self):
         return self.__estado

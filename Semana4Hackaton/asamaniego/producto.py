@@ -22,7 +22,7 @@ class Producto:
         }
         return d
 
-    
+    #jsonStr = json.dumps(miPersona.toDic())
 
 
 

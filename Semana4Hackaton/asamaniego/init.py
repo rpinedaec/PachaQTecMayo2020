@@ -23,19 +23,16 @@ class Menu:
             #print(f"Empresa Roberto \n {self.nombreMenu}")
             for (key, value) in self.listaOpciones.items():
                 print(key, " :: ", value)
-            #print("Salir :: 9")
+            print("Salir :: 9")
             opcion = 100
             try:
-                opcion = int(input("Escoge tu opcion: "))
-                if opcion == 9:
-                    opSalir = False
-                    break
+                 opcion = int(input("Escoge tu opcion: "))
             except ValueError as error:
-                self.__log.error(error)
-                print("Opcion invalida deben ser numeros de 0 - 9")
+                 self.__log.error(error)
+                 print("Opcion invalida deben ser numeros de 0 - 9")
             contOpciones = 0
             for (key, value) in self.listaOpciones.items():
-                if(opcion == int(value)):
+                if(opcion == int(value) or opcion == 9):
                    contOpciones += 1
             if(contOpciones == 0):
                 print("Escoge una opcion valida")
@@ -43,6 +40,7 @@ class Menu:
                 sleep(5)
             else:
                 opSalir = False
+                
 
         return opcion
 
@@ -72,8 +70,8 @@ def cargaInicial():
                                 dicProducto["cantidadProducto"], dicProducto["costoProducto"])
             lstProductos.append(objProducto)
             lstProductosDic.append(dicProducto)
-            print(f"tipo1 : {lstProductosDic}")
-            print(f"existe: {lstProductosDic}")
+           # print(f"tipo1 : {lstProductosDic}")
+            #print(f"existe: {lstProductosDic}")
         
         #prods = Productos(lstProductosDic)
         log.debug(lstProductosDic)
@@ -94,9 +92,19 @@ def buscarProducto(listDic, codPro):
             break
         pos= pos + 1
     
-    print(f"existe: {existe1}")
+
     return existe1 
 
+def costearProducto(listDic):
+    
+    
+    parcial = 0
+    monto  = 0
+    for x in listDic:
+        parcial = int(x['cantidadProducto']) * int(x['costoProducto'])
+        monto = monto + parcial
+    
+    return monto 
 
 cargaInicial()
 
@@ -105,11 +113,11 @@ menuPrincipal = Menu("Menu de Inicio", dicOpcionesMenuPrincipal)
 opcionMenuPrincipal = menuPrincipal.mostrarMenu()
 
 
-dicOpcionesCrearProducto = {"Crear otro": 1, "Mostrar todos": 2, "Eliminar producto": 3}
+dicOpcionesCrearProducto = {"Crear otro": 1, "Mostrar todos": 2, "Eliminar producto": 3, "Costear productos": 4 }
 menuProducto = Menu("Menu Producto", dicOpcionesCrearProducto)
 
 
-if(opcionMenuPrincipal == 9):
+if(opcionMenuPrincipal == 90):
     opcionMenuPrincipal = menuPrincipal.mostrarMenu()
 
 elif(opcionMenuPrincipal == 1):
@@ -167,15 +175,20 @@ elif(opcionMenuPrincipal == 2):
                                     codProducto = int(input("Digita el Codigo del Producto a eliminar: "))
                                     codProducto = str(codProducto)
                                     existe = buscarProducto(lstProductosDic, codProducto)
-                                    if existe == -1:
+                                    if existe >  -1:
                                         lstProductosDic.pop(existe)
                                         jsonStr = json.dumps(lstProductosDic)
                                         fileProducto.escribirArchivo(jsonStr)
-                                        print(f"borro la posicion {existe}")
-                                       
+                                        #print(f"borro la posicion {lstProductosDic}")
+                                        
                                 except ValueError:
                                     print("El código es numerico")
 
+                            elif (resMenuProducto == 4):
+                                log.debug("ingreso a la opcion 4 de menuProducto")
+                                monto = costearProducto(lstProductosDic)
+                                print(f"el monto del inventario es: {monto}")
+                                    
                             else:
                                 log.debug(
                                     f"ingreso a la opcion {resMenuProducto} de menuProducto")
