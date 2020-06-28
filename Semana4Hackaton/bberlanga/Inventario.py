@@ -1,4 +1,5 @@
 import os
+import json
 
 class color:
     PURPLE = '\033[95m'
@@ -83,8 +84,17 @@ Main_menu=Menu("home",Home_op)
 Client_op={"Agregar cliente":"1","Lista de clientes":"2","Remover cliente":"3","Back":"<","Exit":"0"}
 Menu_client=Menu("cliente",Client_op,"Main_menu")
 
-Employee_op={"Horas de trabajo":"1","Inventario":"2","Back":"<","Exit":"0"}
+Employee_op={"Control de empleados":"1","Inventario":"2","Back":"<","Exit":"0"}
 Menu_Employee=Menu("trabajador",Employee_op,"Main_menu")
+
+Employees_control_op={"Lista de empleados":"1","Horas de trabajo":"2","Back":"<","Exit":"0"}
+Menu_employee_control=Menu("Control de empleados",Employees_control_op,"Main_menu")
+
+Employee_lista_op={"Ingresar empleado":"1","Ver lista":"2","Remover":"3","Back":"<","Exit":"0"}
+Menu_Employee_list=Menu("Lista de empleado",Employee_lista_op,"Main_menu")
+
+Employee_working_op={"Ingregar hora de ingreso/salida":"1","Ver lista":"2","Back":"<","Exit":"0"}
+Menu_Employee_working=Menu("Hora de trabajo",Employee_working_op,"Main_menu")
 
 Inventory_op={"Agregar producto":"1","Consulta":"2","Remover producto":"3","Back":"<","Exit":"0"}
 Menu_Inventory=Menu("inventario",Inventory_op,"Menu_Employee")
@@ -127,7 +137,14 @@ while f:
                         client_list.append(client_n)
                         print("")
                         print(color.GREEN+f"{Name} fue agregado ☑"+color.END)
-                        break
+                        client_dict={"name":client_n.name,"las_name":client_n.last_name,"age":client_n.age,"id_num":client_n.id_num,"client_cod":client_n.client_cod,"client_type":client_n.client_type}
+                        dict_me_json=json.dumps(client_dict)
+                        path=os.getcwd()+"\\Semana4Hackaton\\bberlanga\\clients.txt"
+                        try:
+                            open(path,'a').write("'"+dict_me_json+"'"+"\n")
+                        except:
+                            open(path,'w').write("'"+dict_me_json+"'")                                        
+                        break                       
                     elif(ans.upper()=="N"):                  
                         print("")
                         break
@@ -260,7 +277,11 @@ while f:
     elif (ans.upper()=="2"):
         ans=Menu_Employee.show()
         if (ans.upper()=="1"):
-            Working_hrs.show()
+            Menu_employee_control.show()
+            if(ans.upper()=="1"):
+                Menu_Employee_list.show()                      
+            elif(ans.upper()=="2"):
+                Menu_Employee_working.show()
         elif (ans.upper()=="2"):
             ans=Menu_Inventory.show()
             #Add product
@@ -284,6 +305,13 @@ while f:
                             print("")
                             print(color.GREEN+f"Producto {Name} fue agregado ☑"+color.END)
                             print("")
+                            product_dict={"name":product_n.name,"las_name":product_n.price,"age":product_n.enter_date,"id_num":Quantity}
+                            dict_me_json=json.dumps(product_dict)
+                            path=os.getcwd()+"\\Semana4Hackaton\\bberlanga\\product.txt"
+                            try:
+                                open(path,'a').write("'"+dict_me_json+"'"+"\n")
+                            except:
+                                open(path,'w').write("'"+dict_me_json+"'")                                     
                             break
                         elif(ans.upper()=="N"):
                             break
@@ -450,6 +478,3 @@ while f:
                             print("")
                             print(color.RED+"Opción no valida, escoja una opción valida"+color.END)
                             print("")
-#----------------------------------------------------------------------------------
-
-
