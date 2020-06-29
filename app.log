@@ -1,3 +1,137 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+2020-06-19 21:07:40,545 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/files.py'
+2020-06-19 21:07:40,551 - Menu - DEBUG - No escoje opion
+2020-06-19 21:07:45,738 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/files.py'
+2020-06-19 21:07:45,738 - Menu - DEBUG - No escoje opion
+2020-06-20 09:21:37,835 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/main.py'
+2020-06-20 09:21:37,837 - Menu - DEBUG - No escoje opion
+2020-06-20 09:21:45,072 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/Personas.py'
+2020-06-20 09:21:45,078 - Menu - DEBUG - No escoje opion
+2020-06-20 09:21:50,915 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/Productos.py'
+2020-06-20 09:21:50,915 - Menu - DEBUG - No escoje opion
+2020-06-20 09:21:57,157 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/utils.py'
+2020-06-20 09:21:57,158 - Menu - DEBUG - No escoje opion
+2020-06-20 09:38:35,335 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/init.py'
+2020-06-20 09:38:35,347 - Menu - DEBUG - No escoje opion
+=======
+2020-06-18 20:26:09,131 - Menu - DEBUG - Esto es un debug
+2020-06-18 20:26:09,140 - Menu - DEBUG - Cliente, 1
+2020-06-18 20:26:09,140 - Menu - DEBUG - Empleado, 2
+2020-06-18 20:27:57,147 - Menu - DEBUG - Esto es un debug
+2020-06-18 20:27:57,147 - Menu - DEBUG - Comprar, 1
+2020-06-18 20:27:57,147 - Menu - DEBUG - Devolver, 2
+2020-06-21 19:47:56,966 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
+2020-06-21 19:47:57,055 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 19:48:17,724 - Producto - INFO - Se creo un producto
+2020-06-21 19:48:17,726 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 19:48:17,726 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 19:48:21,779 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-21 19:48:34,464 - Menu - DEBUG - No escoje opion
+2020-06-21 19:48:40,195 - Menu - DEBUG - No escoje opion
+2020-06-21 19:49:27,967 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
+2020-06-21 19:49:27,967 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 19:49:35,188 - Menu - DEBUG - No escoje opion
+2020-06-21 19:49:49,400 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
+2020-06-21 19:49:49,403 - Menu - DEBUG - No escoje opion
+2020-06-21 22:06:51,519 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:06:51,519 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:06:51,519 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:08:43,903 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:08:43,903 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:08:43,903 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:08:58,985 - Producto - INFO - Se creo un producto
+2020-06-21 22:08:58,986 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:08:58,986 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:08:58,988 - INIT - ERROR - 'Producto' object is not iterable
+2020-06-21 22:09:39,864 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
+2020-06-21 22:09:39,864 - Menu - DEBUG - No escoje opion
+2020-06-21 22:09:46,009 - Menu - ERROR - invalid literal for int() with base 10: 'das'
+2020-06-21 22:09:46,011 - Menu - DEBUG - No escoje opion
+2020-06-21 22:09:57,601 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:09:57,601 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:09:57,603 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:10:46,942 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:10:46,942 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:10:46,942 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:11:19,065 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:11:19,067 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:11:19,067 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:12:09,752 - Producto - INFO - Se creo un producto
+2020-06-21 22:12:09,752 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:12:09,752 - fileManager - DEBUG - removiendo archivo
+2020-06-21 22:12:09,753 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:12:09,753 - INIT - ERROR - 'Producto' object is not iterable
+2020-06-21 22:12:39,558 - Menu - DEBUG - No escoje opion
+2020-06-21 22:13:29,222 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:13:29,223 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:13:29,223 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:13:57,983 - INIT - ERROR - 'nombreProducto'
+2020-06-21 22:13:57,983 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:13:57,983 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-21 22:14:10,683 - Producto - INFO - Se creo un producto
+2020-06-21 22:14:10,684 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:14:10,684 - fileManager - DEBUG - removiendo archivo
+2020-06-21 22:14:10,684 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
+2020-06-21 22:14:10,688 - INIT - ERROR - 'Producto' object is not iterable
+>>>>>>> upstream/develop
+2020-06-22 23:11:53,625 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Hackaton/dgarcia/files.py'
+2020-06-22 23:11:53,641 - Menu - DEBUG - No escoje opion
+2020-06-22 23:12:19,894 - INIT - INFO - escogio la opcion 1
+2020-06-22 23:19:41,203 - Menú - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Hackaton/dgarcia/hackaton.py'
+2020-06-22 23:19:41,233 - Menú - DEBUG - No escoje opion
+2020-06-22 23:19:46,309 - Menú - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Hackaton/dgarcia/hackaton.py'
+2020-06-22 23:19:46,310 - Menú - DEBUG - No escoje opion
+2020-06-22 23:46:24,451 - Menú - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Hackaton/dgarcia/hackaton.py'
+2020-06-22 23:46:24,457 - Menú - DEBUG - No escoje opion
+2020-06-22 23:52:26,795 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
+2020-06-22 23:52:26,795 - INIT - ERROR - name 'json' is not defined
+2020-06-22 23:52:51,376 - Menú - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Hackaton/dgarcia/hackaton.py'
+2020-06-22 23:52:51,378 - Menú - DEBUG - No escoge opción
+2020-06-22 23:52:58,182 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
+2020-06-22 23:52:58,182 - INIT - ERROR - name 'json' is not defined
+2020-06-22 23:53:36,425 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
+2020-06-22 23:53:36,425 - INIT - ERROR - name 'json' is not defined
+2020-06-22 23:53:54,405 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
+2020-06-22 23:53:54,405 - INIT - ERROR - name 'json' is not defined
+2020-06-22 23:54:03,022 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
+2020-06-22 23:54:03,022 - INIT - ERROR - name 'json' is not defined
+2020-06-22 23:54:24,319 - Producto - INFO - Se creó un producto
+2020-06-22 23:54:24,335 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
+2020-06-22 23:54:24,336 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
+2020-06-22 23:54:28,687 - INIT - DEBUG - Ingreso a la opcion 2 de menuProducto
+2020-06-22 23:55:55,532 - INIT - DEBUG - hjdjd
+
+2020-06-22 23:55:55,532 - INIT - ERROR - name 'json' is not defined
+2020-06-22 23:56:29,938 - INIT - DEBUG - hjdjd
+
+2020-06-22 23:56:29,938 - INIT - ERROR - name 'json' is not defined
+2020-06-22 23:56:47,374 - Producto - INFO - Se creó un producto
+2020-06-22 23:56:47,377 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
+2020-06-22 23:56:47,378 - fileManager - DEBUG - removiendo archivo
+2020-06-22 23:56:47,379 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
+2020-06-22 23:56:50,120 - INIT - DEBUG - Ingreso a la opcion 2 de menuProducto
+2020-06-22 23:57:34,529 - INIT - DEBUG - 2
+
+2020-06-22 23:57:34,529 - INIT - ERROR - name 'json' is not defined
+2020-06-22 23:57:52,342 - Producto - INFO - Se creó un producto
+2020-06-22 23:57:52,360 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
+2020-06-22 23:57:52,361 - fileManager - DEBUG - removiendo archivo
+2020-06-22 23:57:52,361 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
+2020-06-22 23:57:56,472 - INIT - DEBUG - Ingreso a la opcion 2 de menuProducto
+2020-06-23 00:05:21,485 - INIT - DEBUG - 2
+
+2020-06-23 00:05:21,490 - INIT - ERROR - name 'json' is not defined
+2020-06-23 00:05:37,216 - Producto - INFO - Se creó un producto
+2020-06-23 00:05:37,233 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
+2020-06-23 00:05:37,236 - fileManager - DEBUG - removiendo archivo
+2020-06-23 00:08:39,748 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
+2020-06-23 00:08:39,748 - INIT - ERROR - name 'json' is not defined
+2020-06-23 00:08:52,413 - Producto - INFO - Se creó un producto
+2020-06-23 00:08:52,439 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
+2020-06-23 00:08:52,439 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
+2020-06-23 00:08:57,518 - INIT - DEBUG - Ingresó a la opcion 2 de menuProducto
+=======
 2020-06-18 20:44:57,423 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
 2020-06-18 20:45:09,694 - Producto - INFO - Se creo un producto
 2020-06-18 20:45:16,783 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
@@ -231,3 +365,251 @@
 2020-06-20 11:41:17,145 - Producto - INFO - Se creo un producto
 2020-06-20 11:41:17,146 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
 2020-06-20 11:41:17,146 - INIT - DEBUG - [<__main__.Producto object at 0x000001B329A9FB88>, <__main__.Producto object at 0x000001B329A9FBC8>, <__main__.Producto object at 0x000001B329A9FC48>]
+>>>>>>> upstream/develop
+2020-06-25 21:18:18,806 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:18:18,807 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:18:58,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:18:58,616 - fileManager - DEBUG - removiendo archivo
+2020-06-25 21:18:58,616 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:32:36,880 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:32:36,882 - fileManager - DEBUG - removiendo archivo
+2020-06-25 21:32:36,882 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:33:10,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-25 21:33:10,615 - fileManager - DEBUG - removiendo archivo
+2020-06-25 21:33:10,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-27 22:48:27,042 - Producto - INFO - Se creo un producto
+2020-06-27 22:48:27,044 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 22:48:27,044 - Producto - INFO - Se creo un producto
+2020-06-27 22:48:27,044 - Producto - INFO - Se creo un producto
+2020-06-27 22:48:27,045 - Producto - INFO - Se creo un producto
+2020-06-27 22:48:27,045 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 22:48:27,045 - INIT - DEBUG - [<__main__.Producto object at 0x0000019A43A0A708>, <__main__.Producto object at 0x0000019A43A0A748>, <__main__.Producto object at 0x0000019A43A0A7C8>]
+2020-06-27 22:48:59,174 - Producto - INFO - Se creo un producto
+2020-06-27 22:48:59,174 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 22:48:59,175 - Producto - INFO - Se creo un producto
+2020-06-27 22:48:59,175 - Producto - INFO - Se creo un producto
+2020-06-27 22:48:59,175 - Producto - INFO - Se creo un producto
+2020-06-27 22:48:59,175 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 22:48:59,175 - INIT - DEBUG - [<__main__.Producto object at 0x000002BD26FFA748>, <__main__.Producto object at 0x000002BD26FFA788>, <__main__.Producto object at 0x000002BD26FFA808>]
+2020-06-27 22:57:30,496 - Producto - INFO - Se creo un producto
+2020-06-27 22:57:30,496 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 22:57:30,496 - Producto - INFO - Se creo un producto
+2020-06-27 22:57:30,496 - Producto - INFO - Se creo un producto
+2020-06-27 22:57:30,496 - Producto - INFO - Se creo un producto
+2020-06-27 22:57:30,496 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 22:57:30,496 - INIT - DEBUG - [<__main__.Producto object at 0x000001EE311AA7C8>, <__main__.Producto object at 0x000001EE311AA808>, <__main__.Producto object at 0x000001EE311AA888>]
+2020-06-27 22:59:42,681 - Producto - INFO - Se creo un producto
+2020-06-27 22:59:42,702 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 22:59:42,703 - Producto - INFO - Se creo un producto
+2020-06-27 22:59:42,703 - Producto - INFO - Se creo un producto
+2020-06-27 22:59:42,703 - Producto - INFO - Se creo un producto
+2020-06-27 22:59:42,703 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 22:59:42,703 - INIT - DEBUG - [<__main__.Producto object at 0x0000019D3BE5A788>, <__main__.Producto object at 0x0000019D3BE5A7C8>, <__main__.Producto object at 0x0000019D3BE5A848>]
+2020-06-27 23:00:01,570 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/Usuario/AppData/Local/Programs/Python/Python37/python.exe d:/Pachaqtec/PachaQTecMayo2020/Semana4Hackaton/Sperez/Init.py'
+2020-06-27 23:00:01,575 - Menu - DEBUG - No escoje opcion
+2020-06-27 23:00:09,863 - Producto - INFO - Se creo un producto
+2020-06-27 23:00:09,863 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:00:09,863 - Producto - INFO - Se creo un producto
+2020-06-27 23:00:09,863 - Producto - INFO - Se creo un producto
+2020-06-27 23:00:09,863 - Producto - INFO - Se creo un producto
+2020-06-27 23:00:09,863 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:00:09,863 - INIT - DEBUG - [<__main__.Producto object at 0x000002312730A748>, <__main__.Producto object at 0x000002312730A788>, <__main__.Producto object at 0x000002312730A808>]
+2020-06-27 23:00:17,753 - Producto - INFO - Se creo un producto
+2020-06-27 23:00:17,753 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:00:17,754 - Producto - INFO - Se creo un producto
+2020-06-27 23:00:17,754 - Producto - INFO - Se creo un producto
+2020-06-27 23:00:17,754 - Producto - INFO - Se creo un producto
+2020-06-27 23:00:17,754 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:00:17,754 - INIT - DEBUG - [<__main__.Producto object at 0x0000011AE6D7A788>, <__main__.Producto object at 0x0000011AE6D7A7C8>, <__main__.Producto object at 0x0000011AE6D7A848>]
+2020-06-27 23:08:25,371 - Menu - DEBUG - La opcion 1 es valida del menu MENU PRINCIPAL	
+2020-06-27 23:08:31,796 - Menu - DEBUG - La opcion 3 es valida del menu MENU EMPLEADO	
+2020-06-27 23:08:31,796 - fileManager - DEBUG - D:\Pachaqtec\PachaQTecMayo2020\Empleados.txt
+2020-06-27 23:11:15,599 - Producto - INFO - Se creo un producto
+2020-06-27 23:11:15,599 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:11:15,599 - Producto - INFO - Se creo un producto
+2020-06-27 23:11:15,599 - Producto - INFO - Se creo un producto
+2020-06-27 23:11:15,599 - Producto - INFO - Se creo un producto
+2020-06-27 23:11:15,599 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:11:15,600 - INIT - DEBUG - [<__main__.Producto object at 0x0000021BB113A708>, <__main__.Producto object at 0x0000021BB113A748>, <__main__.Producto object at 0x0000021BB113A7C8>]
+2020-06-27 23:12:44,289 - Producto - INFO - Se creo un producto
+2020-06-27 23:12:44,289 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:12:44,289 - Producto - INFO - Se creo un producto
+2020-06-27 23:12:44,289 - Producto - INFO - Se creo un producto
+2020-06-27 23:12:44,289 - Producto - INFO - Se creo un producto
+2020-06-27 23:12:44,289 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:12:44,289 - INIT - DEBUG - [<__main__.Producto object at 0x000002AB89289708>, <__main__.Producto object at 0x000002AB89289748>, <__main__.Producto object at 0x000002AB892897C8>]
+2020-06-27 23:13:00,416 - Producto - INFO - Se creo un producto
+2020-06-27 23:13:00,416 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:13:00,416 - Producto - INFO - Se creo un producto
+2020-06-27 23:13:00,417 - Producto - INFO - Se creo un producto
+2020-06-27 23:13:00,417 - Producto - INFO - Se creo un producto
+2020-06-27 23:13:00,417 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:13:00,417 - INIT - DEBUG - [<__main__.Producto object at 0x0000023BAA2FA748>, <__main__.Producto object at 0x0000023BAA2FA788>, <__main__.Producto object at 0x0000023BAA2FA808>]
+2020-06-27 23:13:46,798 - Producto - INFO - Se creo un producto
+2020-06-27 23:13:46,799 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:13:46,799 - Producto - INFO - Se creo un producto
+2020-06-27 23:13:46,799 - Producto - INFO - Se creo un producto
+2020-06-27 23:13:46,799 - Producto - INFO - Se creo un producto
+2020-06-27 23:13:46,799 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:13:46,799 - INIT - DEBUG - [<__main__.Producto object at 0x000001A289B7A7C8>, <__main__.Producto object at 0x000001A289B7A808>, <__main__.Producto object at 0x000001A289B7A888>]
+2020-06-27 23:16:25,958 - Producto - INFO - Se creo un producto
+2020-06-27 23:16:25,959 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:16:25,959 - Producto - INFO - Se creo un producto
+2020-06-27 23:16:25,959 - Producto - INFO - Se creo un producto
+2020-06-27 23:16:25,959 - Producto - INFO - Se creo un producto
+2020-06-27 23:16:25,959 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:16:25,959 - INIT - DEBUG - [<__main__.Producto object at 0x00000210DFD3A7C8>, <__main__.Producto object at 0x00000210DFD3A808>, <__main__.Producto object at 0x00000210DFD3A888>]
+2020-06-27 23:16:59,752 - Producto - INFO - Se creo un producto
+2020-06-27 23:16:59,752 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:16:59,752 - Producto - INFO - Se creo un producto
+2020-06-27 23:16:59,752 - Producto - INFO - Se creo un producto
+2020-06-27 23:16:59,752 - Producto - INFO - Se creo un producto
+2020-06-27 23:16:59,752 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:16:59,752 - INIT - DEBUG - [<__main__.Producto object at 0x000001D986A7A788>, <__main__.Producto object at 0x000001D986A7A7C8>, <__main__.Producto object at 0x000001D986A7A848>]
+2020-06-27 23:22:28,130 - Producto - INFO - Se creo un producto
+2020-06-27 23:22:28,130 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:22:28,130 - Producto - INFO - Se creo un producto
+2020-06-27 23:22:28,130 - Producto - INFO - Se creo un producto
+2020-06-27 23:22:28,130 - Producto - INFO - Se creo un producto
+2020-06-27 23:22:28,130 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:22:28,130 - INIT - DEBUG - [<__main__.Producto object at 0x0000022E8B13A748>, <__main__.Producto object at 0x0000022E8B13A788>, <__main__.Producto object at 0x0000022E8B13A808>]
+2020-06-27 23:23:56,927 - Producto - INFO - Se creo un producto
+2020-06-27 23:23:56,927 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:23:56,927 - Producto - INFO - Se creo un producto
+2020-06-27 23:23:56,927 - Producto - INFO - Se creo un producto
+2020-06-27 23:23:56,928 - Producto - INFO - Se creo un producto
+2020-06-27 23:23:56,928 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:23:56,928 - INIT - DEBUG - [<__main__.Producto object at 0x000001EB5C91A848>, <__main__.Producto object at 0x000001EB5C91A888>, <__main__.Producto object at 0x000001EB5C91A908>]
+2020-06-27 23:26:11,550 - Producto - INFO - Se creo un producto
+2020-06-27 23:26:11,550 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:26:11,550 - Producto - INFO - Se creo un producto
+2020-06-27 23:26:11,550 - Producto - INFO - Se creo un producto
+2020-06-27 23:26:11,550 - Producto - INFO - Se creo un producto
+2020-06-27 23:26:11,550 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:26:11,550 - INIT - DEBUG - [<__main__.Producto object at 0x0000021AFC8EA848>, <__main__.Producto object at 0x0000021AFC8EA888>, <__main__.Producto object at 0x0000021AFC8EA908>]
+2020-06-27 23:28:10,138 - Producto - INFO - Se creo un producto
+2020-06-27 23:28:10,138 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:28:10,138 - Producto - INFO - Se creo un producto
+2020-06-27 23:28:10,138 - Producto - INFO - Se creo un producto
+2020-06-27 23:28:10,138 - Producto - INFO - Se creo un producto
+2020-06-27 23:28:10,138 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:28:10,138 - INIT - DEBUG - [<__main__.Producto object at 0x000001312F6FA808>, <__main__.Producto object at 0x000001312F6FA848>, <__main__.Producto object at 0x000001312F6FA8C8>]
+2020-06-27 23:33:39,766 - Producto - INFO - Se creo un producto
+2020-06-27 23:33:39,766 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:33:39,767 - Producto - INFO - Se creo un producto
+2020-06-27 23:33:39,767 - Producto - INFO - Se creo un producto
+2020-06-27 23:33:39,767 - Producto - INFO - Se creo un producto
+2020-06-27 23:33:39,767 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:33:39,767 - INIT - DEBUG - [<__main__.Producto object at 0x00000217E8B0A7C8>, <__main__.Producto object at 0x00000217E8B0A808>, <__main__.Producto object at 0x00000217E8B0A888>]
+2020-06-27 23:39:03,424 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:39:03,424 - Producto - INFO - Se creo un producto
+2020-06-27 23:39:03,424 - Producto - INFO - Se creo un producto
+2020-06-27 23:39:03,424 - Producto - INFO - Se creo un producto
+2020-06-27 23:39:03,424 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:39:03,443 - INIT - DEBUG - [<__main__.Producto object at 0x0000027A88B39688>, <__main__.Producto object at 0x0000027A88B396C8>, <__main__.Producto object at 0x0000027A88B39748>]
+2020-06-27 23:43:47,382 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:43:47,382 - Producto - INFO - Se creo un producto
+2020-06-27 23:43:47,382 - Producto - INFO - Se creo un producto
+2020-06-27 23:43:47,382 - Producto - INFO - Se creo un producto
+2020-06-27 23:43:47,382 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:43:47,382 - INIT - DEBUG - [<__main__.Producto object at 0x00000202D88AA708>, <__main__.Producto object at 0x00000202D88AA748>, <__main__.Producto object at 0x00000202D88AA7C8>]
+2020-06-27 23:46:52,092 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:46:52,093 - Producto - INFO - Se creo un producto
+2020-06-27 23:46:52,093 - Producto - INFO - Se creo un producto
+2020-06-27 23:46:52,093 - Producto - INFO - Se creo un producto
+2020-06-27 23:46:52,093 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:46:52,093 - INIT - DEBUG - [<__main__.Producto object at 0x0000012FC3D7A748>, <__main__.Producto object at 0x0000012FC1D2CB48>, <__main__.Producto object at 0x0000012FC3D7A7C8>]
+2020-06-27 23:47:15,690 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:47:15,691 - Producto - INFO - Se creo un producto
+2020-06-27 23:47:15,691 - Producto - INFO - Se creo un producto
+2020-06-27 23:47:15,691 - Producto - INFO - Se creo un producto
+2020-06-27 23:47:15,691 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:47:15,691 - INIT - DEBUG - [<__main__.Producto object at 0x000001A96803A788>, <__main__.Producto object at 0x000001A96803A7C8>, <__main__.Producto object at 0x000001A96803A848>]
+2020-06-27 23:50:18,315 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:50:18,315 - Producto - INFO - Se creo un producto
+2020-06-27 23:50:18,315 - Producto - INFO - Se creo un producto
+2020-06-27 23:50:18,315 - Producto - INFO - Se creo un producto
+2020-06-27 23:50:18,315 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:50:18,315 - INIT - DEBUG - [<__main__.Producto object at 0x000002614FE2A808>, <__main__.Producto object at 0x000002614FE2A848>, <__main__.Producto object at 0x000002614FE2A8C8>]
+2020-06-27 23:52:05,253 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:52:05,253 - Producto - INFO - Se creo un producto
+2020-06-27 23:52:05,253 - Producto - INFO - Se creo un producto
+2020-06-27 23:52:05,253 - Producto - INFO - Se creo un producto
+2020-06-27 23:52:05,253 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:52:05,253 - INIT - DEBUG - [<__main__.Producto object at 0x000001B38DBAA7C8>, <__main__.Producto object at 0x000001B38DBAA808>, <__main__.Producto object at 0x000001B38DBAA888>]
+2020-06-27 23:52:47,216 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 23:52:47,216 - Producto - INFO - Se creo un producto
+2020-06-27 23:52:47,216 - Producto - INFO - Se creo un producto
+2020-06-27 23:52:47,216 - Producto - INFO - Se creo un producto
+2020-06-27 23:52:47,216 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-27 23:52:47,216 - INIT - DEBUG - [<__main__.Producto object at 0x000001B8E7EFA788>, <__main__.Producto object at 0x000001B8E7EFA7C8>, <__main__.Producto object at 0x000001B8E7EFA848>]
+2020-06-28 00:00:58,181 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-28 00:00:58,181 - Producto - INFO - Se creo un producto
+2020-06-28 00:00:58,181 - Producto - INFO - Se creo un producto
+2020-06-28 00:00:58,181 - Producto - INFO - Se creo un producto
+2020-06-28 00:00:58,181 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-28 00:00:58,181 - INIT - DEBUG - [<__main__.Producto object at 0x00000148EA18A808>, <__main__.Producto object at 0x00000148EA18A848>, <__main__.Producto object at 0x00000148EA18A8C8>]
+2020-06-28 00:01:26,581 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/Usuario/AppData/Local/Programs/Python/Python37/python.exe d:/Pachaqtec/PachaQTecMayo2020/Semana4Hackaton/Sperez/Init.py'
+2020-06-28 00:01:26,588 - Menu - DEBUG - No escoje opcion
+2020-06-28 00:01:31,068 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-28 00:01:31,068 - Producto - INFO - Se creo un producto
+2020-06-28 00:01:31,068 - Producto - INFO - Se creo un producto
+2020-06-28 00:01:31,068 - Producto - INFO - Se creo un producto
+2020-06-28 00:01:31,068 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-28 00:01:31,068 - INIT - DEBUG - [<__main__.Producto object at 0x0000020CD2CCA708>, <__main__.Producto object at 0x0000020CD2CCA748>, <__main__.Producto object at 0x0000020CD2CCA7C8>]
+2020-06-28 00:01:51,277 - Cliente - INFO - Se añadio Cliente
+2020-06-28 00:01:51,278 - fileManager - DEBUG - D:\Pachaqtec\PachaQTecMayo2020\Clientes.txt
+2020-06-28 00:10:47,464 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-28 00:10:47,464 - Producto - INFO - Se creo un producto
+2020-06-28 00:10:47,465 - Producto - INFO - Se creo un producto
+2020-06-28 00:10:47,465 - Producto - INFO - Se creo un producto
+2020-06-28 00:10:47,465 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-28 00:10:47,465 - INIT - DEBUG - [<__main__.Producto object at 0x0000026540AEA648>, <__main__.Producto object at 0x0000026540AEA688>, <__main__.Producto object at 0x0000026540AEA708>]
+2020-06-28 00:11:10,037 - Cliente - INFO - Se añadio Cliente
+2020-06-28 00:11:10,038 - fileManager - DEBUG - D:\Pachaqtec\PachaQTecMayo2020\Clientes.txt
+2020-06-28 00:13:53,932 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-28 00:13:53,932 - Producto - INFO - Se creo un producto
+2020-06-28 00:13:53,932 - Producto - INFO - Se creo un producto
+2020-06-28 00:13:53,932 - Producto - INFO - Se creo un producto
+2020-06-28 00:13:53,932 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-28 00:13:53,932 - INIT - DEBUG - [<__main__.Producto object at 0x00000272B05CA588>, <__main__.Producto object at 0x00000272B05CA5C8>, <__main__.Producto object at 0x00000272B05CA648>]
+2020-06-28 00:14:10,114 - Cliente - INFO - Se añadio Cliente
+2020-06-28 00:14:10,115 - fileManager - DEBUG - D:\Pachaqtec\PachaQTecMayo2020\Clientes.txt
+2020-06-28 00:14:10,115 - fileManager - DEBUG - D:\Pachaqtec\PachaQTecMayo2020\Clientes.txt
+2020-06-28 00:15:24,283 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-28 00:15:24,283 - Producto - INFO - Se creo un producto
+2020-06-28 00:15:24,283 - Producto - INFO - Se creo un producto
+2020-06-28 00:15:24,283 - Producto - INFO - Se creo un producto
+2020-06-28 00:15:24,283 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-28 00:15:24,283 - INIT - DEBUG - [<__main__.Producto object at 0x0000017F59ABA648>, <__main__.Producto object at 0x0000017F59ABA688>, <__main__.Producto object at 0x0000017F59ABA708>]
+2020-06-28 00:16:19,979 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-28 00:16:19,979 - Producto - INFO - Se creo un producto
+2020-06-28 00:16:19,979 - Producto - INFO - Se creo un producto
+2020-06-28 00:16:19,979 - Producto - INFO - Se creo un producto
+2020-06-28 00:16:19,979 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-28 00:16:19,979 - INIT - DEBUG - [<__main__.Producto object at 0x000001E39EE2A648>, <__main__.Producto object at 0x000001E39EE2A688>, <__main__.Producto object at 0x000001E39EE2A708>]
+2020-06-28 00:16:59,223 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/Usuario/AppData/Local/Programs/Python/Python37/python.exe d:/Pachaqtec/PachaQTecMayo2020/Semana4Hackaton/Sperez/Init.py'
+2020-06-28 00:16:59,231 - Menu - DEBUG - No escoje opcion
+2020-06-28 00:17:04,637 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-28 00:17:04,637 - Producto - INFO - Se creo un producto
+2020-06-28 00:17:04,637 - Producto - INFO - Se creo un producto
+2020-06-28 00:17:04,637 - Producto - INFO - Se creo un producto
+2020-06-28 00:17:04,637 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-28 00:17:04,637 - INIT - DEBUG - [<__main__.Producto object at 0x000002679B98A688>, <__main__.Producto object at 0x000002679B98A6C8>, <__main__.Producto object at 0x000002679B98A748>]
+2020-06-28 00:17:16,311 - Cliente - INFO - Se añadio Cliente
+2020-06-28 00:18:05,802 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-28 00:18:05,802 - Producto - INFO - Se creo un producto
+2020-06-28 00:18:05,803 - Producto - INFO - Se creo un producto
+2020-06-28 00:18:05,803 - Producto - INFO - Se creo un producto
+2020-06-28 00:18:05,803 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-28 00:18:05,803 - INIT - DEBUG - [<__main__.Producto object at 0x00000249F2B6A688>, <__main__.Producto object at 0x00000249F2B6A6C8>, <__main__.Producto object at 0x00000249F2B6A748>]
+2020-06-28 00:18:15,585 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-28 00:18:15,585 - Producto - INFO - Se creo un producto
+2020-06-28 00:18:15,585 - Producto - INFO - Se creo un producto
+2020-06-28 00:18:15,601 - Producto - INFO - Se creo un producto
+2020-06-28 00:18:15,602 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-28 00:18:15,602 - INIT - DEBUG - [<__main__.Producto object at 0x0000023326D4A688>, <__main__.Producto object at 0x0000023326D4A6C8>, <__main__.Producto object at 0x0000023326D4A748>]
+2020-06-28 00:18:38,014 - Cliente - INFO - Se añadio Cliente
+2020-06-28 00:18:38,015 - fileManager - DEBUG - D:\Pachaqtec\PachaQTecMayo2020\Clientes.txt
+2020-06-28 00:18:38,015 - fileManager - DEBUG - removiendo archivo
+2020-06-28 00:18:38,015 - fileManager - DEBUG - D:\Pachaqtec\PachaQTecMayo2020\Clientes.txt

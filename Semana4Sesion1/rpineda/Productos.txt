@@ -1,0 +1,1 @@
+[{"codProducto": "01", "nombreProducto": "mesa", "cantidadProducto": "87", "costoProducto": "56"}, {"codProducto": "", "nombreProducto": "", "cantidadProducto": "", "costoProducto": ""}]
