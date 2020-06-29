@@ -1,5 +1,6 @@
 #Hackaton 4: Programa de inventario
 #Alumno: Ricardo Cornejo
+
 import os
 import utils
 from time import sleep
@@ -49,8 +50,12 @@ class Empleado(Persona):
     def marcarIngreso(self):
         print("El empleado está marcando su ingreso")
         print("El empleado marcó su ingreso")
-
-
+        
+    def marcarSalida(self):
+        print("El empleado está marcando su salida")
+        print("El empleado marcó su salida")
+        
+    
 class Producto:
     log = utils.log("Producto")
 
@@ -103,18 +108,17 @@ class Menu: #Esta clase es para no volver a hacer varias veces el menu.
             print("- Salir:  9")
             print("\033[1;34m"+"...................................................."+'\033[0;m')
             opcion = 100
-            
-            
+             
                                
             try:
-                print("- Digita tu opción aquí debajo:")
+                print ("- Digita tu opción aquí abajo:")
                 opcion = int(input())
             except ValueError as error:
                 self.__log.error(error)
                 print("Opción invalida, deben ser numeros del 0 al 9")
             contOpciones = 0
             for (key, value) in self.listaOpciones.items():
-                if(opcion == int(value)):
+                if(opcion == int(value) or opcion == 9):
                    contOpciones += 1
             if(contOpciones == 0):
                 print("Digite una opción válida")
@@ -156,12 +160,29 @@ def cargaInicial():
     except Exception as erro:
         log.error(erro)
 
-
+def delProducto():
+    try:
+        res = fileProducto.leerArchivo()
+        log.debug(res)
+        lstProducto = json.loads(res)
+        for dicProducto in lstProducto:
+            #codProducto, nombreProducto, cantidadProducto, costoProducto
+            objProducto = Producto(dicProducto["codProducto"], dicProducto["nombreProducto"],
+                                dicProducto["cantidadProducto"], dicProducto["costoProducto"])
+            lstProductos.remove(objProducto)
+            lstProductosDic.remove(dicProducto)
+        log.debug(lstProductosDic)
+        log.debug(lstProductos)
+    except Exception as erro:
+        log.error(erro)
+        
 cargaInicial() 
 #Aquí está el menu de inicio.
 dicOpcionesMenuPrincipal = {"\t- Cliente": 1, "\t- Empleado": 2}
 menuPrincipal = Menu("Menu Inicio", dicOpcionesMenuPrincipal)
 opcionMenuPrincipal = menuPrincipal.mostrarMenu()
+
+delProducto()
 
 #Menu productos
 dicOpcionesCrearProducto = {"\t- Crear otro": 1, "\t- Mostrar todos": 2}
@@ -189,15 +210,23 @@ elif(opcionMenuPrincipal == 2): #Menu empleado
             print("\033[1;34m"+"...................................................."+'\033[0;m')
             print("Digita el código del producto:")
             codProducto = input()
+            print("\033[1;34m"+"...................................................."+'\033[0;m')
+            print("Digita el nombre del producto:")
+            nomProducto = input()
+            print("\033[1;34m"+"...................................................."+'\033[0;m')
+            print("Digita el stock del producto:")
+            cantProducto = input()
+            print("\033[1;34m"+"...................................................."+'\033[0;m')
+            print("Digita el precio del producto:")
+            costProducto = input()
             
-            producto = Producto(codProducto, nomProducto,
-                                cantProducto, costProducto)
+            producto = Producto(codProducto, nomProducto, cantProducto, costProducto)
 
             print("Haz creado el producto: ", producto)
             fileProducto.borrarArchivo()
-            lstProductosDic.append(producto.dictProducto())
+            lstProductosDic.append(producto. dictProducto())
             lstProductos.append(producto)
-            #jsonStr = json.dumps(lstProductosDic)
+            jsonStr = json.dumps(lstProductosDic)
             fileProducto.escribirArchivo(jsonStr)
             resMenuProducto = menuProducto.mostrarMenu()
             if(resMenuProducto == 1):

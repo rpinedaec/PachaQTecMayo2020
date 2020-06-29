@@ -1,0 +1,1 @@
+print("\033[1;31m"+"Alejandra loca")
