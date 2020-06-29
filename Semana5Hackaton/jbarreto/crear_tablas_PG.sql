@@ -1,7 +1,6 @@
 --crear bd jbarreto
   CREATE DATABASE jbarreto;
 
-
 -- crear tabla 	ALUMNO
   CREATE TABLE IF NOT EXISTS alumno(
   idalumno serial,
@@ -49,7 +48,7 @@ CREATE TABLE IF NOT EXISTS curso (
 -- crear indice idsemestre
     create INDEX fk_curso_semestre1_idx ON curso(idsemestre)
 
--- crear constraint(restricción) fk_curso_profesor
+-- crear constraint(restricciï¿½n) fk_curso_profesor
     alter table curso
     add CONSTRAINT fk_curso_profesor
     FOREIGN KEY (idprofesor)
@@ -57,7 +56,7 @@ CREATE TABLE IF NOT EXISTS curso (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
 
--- crear constraint(restricción) fk_curso_semestre1
+-- crear constraint(restricciï¿½n) fk_curso_semestre1
     alter table curso
 	add	CONSTRAINT fk_curso_semestre1
     FOREIGN KEY (idsemestre)
@@ -88,7 +87,7 @@ CREATE TABLE IF NOT EXISTS salon(
 -- crear indice idalumno
   create INDEX fk_salon_alumno1_idx ON alumno(idalumno)
 
--- crear constraint(restricción) fk_curso_profesor1
+-- crear constraint(restricciï¿½n) fk_curso_profesor1
    alter table salon
    add CONSTRAINT fk_salon_profesor1
    FOREIGN KEY (idprofesor)
@@ -96,7 +95,7 @@ CREATE TABLE IF NOT EXISTS salon(
    ON DELETE NO ACTION
    ON UPDATE NO ACTION
     
--- crear constraint(restricción) fk_salon_alumno1   
+-- crear constraint(restricciï¿½n) fk_salon_alumno1   
    alter table salon
    add CONSTRAINT fk_salon_alumno1
    FOREIGN KEY (idalumno)
@@ -127,7 +126,7 @@ CREATE TABLE IF NOT EXISTS salon(
 -- crear indice idalumno
    create INDEX fk_notas_Alumno1_idx ON alumno(idalumno)
   
--- crear constraint(restricción) fk_notas_curso1
+-- crear constraint(restricciï¿½n) fk_notas_curso1
    alter table notas
    add CONSTRAINT fk_notas_curso1
    FOREIGN KEY (idcurso)
@@ -135,7 +134,7 @@ CREATE TABLE IF NOT EXISTS salon(
    ON DELETE NO ACTION
    ON UPDATE NO ACTION
    
--- crear constraint(restricción) fk_notas_Alumno1
+-- crear constraint(restricciï¿½n) fk_notas_Alumno1
    alter table notas
    add CONSTRAINT fk_notas_Alumno1
    FOREIGN KEY (idalumno)
