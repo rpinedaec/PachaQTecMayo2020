@@ -1,4 +1,12 @@
-	--Se ingresa la data de todas las tablas creadas
+	--Busquedas
+    --Lista de alumnos desaprobados por curso
+select * 
+from alumnos
+where alumnonota <11
+order by alumnocurso desc
+    
+    
+    --Ingreso de datos a la DB
     --Data de Salon
      insert into salon (salonid, salondesc) values ('11','Gimnasio');
 	 insert into salon (salonid, salondesc) values ('12','Teatro');
@@ -276,3 +284,117 @@ CREATE INDEX fki_alumnocurso
 	where alumnoid = '3010001'
 	update alumnos set alumnocurso = '906'
 	where alumnoid = '5010002'
+
+--Relacion alumno nota
+ALTER TABLE public.alumnos
+    ADD COLUMN alumnonota integer;
+
+ALTER TABLE public.alumnos
+    ADD CONSTRAINT alumnonota FOREIGN KEY (alumnonota)
+    REFERENCES public.notas (notaid) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+CREATE INDEX fki_alumnonota
+    ON public.alumnos(alumnonota);
+
+    update alumnos set alumnonota = '20'
+	where alumnoid = '1010002'
+	update alumnos set alumnonota = '05'
+	where alumnoid = '1010003'
+	update alumnos set alumnonota = '19'
+	where alumnoid = '1010004'
+	update alumnos set alumnonota = '01'
+	where alumnoid = '1010005'
+	update alumnos set alumnonota = '18'
+	where alumnoid = '1010006'
+	update alumnos set alumnonota = '02'
+	where alumnoid = '1010007'
+	update alumnos set alumnonota = '03'
+	where alumnoid = '1010008'
+	update alumnos set alumnonota = '17'
+	where alumnoid = '1010009'
+	update alumnos set alumnonota = '16'
+	where alumnoid = '1010010'
+	update alumnos set alumnonota = '15'
+	where alumnoid = '2010001'
+	update alumnos set alumnonota = '14'
+	where alumnoid = '2010002'
+	update alumnos set alumnonota = '11'
+	where alumnoid = '2010003'
+	update alumnos set alumnonota = '11'
+	where alumnoid = '2010004'
+	update alumnos set alumnonota = '14'
+	where alumnoid = '2010005'
+	update alumnos set alumnonota = '18'
+	where alumnoid = '2010006'
+	update alumnos set alumnonota = '07'
+	where alumnoid = '2010007'
+	update alumnos set alumnonota = '09'
+	where alumnoid = '2010008'
+	update alumnos set alumnonota = '01'
+	where alumnoid = '2010009'
+	update alumnos set alumnonota = '16'
+	where alumnoid = '2010010'
+    update alumnos set alumnonota = '15'
+	where alumnoid = '3010002'
+	update alumnos set alumnonota = '15'
+	where alumnoid = '3010003'
+	update alumnos set alumnonota = '17'
+	where alumnoid = '3010004'
+	update alumnos set alumnonota = '18'
+	where alumnoid = '3010005'
+	update alumnos set alumnonota = '20'
+	where alumnoid = '3010006'
+	update alumnos set alumnonota = '11'
+	where alumnoid = '3010007'
+	update alumnos set alumnonota = '11'
+	where alumnoid = '3010008'
+	update alumnos set alumnonota = '13'
+	where alumnoid = '3010009'
+	update alumnos set alumnonota = '08'
+	where alumnoid = '3010010'
+	update alumnos set alumnonota = '06'
+	where alumnoid = '4010001'
+	update alumnos set alumnonota = '17'
+	where alumnoid = '4010002'
+	update alumnos set alumnonota = '19'
+	where alumnoid = '4010003'
+	update alumnos set alumnonota = '04'
+	where alumnoid = '4010004'
+	update alumnos set alumnonota = '20'
+	where alumnoid = '4010005'
+	update alumnos set alumnonota = '11'
+	where alumnoid = '4010006'
+	update alumnos set alumnonota = '12'
+	where alumnoid = '4010007'
+	update alumnos set alumnonota = '13'
+	where alumnoid = '4010008'
+	update alumnos set alumnonota = '14'
+	where alumnoid = '4010009'
+	update alumnos set alumnonota = '15'
+	where alumnoid = '4010010'
+    update alumnos set alumnonota = '18'
+	where alumnoid = '5010001'
+	update alumnos set alumnonota = '10'
+	where alumnoid = '5010003'
+	update alumnos set alumnonota = '10'
+	where alumnoid = '5010004'
+	update alumnos set alumnonota = '10'
+	where alumnoid = '5010005'
+	update alumnos set alumnonota = '15'
+	where alumnoid = '5010006'
+	update alumnos set alumnonota = '14'
+	where alumnoid = '5010007'
+	update alumnos set alumnonota = '02'
+	where alumnoid = '5010008'
+	update alumnos set alumnonota = '11'
+	where alumnoid = '5010009'
+	update alumnos set alumnonota = '12'
+	where alumnoid = '5010010'
+    update alumnos set alumnonota = '16'
+	where alumnoid = '3010001'
+	update alumnos set alumnonota = '15'
+	where alumnoid = '5010002'
+    update alumnos set alumnonota = '15'
+	where alumnoid = '1010001'
