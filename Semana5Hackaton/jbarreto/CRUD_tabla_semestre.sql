@@ -10,5 +10,6 @@ select * from semestre
 UPDATE semestre SET descsemestre = 'semestre II' 
 	WHERE descsemestre= 'semestre1';
 
+
 --eliminar datos de tabla semestre
 DELETE FROM semestre WHERE descsemestre = 'semestre II';

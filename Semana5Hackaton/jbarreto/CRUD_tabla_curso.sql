@@ -3,7 +3,7 @@
 /*insertar datos en la tabla curso, antes se debe insertar datos en la
 tabla profesor y semestre*/
 insert into curso(nombrecurso,idprofesor,idsemestre)
-select 'programación 1' as nombrecurso, idprofesor, idsemestre from profesor, semestre
+select 'programacion 1' as nombrecurso, idprofesor, idsemestre from profesor, semestre
 	where idprofesor = profesor.idprofesor and
 		  idsemestre = semestre.idsemestre
 		  
@@ -14,7 +14,8 @@ select idcurso, nombrecurso, curso.idprofesor, curso.idsemestre
 
 --actualizar datos de tabla curso
 UPDATE curso SET nombrecurso = 'Algoritmos'
-	where nombrecurso = 'programación 1'
+	where nombrecurso = 'programacion 1'
+
 
 --eliminar datos de tabla
 delete from curso where nombrecurso = 'Algoritmos';
