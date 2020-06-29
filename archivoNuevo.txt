@@ -19,3 +19,12 @@ Nueva linea desde for 6 con append de nuevo
 Nueva linea desde for 7 con append de nuevo 
 Nueva linea desde for 8 con append de nuevo 
 Nueva linea desde for 9 con append de nuevo 
+Nueva linea desde for 1 con append de nuevo 
+Nueva linea desde for 2 con append de nuevo 
+Nueva linea desde for 3 con append de nuevo 
+Nueva linea desde for 4 con append de nuevo 
+Nueva linea desde for 5 con append de nuevo 
+Nueva linea desde for 6 con append de nuevo 
+Nueva linea desde for 7 con append de nuevo 
+Nueva linea desde for 8 con append de nuevo 
+Nueva linea desde for 9 con append de nuevo 

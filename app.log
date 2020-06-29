@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2020-06-18 20:44:57,423 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
 2020-06-18 20:45:09,694 - Producto - INFO - Se creo un producto
 2020-06-18 20:45:16,783 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
@@ -340,3 +341,5 @@
 2020-06-23 11:52:22,093 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
 2020-06-23 11:52:22,093 - fileManager - DEBUG - removiendo archivo
 2020-06-23 11:52:22,094 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+=======
+>>>>>>> upstream/develop
