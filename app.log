@@ -377,3 +377,129 @@
 2020-06-25 21:33:10,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
 2020-06-25 21:33:10,615 - fileManager - DEBUG - removiendo archivo
 2020-06-25 21:33:10,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
+2020-06-27 18:28:20,275 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 18:28:20,290 - INIT - ERROR - name 'json' is not defined
+2020-06-27 18:52:43,393 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/rcornejo/main.py'
+2020-06-27 18:52:43,399 - Menu - DEBUG - No escoge opción
+2020-06-27 18:52:50,538 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 18:52:50,539 - INIT - ERROR - name 'json' is not defined
+2020-06-27 18:57:42,116 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2020.6.90262\\pythonFiles\\pyvsc-run-isolated.py pip install -U autopep8 --user'
+2020-06-27 18:57:42,118 - Menu - DEBUG - No escoge opción
+2020-06-27 18:58:00,032 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2020.6.90262\\pythonFiles\\pyvsc-run-isolated.py pip install -U autopep8 --user'
+2020-06-27 18:58:00,033 - Menu - DEBUG - No escoge opción
+2020-06-27 18:58:25,381 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2020.6.90262\\pythonFiles\\pyvsc-run-isolated.py pip install -U autopep8 --user'
+2020-06-27 18:58:25,382 - Menu - DEBUG - No escoge opción
+2020-06-27 18:59:06,632 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2020.6.90262\\pythonFiles\\pyvsc-run-isolated.py pip install -U yapf --user'
+2020-06-27 18:59:06,633 - Menu - DEBUG - No escoge opción
+2020-06-27 18:59:20,029 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2020.6.90262\\pythonFiles\\pyvsc-run-isolated.py pip install -U autopep8 --user'
+2020-06-27 18:59:20,030 - Menu - DEBUG - No escoge opción
+2020-06-27 19:00:00,870 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2020.6.90262\\pythonFiles\\pyvsc-run-isolated.py pip install -U yapf --user'
+2020-06-27 19:00:00,871 - Menu - DEBUG - No escoge opción
+2020-06-27 19:00:31,001 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2020.6.90262\\pythonFiles\\pyvsc-run-isolated.py pip install -U yapf --user'
+2020-06-27 19:00:31,002 - Menu - DEBUG - No escoge opción
+2020-06-27 19:01:37,009 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2020.6.90262\\pythonFiles\\pyvsc-run-isolated.py pip install -U yapf --user'
+2020-06-27 19:01:37,010 - Menu - DEBUG - No escoge opción
+2020-06-27 19:05:05,775 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2020.6.90262\\pythonFiles\\pyvsc-run-isolated.py pip install -U autopep8 --user'
+2020-06-27 19:05:05,776 - Menu - DEBUG - No escoge opción
+2020-06-27 19:05:19,845 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:05:19,845 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:09:23,717 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:09:23,718 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:13:01,744 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/rcornejo/main.py'
+2020-06-27 19:13:01,745 - Menu - DEBUG - No escoge opción
+2020-06-27 19:13:37,880 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:13:37,881 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:14:07,321 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/rcornejo/main.py'
+2020-06-27 19:14:07,322 - Menu - DEBUG - No escoge opción
+2020-06-27 19:14:18,498 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:14:18,499 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:14:30,863 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/rcornejo/main.py'
+2020-06-27 19:14:30,863 - Menu - DEBUG - No escoge opción
+2020-06-27 19:14:35,303 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:14:35,304 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:15:18,375 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:15:18,375 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:15:26,601 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/rcornejo/main.py'
+2020-06-27 19:15:26,602 - Menu - DEBUG - No escoge opción
+2020-06-27 19:15:30,123 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:15:30,123 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:26:58,613 - Menu - ERROR - invalid literal for int() with base 10: 'k'
+2020-06-27 19:26:58,613 - Menu - DEBUG - No escoge opción
+2020-06-27 19:28:00,430 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:28:00,430 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:49:36,615 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:49:36,615 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:49:47,186 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:49:47,187 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:53:51,240 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:53:51,240 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:54:03,137 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:54:03,138 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:55:15,258 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:55:15,258 - INIT - ERROR - name 'json' is not defined
+2020-06-27 19:55:22,418 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 19:55:22,418 - INIT - ERROR - name 'json' is not defined
+2020-06-27 20:00:10,075 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 20:00:10,076 - INIT - ERROR - name 'json' is not defined
+2020-06-27 20:00:13,452 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+2020-06-27 20:00:13,453 - INIT - ERROR - name 'json' is not defined
+2020-06-27 20:00:51,358 - Producto - INFO - ¡Se creó un producto!
+2020-06-27 20:00:51,359 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\Productos.txt
+2020-06-27 20:00:51,359 - fileManager - DEBUG - removiendo archivo
+2020-06-27 20:03:11,086 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,087 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,088 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,088 - fileManager - DEBUG - removiendo archivo
+2020-06-27 20:03:11,088 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,089 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,090 - fileManager - DEBUG - removiendo archivo
+2020-06-27 20:03:11,090 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,090 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,091 - fileManager - DEBUG - removiendo archivo
+2020-06-27 20:03:11,091 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,093 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,093 - fileManager - DEBUG - removiendo archivo
+2020-06-27 20:03:11,093 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,094 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,095 - fileManager - DEBUG - removiendo archivo
+2020-06-27 20:03:11,095 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\UnidadMedida.txt
+2020-06-27 20:03:11,096 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-27 20:03:11,097 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-27 20:03:11,097 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-27 20:03:30,346 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe "c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/Bryan Arias/Inventario.py"'
+2020-06-27 20:03:30,347 - Menu - DEBUG - No escoje opion
+2020-06-27 20:03:45,648 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/bberlanga/Inventario.py'
+2020-06-27 20:03:45,648 - Menu - DEBUG - No escoje opion
+2020-06-27 20:03:54,682 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/bberlanga/Inventario.py'
+2020-06-27 20:03:54,705 - Menu - DEBUG - No escoje opion
+2020-06-27 20:03:55,852 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/bberlanga/Inventario.py'
+2020-06-27 20:03:55,852 - Menu - DEBUG - No escoje opion
+2020-06-27 20:04:06,406 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/bporras/menu.py'
+2020-06-27 20:04:06,407 - Menu - DEBUG - No escoje opion
+2020-06-27 20:04:07,417 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/bporras/menu.py'
+2020-06-27 20:04:07,418 - Menu - DEBUG - No escoje opion
+2020-06-27 20:04:08,504 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/bporras/menu.py'
+2020-06-27 20:04:08,505 - Menu - DEBUG - No escoje opion
+2020-06-27 20:04:08,729 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/bporras/menu.py'
+2020-06-27 20:04:08,729 - Menu - DEBUG - No escoje opion
+2020-06-27 20:04:09,546 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/bporras/menu.py'
+2020-06-27 20:04:09,546 - Menu - DEBUG - No escoje opion
+2020-06-27 20:04:09,769 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/USER/AppData/Local/Programs/Python/Python37/python.exe c:/Users/USER/Desktop/Backend/PachaQTecMayo2020/Semana4Hackaton/bporras/menu.py'
+2020-06-27 20:04:09,769 - Menu - DEBUG - No escoje opion
+2020-06-27 20:10:22,010 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-27 20:10:22,010 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-27 20:10:22,010 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-27 20:10:59,584 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\Empleados.txt
+2020-06-27 20:10:59,585 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\Empleados.txt
+2020-06-27 20:12:26,482 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
+2020-06-27 20:12:26,483 - INIT - ERROR - name 'json' is not defined
+2020-06-27 20:23:54,040 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
+2020-06-27 20:23:54,040 - INIT - ERROR - name 'json' is not defined
+2020-06-27 20:24:12,943 - Producto - INFO - ¡Se creó un producto!
+2020-06-27 20:24:12,943 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\Productos.txt
+2020-06-27 20:25:12,692 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
+2020-06-27 20:25:12,692 - INIT - ERROR - name 'json' is not defined
+2020-06-27 20:25:16,581 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
+2020-06-27 20:25:16,581 - INIT - ERROR - name 'json' is not defined
+2020-06-27 20:25:33,902 - Producto - INFO - ¡Se creó un producto!
+2020-06-27 20:25:33,903 - fileManager - DEBUG - C:\Users\USER\Desktop\Backend\PachaQTecMayo2020\Productos.txt
