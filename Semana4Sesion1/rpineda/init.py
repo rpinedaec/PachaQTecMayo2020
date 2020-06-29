@@ -126,6 +126,7 @@ menuProducto = Menu("Menu Producto", dicOpcionesCrearProducto)
 
 fileProducto = utils.fileManager("Productos")
 
+
 if(opcionMenuPrincipal == 9):
     opcionMenuPrincipal = menuPrincipal.mostrarMenu()
 

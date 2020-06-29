@@ -1,7 +1,6 @@
 import logging
 import os.path
 
-
 class log:
     def __init__(self, nombreLogger):
         # create logger
@@ -18,7 +17,6 @@ class log:
         ch.setFormatter(formatter)
         # add ch to logger
         self.logger.addHandler(ch)
-        
 
     def debug(self, mensaje):
         self.logger.debug(mensaje)
@@ -81,4 +79,4 @@ class fileManager:
                 file = open(self.nombreArchivo, 'a')
                 file.write(linea + "\n")
         except Exception as error:
-            self.logD.error(error)
+            self.logD.error(error)      
