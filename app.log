@@ -231,3 +231,112 @@
 2020-06-20 11:41:17,145 - Producto - INFO - Se creo un producto
 2020-06-20 11:41:17,146 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
 2020-06-20 11:41:17,146 - INIT - DEBUG - [<__main__.Producto object at 0x000001B329A9FB88>, <__main__.Producto object at 0x000001B329A9FBC8>, <__main__.Producto object at 0x000001B329A9FC48>]
+2020-06-23 11:43:30,707 - Menu - DEBUG - La opcion 1 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:43:32,100 - Menu - DEBUG - La opcion 1 es valida del menu MENU EMPLEADO	
+2020-06-23 11:43:32,102 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:43:34,346 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:43:34,347 - Principal - DEBUG - Vacio
+2020-06-23 11:43:37,058 - Principal - DEBUG - Se agrego al Empleado K K
+2020-06-23 11:43:37,059 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:43:39,165 - Menu - ERROR - invalid literal for int() with base 10: 'K'
+2020-06-23 11:43:41,271 - Menu - INFO - La opcion 22 no es valida
+2020-06-23 11:43:43,324 - Menu - INFO - La opcion 22 no es valida
+2020-06-23 11:43:45,385 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:47,452 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:49,508 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:51,569 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:53,622 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:02,915 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:12,666 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:15,613 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:17,691 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:19,746 - Menu - DEBUG - La opcion 0 es valida del menu MENU EMPLEADO	
+2020-06-23 11:44:19,746 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:44:19,758 - Principal - DEBUG - Salir del Sistema
+2020-06-23 11:44:25,738 - Menu - DEBUG - La opcion 1 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:44:26,819 - Menu - DEBUG - La opcion 2 es valida del menu MENU EMPLEADO	
+2020-06-23 11:44:26,822 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:44:26,825 - ListarEmpleados - DEBUG - Existen un total de 1 personas
+2020-06-23 11:44:29,290 - Principal - DEBUG - Eligio salir del sistema
+2020-06-23 11:44:34,826 - Menu - DEBUG - La opcion 1 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:44:42,058 - Menu - DEBUG - La opcion 0 es valida del menu MENU EMPLEADO	
+2020-06-23 11:44:42,059 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:44:42,060 - Principal - DEBUG - Salir del Sistema
+2020-06-23 11:44:54,073 - Menu - DEBUG - La opcion 2 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:44:59,324 - Menu - DEBUG - La opcion 9 es valida del menu MENU CLIENTE	
+2020-06-23 11:44:59,326 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:45:00,276 - Menu - DEBUG - La opcion 2 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:45:02,004 - Menu - DEBUG - La opcion 3 es valida del menu MENU CLIENTE	
+2020-06-23 11:45:02,005 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:45:02,006 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:45:02,023 - ListaProductos - ERROR - Expecting value: line 1 column 1 (char 0)
+2020-06-23 11:45:14,384 - INIT - DEBUG - <<<<<<< HEAD
+[{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+=======
+
+>>>>>>> f1e0bdba5248a5326347a7a01e473051d22ebfa6
+
+2020-06-23 11:45:14,385 - INIT - ERROR - Expecting value: line 1 column 1 (char 0)
+2020-06-23 11:45:14,385 - INIT - DEBUG - []
+2020-06-23 11:45:14,385 - INIT - DEBUG - []
+2020-06-23 11:45:14,385 - INIT - DEBUG - []
+2020-06-23 11:45:25,523 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:45:25,523 - Menu - DEBUG - No escoje opion
+2020-06-23 11:45:28,617 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:45:28,620 - Menu - DEBUG - No escoje opion
+2020-06-23 11:45:36,553 - Producto - INFO - Se creo un producto
+2020-06-23 11:45:36,554 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:45:36,554 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:45:36,555 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:45:38,396 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-23 11:45:43,532 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:45:43,532 - Menu - DEBUG - No escoje opion
+2020-06-23 11:48:56,228 - INIT - DEBUG - [{"codProducto": "5", "nombreProducto": "5", "cantidadProducto": "5", "costoProducto": "5"}]
+
+2020-06-23 11:48:56,228 - Producto - INFO - Se creo un producto
+2020-06-23 11:48:56,228 - INIT - DEBUG - [{'codProducto': '5', 'nombreProducto': '5', 'cantidadProducto': '5', 'costoProducto': '5'}]
+2020-06-23 11:48:56,228 - INIT - DEBUG - [<__main__.Producto object at 0x0000021FA5342F08>]
+2020-06-23 11:48:56,229 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-23 11:49:05,257 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:49:05,257 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:10,299 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:20,076 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:49:20,077 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:49:20,077 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:49:30,163 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:45,321 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:50,368 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:59,818 - Menu - DEBUG - No escoje opion
+2020-06-23 11:50:04,877 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:50:04,877 - Menu - DEBUG - No escoje opion
+2020-06-23 11:50:13,378 - Menu - DEBUG - No escoje opion
+2020-06-23 11:50:18,425 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:50:18,426 - Menu - DEBUG - No escoje opion
+2020-06-23 11:51:38,455 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,455 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,457 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,458 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,458 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,460 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,461 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,461 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,464 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,465 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,466 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,467 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,468 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,468 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,470 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,470 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,471 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,489 - INIT - ERROR - 'codigo'
+2020-06-23 11:51:38,490 - INIT - ERROR - 'codigo'
+2020-06-23 11:51:38,491 - INIT - ERROR - 'codigo'
+2020-06-23 11:51:57,434 - Producto - INFO - Se creo un producto
+2020-06-23 11:51:57,435 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:51:57,435 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:57,436 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:52:22,092 - Producto - INFO - Se creo un producto
+2020-06-23 11:52:22,093 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:52:22,093 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:52:22,094 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
