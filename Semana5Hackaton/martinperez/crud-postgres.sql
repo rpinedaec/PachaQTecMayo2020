@@ -97,10 +97,8 @@ delete from SALON WHERE idsalon =9999;
 select idsemestre ID,descripcion SEMESTRE from semestre;
 
 insert into semestre (descripcion)
-select 'SEMESTRE-2020-06' DESCRIPCION UNION ALL
-select 'SEMESTRE-2020-07' UNION ALL
-select 'SEMESTRE-2020-08' UNION ALL
-select 'SEMESTRE-2020-09'; 
+select 'SEMESTRE-2020-I' DESCRIPCION UNION ALL
+select 'SEMESTRE-2020-II'; 
 
 update semestre
 set descripcion = concat('SEM',RIGHT(descripcion,7))
