@@ -71,7 +71,7 @@ class Menu:
 
     def printMenu(self):
         self.limpiarPantalla()
-        print("Menu" + self.nombreMenu)
+        print("Menu " + self.nombreMenu)
         print(" ")
         for (key, value) in self.listaOpciones.items():
                 print(key, " :: ", value)
@@ -87,10 +87,55 @@ class Menu:
         except:
             print("Elige una opcion valida")
 
+class Archivo:
+    def __init__(self, nombreArchivo):
+        self.nombreArchivo = nombreArchivo
+
+    def leerArchivo(self):
+        try:
+            file = open(self.nombreArchivo,'r')
+            return file.read()
+        except Exception as e:
+            return e
+
+    def borrarArchivo(self):
+        directorioActual = os.getcwd()
+        path = directorioActual+"\\"+self.nombreArchivo
+        if(os.path.isfile(path)):
+            os.remove(path)
+            print("Archivo removido")
+        else:
+            print("No existe el archivo")
+
+    def escribirArchivo(self, texto):
+        try:
+            directorioActual = os.getcwd()
+            path = directorioActual+"\\"+self.nombreArchivo
+            if(os.path.isfile(path)):
+                try:
+                    #escribir el archiv
+                    file = open(self.nombreArchivo, 'a')
+                    file.write(texto + "\n")
+                except:
+                    print("error")
+                finally:
+                    file.close()
+            else:
+                file = open(self.nombreArchivo, 'w')
+                file.close()
+                file = open(self.nombreArchivo, 'a')
+                file.write(texto + "\n")
+        except:
+            print("error") 
+    
+
 #Variables globales
 lstCliente = []
 lstEmpleado = []
 lstProducto = []
+archivoproduct = Archivo("Productos.txt")
+archivocliente = Archivo("Clientes.txt")
+archivoemplead = Archivo("Empleados.txt")
 
 #Programa Principal
 while True:
@@ -121,6 +166,9 @@ while True:
                 cliente = Cliente(dniCliente,nombreCliente,apellidoCliente,codCliente)
                 print("Has creado al cliente: ", nombreCliente)
                 lstCliente.append(cliente.dictCliente())
+                linea = cliente.dictCliente()
+                linea = str(linea)
+                archivocliente.escribirArchivo(linea + ",")
                 sleep(5)
 
             elif(opcionMenuClientes == 2):
@@ -148,7 +196,7 @@ while True:
     elif(opcionMenuPrincipal == 2):
         while True:
             dictMenuEmpleado = {"Añadir":1,"Ver":2, "Validar":3, "Inventariar":4, "Salir":9}
-            MenuEmpleados = Menu("Clientes",dictMenuEmpleado)
+            MenuEmpleados = Menu("Empleado",dictMenuEmpleado)
             MenuEmpleados.printMenu()
             opcionMenuEmpleados = MenuEmpleados.inputMenu()
 
@@ -165,6 +213,9 @@ while True:
                 empleado = Empleado(dniEmpleado,nombreEmpleado,apellidoEmpleado,codEmpleado)
                 print("Has creado al Empleado: ", nombreEmpleado)
                 lstEmpleado.append(empleado.dictEmpleado())
+                linea = empleado.dictEmpleado()
+                linea = str(linea)
+                archivoemplead.escribirArchivo(linea + ",")
                 sleep(5)
 
             elif(opcionMenuEmpleados == 2):
@@ -202,6 +253,9 @@ while True:
                         producto = Producto(codProducto,nombreProducto,cantProducto,costProducto)
                         print("Has creado al Producto: ", nombreProducto)
                         lstProducto.append(producto.dictProducto())
+                        linea = producto.dictProducto()
+                        linea = str(linea)
+                        archivoproduct.escribirArchivo(linea + ",")
                         sleep(5)
 
                     elif(opcionMenuProductos == 2):

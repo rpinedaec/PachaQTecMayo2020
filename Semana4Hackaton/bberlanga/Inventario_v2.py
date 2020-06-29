@@ -327,6 +327,13 @@ while f:
                             print("")
                             print(color.GREEN+f"Producto {Name} fue agregado ☑"+color.END)
                             print("")
+                            product_dict={"name":product_n.name,"las_name":product_n.price,"age":product_n.enter_date,"id_num":Quantity}
+                            dict_me_json=json.dumps(product_dict)
+                            path=os.getcwd()+"\\Semana4Hackaton\\bberlanga\\product.txt"
+                            try:
+                                open(path,'a').write("'"+dict_me_json+"'"+"\n")
+                            except:
+                                open(path,'w').write("'"+dict_me_json+"'")                                     
                             break
                         elif(ans.upper() =="N"):
                             break

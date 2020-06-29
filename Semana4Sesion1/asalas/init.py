@@ -114,39 +114,67 @@ class Producto:
     log = utils.log("Producto")
 
     def __init__(self, codProducto, nombreProducto, cantidadProducto, costoProducto):
-        self.codProducto = codProducto
-        self.nombreProducto = nombreProducto
-        self.cantidadProducto = cantidadProducto
-        self.costoProducto = costoProducto
+        self.__codProducto = codProducto
+        self.__nombreProducto = nombreProducto
+        self.__cantidadProducto = cantidadProducto
+        self.__costoProducto = costoProducto
         self.log.info("Se creo un producto")
 
+    @property
+    def codProducto(self):
+        return self.__codProducto
+    
+    @codProducto.setter
+    def codProducto(self, valor):
+        self.__codProducto = valor
+###############################################
+    @property
+    def nombreProducto(self):
+        return self.__nombreProducto
+    
+    @nombreProducto.setter
+    def nombreProducto(self, valor):
+        self.__nombreProducto = valor
+##############################################
+    @property
+    def cantidadProducto(self):
+        return self.__cantidadProducto
+    
+    @cantidadProducto.setter
+    def cantidadProducto(self, valor):
+        self.__cantidadProducto = valor
+ ############################################   
+    @property
+    def costoProducto(self):
+        return self.__costoProducto
+    
+    @costoProducto.setter
+    def costoProducto(self, valor):
+        self.__costoProducto = valor
+#############################################
+
     def __str__(self):
-        return """Codigo: {} \nNombre: {}""".format(self.codProducto, self.nombreProducto)
+        return ' Codigo: ' + str(self.__codProducto) + ' Nombre  ' + self.__nombreProducto + ' Cantidad  ' + str(self.__cantidadProducto) + ' Costo  ' + str(self.__costoProducto)
+
+
+    #def __str__(self):
+    #    return """Codigo: {} \nNombre: {}""".format(self.__codProducto, self.__nombreProducto)
 
     def dictProducto(self):
-        d = dict()
+        #d = dic()
         d = {
-            'codProducto': self.codProducto,
-            'nombreProducto': self.nombreProducto,
-            'cantidadProducto': self.cantidadProducto,
-            'costoProducto': self.costoProducto
+            'codProducto': self.__codProducto,
+            'nombreProducto': self.__nombreProducto,
+            'cantidadProducto': self.__cantidadProducto,
+            'costoProducto': self.__costoProducto
         }
         return d
     
-    def showproducto(self):
-        print("           *********INVENTARIO DE PRODUCTOS******")
-        print("-----------------------------------------------------------------")
-        fltotal=0.0
-        print("ID\t|PRODUCTO\t|CANTIDAD\t|VALOR UNIT.\t|SUBTOTAL")
-        print("-----------------------------------------------------------------")            
-        for objProducto in lstProductos:
-            print(
-            f"|{objProducto.codProducto}\t| {objProducto.nombreProducto}\t| {objProducto.codProducto} \t|\t|{objProducto.cantidadProducto} \t|\t| {objProducto.costoProducto} |")
-            #valortotal= objProducto['cantidadProducto'] * objProducto['costoProducto']
-            #fltotal += valortotal
-        print("-----------------------------------------------------------------")
-        print(f"El Precio Total de todos los Productos es: S/.{fltotal}")
-        #print(fltotal)
+        
+   # def eliminar_producto(self, producto):
+     #   if producto in self.__productos:
+       #     indice = self.__productos.index(producto)
+       #     del self.__productos[indice]
 
     def costearProducto(self):
         print("Costeando producto")
@@ -361,7 +389,7 @@ elif(opcionMenuPrincipal == 1):
             break
 elif(opcionMenuPrincipal == 2):
     dicOpcionesEmpleado = {"Marcar Ingreso": 1,
-                           "Marcar Salida": 2, "Agregar Producto": 3, "Registrar Nuevo Empleado": 4, "Ver Empleados": 5}
+                           "Marcar Salida": 2, "Agregar Producto": 3, "Eliminar Producto": 6, "Registrar Nuevo Empleado": 4, "Ver Empleados": 5}
     menuEmpleado = Menu("Menu del Empleado", dicOpcionesEmpleado)
     res = menuEmpleado.mostrarMenu()
     salirCreacionProducto = True
@@ -387,17 +415,18 @@ elif(opcionMenuPrincipal == 2):
             #producto.showproducto()
             print("           *********INVENTARIO DE PRODUCTOS******")
             print("-----------------------------------------------------------------")
-            #fltotal=0.0
+            fltotal=0.0
             print("ID\t|PRODUCTO\t|CANTIDAD\t|VALOR UNIT.\t|SUBTOTAL")
             print("-----------------------------------------------------------------")            
             for objProducto in lstProductos:
                 print(
                 f"|{objProducto.codProducto}\t| {objProducto.nombreProducto}\t|\t {objProducto.codProducto} \t|\t|{objProducto.cantidadProducto} \t|\t| {objProducto.costoProducto} |")
-                #valortotal= ['objProducto.cantidadProducto'] * ['objProducto.costoProducto']
-                #fltotal += valortotal
+                valortotal= int(objProducto.cantidadProducto) * int(objProducto.costoProducto)
+                fltotal += valortotal
+                #print("El total de Productos es:",valortotal)
             print("-----------------------------------------------------------------")
-            #print(f"El Precio Total de todos los Productos es: S/.{fltotal}")
-            sleep(5)
+            print(f"El Precio Total de todos los Productos es: S/.{fltotal}")
+            sleep(8)
             resMenuProducto = menuProducto.mostrarMenu()
             if(resMenuProducto == 1):
                 log.debug("ingreso a la opcion 1 de menuProducto")
@@ -417,33 +446,35 @@ elif(opcionMenuPrincipal == 2):
                 log.debug("ingreso a la opcion 3 de menuProducto")
                 #print("Busca en la lista el producto que deseas quitar")
                
-                print("Digita el nombre del producto que desea eliminar")
-                nomeProducto = input()
-
-                #nom = dicProducto.get(nomeProducto)
-                if (nomeProducto == producto.nombreProducto):
-                    try: 
-                        res = fileProducto.leerArchivo()
-                        log.debug(res)
-                        lstProducto = json.loads(res)
-                        for dicProducto in lstProducto:
-                        #codProducto, nombreProducto, cantidadProducto, costoProducto
-                            objProducto = Producto(dicProducto["codProducto"], dicProducto["nombreProducto"],
-                                    dicProducto["cantidadProducto"], dicProducto["costoProducto"])
+                
+                try: 
+                    res = fileProducto.leerArchivo()
+                    log.debug(res)
+                    lstProducto = json.loads(res)
+                   
                             #fileProducto.borrarArchivo()
-                            lstProductos.remove(producto.nombreProducto)
-                            lstProductosDic.remove(producto.nombreProducto)
-                            #del dicProducto[producto.nombreProducto]
-                            #item= dict.pop("nombreProducto", None)
-                        log.debug(lstProductosDic)
-                        log.debug(lstProductos)
+                    print("Digita el Codigo del producto que desea eliminar")
+                    nomeProducto = input()
+                    if (nomeProducto == Producto.nombreProducto):
+                        for dicProducto in lstProducto:
+                            objProducto = Producto(dicProducto["codProducto"], dicProducto["nombreProducto"],
+                                            dicProducto["cantidadProducto"], dicProducto["costoProducto"])
+                             #nom = dicProducto.get(nomeProducto)
+                        
+                            del [dicProducto]
+                            #lstProductos.remove(objProducto)
+                            #lstProductosDic.remove(objProducto)
+                        #log.debug(lstProductosDic)
+                        #log.debug(lstProductos)
+                        #for deleprodu in d.values():
+                         #   del d['deleprodu']
+                         #   print(deleprodu)
                         print("Haz eliminado el producto: ", nomeProducto)
-                            #jsonStr = json.dumps(lstProductosDic)
-                            #fileProducto.escribirArchivo(jsonStr)
                                 
-                    except ValueError:
-                        print("no se encuentra en la lista")
-
+                except ValueError:
+                    print("no se encuentra en la lista")
+                    sleep(10) 
+        #res = menuEmpleado.mostrarMenu()
         if(res == 4):
             print("Digita el Codigo del Empleado")
             codEmpleado = input()
@@ -474,6 +505,33 @@ elif(opcionMenuPrincipal == 2):
                     f"|{objEmpleado.codEmpleado} | {objEmpleado.dni} | {objEmpleado.nombre} | {objEmpleado.apellido} | {objEmpleado.edad} |")
             sleep(10)
             res = menuEmpleado.mostrarMenu()
+        if(res == 6):
+            log.debug("ingreso a la opcion 9 de menuEmpleado")
+            try: 
+                res = fileProducto.leerArchivo()
+                log.debug(res)
+                lstProducto = json.loads(res)
+                    
+                                #fileProducto.borrarArchivo()
+                print("Digita el nombre del producto que desea eliminar")
+                nomeProducto = input()
+                        
+                for dicProducto in lstProducto:
+                    objProducto = Producto(dicProducto["codProducto"], dicProducto["nombreProducto"],
+                                                dicProducto["cantidadProducto"], dicProducto["costoProducto"])
+                                #nom = dicProducto.get(nomeProducto)
+                    if (nomeProducto == Producto.nombreProducto):
+                        del objProducto
+                                #lstProductos.remove(objProducto)
+                                #lstProductosDic.remove(objProducto)
+                            #log.debug(lstProductosDic)
+                            #log.debug(lstProductos)
+                    print("Haz eliminado el producto: ", nomeProducto)
+            except ValueError:
+                    print("no se encuentra en la lista")
+                    sleep(10) 
+                                  
+
         else:  
             salirCreacionProducto = False
             break
