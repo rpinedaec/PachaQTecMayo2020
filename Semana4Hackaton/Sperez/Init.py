@@ -50,8 +50,6 @@ class Cliente(Persona):
         }
         return c 
     
-    def __str__(self):
-        return """Usuario: {}""".format(self.usuaCliente)
 
     def comprar(self):
         print("El Cliente esta comprando")
@@ -176,7 +174,7 @@ agendaCliente = utils.fileManager("Clientes.txt")
 lstProductos = []
 lstProductosDic = []
 lstClientes = []
-producto = Producto('codProducto', 'nombreProducto', 'cantidadProducto', 'costoProducto')
+lstClientes_Dict=[]
 
 def cargaInicial():
     try:
@@ -218,9 +216,14 @@ elif(opcionMenuPrincipal == 1):
     usuaCliente = input("Usuario del Cliente: ")
     passwCliente = input("Password del Cliente: ")
     cliente = Cliente(dniCliente, nombreCliente, apellCliente, edadCliente, usuaCliente, passwCliente)
+    lstClientes.append(cliente)
     print("acceso valido para cliente: ", cliente) 
     dicOpcionesCliente = {"Comprar": 1, "Devolver": 2}
     menuCliente = Menu(f"{cliente}", dicOpcionesCliente)
+    agendaCliente.borrarArchivo()
+    lstClientes_Dict.append(cliente.dictCliente())
+    jsonStr = json.dumps(lstClientes_Dict)
+    agendaCliente.escribirArchivo(jsonStr)
     res = menuCliente.mostrarMenu()
     if (res == 1):
         cliente.comprar()
@@ -285,11 +288,17 @@ elif(opcionMenuPrincipal == 2):
                 salirCreacionProducto = False
                 break
         elif(res == 4):
-            producto.contarProducto()
+            for p in lstProductosDic:
+                print(p['nombreProducto'])
+            print("Hay "+str(len(lstProductosDic))+ " productos") 
             input()
             res = menuEmpleado.mostrarMenu()
         
         elif(res == 5):
-            producto.valorizarProducto()
+            fltTotal=0.0
+            for p in lstProductosDic:
+                fltProd=float(p['costoProducto'])*float(p['cantidadProducto'])
+                fltTotal+=fltProd
+            print("S/."+str(fltTotal)+ " Soles")
             input()
             res = menuEmpleado.mostrarMenu()

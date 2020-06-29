@@ -44,7 +44,7 @@ def menu():
             
 
 def agregar_productos():
-    existe = -1
+    #existe = -1
     try:
         codpro = int(input("ingresa el código: "))
       
