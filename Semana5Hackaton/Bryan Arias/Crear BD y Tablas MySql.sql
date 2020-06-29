@@ -1,0 +1,142 @@
+-- MYSQL 
+CREATE DATABASE IF NOT EXISTS registro;
+USE registro;
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+--TABLA ALUMNO
+CREATE TABLE IF NOT EXISTS registro .Alumno (
+  IdAlumno INT(11) NOT NULL AUTO_INCREMENT,
+  Nombre_Alumno VARCHAR(50) NULL DEFAULT NULL,
+  Dni_Alumno VARCHAR(8) NOT NULL UNIQUE,
+  Fecha_Nacimiento DATETIME NULL DEFAULT NULL,
+  Correo_Alumno VARCHAR(50) NULL DEFAULT NULL,
+  Fecha_Registro DATETIME NULL DEFAULT NULL,
+  Fecha_Modificacion DATETIME NULL DEFAULT NULL,
+  Fecha_Baja DATETIME NULL DEFAULT NULL,
+  Estado VARCHAR(2) NULL DEFAULT 1,
+  PRIMARY KEY (IdAlumno))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+--TABLA SALON
+CREATE TABLE IF NOT EXISTS registro.Salon (
+  IdSalon INT(11) NOT NULL AUTO_INCREMENT,
+  Nombre_Salon VARCHAR(20) NOT NULL UNIQUE,
+  Bimestre_IdBimestre INT(11) NOT NULL,
+  Profesores_IdProfesores INT(11) NOT NULL,
+  Fecha_Registro DATETIME NULL DEFAULT NULL,
+  Fecha_Modificacion DATETIME NULL DEFAULT NULL,
+  Fecha_Baja DATETIME NULL DEFAULT NULL,
+  Estado VARCHAR(2) NULL DEFAULT 1,
+  PRIMARY KEY (IdSalon, Bimestre_IdBimestre, Profesores_IdProfesores),
+  INDEX fk_Salon_Bimestre_idx (Bimestre_IdBimestre ASC) VISIBLE,
+  INDEX fk_Salon_Profesores1_idx (Profesores_IdProfesores ASC) VISIBLE,
+  CONSTRAINT fk_Salon_Bimestre
+    FOREIGN KEY (Bimestre_IdBimestre)
+    REFERENCES registro.Bimestre(IdBimestre)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_Salon_Profesores1
+    FOREIGN KEY (Profesores_IdProfesores)
+    REFERENCES registro.Profesores (IdProfesores)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+--TABLA CURSOS
+CREATE TABLE IF NOT EXISTS registro.Cursos (
+  IdCursos INT(11) NOT NULL AUTO_INCREMENT,
+  Nombre_Curso VARCHAR(50) NOT NULL UNIQUE,
+  Fecha_Registro DATETIME NULL DEFAULT NULL,
+  Fecha_Modificacion DATETIME NULL DEFAULT NULL,
+  Fecha_Baja DATETIME NULL DEFAULT NULL,
+  Estado VARCHAR(2) NULL DEFAULT 1,
+  PRIMARY KEY (IdCursos))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+--TABLA PROFESORES
+CREATE TABLE IF NOT EXISTS registro.Profesores (
+  IdProfesores INT(11) NOT NULL AUTO_INCREMENT,
+  Nombre_Profesor VARCHAR(50) NULL DEFAULT NULL,
+  Dni_Profesor VARCHAR(8) NOT NULL UNIQUE,
+  Fecha_Nacimiento DATETIME NULL DEFAULT NULL,
+  Correo_Profesor VARCHAR(50) NULL DEFAULT NULL,
+  Fecha_Registro DATETIME NULL DEFAULT NULL,
+  Fecha_Modificacion DATETIME NULL DEFAULT NULL,
+  Fecha_Baja DATETIME NULL DEFAULT NULL,
+  Estado VARCHAR(2) NULL DEFAULT 1,
+  PRIMARY KEY (IdProfesores))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+--TABLA BIMESTRE
+CREATE TABLE IF NOT EXISTS registro.Bimestre (
+  IdBimestre INT(11) NOT NULL AUTO_INCREMENT,
+  Des_Bimestre VARCHAR(20) NOT NULL UNIQUE,
+  Fecha_Registro DATETIME NULL DEFAULT NULL,
+  Fecha_Modificacion DATETIME NULL DEFAULT NULL,
+  Fecha_Baja DATETIME NULL DEFAULT NULL,
+  Estado VARCHAR(2) NULL DEFAULT 1,
+  PRIMARY KEY (IdBimestre))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+--TABLA DETALLE DE LOS CURSOS CON LOS PROFESORES
+CREATE TABLE IF NOT EXISTS registro.Cursos_has_Profesores (
+  IdDetalle INT(11) NOT NULL AUTO_INCREMENT,
+  Cursos_IdCursos INT(11) NOT NULL,
+  Profesores_IdProfesores INT(11) NOT NULL,
+  Fecha_Registro DATETIME NULL DEFAULT NULL,
+  Fecha_Modificacion DATETIME NULL DEFAULT NULL,
+  Fecha_Baja DATETIME NULL DEFAULT NULL,
+  Estado VARCHAR(2) NULL DEFAULT 1,
+  PRIMARY KEY (IdDetalle, Cursos_IdCursos, Profesores_IdProfesores),
+  INDEX fk_Cursos_has_Profesores_Profesores1_idx (Profesores_IdProfesores ASC) VISIBLE,
+  INDEX fk_Cursos_has_Profesores_Cursos1_idx (Cursos_IdCursos ASC) VISIBLE,
+  CONSTRAINT fk_Cursos_has_Profesores_Cursos1
+    FOREIGN KEY (Cursos_IdCursos)
+    REFERENCES registro.Cursos (IdCursos)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_Cursos_has_Profesores_Profesores1
+    FOREIGN KEY (Profesores_IdProfesores)
+    REFERENCES registro.Profesores (IdProfesores)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+--TABLA DETALLE DEL ALUMNO Y EL SALON (NOTAS)
+CREATE TABLE IF NOT EXISTS registro.Alumno_has_Salon (
+  IdDetalle INT(11) NOT NULL AUTO_INCREMENT,
+  Alumno_IdAlumno INT(11) NOT NULL,
+  Salon_IdSalon INT(11) NOT NULL,
+  Nota INT(11) NULL DEFAULT NULL,
+  Fecha_Registro DATETIME NULL DEFAULT NULL,
+  Fecha_Modificacion DATETIME NULL DEFAULT NULL,
+  Fecha_Baja DATETIME NULL DEFAULT NULL,
+  Estado VARCHAR(2) NULL DEFAULT 1,
+  PRIMARY KEY (IdDetalle, Alumno_IdAlumno, Salon_IdSalon),
+  INDEX fk_Alumno_has_Salon_Salon1_idx (Salon_IdSalon ASC) VISIBLE,
+  INDEX fk_Alumno_has_Salon_Alumno1_idx (Alumno_IdAlumno ASC) VISIBLE,
+  CONSTRAINT fk_Alumno_has_Salon_Alumno1
+    FOREIGN KEY (Alumno_IdAlumno)
+    REFERENCES registro.Alumno (IdAlumno)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_Alumno_has_Salon_Salon1
+    FOREIGN KEY (Salon_IdSalon)
+    REFERENCES registro.Salon (IdSalon)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
