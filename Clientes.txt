@@ -1,1 +1,0 @@
-[{"dniCliente": 45249658, "nombreCliente": "sergio", "apellCliente": "perez", "edadCliente": 31, "usuaCliente": "sperez", "passwCliente": "asdas"}]
