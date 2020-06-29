@@ -159,6 +159,7 @@ dicOpcionesCrearProducto = {"Crear otro": 1, "Mostrar todos": 2}
 menuProducto = Menu("Menu Producto", dicOpcionesCrearProducto)
 
 
+
 if(opcionMenuPrincipal == 9):
     opcionMenuPrincipal = menuPrincipal.mostrarMenu()
 
