@@ -16,5 +16,6 @@ select idsalon, nombresalon, salon.idprofesor, nombreprofesor, salon.idalumno, n
 UPDATE salon SET nombresalon = 'salon ciclo 2' 
 	WHERE nombresalon = 'salon ciclo 1';
 
+
 --eliminar datos de tabla
 DELETE FROM salon WHERE nombresalon = 'salon ciclo 2';
