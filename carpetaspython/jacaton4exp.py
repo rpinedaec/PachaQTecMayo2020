@@ -12,10 +12,40 @@ listaUsuarios = list()
 global listaProductos
 listaProductos = list()
 
+class Persona:
+    __estado = True
+    def __init__(self, idPersona, dniPersona, nombrePersona, apellidoPersona, edadPersona):
+        self.idPersona = idPersona
+        self.dniPersona = dniPersona
+        self.nombrePersona = nombrePersona
+        self.apellidoPersona = apellidoPersona
+        self.edadPersona = edadPersona
+
+    @property
+    def estado(self):
+        return self.__estado
+
+    @estado.setter
+    def estado(self, nuevoEstado):
+        __estado = nuevoEstado
+    def registro(self):
+        self.estado = True
+        print("La persona se ha registrado")
+    def desregistro(self):
+        self.estado = False
 
 #CLASE EMPLEADO VACÍA PARA QUE SE LLENE DESPUÉS
 
-class Empleado:
+
+class Empleado():
+    # def __init__(self, dniPersona, nombrePersona, apellidoPersona, edadPersona, codEmpleado, sueldoEmpleado):
+    #     super().__init__(dniPersona, nombrePersona, apellidoPersona, edadPersona)
+    #     self.codEmpleado = codEmpleado
+    #     self.sueldoEmpleado = sueldoEmpleado
+    # def marcarIngreso(self):
+    #     print("El empleado está marcando su hora de ingreso")
+    #     print("El empleado ha marcado su hora de ingreso")
+
 	idEmpleado = ""
 	apellidoP = ""
 	nombres = ""
@@ -25,11 +55,29 @@ class Empleado:
 
 
 class Usuario:
+    # def __init__(self, dniPersona, nombrePersona, apellidoPersona, edadPersona, codCliente, usuarioCliente, contraseñaCliente):
+    #     super().__init__(dniPersona, nombrePersona, apellidoPersona, edadPersona)
+    #     self.codCliente = codCliente
+    #     self.usuarioCliente = usuarioCliente
+    #     self.contraseñaCliente = contraseñaCliente
+    # def consumir(self):
+    #     print("El cliente está consumiendo cosas que no necesita")
+    #     print("El cliente es adicto al capitalismo salvaje")
+
 	usuario = ""
 	contraseña = ""
 
-
 class Producto:
+	# def __init__(self, codProducto, nombreProducto, cantidadProducto, costoProducto):
+	# 	self.codProducto = codProducto
+	# 	self.nombreProducto = nombreProducto
+	# 	self.cantidadProducto = cantidadProducto
+	# 	self.costoProducto = costoProducto
+	# def __str__(self):
+	# 	return """Codigo: {} \nNombre: {}""".format(self.codProducto, self.nombreProducto)
+	# def costearProducto(self):
+	# 	print("Calculando valor del producto")
+	
 	idProducto = ""
 	nombreP = ""
 	cantidad = ""
@@ -277,6 +325,7 @@ def limpiarPantalla():
     	return os.system('clear')
     clear()
 
+
 def archivoUsuarios():
 
 	with open('usuarios.txt') as arch:
@@ -293,6 +342,7 @@ def archivoUsuarios():
 		h.contraseña = dicUsuarios[j][1]
 		listaUsuarios.append(h)
 		j += 1
+
 
 def archivoEmpleados():
 
@@ -313,6 +363,7 @@ def archivoEmpleados():
 		o.salario = dicEmpleados[j][4]
 		listaEmpleados.append(o)
 		j += 1
+
 
 def main():
 	archivoUsuarios()
@@ -340,7 +391,7 @@ def main():
 			contador = 3
 			print("")
 			print("╔═════════════════════════════════════════╗")
-			print("║        BIENVENIDOS A PACHACUTEC ®       ║")
+			print("║        BIENVENIDOS A CIUDAD 17 ®        ║")
 			print("╚═════════════════════════════════════════╝")
 			menu()
 		else:
@@ -351,5 +402,6 @@ def main():
 			else:
 				print("\n▬▬Usuario Invalido▬▬")
 				print("Quedan", i, "de 3 intento(s)...")
+
 
 menu()
