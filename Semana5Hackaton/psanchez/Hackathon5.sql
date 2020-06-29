@@ -114,7 +114,7 @@ ALTER TABLE public.profesores
     NOT VALID;
 CREATE INDEX fki_profesorcurso
     ON public.profesores(profesorcurso);
-    
+
 --Ingreso la información a la nueva columna relacionada	
 	update profesores set profesorcurso = '900'
 	where profesornombre = 'Benito Juarez'
@@ -130,3 +130,149 @@ CREATE INDEX fki_profesorcurso
 	where profesornombre = 'Nolberto Nolasco'
 	update profesores set profesorcurso = '906'
 	where profesornombre = 'Carlos Cacho'
+
+--Se relaciona el salon con el curso
+ALTER TABLE public.salon
+    ADD COLUMN salondelcurso integer;
+
+ALTER TABLE public.salon
+    ADD CONSTRAINT salondelcurso FOREIGN KEY (salondelcurso)
+    REFERENCES public.cursos (cursoid) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+CREATE INDEX fki_salondelcurso
+    ON public.salon(salondelcurso);
+
+	update salon set salondelcurso = '904'
+	where salonid = '11'
+	update salon set salondelcurso = '906'
+	where salonid = '12'
+	update salon set salondelcurso = '904'
+	where salonid = '13'
+	update salon set salondelcurso = '900'
+	where salonid = '101'
+	update salon set salondelcurso = '902'
+	where salonid = '201'
+	update salon set salondelcurso = '903'
+	where salonid = '301'
+	update salon set salondelcurso = '905'
+	where salonid = '401'
+	update salon set salondelcurso = '901'
+	where salonid = '501'
+	update salon set salondelcurso = '902'
+	where salonid = '14'
+	update salon set salondelcurso = '902'
+	where salonid = '15'
+
+--Se relaciona alumno curso
+ALTER TABLE public.alumnos
+    ADD COLUMN alumnocurso integer;
+
+ALTER TABLE public.alumnos
+    ADD CONSTRAINT alumnocurso FOREIGN KEY (alumnocurso)
+    REFERENCES public.cursos (cursoid) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+CREATE INDEX fki_alumnocurso
+    ON public.alumnos(alumnocurso);
+
+    update alumnos set alumnocurso = '900'
+	where alumnoid = '1010002'
+	update alumnos set alumnocurso = '901'
+	where alumnoid = '1010003'
+	update alumnos set alumnocurso = '902'
+	where alumnoid = '1010004'
+	update alumnos set alumnocurso = '903'
+	where alumnoid = '1010005'
+	update alumnos set alumnocurso = '904'
+	where alumnoid = '1010006'
+	update alumnos set alumnocurso = '905'
+	where alumnoid = '1010007'
+	update alumnos set alumnocurso = '906'
+	where alumnoid = '1010008'
+	update alumnos set alumnocurso = '900'
+	where alumnoid = '1010009'
+	update alumnos set alumnocurso = '901'
+	where alumnoid = '1010010'
+	update alumnos set alumnocurso = '902'
+	where alumnoid = '2010001'
+	update alumnos set alumnocurso = '903'
+	where alumnoid = '2010002'
+	update alumnos set alumnocurso = '904'
+	where alumnoid = '2010003'
+	update alumnos set alumnocurso = '905'
+	where alumnoid = '2010004'
+	update alumnos set alumnocurso = '906'
+	where alumnoid = '2010005'
+	update alumnos set alumnocurso = '900'
+	where alumnoid = '2010006'
+	update alumnos set alumnocurso = '901'
+	where alumnoid = '2010007'
+	update alumnos set alumnocurso = '902'
+	where alumnoid = '2010008'
+	update alumnos set alumnocurso = '903'
+	where alumnoid = '2010009'
+	update alumnos set alumnocurso = '904'
+	where alumnoid = '2010010'
+    update alumnos set alumnocurso = '905'
+	where alumnoid = '3010002'
+	update alumnos set alumnocurso = '906'
+	where alumnoid = '3010003'
+	update alumnos set alumnocurso = '900'
+	where alumnoid = '3010004'
+	update alumnos set alumnocurso = '901'
+	where alumnoid = '3010005'
+	update alumnos set alumnocurso = '902'
+	where alumnoid = '3010006'
+	update alumnos set alumnocurso = '903'
+	where alumnoid = '3010007'
+	update alumnos set alumnocurso = '904'
+	where alumnoid = '3010008'
+	update alumnos set alumnocurso = '905'
+	where alumnoid = '3010009'
+	update alumnos set alumnocurso = '906'
+	where alumnoid = '3010010'
+	update alumnos set alumnocurso = '900'
+	where alumnoid = '4010001'
+	update alumnos set alumnocurso = '901'
+	where alumnoid = '4010002'
+	update alumnos set alumnocurso = '902'
+	where alumnoid = '4010003'
+	update alumnos set alumnocurso = '903'
+	where alumnoid = '4010004'
+	update alumnos set alumnocurso = '904'
+	where alumnoid = '4010005'
+	update alumnos set alumnocurso = '905'
+	where alumnoid = '4010006'
+	update alumnos set alumnocurso = '906'
+	where alumnoid = '4010007'
+	update alumnos set alumnocurso = '900'
+	where alumnoid = '4010008'
+	update alumnos set alumnocurso = '901'
+	where alumnoid = '4010009'
+	update alumnos set alumnocurso = '902'
+	where alumnoid = '4010010'
+    update alumnos set alumnocurso = '903'
+	where alumnoid = '5010001'
+	update alumnos set alumnocurso = '904'
+	where alumnoid = '5010003'
+	update alumnos set alumnocurso = '905'
+	where alumnoid = '5010004'
+	update alumnos set alumnocurso = '906'
+	where alumnoid = '5010005'
+	update alumnos set alumnocurso = '900'
+	where alumnoid = '5010006'
+	update alumnos set alumnocurso = '901'
+	where alumnoid = '5010007'
+	update alumnos set alumnocurso = '902'
+	where alumnoid = '5010008'
+	update alumnos set alumnocurso = '903'
+	where alumnoid = '5010009'
+	update alumnos set alumnocurso = '904'
+	where alumnoid = '5010010'
+    update alumnos set alumnocurso = '905'
+	where alumnoid = '3010001'
+	update alumnos set alumnocurso = '906'
+	where alumnoid = '5010002'
