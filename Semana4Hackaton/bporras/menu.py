@@ -4,7 +4,11 @@ import pickle
 from funciones import *
 from io import open
 
+<<<<<<< HEAD
+# Definición de Clases:
+=======
 #Definición de Clases:
+>>>>>>> upstream/develop
 
 
 class Menu:
@@ -82,12 +86,20 @@ class Producto:
         return (f'El producto "{self.nombreProducto}", código "{self.codProducto}" se ha registrado')
 
 
+<<<<<<< HEAD
+# Almacen de datos en ejecución
+=======
 #Almacen de datos en ejecución
+>>>>>>> upstream/develop
 lstProductos = []
 lstClientes = []
 lstEmpleados = []
 
+<<<<<<< HEAD
+# Definición de todos los menus:
+=======
 #Definición de todos los menus:
+>>>>>>> upstream/develop
 MenuPrincipal = Menu({1: "Cliente",            2: "Empleado",           3: "Producto"},
                      "VENTAS GROUP S.A.", "Menú Principal")
 MenuEmpleado = Menu({1: "Crear empleado",     2: "Ver empleado",       3: "Validar existencia"},
@@ -96,7 +108,11 @@ MenuCliente = Menu({1: "Crear cliente",      2: "Ver cliente",        3: "Valida
                    "VENTAS GROUP S.A.", "Menú Cliente")
 MenuProducto = Menu({1: "Agregar producto",   2: "Quitar Producto",    3: "Listar/Contar Producto",
                      4: "Valorizar productos"},   "VENTAS GROUP S.A.", "Menú Producto")
+<<<<<<< HEAD
+# Inicio del programa(recupera datos):
+=======
 #Inicio del programa(recupera datos):
+>>>>>>> upstream/develop
 while True:
     os.system("cls")
     lstClientes = recovery("cliente")
@@ -111,7 +127,7 @@ while True:
     print("Cargando.....99%")
     time.sleep(2)
     break
-#Ejecución del programa
+# Ejecución del programa
 while True:
     intOptionSelect = MenuPrincipal.show()
     if intOptionSelect == 1:  # Menu cliente

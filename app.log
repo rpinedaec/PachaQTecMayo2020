@@ -1,0 +1,345 @@
+<<<<<<< HEAD
+2020-06-18 20:44:57,423 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-18 20:45:09,694 - Producto - INFO - Se creo un producto
+2020-06-18 20:45:16,783 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-18 20:48:04,657 - Producto - INFO - Se creo un producto
+2020-06-18 20:48:07,039 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-18 20:51:27,240 - Producto - INFO - Se creo un producto
+2020-06-18 20:51:29,189 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-18 20:52:10,256 - Producto - INFO - Se creo un producto
+2020-06-18 20:52:13,782 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-18 20:52:19,651 - Producto - INFO - Se creo un producto
+2020-06-18 20:52:23,528 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-18 20:53:07,646 - INIT - DEBUG - ingreso a la opcion 1
+2020-06-18 20:53:59,712 - Producto - INFO - Se creo un producto
+2020-06-18 20:54:03,882 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-18 20:54:07,482 - Producto - INFO - Se creo un producto
+2020-06-18 20:54:09,393 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-19 20:36:22,898 - Producto - INFO - Se creo un producto
+2020-06-19 20:38:16,070 - Producto - INFO - Se creo un producto
+2020-06-19 20:40:26,135 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/rpineda/AppData/Local/Programs/Python/Python37/python.exe "e:/Users/rpineda/SERVICIO EDUCATIVO EMPRESARIALE S.A.C/DESARROLLO BACKEND MAYO 20 - General/Ejercicios en Clase/Semana4Sesion1/rpin
+2020-06-19 20:40:26,139 - Menu - DEBUG - No escoje opion
+2020-06-19 20:40:50,927 - Producto - INFO - Se creo un producto
+2020-06-19 20:40:50,928 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en ClaseProductos
+2020-06-19 20:42:10,018 - Producto - INFO - Se creo un producto
+2020-06-19 20:42:10,019 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-19 20:43:44,709 - Producto - INFO - Se creo un producto
+2020-06-19 20:43:44,709 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-19 20:43:44,710 - fileManager - ERROR - unsupported operand type(s) for +: 'Producto' and 'str'
+2020-06-19 20:45:15,670 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/rpineda/AppData/Local/Programs/Python/Python37/python.exe "e:/Users/rpineda/SERVICIO EDUCATIVO EMPRESARIALE S.A.C/DESARROLLO BACKEND MAYO 20 - General/Ejercicios en Clase/Semana4Sesion1/rpin
+2020-06-19 20:45:15,671 - Menu - DEBUG - No escoje opion
+2020-06-19 20:45:34,832 - Producto - INFO - Se creo un producto
+2020-06-19 20:45:34,833 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-19 20:45:50,331 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-19 20:46:02,466 - Producto - INFO - Se creo un producto
+2020-06-19 20:46:02,466 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 09:37:34,857 - Producto - INFO - Se creo un producto
+2020-06-20 09:38:57,310 - Producto - INFO - Se creo un producto
+2020-06-20 09:49:34,852 - Producto - INFO - Se creo un producto
+2020-06-20 09:50:22,618 - Producto - INFO - Se creo un producto
+2020-06-20 09:51:08,503 - Producto - INFO - Se creo un producto
+2020-06-20 09:51:08,517 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 09:51:34,465 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-20 09:51:47,189 - Producto - INFO - Se creo un producto
+2020-06-20 09:51:47,205 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 09:52:10,604 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-20 09:52:25,205 - Producto - INFO - Se creo un producto
+2020-06-20 09:52:25,218 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 09:54:40,269 - Producto - INFO - Se creo un producto
+2020-06-20 09:54:40,284 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 09:54:53,430 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-20 09:55:08,967 - Producto - INFO - Se creo un producto
+2020-06-20 09:55:08,983 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 09:59:36,151 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/rpineda/AppData/Local/Programs/Python/Python37/python.exe "e:/Users/rpineda/SERVICIO EDUCATIVO EMPRESARIALE S.A.C/DESARROLLO BACKEND MAYO 20 - General/Ejercicios en Clase/Semana4Sesion1/rpin
+2020-06-20 09:59:36,162 - Menu - DEBUG - No escoje opion
+2020-06-20 09:59:58,676 - Producto - INFO - Se creo un producto
+2020-06-20 09:59:58,698 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:04:04,232 - Producto - INFO - Se creo un producto
+2020-06-20 10:04:04,252 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:05:46,489 - Producto - INFO - Se creo un producto
+2020-06-20 10:05:46,505 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:06:55,651 - Producto - INFO - Se creo un producto
+2020-06-20 10:06:55,666 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:06:55,668 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:06:55,670 - fileManager - ERROR - 'str' object has no attribute 'isfile'
+2020-06-20 10:09:01,187 - Producto - INFO - Se creo un producto
+2020-06-20 10:09:14,074 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:10:50,402 - Producto - INFO - Se creo un producto
+2020-06-20 10:10:57,454 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:11:04,526 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:12:01,577 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/rpineda/AppData/Local/Programs/Python/Python37/python.exe "e:/Users/rpineda/SERVICIO EDUCATIVO EMPRESARIALE S.A.C/DESARROLLO BACKEND MAYO 20 - General/Ejercicios en Clase/Semana4Sesion1/rpin
+2020-06-20 10:12:01,589 - Menu - DEBUG - No escoje opion
+2020-06-20 10:12:19,205 - Producto - INFO - Se creo un producto
+2020-06-20 10:12:19,219 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:12:19,220 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:12:19,221 - fileManager - ERROR - 'str' object has no attribute 'isfile'
+2020-06-20 10:12:49,701 - Producto - INFO - Se creo un producto
+2020-06-20 10:12:57,260 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:13:14,973 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:17:32,881 - Producto - INFO - Se creo un producto
+2020-06-20 10:17:38,097 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:17:43,774 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:17:56,572 - fileManager - ERROR - 'str' object has no attribute 'isfile'
+2020-06-20 10:18:52,843 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-20 10:18:55,317 - Producto - INFO - Se creo un producto
+2020-06-20 10:19:04,815 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:19:09,018 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:21:19,564 - fileManager - ERROR - 'str' object has no attribute 'isfile'
+2020-06-20 10:21:25,442 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-20 10:21:28,500 - Producto - INFO - Se creo un producto
+2020-06-20 10:21:33,580 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:21:37,277 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:22:26,642 - Producto - INFO - Se creo un producto
+2020-06-20 10:22:31,385 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:22:41,256 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:23:42,448 - Producto - INFO - Se creo un producto
+2020-06-20 10:23:47,103 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:23:50,915 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:25:01,431 - Producto - INFO - Se creo un producto
+2020-06-20 10:25:01,447 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:25:01,449 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:25:01,450 - fileManager - ERROR - 'str' object has no attribute 'isfile'
+2020-06-20 10:27:02,635 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/rpineda/AppData/Local/Programs/Python/Python37/python.exe "e:/Users/rpineda/SERVICIO EDUCATIVO EMPRESARIALE S.A.C/DESARROLLO BACKEND MAYO 20 - General/Ejercicios en Clase/Semana4Sesion1/rpin
+2020-06-20 10:27:02,688 - Menu - DEBUG - No escoje opion
+2020-06-20 10:27:17,862 - Producto - INFO - Se creo un producto
+2020-06-20 10:27:17,877 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:27:17,878 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos
+2020-06-20 10:27:17,879 - fileManager - ERROR - 'str' object has no attribute 'isfile'
+2020-06-20 10:28:07,172 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/rpineda/AppData/Local/Programs/Python/Python37/python.exe "e:/Users/rpineda/SERVICIO EDUCATIVO EMPRESARIALE S.A.C/DESARROLLO BACKEND MAYO 20 - General/Ejercicios en Clase/Semana4Sesion1/rpin
+2020-06-20 10:28:07,173 - Menu - DEBUG - No escoje opion
+2020-06-20 10:28:18,042 - Producto - INFO - Se creo un producto
+2020-06-20 10:28:18,058 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:28:18,058 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:28:18,059 - fileManager - ERROR - 'str' object has no attribute 'isfile'
+2020-06-20 10:29:35,008 - Producto - INFO - Se creo un producto
+2020-06-20 10:29:35,026 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:32:22,952 - Menu - ERROR - invalid literal for int() with base 10: '1C:/Users/rpineda/AppData/Local/Programs/Python/Python37/python.exe "e:/Users/rpineda/SERVICIO EDUCATIVO EMPRESARIALE S.A.C/DESARROLLO BACKEND MAYO 20 - General/Ejercicios en Clase/Semana4Sesion1/rpi
+2020-06-20 10:32:22,954 - Menu - DEBUG - No escoje opion
+2020-06-20 10:32:31,718 - Producto - INFO - Se creo un producto
+2020-06-20 10:33:03,230 - Producto - INFO - Se creo un producto
+2020-06-20 10:33:03,243 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:33:03,244 - fileManager - DEBUG - Remover archivo
+2020-06-20 10:33:03,245 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:37:34,366 - Producto - INFO - Se creo un producto
+2020-06-20 10:37:34,383 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:37:34,384 - fileManager - DEBUG - removiendo archivo
+2020-06-20 10:37:34,385 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:37:43,408 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-20 10:37:45,828 - Producto - INFO - Se creo un producto
+2020-06-20 10:37:45,830 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:37:45,831 - fileManager - DEBUG - removiendo archivo
+2020-06-20 10:37:45,831 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:37:54,577 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-20 10:37:57,019 - Producto - INFO - Se creo un producto
+2020-06-20 10:37:57,023 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:37:57,024 - fileManager - DEBUG - removiendo archivo
+2020-06-20 10:37:57,025 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:42:29,674 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+
+2020-06-20 10:45:36,853 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+
+2020-06-20 10:45:36,854 - INIT - DEBUG - <class 'list'>
+2020-06-20 10:46:30,477 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+
+2020-06-20 10:46:30,477 - INIT - DEBUG - <class 'list'>
+2020-06-20 10:46:30,477 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-20 10:46:30,477 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-20 10:46:30,477 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-20 10:46:56,871 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+
+2020-06-20 10:46:56,871 - INIT - DEBUG - <class 'list'>
+2020-06-20 10:46:56,871 - INIT - DEBUG - {'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}
+2020-06-20 10:46:56,871 - INIT - DEBUG - {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}
+2020-06-20 10:46:56,871 - INIT - DEBUG - {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}
+2020-06-20 10:50:18,353 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/rpineda/AppData/Local/Programs/Python/Python37/python.exe "e:/Users/rpineda/SERVICIO EDUCATIVO EMPRESARIALE S.A.C/DESARROLLO BACKEND MAYO 20 - General/Ejercicios en Clase/Semana4Sesion1/rpin
+2020-06-20 10:50:18,356 - Menu - DEBUG - No escoje opion
+2020-06-20 10:50:24,114 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+
+2020-06-20 10:50:24,114 - INIT - DEBUG - <class 'list'>
+2020-06-20 10:50:24,114 - INIT - DEBUG - {'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}
+2020-06-20 10:50:24,114 - INIT - DEBUG - {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}
+2020-06-20 10:50:24,115 - INIT - DEBUG - {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}
+2020-06-20 10:50:24,115 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-20 10:53:40,660 - Producto - INFO - Se creo un producto
+2020-06-20 10:53:40,662 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:53:40,663 - fileManager - DEBUG - removiendo archivo
+2020-06-20 10:53:40,664 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 10:53:43,345 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-20 10:54:52,097 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}, {"codProducto": "4", "nombreProducto": "4", "cantidadProducto": "4", "costoProducto": "4"}]
+
+2020-06-20 10:54:52,097 - INIT - DEBUG - <class 'list'>
+2020-06-20 10:54:52,098 - INIT - DEBUG - 1
+2020-06-20 10:54:52,098 - INIT - DEBUG - 2
+2020-06-20 10:54:52,098 - INIT - DEBUG - 3
+2020-06-20 10:54:52,098 - INIT - DEBUG - 4
+2020-06-20 10:54:52,098 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}, {'codProducto': '4', 'nombreProducto': '4', 'cantidadProducto': '4', 'costoProducto': '4'}]
+2020-06-20 11:05:56,521 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}, {"codProducto": "4", "nombreProducto": "4", "cantidadProducto": "4", "costoProducto": "4"}]
+
+2020-06-20 11:05:56,521 - INIT - DEBUG - <class 'list'>
+2020-06-20 11:05:56,522 - INIT - DEBUG - 1
+2020-06-20 11:05:56,522 - Producto - INFO - Se creo un producto
+2020-06-20 11:05:56,522 - INIT - DEBUG - 2
+2020-06-20 11:05:56,522 - Producto - INFO - Se creo un producto
+2020-06-20 11:05:56,523 - INIT - DEBUG - 3
+2020-06-20 11:05:56,523 - Producto - INFO - Se creo un producto
+2020-06-20 11:05:56,523 - INIT - DEBUG - 4
+2020-06-20 11:05:56,523 - Producto - INFO - Se creo un producto
+2020-06-20 11:05:56,523 - INIT - DEBUG - []
+2020-06-20 11:06:19,504 - Producto - INFO - Se creo un producto
+2020-06-20 11:06:19,505 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 11:06:19,507 - fileManager - DEBUG - removiendo archivo
+2020-06-20 11:06:19,508 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 11:08:10,646 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
+2020-06-20 11:09:10,258 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
+2020-06-20 11:09:10,258 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-20 11:09:49,394 - Producto - INFO - Se creo un producto
+2020-06-20 11:09:49,396 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 11:09:49,397 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 11:09:51,372 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
+2020-06-20 11:09:56,901 - Producto - INFO - Se creo un producto
+2020-06-20 11:09:56,902 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 11:09:56,903 - fileManager - DEBUG - removiendo archivo
+2020-06-20 11:09:56,903 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 11:09:57,134 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-20 11:10:07,298 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-20 11:10:07,299 - Menu - DEBUG - No escoje opion
+2020-06-20 11:10:37,411 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}]
+
+2020-06-20 11:10:37,411 - INIT - DEBUG - <class 'list'>
+2020-06-20 11:10:37,411 - INIT - DEBUG - 1
+2020-06-20 11:10:37,411 - Producto - INFO - Se creo un producto
+2020-06-20 11:10:37,411 - INIT - DEBUG - 2
+2020-06-20 11:10:37,412 - Producto - INFO - Se creo un producto
+2020-06-20 11:10:37,412 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}]
+2020-06-20 11:10:37,412 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}]
+2020-06-20 11:11:01,306 - Producto - INFO - Se creo un producto
+2020-06-20 11:11:01,307 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 11:11:01,308 - fileManager - DEBUG - removiendo archivo
+2020-06-20 11:11:01,309 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\Productos.txt
+2020-06-20 11:11:03,427 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-20 11:20:40,706 - Menu - DEBUG - No escoje opion
+2020-06-20 11:20:47,783 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+
+2020-06-20 11:20:47,784 - Producto - INFO - Se creo un producto
+2020-06-20 11:20:47,785 - Producto - INFO - Se creo un producto
+2020-06-20 11:20:47,785 - Producto - INFO - Se creo un producto
+2020-06-20 11:20:47,785 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-20 11:20:47,785 - INIT - DEBUG - [<__main__.Producto object at 0x000002AB572FFB48>, <__main__.Producto object at 0x000002AB572FFB88>, <__main__.Producto object at 0x000002AB572FFC08>]
+2020-06-20 11:41:17,144 - INIT - DEBUG - [{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+
+2020-06-20 11:41:17,145 - Producto - INFO - Se creo un producto
+2020-06-20 11:41:17,145 - Producto - INFO - Se creo un producto
+2020-06-20 11:41:17,145 - Producto - INFO - Se creo un producto
+2020-06-20 11:41:17,146 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
+2020-06-20 11:41:17,146 - INIT - DEBUG - [<__main__.Producto object at 0x000001B329A9FB88>, <__main__.Producto object at 0x000001B329A9FBC8>, <__main__.Producto object at 0x000001B329A9FC48>]
+2020-06-23 11:43:30,707 - Menu - DEBUG - La opcion 1 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:43:32,100 - Menu - DEBUG - La opcion 1 es valida del menu MENU EMPLEADO	
+2020-06-23 11:43:32,102 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:43:34,346 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:43:34,347 - Principal - DEBUG - Vacio
+2020-06-23 11:43:37,058 - Principal - DEBUG - Se agrego al Empleado K K
+2020-06-23 11:43:37,059 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:43:39,165 - Menu - ERROR - invalid literal for int() with base 10: 'K'
+2020-06-23 11:43:41,271 - Menu - INFO - La opcion 22 no es valida
+2020-06-23 11:43:43,324 - Menu - INFO - La opcion 22 no es valida
+2020-06-23 11:43:45,385 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:47,452 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:49,508 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:51,569 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:53,622 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:02,915 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:12,666 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:15,613 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:17,691 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:19,746 - Menu - DEBUG - La opcion 0 es valida del menu MENU EMPLEADO	
+2020-06-23 11:44:19,746 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:44:19,758 - Principal - DEBUG - Salir del Sistema
+2020-06-23 11:44:25,738 - Menu - DEBUG - La opcion 1 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:44:26,819 - Menu - DEBUG - La opcion 2 es valida del menu MENU EMPLEADO	
+2020-06-23 11:44:26,822 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:44:26,825 - ListarEmpleados - DEBUG - Existen un total de 1 personas
+2020-06-23 11:44:29,290 - Principal - DEBUG - Eligio salir del sistema
+2020-06-23 11:44:34,826 - Menu - DEBUG - La opcion 1 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:44:42,058 - Menu - DEBUG - La opcion 0 es valida del menu MENU EMPLEADO	
+2020-06-23 11:44:42,059 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:44:42,060 - Principal - DEBUG - Salir del Sistema
+2020-06-23 11:44:54,073 - Menu - DEBUG - La opcion 2 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:44:59,324 - Menu - DEBUG - La opcion 9 es valida del menu MENU CLIENTE	
+2020-06-23 11:44:59,326 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:45:00,276 - Menu - DEBUG - La opcion 2 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:45:02,004 - Menu - DEBUG - La opcion 3 es valida del menu MENU CLIENTE	
+2020-06-23 11:45:02,005 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:45:02,006 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:45:02,023 - ListaProductos - ERROR - Expecting value: line 1 column 1 (char 0)
+2020-06-23 11:45:14,384 - INIT - DEBUG - <<<<<<< HEAD
+[{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+=======
+
+>>>>>>> f1e0bdba5248a5326347a7a01e473051d22ebfa6
+
+2020-06-23 11:45:14,385 - INIT - ERROR - Expecting value: line 1 column 1 (char 0)
+2020-06-23 11:45:14,385 - INIT - DEBUG - []
+2020-06-23 11:45:14,385 - INIT - DEBUG - []
+2020-06-23 11:45:14,385 - INIT - DEBUG - []
+2020-06-23 11:45:25,523 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:45:25,523 - Menu - DEBUG - No escoje opion
+2020-06-23 11:45:28,617 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:45:28,620 - Menu - DEBUG - No escoje opion
+2020-06-23 11:45:36,553 - Producto - INFO - Se creo un producto
+2020-06-23 11:45:36,554 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:45:36,554 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:45:36,555 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:45:38,396 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-23 11:45:43,532 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:45:43,532 - Menu - DEBUG - No escoje opion
+2020-06-23 11:48:56,228 - INIT - DEBUG - [{"codProducto": "5", "nombreProducto": "5", "cantidadProducto": "5", "costoProducto": "5"}]
+
+2020-06-23 11:48:56,228 - Producto - INFO - Se creo un producto
+2020-06-23 11:48:56,228 - INIT - DEBUG - [{'codProducto': '5', 'nombreProducto': '5', 'cantidadProducto': '5', 'costoProducto': '5'}]
+2020-06-23 11:48:56,228 - INIT - DEBUG - [<__main__.Producto object at 0x0000021FA5342F08>]
+2020-06-23 11:48:56,229 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-23 11:49:05,257 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:49:05,257 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:10,299 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:20,076 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:49:20,077 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:49:20,077 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:49:30,163 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:45,321 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:50,368 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:59,818 - Menu - DEBUG - No escoje opion
+2020-06-23 11:50:04,877 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:50:04,877 - Menu - DEBUG - No escoje opion
+2020-06-23 11:50:13,378 - Menu - DEBUG - No escoje opion
+2020-06-23 11:50:18,425 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:50:18,426 - Menu - DEBUG - No escoje opion
+2020-06-23 11:51:38,455 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,455 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,457 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,458 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,458 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,460 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,461 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,461 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,464 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,465 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,466 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,467 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,468 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,468 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,470 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,470 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,471 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,489 - INIT - ERROR - 'codigo'
+2020-06-23 11:51:38,490 - INIT - ERROR - 'codigo'
+2020-06-23 11:51:38,491 - INIT - ERROR - 'codigo'
+2020-06-23 11:51:57,434 - Producto - INFO - Se creo un producto
+2020-06-23 11:51:57,435 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:51:57,435 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:57,436 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:52:22,092 - Producto - INFO - Se creo un producto
+2020-06-23 11:52:22,093 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:52:22,093 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:52:22,094 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+=======
+>>>>>>> upstream/develop

@@ -1,0 +1,1 @@
+[{"codigo": 1, "nombre": "5", "cantidadProducto": 5.0, "unidad": "MG", "costoProducto": 5.0, "total": 25.0}, {"codigo": 2, "nombre": "55", "cantidadProducto": 5.0, "unidad": "MG", "costoProducto": 5.0, "total": 25.0}]
