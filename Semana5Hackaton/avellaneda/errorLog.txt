@@ -1,0 +1,31 @@
+Executing SQL script in server
+ERROR: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VISIBLE,
+  INDEX `fk_asignaturas_semestre1_idx` (`idsemestre` ASC) VISIBLE,
+  CO' at line 7
+SQL Code:
+        CREATE TABLE IF NOT EXISTS `avellaneda`.`asignaturas` (
+          `idasignaturas` INT(11) NOT NULL AUTO_INCREMENT,
+          `nombreCurso` VARCHAR(45) NOT NULL,
+          `idprofesores` INT(11) NOT NULL,
+          `idsemestre` INT(11) NOT NULL,
+          PRIMARY KEY (`idasignaturas`),
+          INDEX `fk_asignaturas_profesores_idx` (`idprofesores` ASC) VISIBLE,
+          INDEX `fk_asignaturas_semestre1_idx` (`idsemestre` ASC) VISIBLE,
+          CONSTRAINT `fk_asignaturas_profesores`
+            FOREIGN KEY (`idprofesores`)
+            REFERENCES `avellaneda`.`profesores` (`idprofesores`)
+            ON DELETE NO ACTION
+            ON UPDATE NO ACTION,
+          CONSTRAINT `fk_asignaturas_semestre1`
+            FOREIGN KEY (`idsemestre`)
+            REFERENCES `avellaneda`.`semestre` (`idsemestre`)
+            ON DELETE NO ACTION
+            ON UPDATE NO ACTION)
+        ENGINE = InnoDB
+        DEFAULT CHARACTER SET = utf8
+
+SQL script execution finished: statements: 6 succeeded, 1 failed
+
+Fetching back view definitions in final form.
+Nothing to fetch
+
