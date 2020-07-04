@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-{'NomCliente': 'U5', 'ApellidoCliente': '5', 'UsuarioCod': '5', 'PasswordCliente': '5'}
-=======
-{'NomCliente': 'd', 'ApellidoCliente': 'd', 'UsuarioCod': 'd', 'PasswordCliente': 'd'}
->>>>>>> upstream/develop
