@@ -1,6 +1,0 @@
-123|Phillips|Lovecraft|Howard|400
-234|Pérez|Rodríguez|Silvia|500
-323|Suarez|Román|Jorge|400
-409|Sánchez|Robles|María|700
-998|Gallardo|Juarez|Hugo|450
-854|Valencia|Hernandez|Antonio|600

@@ -1,1 +1,0 @@
-[{"name": "ee", "last_name": "ee", "age": "44", "id_num": "44", "client_cod": "44", "client_type": "4"}, {"name": "22", "last_name": "22", "age": "22", "id_num": "22", "client_cod": "22", "client_type": "22"}]
