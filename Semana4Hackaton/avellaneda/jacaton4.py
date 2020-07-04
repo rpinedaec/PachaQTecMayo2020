@@ -1,8 +1,9 @@
 #GETPASS ES PARA CONTRASEÑAS
+from time import sleep
 import getpass
 #OS ES DEL SISTEMA MISMO
 import os
-#GLOBAL declaración simple que permite modificar la variable fuera del alcance actual. 
+#GLOBAL declaración simple que permite modificar la variable fuera del alcance actual.
 # Se utiliza para crear una variable global y realizar cambios en la variable en un contexto local.
 global listaEmpleados
 listaEmpleados = list()
@@ -11,9 +12,9 @@ listaUsuarios = list()
 global listaProductos
 listaProductos = list()
 
-from time import sleep
 
 #CLASE EMPLEADO VACÍA PARA QUE SE LLENE DESPUÉS
+
 class Empleado:
 	idEmpleado = ""
 	apellidoP = ""
@@ -21,9 +22,12 @@ class Empleado:
 	salario = ""
 
 #CLASE USUARIO VACÍA PARA QUE SE LLENE DESPUÉS
+
+
 class Usuario:
 	usuario = ""
 	contraseña = ""
+
 
 class Producto:
 	idProducto = ""
@@ -31,6 +35,8 @@ class Producto:
 	cantidad = ""
 
 #FUNCIÓN DE REGISTRAR EMPLEADO
+
+
 def registrarEmpleado():
 	#SE LE DA "e" PORQUE SE LE PUEDE DAR CUALQUIER VARIABLE
 	e = Empleado()
@@ -44,6 +50,7 @@ def registrarEmpleado():
 	e.salario = input("Salario Minimo:✎ ")
 
 	listaEmpleados.append(e)
+
 
 def borrarEmpleado():
 	titulo = " \u2749 ELIMINAR EMPLEADO \u2749 "
@@ -145,6 +152,7 @@ def totalNomina():
 
 	print("El total de la nomina es: $", suma*12)
 
+
 def registrarCompra():
 	p = Producto()
 	titulo = " \u2749 COMPRAR \u2749 "
@@ -161,13 +169,15 @@ def registrarCompra():
 	# 	print(i, ".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
 	# 	i += 1
 
+
 def eliminarCompra():
 	titulo = " \u2749 ELIMINAR COMPRA \u2749 "
 	print("\n" + titulo.center(30, "═"))
 	i = 1
 	for p in listaProductos:
 		#SE USA EL METODO .upper() PARA TRANSFORMAR EL string A MAYÚSCULAS
-		print(i, ".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+		print(i, ".-  |ID:", p.idProducto, "-",
+		      p.nombreP.upper(), " ", p.cantidad.upper())
 		i += 1
 
 	opc = int(input("\nID de producto a borrar: "))
@@ -175,8 +185,10 @@ def eliminarCompra():
 	print("\nResultado:")
 	i = 1
 	for p in listaProductos:
-		print(i, ".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+		print(i, ".-  |ID:", p.idProducto, "-",
+		      p.nombreP.upper(), " ", p.cantidad.upper())
 		i += 1
+
 
 def buscarProducto():
 	titulo = " \u2749 BUSCAR PRODUCTO \u2749 "
@@ -189,19 +201,23 @@ def buscarProducto():
 	for p in listaProductos:
 		if p.idProducto == filtro or p.nombreP == filtro:
 			print("\nResultado de Busqueda: ")
-			print(".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+			print(".-  |ID:", p.idProducto, "-",
+			      p.nombreP.upper(), " ", p.cantidad.upper())
 			bandera = 1
 		elif p.idProducto == filtro.upper() or p.nombreP == filtro.upper():
 			print("\nResultado de Busqueda: ")
-			print(".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+			print(".-  |ID:", p.idProducto, "-",
+			      p.nombreP.upper(), " ", p.cantidad.upper())
 			bandera = 1
 		elif p.idProducto == filtro.lower() or p.nombreP == filtro.lower():
 			print("\nResultado de Busqueda: ")
-			print(".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+			print(".-  |ID:", p.idProducto, "-",
+			      p.nombreP.upper(), " ", p.cantidad.upper())
 			bandera = 1
 		elif p.idProducto == filtro.capitalize() or p.nombreP == filtro.capitalize():
 			print("\nResultado de Busqueda: ")
-			print(".-  |ID:", p.idProducto, "-", p.nombreP.upper(), " ", p.cantidad.upper())
+			print(".-  |ID:", p.idProducto, "-",
+			      p.nombreP.upper(), " ", p.cantidad.upper())
 			bandera = 1
 
 	if bandera == 0:
@@ -254,7 +270,8 @@ def menu():
 			buscarProducto()
 		elif opcion == 0:
 			salir()
-	
+
+
 def limpiarPantalla():
     def clear():
     	return os.system('clear')
@@ -323,7 +340,7 @@ def main():
 			contador = 3
 			print("")
 			print("╔═════════════════════════════════════════╗")
-			print("║        BIENVENIDOS A CIUDAD 17 ®        ║")
+			print("║        BIENVENIDOS A PACHACUTEC ®       ║")
 			print("╚═════════════════════════════════════════╝")
 			menu()
 		else:
