@@ -1,1 +1,1 @@
-[{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+[{"codigo": 1, "nombre": "5", "cantidadProducto": 5.0, "unidad": "MG", "costoProducto": 5.0, "total": 25.0}, {"codigo": 2, "nombre": "55", "cantidadProducto": 5.0, "unidad": "MG", "costoProducto": 5.0, "total": 25.0}]

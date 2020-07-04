@@ -1,137 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-2020-06-19 21:07:40,545 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/files.py'
-2020-06-19 21:07:40,551 - Menu - DEBUG - No escoje opion
-2020-06-19 21:07:45,738 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/files.py'
-2020-06-19 21:07:45,738 - Menu - DEBUG - No escoje opion
-2020-06-20 09:21:37,835 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/main.py'
-2020-06-20 09:21:37,837 - Menu - DEBUG - No escoje opion
-2020-06-20 09:21:45,072 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/Personas.py'
-2020-06-20 09:21:45,078 - Menu - DEBUG - No escoje opion
-2020-06-20 09:21:50,915 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/Productos.py'
-2020-06-20 09:21:50,915 - Menu - DEBUG - No escoje opion
-2020-06-20 09:21:57,157 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/utils.py'
-2020-06-20 09:21:57,158 - Menu - DEBUG - No escoje opion
-2020-06-20 09:38:35,335 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Sesion1/rpineda/init.py'
-2020-06-20 09:38:35,347 - Menu - DEBUG - No escoje opion
-=======
-2020-06-18 20:26:09,131 - Menu - DEBUG - Esto es un debug
-2020-06-18 20:26:09,140 - Menu - DEBUG - Cliente, 1
-2020-06-18 20:26:09,140 - Menu - DEBUG - Empleado, 2
-2020-06-18 20:27:57,147 - Menu - DEBUG - Esto es un debug
-2020-06-18 20:27:57,147 - Menu - DEBUG - Comprar, 1
-2020-06-18 20:27:57,147 - Menu - DEBUG - Devolver, 2
-2020-06-21 19:47:56,966 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
-2020-06-21 19:47:57,055 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 19:48:17,724 - Producto - INFO - Se creo un producto
-2020-06-21 19:48:17,726 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
-2020-06-21 19:48:17,726 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
-2020-06-21 19:48:21,779 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
-2020-06-21 19:48:34,464 - Menu - DEBUG - No escoje opion
-2020-06-21 19:48:40,195 - Menu - DEBUG - No escoje opion
-2020-06-21 19:49:27,967 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos.txt'
-2020-06-21 19:49:27,967 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 19:49:35,188 - Menu - DEBUG - No escoje opion
-2020-06-21 19:49:49,400 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
-2020-06-21 19:49:49,403 - Menu - DEBUG - No escoje opion
-2020-06-21 22:06:51,519 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:06:51,519 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:06:51,519 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:08:43,903 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:08:43,903 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:08:43,903 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:08:58,985 - Producto - INFO - Se creo un producto
-2020-06-21 22:08:58,986 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
-2020-06-21 22:08:58,986 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
-2020-06-21 22:08:58,988 - INIT - ERROR - 'Producto' object is not iterable
-2020-06-21 22:09:39,864 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio2/PachaQTecMayo2020/Semana4Hackaton/martinperez/init.py'
-2020-06-21 22:09:39,864 - Menu - DEBUG - No escoje opion
-2020-06-21 22:09:46,009 - Menu - ERROR - invalid literal for int() with base 10: 'das'
-2020-06-21 22:09:46,011 - Menu - DEBUG - No escoje opion
-2020-06-21 22:09:57,601 - INIT - ERROR - 'nombreProducto'
-2020-06-21 22:09:57,601 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:09:57,603 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:10:46,942 - INIT - ERROR - 'nombreProducto'
-2020-06-21 22:10:46,942 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:10:46,942 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:11:19,065 - INIT - ERROR - 'nombreProducto'
-2020-06-21 22:11:19,067 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:11:19,067 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:12:09,752 - Producto - INFO - Se creo un producto
-2020-06-21 22:12:09,752 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
-2020-06-21 22:12:09,752 - fileManager - DEBUG - removiendo archivo
-2020-06-21 22:12:09,753 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
-2020-06-21 22:12:09,753 - INIT - ERROR - 'Producto' object is not iterable
-2020-06-21 22:12:39,558 - Menu - DEBUG - No escoje opion
-2020-06-21 22:13:29,222 - INIT - ERROR - 'nombreProducto'
-2020-06-21 22:13:29,223 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:13:29,223 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:13:57,983 - INIT - ERROR - 'nombreProducto'
-2020-06-21 22:13:57,983 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:13:57,983 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
-2020-06-21 22:14:10,683 - Producto - INFO - Se creo un producto
-2020-06-21 22:14:10,684 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
-2020-06-21 22:14:10,684 - fileManager - DEBUG - removiendo archivo
-2020-06-21 22:14:10,684 - fileManager - DEBUG - E:\BACKEND-PAQ\git-repositorio2\PachaQTecMayo2020\Productos.txt
-2020-06-21 22:14:10,688 - INIT - ERROR - 'Producto' object is not iterable
->>>>>>> upstream/develop
-2020-06-22 23:11:53,625 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Hackaton/dgarcia/files.py'
-2020-06-22 23:11:53,641 - Menu - DEBUG - No escoje opion
-2020-06-22 23:12:19,894 - INIT - INFO - escogio la opcion 1
-2020-06-22 23:19:41,203 - Menú - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Hackaton/dgarcia/hackaton.py'
-2020-06-22 23:19:41,233 - Menú - DEBUG - No escoje opion
-2020-06-22 23:19:46,309 - Menú - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Hackaton/dgarcia/hackaton.py'
-2020-06-22 23:19:46,310 - Menú - DEBUG - No escoje opion
-2020-06-22 23:46:24,451 - Menú - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Hackaton/dgarcia/hackaton.py'
-2020-06-22 23:46:24,457 - Menú - DEBUG - No escoje opion
-2020-06-22 23:52:26,795 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
-2020-06-22 23:52:26,795 - INIT - ERROR - name 'json' is not defined
-2020-06-22 23:52:51,376 - Menú - ERROR - invalid literal for int() with base 10: 'C:/Users/CARLOS/AppData/Local/Programs/Python/Python37/python.exe d:/PachaQtec/PachaQTecMayo2020-1/Semana4Hackaton/dgarcia/hackaton.py'
-2020-06-22 23:52:51,378 - Menú - DEBUG - No escoge opción
-2020-06-22 23:52:58,182 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
-2020-06-22 23:52:58,182 - INIT - ERROR - name 'json' is not defined
-2020-06-22 23:53:36,425 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
-2020-06-22 23:53:36,425 - INIT - ERROR - name 'json' is not defined
-2020-06-22 23:53:54,405 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
-2020-06-22 23:53:54,405 - INIT - ERROR - name 'json' is not defined
-2020-06-22 23:54:03,022 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
-2020-06-22 23:54:03,022 - INIT - ERROR - name 'json' is not defined
-2020-06-22 23:54:24,319 - Producto - INFO - Se creó un producto
-2020-06-22 23:54:24,335 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
-2020-06-22 23:54:24,336 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
-2020-06-22 23:54:28,687 - INIT - DEBUG - Ingreso a la opcion 2 de menuProducto
-2020-06-22 23:55:55,532 - INIT - DEBUG - hjdjd
-
-2020-06-22 23:55:55,532 - INIT - ERROR - name 'json' is not defined
-2020-06-22 23:56:29,938 - INIT - DEBUG - hjdjd
-
-2020-06-22 23:56:29,938 - INIT - ERROR - name 'json' is not defined
-2020-06-22 23:56:47,374 - Producto - INFO - Se creó un producto
-2020-06-22 23:56:47,377 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
-2020-06-22 23:56:47,378 - fileManager - DEBUG - removiendo archivo
-2020-06-22 23:56:47,379 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
-2020-06-22 23:56:50,120 - INIT - DEBUG - Ingreso a la opcion 2 de menuProducto
-2020-06-22 23:57:34,529 - INIT - DEBUG - 2
-
-2020-06-22 23:57:34,529 - INIT - ERROR - name 'json' is not defined
-2020-06-22 23:57:52,342 - Producto - INFO - Se creó un producto
-2020-06-22 23:57:52,360 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
-2020-06-22 23:57:52,361 - fileManager - DEBUG - removiendo archivo
-2020-06-22 23:57:52,361 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
-2020-06-22 23:57:56,472 - INIT - DEBUG - Ingreso a la opcion 2 de menuProducto
-2020-06-23 00:05:21,485 - INIT - DEBUG - 2
-
-2020-06-23 00:05:21,490 - INIT - ERROR - name 'json' is not defined
-2020-06-23 00:05:37,216 - Producto - INFO - Se creó un producto
-2020-06-23 00:05:37,233 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
-2020-06-23 00:05:37,236 - fileManager - DEBUG - removiendo archivo
-2020-06-23 00:08:39,748 - INIT - DEBUG - [Errno 2] No such file or directory: 'Productos'
-2020-06-23 00:08:39,748 - INIT - ERROR - name 'json' is not defined
-2020-06-23 00:08:52,413 - Producto - INFO - Se creó un producto
-2020-06-23 00:08:52,439 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
-2020-06-23 00:08:52,439 - fileManager - DEBUG - D:\PachaQtec\PachaQTecMayo2020-1\Productos
-2020-06-23 00:08:57,518 - INIT - DEBUG - Ingresó a la opcion 2 de menuProducto
-=======
 2020-06-18 20:44:57,423 - INIT - DEBUG - ingreso a la opcion 1 de menuProducto
 2020-06-18 20:45:09,694 - Producto - INFO - Se creo un producto
 2020-06-18 20:45:16,783 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
@@ -365,15 +232,114 @@
 2020-06-20 11:41:17,145 - Producto - INFO - Se creo un producto
 2020-06-20 11:41:17,146 - INIT - DEBUG - [{'codProducto': '1', 'nombreProducto': '1', 'cantidadProducto': '1', 'costoProducto': '1'}, {'codProducto': '2', 'nombreProducto': '2', 'cantidadProducto': '2', 'costoProducto': '2'}, {'codProducto': '3', 'nombreProducto': '3', 'cantidadProducto': '3', 'costoProducto': '3'}]
 2020-06-20 11:41:17,146 - INIT - DEBUG - [<__main__.Producto object at 0x000001B329A9FB88>, <__main__.Producto object at 0x000001B329A9FBC8>, <__main__.Producto object at 0x000001B329A9FC48>]
+2020-06-23 11:43:30,707 - Menu - DEBUG - La opcion 1 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:43:32,100 - Menu - DEBUG - La opcion 1 es valida del menu MENU EMPLEADO	
+2020-06-23 11:43:32,102 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:43:34,346 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:43:34,347 - Principal - DEBUG - Vacio
+2020-06-23 11:43:37,058 - Principal - DEBUG - Se agrego al Empleado K K
+2020-06-23 11:43:37,059 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:43:39,165 - Menu - ERROR - invalid literal for int() with base 10: 'K'
+2020-06-23 11:43:41,271 - Menu - INFO - La opcion 22 no es valida
+2020-06-23 11:43:43,324 - Menu - INFO - La opcion 22 no es valida
+2020-06-23 11:43:45,385 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:47,452 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:49,508 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:51,569 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:43:53,622 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:02,915 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:12,666 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:15,613 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:17,691 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:44:19,746 - Menu - DEBUG - La opcion 0 es valida del menu MENU EMPLEADO	
+2020-06-23 11:44:19,746 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:44:19,758 - Principal - DEBUG - Salir del Sistema
+2020-06-23 11:44:25,738 - Menu - DEBUG - La opcion 1 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:44:26,819 - Menu - DEBUG - La opcion 2 es valida del menu MENU EMPLEADO	
+2020-06-23 11:44:26,822 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:44:26,825 - ListarEmpleados - DEBUG - Existen un total de 1 personas
+2020-06-23 11:44:29,290 - Principal - DEBUG - Eligio salir del sistema
+2020-06-23 11:44:34,826 - Menu - DEBUG - La opcion 1 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:44:42,058 - Menu - DEBUG - La opcion 0 es valida del menu MENU EMPLEADO	
+2020-06-23 11:44:42,059 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Empleados.txt
+2020-06-23 11:44:42,060 - Principal - DEBUG - Salir del Sistema
+2020-06-23 11:44:54,073 - Menu - DEBUG - La opcion 2 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:44:59,324 - Menu - DEBUG - La opcion 9 es valida del menu MENU CLIENTE	
+2020-06-23 11:44:59,326 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:45:00,276 - Menu - DEBUG - La opcion 2 es valida del menu MENU PRINCIPAL	
+2020-06-23 11:45:02,004 - Menu - DEBUG - La opcion 3 es valida del menu MENU CLIENTE	
+2020-06-23 11:45:02,005 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:45:02,006 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:45:02,023 - ListaProductos - ERROR - Expecting value: line 1 column 1 (char 0)
+2020-06-23 11:45:14,384 - INIT - DEBUG - <<<<<<< HEAD
+[{"codProducto": "1", "nombreProducto": "1", "cantidadProducto": "1", "costoProducto": "1"}, {"codProducto": "2", "nombreProducto": "2", "cantidadProducto": "2", "costoProducto": "2"}, {"codProducto": "3", "nombreProducto": "3", "cantidadProducto": "3", "costoProducto": "3"}]
+=======
+
+>>>>>>> f1e0bdba5248a5326347a7a01e473051d22ebfa6
+
+2020-06-23 11:45:14,385 - INIT - ERROR - Expecting value: line 1 column 1 (char 0)
+2020-06-23 11:45:14,385 - INIT - DEBUG - []
+2020-06-23 11:45:14,385 - INIT - DEBUG - []
+2020-06-23 11:45:14,385 - INIT - DEBUG - []
+2020-06-23 11:45:25,523 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:45:25,523 - Menu - DEBUG - No escoje opion
+2020-06-23 11:45:28,617 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:45:28,620 - Menu - DEBUG - No escoje opion
+2020-06-23 11:45:36,553 - Producto - INFO - Se creo un producto
+2020-06-23 11:45:36,554 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:45:36,554 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:45:36,555 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:45:38,396 - INIT - DEBUG - ingreso a la opcion 2 de menuProducto
+2020-06-23 11:45:43,532 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:45:43,532 - Menu - DEBUG - No escoje opion
+2020-06-23 11:48:56,228 - INIT - DEBUG - [{"codProducto": "5", "nombreProducto": "5", "cantidadProducto": "5", "costoProducto": "5"}]
+
+2020-06-23 11:48:56,228 - Producto - INFO - Se creo un producto
+2020-06-23 11:48:56,228 - INIT - DEBUG - [{'codProducto': '5', 'nombreProducto': '5', 'cantidadProducto': '5', 'costoProducto': '5'}]
+2020-06-23 11:48:56,228 - INIT - DEBUG - [<__main__.Producto object at 0x0000021FA5342F08>]
+2020-06-23 11:48:56,229 - INIT - ERROR - the JSON object must be str, bytes or bytearray, not FileNotFoundError
+2020-06-23 11:49:05,257 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:49:05,257 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:10,299 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:20,076 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:49:20,077 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:49:20,077 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Clientes.txt
+2020-06-23 11:49:30,163 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:45,321 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:50,368 - Menu - DEBUG - No escoje opion
+2020-06-23 11:49:59,818 - Menu - DEBUG - No escoje opion
+2020-06-23 11:50:04,877 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:50:04,877 - Menu - DEBUG - No escoje opion
+2020-06-23 11:50:13,378 - Menu - DEBUG - No escoje opion
+2020-06-23 11:50:18,425 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-06-23 11:50:18,426 - Menu - DEBUG - No escoje opion
+2020-06-23 11:51:38,455 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,455 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,457 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,458 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,458 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,460 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,461 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,461 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,464 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,465 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,466 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,467 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,468 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,468 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,470 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,470 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:38,471 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\UnidadMedida.txt
+2020-06-23 11:51:38,489 - INIT - ERROR - 'codigo'
+2020-06-23 11:51:38,490 - INIT - ERROR - 'codigo'
+2020-06-23 11:51:38,491 - INIT - ERROR - 'codigo'
+2020-06-23 11:51:57,434 - Producto - INFO - Se creo un producto
+2020-06-23 11:51:57,435 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:51:57,435 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:51:57,436 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:52:22,092 - Producto - INFO - Se creo un producto
+2020-06-23 11:52:22,093 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+2020-06-23 11:52:22,093 - fileManager - DEBUG - removiendo archivo
+2020-06-23 11:52:22,094 - fileManager - DEBUG - D:\PERSONAL\BACK_END\Proyecto\PachaQTecMayo2020-1\Productos.txt
+=======
 >>>>>>> upstream/develop
-2020-06-25 21:18:18,806 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
-2020-06-25 21:18:18,807 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
-2020-06-25 21:18:58,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
-2020-06-25 21:18:58,616 - fileManager - DEBUG - removiendo archivo
-2020-06-25 21:18:58,616 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
-2020-06-25 21:32:36,880 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
-2020-06-25 21:32:36,882 - fileManager - DEBUG - removiendo archivo
-2020-06-25 21:32:36,882 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
-2020-06-25 21:33:10,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
-2020-06-25 21:33:10,615 - fileManager - DEBUG - removiendo archivo
-2020-06-25 21:33:10,615 - fileManager - DEBUG - E:\Users\rpineda\SERVICIO EDUCATIVO EMPRESARIALE S.A.C\DESARROLLO BACKEND MAYO 20 - General\Ejercicios en Clase\cliente.txt
