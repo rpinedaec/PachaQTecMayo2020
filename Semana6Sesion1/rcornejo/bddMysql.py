@@ -2,12 +2,13 @@ import mysql.connector
 from mysql.connector import errorcode
 try:
     conn = mysql.connector.connect(user='root',
-                               password="pachaqtec",
+                               password="741852",
                                host="localhost",
                                port="3306",
-                               database="rpineda")
+                               database="rcornejo")
+    
     cur = conn.cursor()
-    cur.execute("insert into alumno (nombreAlumno, edadAlumno, correoAlumno) values('Denisse Garcia', '24', 'denisse@pachaqtec.pe');")
+    cur.execute("insert into alumno (idalumno, nombreAlumno, edadAlumno, correoAlumno) values(4, 'Denisse Garcia', '24', 'denisse@pachaqtec.pe');")
     conn.commit()
     cur.execute("Select * from alumno;")
     

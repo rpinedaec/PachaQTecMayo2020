@@ -226,7 +226,7 @@ elif(opcionMenuPrincipal == 2): #Menu empleado
             fileProducto.borrarArchivo()
             lstProductosDic.append(producto. dictProducto())
             lstProductos.append(producto)
-            jsonStr = json.dumps(lstProductosDic)
+            #jsonStr = json.dumps(lstProductosDic)
             fileProducto.escribirArchivo(jsonStr)
             resMenuProducto = menuProducto.mostrarMenu()
             if(resMenuProducto == 1):
