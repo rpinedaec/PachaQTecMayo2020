@@ -3,10 +3,10 @@ from mysql.connector import errorcode
 
 try:
     conn = mysql.connector.connect(user='root',
-                            password='pachaqtec',
-                            host="localhost",
-                            port="3306",
-                            database="rpineda")
+                                   password="1984RICARDO2011PAPO",
+                                   host="localhost",
+                                   port="3306",
+                                   database="avellaneda")
     cur = conn.cursor()
     cur.execute("Select version_();")
     record = cur.fetchone()
@@ -17,4 +17,3 @@ finally:
     if(conn):
         cur.close()
         conn.close()
-
