@@ -15,6 +15,9 @@ lstProductos = []
 lstFacturaCabecera = []
 lstFacturaDetalle = []
 MsjContinuar = "Enter para continuar..."
+#       NumeroBDD =1     =>> Base de datos mysql
+#       NumeroBDD =2     =>> Base de datos postgres
+#       NumeroBDD =3     =>> Base de datos sqlite:: Ubicarse en la carpeta app =>> "cd Semana6Hackaton/martinperez/app/"
 NumeroBDD = 1
 
 query_Productos="" 
@@ -28,7 +31,7 @@ if NumeroBDD ==2:
     query_Productos = 'select "idproducto", "nombreProducto", "valorProducto","igvProducto" from "productos"'
     query_Clientes = 'select idCliente, "nombreCliente", "nroIdentidicacionCliente", "direccionCliente" from "clientes"'
     query_Empresa = 'select "idempresa", "rucEmpresa", "nombreEmpresa" from "empresa"'
-    query_TipoPago = 'select "idtipoPago", "descTipoPago" from "tipoPago"'
+    query_TipoPago = 'select "idtipoPago", "descTipoPago" from "tipoPago" '
     query_FacturaCabecera = 'select c."idfacCabecera", e."nombreEmpresa" empresa '
     query_FacturaCabecera += ',cli."nombreCliente" cliente, tp."descTipoPago" tipoPago '
     query_FacturaCabecera += ',c."fechaFacCabecera",c."igvFacCabecera",c."subtotalFacCabecera" '
@@ -37,14 +40,14 @@ if NumeroBDD ==2:
     query_FacturaCabecera += 'inner join empresa as e on c.idempresa = e.idempresa '
     query_FacturaCabecera += 'inner join clientes as cli on c.idcliente = cli.idcliente '
     query_FacturaCabecera += 'inner join "tipoPago" as tp on tp."idtipoPago" = c."idtipoPago" '
-    query_FacturaDetalle = ' select idfacDetalle, idfacCabecera, p.nombreProducto producto '
-    query_FacturaDetalle += ' ,d.cantFacDetalle cantidad,d.valorFacDetalle valor, p.igvProducto afecto '
-    query_FacturaDetalle += ' from facdetalle d inner join productos p on d.idproducto = p.idproducto '
+    query_FacturaDetalle = ' select "idfacDetalle", "idfacCabecera", p."nombreProducto" producto '
+    query_FacturaDetalle += ' ,d."cantFacDetalle" cantidad  ,d."valorFacDetalle" valor, p."igvProducto" afecto  '
+    query_FacturaDetalle += ' from "facDetalle" d inner join productos p on d.idproducto = p.idproducto '
 else: 
     query_Productos = "select idproducto,nombreProducto,valorProducto,igvProducto from productos"
     query_Clientes = "select idCliente, nombreCliente, nroIdentidicacionCliente, direccionCliente from clientes" 
     query_Empresa = "select idempresa, rucEmpresa, nombreEmpresa from empresa"
-    query_TipoPago = "select idtipoPago, descTipoPago from tipopago"
+    query_TipoPago = "select idtipoPago, descTipoPago from tipopago "
     query_FacturaCabecera = "select c.idfacCabecera, e.nombreEmpresa 'empresa'"
     query_FacturaCabecera += ",cli.nombreCliente 'cliente', tp.descTipoPago 'tipoPago'"
     query_FacturaCabecera += ",c.fechaFacCabecera,c.igvFacCabecera,c.subtotalFacCabecera "
@@ -104,6 +107,8 @@ def cargarCabeceraFactura():
         documentF = factura.facturaCabecera(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8])
         lstFacturaCabecera.append(documentF)
 
+def limpiarDetalleFactura():
+    lstFacturaCabecera.clear()
 
 dicMenuMantenimientoGeneral = {    "\t- Todos: ": 1,"\t- Buscar: ": 2
                             ,"\t- Modificar: ": 3,"\t- Crear: ": 4,"\t- Borrar: ": 5}
@@ -132,7 +137,7 @@ def mantenimientoTipoPago():
             for row in resConn2:
                 FilaTempF = tipopago.tipopago(row[0],row[1])
                 lstTemp.append(FilaTempF) 
-            utils.listaSimple(lstTemp,3,1) 
+            utils.listaSimple(lstTemp,4,1) 
         elif(resmenuMostrar == 3):
             log.debug("actualizar tipo pago")
             conn = conexion.conexionBDD(NumeroBDD)  
@@ -142,8 +147,8 @@ def mantenimientoTipoPago():
                 nombre = input("Descripción: ") 
                 query = ""
                 if NumeroBDD==2:
-                    query = 'update "tipoPago" set "desctipopago" = ' + f"'{nombre}'"+', "idtipoPago" = ' +f"'{nombre}'"
-                    query += ' where "idempresa" =' + f" {idBuscar};"
+                    query = 'update "tipoPago" set "descTipoPago" = ' + f"'{nombre}'"
+                    query += ' where "idtipoPago" =' + f" {idBuscar};"
                 else:
                     query = f"update tipopago set descTipoPago = '{nombre}'  where idtipoPago = {idBuscar};"
                 resConn = conn.ejecutarBDD(query)
@@ -229,7 +234,7 @@ def mantenimientoEmpresa():
                 query = ""
                 if NumeroBDD==2:
                     query = 'update "empresa" set "rucEmpresa" = ' + f"'{Ruc}'"+', "nombreEmpresa" = ' +f"'{nombre}'"
-                    query += ' where "idempresa" =' + f" {idBuscar};"
+                    query += ' where idempresa =' + f" {idBuscar};"
                 else:
                     query = f"update empresa set rucEmpresa = '{Ruc}', nombreEmpresa = '{nombre}'  where idempresa = {idBuscar};"
                 resConn = conn.ejecutarBDD(query)
@@ -265,7 +270,7 @@ def mantenimientoEmpresa():
             if idbuscar != "":
                 query = ""
                 if NumeroBDD==2:
-                    query = 'delete from "empresa" where "idempresa" = '+ f"{idbuscar} ;"
+                    query = 'delete from "empresa" where idempresa = '+ f"{idbuscar} ;"
                 else:
                     query = f"delete from empresa where idempresa = {idbuscar} ;"
                 resConn = conn.ejecutarBDD(query)
@@ -322,7 +327,7 @@ def mantenimientoProductos():
                 query = ""
                 if NumeroBDD==2:
                     query = 'update "productos" set "nombreProducto" = ' + f"'{nombre}'"+', "valorProducto" = ' +f"'{Valor}'"+ ',"igvProducto" = '+ f"'{afecto}'"
-                    query += ' where "idProducto" =' + f" {idProducto};"
+                    query += ' where idProducto =' + f" {idProducto};"
                 else:
                     query = f"update productos set nombreProducto = '{nombre}', valorProducto = '{Valor}',igvProducto = '{afecto}' where idProducto = {idProducto};"
                 resConn = conn.ejecutarBDD(query)
@@ -364,7 +369,7 @@ def mantenimientoProductos():
             if idProducto != "":
                 query = ""
                 if NumeroBDD==2:
-                    query = 'delete from "productos" where "idProducto" = '+ f"{idProducto} ;"
+                    query = 'delete from "productos" where idProducto = '+ f"{idProducto} ;"
                 else:
                     query = f"delete from productos where idProducto = {idProducto} ;"
                 resConn = conn.ejecutarBDD(query)
@@ -416,11 +421,10 @@ def mantenimientoCliente():
                 query = ""
                 if NumeroBDD==2:
                     query = 'update clientes set "nombreCliente" =  ' + f"'{nombre}'"+', "nroIdentidicacionCliente" = ' +f"'{dni}'"+ ',"direccionCliente" = '+ f"'{direccion}'"
-                    query += ' where "idCliente" =' + f" {idcliente};"
+                    query += ' where idCliente =' + f" {idcliente};"
                 else:
                     query = f"update clientes set nombreCliente = '{nombre}', nroIdentidicacionCliente = '{dni}',direccionCliente = '{direccion}' where idCliente = {idcliente};"
-                    
-                resConn = conn.ejecutarBDD(query)
+                resConn = conn.ejecutarBDD(query) 
                 if(resConn):
                     cargarClientes()
                     print("Se ejecuto correctamente")
@@ -454,7 +458,7 @@ def mantenimientoCliente():
             if idcliente != "":
                 query = ""
                 if NumeroBDD==2:
-                    query = 'delete from "clientes" where "idCliente" = '+ f"{idcliente} ;"
+                    query = 'delete from "clientes" where idCliente = '+ f"{idcliente} ;"
                 else:
                     query = f"delete from clientes where idCliente = {idcliente} ;"
                 resConn = conn.ejecutarBDD(query)
@@ -508,12 +512,12 @@ def Facturas():
             log.debug("escogio 2 - Buscar")
             Buscar = utils.validarEntero("Correlativo: ")
             conn = conexion.conexionBDD(NumeroBDD) 
-            query = query_FacturaCabecera
+            query2 = query_FacturaCabecera
             if NumeroBDD==2:
-                query = query_FacturaCabecera +' where c.idfacCabecera ='+  f" '{Buscar}';"
+                query2 = query_FacturaCabecera +' where c."idfacCabecera" ='+  f" '{Buscar}';"
             elif NumeroBDD !=2:
-                query = query_FacturaCabecera + f" where c.idfacCabecera ='{Buscar}';"
-            resConn2 = conn.consultarBDD(query)
+                query2 = query_FacturaCabecera + f" where c.idfacCabecera ='{Buscar}';"
+            resConn2 = conn.consultarBDD(query2)
             lstGeneralTemp = []
             for row in resConn2:
                 GeneralF = factura.facturaCabecera(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8])
@@ -521,7 +525,7 @@ def Facturas():
                 
             queryDetalle = query_FacturaDetalle
             if NumeroBDD==2:
-                queryDetalle = query_FacturaDetalle +' where d.idfacCabecera ='+  f" '{Buscar}';"
+                queryDetalle = query_FacturaDetalle +' where d."idfacCabecera" ='+  f" '{Buscar}';"
             elif NumeroBDD !=2:
                 queryDetalle = query_FacturaDetalle + f" where d.idfacCabecera ='{Buscar}';"
             resConnD = conn.consultarBDD(queryDetalle)
@@ -591,31 +595,35 @@ def Facturas():
 
             connInsertar = conexion.conexionBDD(NumeroBDD) 
             query_Insertar = ""
+            resConnInsertar = 0
             if NumeroBDD==2: 
-                query_Insertar = ' insert into "faccabecera" ("idempresa", "idcliente","idtipoPago","fechaFacCabecera" '
+                query_Insertar = ' insert into "facCabecera" ("idempresa", "idcliente","idtipoPago","fechaFacCabecera" '
                 query_Insertar += ' ,"igvFacCabecera","subtotalFacCabecera","totalFacCabecera","estadoFactura" )'
-                query_Insertar += ' values( '+ f" '{idEmpresa}','{idCliente}','{idTipoPago}',now(),'{Igv}','{SubTotalFinal}','{Total}',1);"
+                query_Insertar += ' values( '+ f" '{idEmpresa}','{idCliente}','{idTipoPago}',now(),'{Igv}','{SubTotalFinal}','{Total}',1)  RETURNING "+'"idfacCabecera"'
+                resConnInsertar = connInsertar.ejecutarBDD_ReturnID_POSTGRES(query_Insertar)
+            if NumeroBDD==3: 
+                query_Insertar = " insert into faccabecera (idempresa, idcliente,idtipoPago,fechaFacCabecera "
+                query_Insertar += " ,igvFacCabecera,subtotalFacCabecera,totalFacCabecera,estadoFactura ) "
+                query_Insertar += " values( "+ f" '{idEmpresa}','{idCliente}','{idTipoPago}',date(),'{Igv}','{SubTotalFinal}','{Total}',1);"
+                resConnInsertar = connInsertar.ejecutarBDD_ReturnID(query_Insertar) 
             else:
                 query_Insertar = " insert into faccabecera (idempresa, idcliente,idtipoPago,fechaFacCabecera "
                 query_Insertar += " ,igvFacCabecera,subtotalFacCabecera,totalFacCabecera,estadoFactura ) "
                 query_Insertar += " values( "+ f" '{idEmpresa}','{idCliente}','{idTipoPago}',now(),'{Igv}','{SubTotalFinal}','{Total}',1);"
-            
-            resConnInsertar = connInsertar.ejecutarBDD_ReturnID(query_Insertar)
+                resConnInsertar = connInsertar.ejecutarBDD_ReturnID(query_Insertar) 
             if(resConnInsertar>0):
                 #cargarCabeceraFactura() 
                 Intguardados = 0  
-                query_InsertarDetalle = "" 
+                query_InsertarDetalle = ""
                 #idFacDetalle, idfacCabecera, idproducto, cantFacDetalle, valorFacDetalle, afecto
                 for detalle in lstFacturaDetalle:
                     if NumeroBDD==2:
-                        query_InsertarDetalle = ' insert into "facdetalle" ("idfacCabecera", "idproducto","cantFacDetalle","valorFacDetalle") '
+                        query_InsertarDetalle = ' insert into "facDetalle" ("idfacCabecera", "idproducto","cantFacDetalle","valorFacDetalle") '
                         query_InsertarDetalle += ' values( '+ f" '{resConnInsertar}','{detalle.idproducto}','{detalle.cantFacDetalle}','{detalle.valorFacDetalle}');"
                     else:
                         query_InsertarDetalle = " insert into facdetalle (idfacCabecera, idproducto,cantFacDetalle,valorFacDetalle) "
                         query_InsertarDetalle += " values( "+ f" '{resConnInsertar}','{detalle.idproducto}','{detalle.cantFacDetalle}','{detalle.valorFacDetalle}');"
                     resConnInsertarDetalle = connInsertar.ejecutarBDD(query_InsertarDetalle)
-                    
-                    print(resConnInsertarDetalle)
                     if(resConnInsertarDetalle):
                         Intguardados+=1
                 if(Intguardados>0):

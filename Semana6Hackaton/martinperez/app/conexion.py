@@ -76,13 +76,25 @@ class conexionBDD:
             conexion = self.conexion()
             cur = conexion.cursor()
             cur.execute(query) 
-            conexion.commit()
-            #cur.execute('SELECT last_insert_id()')
-            #exito = cur.fetchone()
+            conexion.commit() 
             exito =  cur.lastrowid
             return exito
         except Exception as identifier:
             identifier
             return 0
+
+    def ejecutarBDD_ReturnID_POSTGRES(self, query):
+        exito = 0
+        try:
+            conexion = self.conexion()
+            cur = conexion.cursor()
+            cur.execute(query) 
+            exito = cur.fetchone()[0]
+            conexion.commit() 
+            return exito
+        except Exception as identifier:
+            identifier
+            return 0
+
 
 
