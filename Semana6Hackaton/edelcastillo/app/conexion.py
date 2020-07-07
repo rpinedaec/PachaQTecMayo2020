@@ -7,7 +7,7 @@ import psycopg2
 from psycopg2 import Error
 #sqlite
 import sqlite3
- 
+
 class conexionBDD:   
     def __init__(self,intBDD):
         self.intBDD= intBDD
@@ -17,10 +17,10 @@ class conexionBDD:
         if(self.intBDD == 1):
             try:
                 conn = mysql.connector.connect(user='root',
-                                password='pachaqtec',
+                                password='123456',
                                 host="localhost",
                                 port="3306",
-                                database="rpineda")
+                                database="hackatons6rpineda")
                 return conn
             except(mysql.connector.Error, Exception) as error:
                 return False
@@ -28,7 +28,7 @@ class conexionBDD:
         elif(self.intBDD == 2):
             try:
                 conn = psycopg2.connect(user='postgres',
-                            password='pachaqtec',
+                            password='123456',
                             host="localhost",
                             port="5432",
                             database="rpineda")
@@ -45,7 +45,7 @@ class conexionBDD:
             
 
     def consultarBDD(self, query): 
-        try:    
+        try:
             conexion = self.conexion()
             cur = conexion.cursor()
             cur.execute(query)
@@ -62,5 +62,17 @@ class conexionBDD:
             conexion.commit()
             exito = True
             return exito
+        except Exception as identifier:
+            return False
+    
+    def ejecutarRetrornoBDD(self, query):
+        try:
+            conexion = self.conexion()
+            cur = conexion.cursor()
+            cur.execute(query)
+            conexion.commit()
+            cur.execute("SELECT LAST_INSERT_ID();")
+            records = cur.fetchall()
+            return records
         except Exception as identifier:
             return False
