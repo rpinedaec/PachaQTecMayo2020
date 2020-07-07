@@ -1,6 +1,5 @@
 import logging
 import os
-import init
 from time import sleep
 
 class color:
@@ -46,6 +45,7 @@ class log:
 
     def critical(self, mensaje):
         self.logger.critical(mensaje)
+#-----------------
 class Menu:
     __log = log("Menu")
     def __init__(self, nombreMenu, listaOpciones):
@@ -59,16 +59,16 @@ class Menu:
             self.limpiarPantalla()
             print(color.BLUE+":::::::::::BIENVENIDOS EMPRESA PACHAQTEC::::::::::::::"+color.CEND)
             print(color.BLUE+":::::::::::::::::::" +self.nombreMenu + ":::::::::::::::::::::"+color.CEND)
-            for i in self.listaOpciones:
-                print (i)
+            for (key,value) in self.listaOpciones.items():
+                print (key, "\t::",value)
             opcion = 100
-            print("9: Salir")
+            print("\t- Salir \t\t:: 9")
             try:
                 print(color.CYAN+"Escoge tu opcion"+color.CEND)
                 opcion = int(input())
             except ValueError as error:
                 self.__log.error(error)
-                print(color.RED+"Opcion invalida deben ser numeros del 0 al 2"+color.CEND)
+                print(color.RED+"Opcion invalida deben ser numeros del 0 al 9"+color.CEND)
             contOpciones = 0
             for (key, value) in self.listaOpciones.items():
                 if(opcion == int(value) or opcion == 9):
@@ -87,29 +87,7 @@ class Menu:
             #return os.system('cls')
             return os.system('clear')
         clear()
-
-OpcionMenuPrincipal = True
-while OpcionMenuPrincipal:
-    listaMenuPrincipal = ("1: Clientes","2: Productos", "Empresas")
-    MPrincipal = Menu("MENU DE INICIO", listaMenuPrincipal)
-    MostrarMenuPrincipal = MPrincipal.mostrarMenu()
-    #Opcion Clientes
-    if MostrarMenuPrincipal == 1:
-        opcionClientes = True
-        while opcionClientes:
-            listaMenuClientes = dicMenuCliente.mantenimientoCliente.utils
-            MenuClientes = Menu("MENU CLIENTES", listaMenuClientes)
-            MostrarMenuClientes = MenuClientes.mostrarMenu()
-        #Opcion Productos
-    elif MostrarMenuPrincipal == 2:
-            opcionProducto = True
-            while opcionProducto:
-            listaMenuProducto = dicMenuProducto.mantenimientoProducto.utils
-            MenuProducto = Menu("MENU PRODUCTO", listaMenuProducto)
-            MostrarMenuProducto = MenuProducto.mostrarMenu()
-        #Opcion Empresas
-    elif MostrarMenuPrincipal == 3:
-
+#-----------------
 class fileManager:
     logD = log("fileManager")
 
@@ -122,7 +100,6 @@ class fileManager:
             return file.read()
         except Exception as e:
             return e
-        
 
     def borrarArchivo(self):
         directorioActual = os.getcwd()
