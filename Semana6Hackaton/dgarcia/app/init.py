@@ -1,25 +1,25 @@
 import utils
 import conexion
-import clientes
+import cliente
 
 log = utils.log("INIT")
-log.info("Inicio del programa")
-lstClientes = []
+log.info("inicio del programa")
+lstCliente = []
 lstTipoPago = []
 lstEmpresa = []
 lstProductos = []
 
 def cargarObjetos():
     conn = conexion.conexionBDD(1)
-    query = "select idCliente, nombreCliente as Nombre, nroIdentCliente as ID, direccionCliente as Direccion, created_at as creado, updated_at as actualizado from clientes"
+    query = "select idCliente, nombreCliente as Nombre, nroIdentCliente as ID, direccionCliente as Direccion from cliente;"
     resconn = conn.consultarBDD(query)
     for row in resconn:
-        cliente = clientes.clientes(row[0],row[1],row[2],row[3])
+        cliente = cliente.cliente(row[0],row[1],row[2],row[3])
         lstClientes.append(cliente)
 
-    for obj in lstClientes:
+    for obj in lstCliente:
         print(obj.nombreCliente)
-    input("Continuar")
+    input("continuar")
 
 def mantenimientoCliente():
     dicMenuCliente = {  "\t- Buscar Cliente Todos": 1,
@@ -32,7 +32,7 @@ def mantenimientoCliente():
     if(resMenuCliente == 1):
         log.debug("buscamos cliente")
         conn = conexion.conexionBDD(1)
-        query = "select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes;"
+        query = "select idCliente, nombreCliente as Nombre, nroIdentCliente as ID, direccionCliente as Direccion from cliente;"
         resConn = conn.consultarBDD(query)
         print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
         for row in resConn:
@@ -45,7 +45,7 @@ def mantenimientoCliente():
         print("escribe el numero de DNI")
         dni = input()
         conn = conexion.conexionBDD(1)
-        query = f"select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes where nroIdentidicacionCliente = '{dni}';"
+        query = f"select idCliente, nombreCliente as Nombre, nroIdentCliente as ID, direccionCliente as Direccion from cliente where nroIdentCliente = '{dni}';"
         resConn = conn.consultarBDD(query)
         print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
         for row in resConn:
@@ -55,7 +55,7 @@ def mantenimientoCliente():
     elif(resMenuCliente == 3):
         log.debug("buscamos cliente")
         conn = conexion.conexionBDD(1)
-        query = "select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes;"
+        query = "select idCliente, nombreCliente as Nombre, nroIdentCliente as ID, direccionCliente as Direccion from cliente;"
         resConn = conn.consultarBDD(query)
         print("Escoja el ID del cliente que desea modificar")
         print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
@@ -69,7 +69,7 @@ def mantenimientoCliente():
         dni = input()
         print("Escriba el nuevo valor para Direccion")
         direccion = input()
-        query = f"update clientes set nombreCliente = '{nombre}', nroIdentidicacionCliente = '{dni}',direccionCliente = '{direccion}' where idCliente = {idcliente};"
+        query = f"update cliente set nombreCliente = '{nombre}', nroIdentCliente = '{dni}', direccionCliente = '{direccion}' where idCliente = {idcliente};"
         resConn = conn.ejecutarBDD(query)
         if(resConn):
             print("Se ejecuto correctamente")
@@ -86,7 +86,7 @@ def mantenimientoCliente():
         print("Escriba el Direccion del Cliente")
         direccion = input()
         conn = conexion.conexionBDD(1)
-        query = f"insert into clientes (nombreCliente, nroIdentidicacionCliente,direccionCliente) values('{nombre}','{dni}','{direccion}');"
+        query = f"insert into cliente (nombreCliente, nroIdentCliente, direccionCliente) values('{nombre}','{dni}','{direccion}');"
         resConn = conn.ejecutarBDD(query)
         if(resConn):
             print("Se ejecuto correctamente")
@@ -97,7 +97,7 @@ def mantenimientoCliente():
     elif(resMenuCliente == 5):
         log.debug("eliminamos cliente")
         conn = conexion.conexionBDD(1)
-        query = "select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes;"
+        query = "select idCliente, nombreCliente as Nombre, nroIdentCliente as ID, direccionCliente as Direccion from cliente;"
         resConn = conn.consultarBDD(query)
         print("Escoja el ID del cliente que desea eliminar")
         print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
