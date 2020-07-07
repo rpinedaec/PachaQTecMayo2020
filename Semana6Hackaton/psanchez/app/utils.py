@@ -1,5 +1,6 @@
 import logging
 import os
+import init
 from time import sleep
 
 class color:
@@ -56,13 +57,12 @@ class Menu:
         opSalir = True
         while(opSalir):
             self.limpiarPantalla()
-            print(color.BLUE+":::::::::::::BIENVENIDOS EMPRESA PACHAQTEC::::::::::::::"+color.CEND)
-            print(color.BLUE+":::::::::::::::::::" +self.nombreMenu + "::::::::::::::::::"+color.CEND)
-            
-            for (key, value) in self.listaOpciones.items():
-                print(key, "\t:: ", value)
+            print(color.BLUE+":::::::::::BIENVENIDOS EMPRESA PACHAQTEC::::::::::::::"+color.CEND)
+            print(color.BLUE+":::::::::::::::::::" +self.nombreMenu + ":::::::::::::::::::::"+color.CEND)
+            for i in self.listaOpciones:
+                print (i)
             opcion = 100
-            print("\t- Salir \t\t::  9")
+            print("9: Salir")
             try:
                 print(color.CYAN+"Escoge tu opcion"+color.CEND)
                 opcion = int(input())
@@ -76,7 +76,7 @@ class Menu:
             if(contOpciones == 0):
                 print(color.RED+"Escoge una opcion valida"+color.CEND)
                 self.__log.debug("No escoje opion")
-                sleep(3)
+                sleep(1)
             else:
                 opSalir = False
 
@@ -88,6 +88,27 @@ class Menu:
             return os.system('clear')
         clear()
 
+OpcionMenuPrincipal = True
+while OpcionMenuPrincipal:
+    listaMenuPrincipal = ("1: Clientes","2: Productos", "Empresas")
+    MPrincipal = Menu("MENU DE INICIO", listaMenuPrincipal)
+    MostrarMenuPrincipal = MPrincipal.mostrarMenu()
+    #Opcion Clientes
+    if MostrarMenuPrincipal == 1:
+        opcionClientes = True
+        while opcionClientes:
+            listaMenuClientes = dicMenuCliente.mantenimientoCliente.utils
+            MenuClientes = Menu("MENU CLIENTES", listaMenuClientes)
+            MostrarMenuClientes = MenuClientes.mostrarMenu()
+        #Opcion Productos
+    elif MostrarMenuPrincipal == 2:
+            opcionProducto = True
+            while opcionProducto:
+            listaMenuProducto = dicMenuProducto.mantenimientoProducto.utils
+            MenuProducto = Menu("MENU PRODUCTO", listaMenuProducto)
+            MostrarMenuProducto = MenuProducto.mostrarMenu()
+        #Opcion Empresas
+    elif MostrarMenuPrincipal == 3:
 
 class fileManager:
     logD = log("fileManager")
@@ -136,4 +157,3 @@ class fileManager:
                 file.write(linea + "\n")
         except Exception as error:
             self.logD.error(error)
-

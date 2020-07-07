@@ -1,6 +1,4 @@
 import utils
-import conexionbdmysql
-import clientes
 
 log = utils.log("INIT")
 log.info("inicio del programa")
@@ -20,64 +18,53 @@ def cargarObjetos():
     for obj in lstClientes:
         print(obj.nombreCliente)
     input("continuar")
-
+#Clientes
 def mantenimientoCliente():
     dicMenuCliente = {  "\t- Buscar Cliente Todos": 1,
-                        "\t- Buscar Cliente por DNI": 2,
-                        "\t- Modificar Cliente por DNI": 3,
-                        "\t- Crear Cliente": 4,
-                        "\t- Borrar Cliente": 5}
+                        "\t- Modificar Cliente por DNI": 2,
+                        "\t- Crear Cliente": 3,
+                        "\t- Borrar Cliente": 4}
     menuCliente = utils.Menu("Menu Cliente", dicMenuCliente)
     resMenuCliente = menuCliente.mostrarMenu()
     if(resMenuCliente == 1):
         log.debug("buscamos cliente")
         conn = conexion.conexionBDD(1)
-        query = "select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes;"
+        query = "select idcliente, nombrecliente as Nombre, nroidentidicacioncliente as ID, direccioncliente as Direccion from clientes;"
         resConn = conn.consultarBDD(query)
         print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
         for row in resConn:
             print(f"\t{str(row[0])}\t\t{str(row[1])}\t\t{str(row[2])}\t\t{str(row[3])}")
 
-        input("continuar???")
+        print("Si desea continuar escriba 1, para salir 2")
+        input("Ingrese su opción: ")
         print(resConn)
     elif(resMenuCliente == 2):
-        log.debug("buscamos cliente por DNI")
-        print("escribe el numero de DNI")
-        dni = input()
-        conn = conexion.conexionBDD(1)
-        query = f"select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes where nroIdentidicacionCliente = '{dni}';"
-        resConn = conn.consultarBDD(query)
-        print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
-        for row in resConn:
-            print(f"\t{str(row[0])}\t\t{str(row[1])}\t\t{str(row[2])}\t\t{str(row[3])}")
-        input("continuar???")
-        print(resConn)
-    elif(resMenuCliente == 3):
         log.debug("buscamos cliente")
         conn = conexion.conexionBDD(1)
-        query = "select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes;"
+        query = "select idclientes, nombrecliente as Nombre, nroidentidicacioncliente as ID, direccioncliente as Direccion from clientes;"
         resConn = conn.consultarBDD(query)
-        print("Escoja el ID del cliente que desea modificar")
+        print("Elija el ID del cliente que desea modificar")
         print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
         for row in resConn:
             print(f"\t{str(row[0])}\t\t{str(row[1])}\t\t{str(row[2])}\t\t{str(row[3])}")
 
-        idcliente = input()
+        idclientes = input()
         print("Escriba el nuevo valor para Nombre")
         nombre = input()
         print("Escriba el nuevo valor para DNI")
         dni = input()
         print("Escriba el nuevo valor para Direccion")
         direccion = input()
-        query = f"update clientes set nombreCliente = '{nombre}', nroIdentidicacionCliente = '{dni}',direccionCliente = '{direccion}' where idCliente = {idcliente};"
+        query = f"update clientes set nombrecliente = '{nombre}', nroidentidicacioncliente = '{dni}',direccioncliente = '{direccion}' where idclientes = {idclientes};"
         resConn = conn.ejecutarBDD(query)
         if(resConn):
             print("Se ejecuto correctamente")
         else:
             print("Hubo un error")
-        
-        input("desea continuar???")
-    elif(resMenuCliente == 4):
+
+        print("Si desea continuar escriba 1, para salir 2")
+        input("Ingrese su opción: ")
+    elif(resMenuCliente == 3):
         print("##Creacion de un cliente##")
         print("Escriba el Nombre del Cliente")
         nombre = input()
@@ -94,7 +81,7 @@ def mantenimientoCliente():
             print("Hubo un error")
         
         input("desea continuar???")
-    elif(resMenuCliente == 5):
+    elif(resMenuCliente == 4):
         log.debug("eliminamos cliente")
         conn = conexion.conexionBDD(1)
         query = "select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes;"
@@ -106,7 +93,7 @@ def mantenimientoCliente():
 
         idcliente = input()
         
-        query = f"delete from clientes where idCliente = {idcliente} ;"
+        query = f"delete from clientes where idcliente = {idcliente} ;"
         resConn = conn.ejecutarBDD(query)
         if(resConn):
             print("Se ejecuto correctamente")
@@ -114,6 +101,7 @@ def mantenimientoCliente():
             print("Hubo un error")
         
         input("desea continuar???")
+
 def mantenimento(resMenu):
     if resMenu == 1:
         log.debug("escogio 1")
@@ -126,7 +114,92 @@ def mantenimento(resMenu):
         log.debug("escogio 4")
     else:
         log.debug(f"escogio {resMenu}")
+#Producto
+def mantenimientoProducto():
+    dicMenuProducto = {  "\t- Buscar Producto Todos": 1,
+                        "\t- Modificar Producto por ID": 2,
+                        "\t- Crear Producto": 3,
+                        "\t- Borrar Producto": 4}
+    menuProducto = utils.Menu("Menu Producto", dicMenuProducto)
+    resMenuProducto = menuProducto.mostrarMenu()
+    if(resMenuProducto == 1):
+        log.debug("buscamos Producto")
+        conn = conexion.conexionBDD(1)
+        query = "select idproductos as ID, nombreproducto as Nombre, valorproducto as Valor, igvproducto as IGV from productos;"
+        resConn = conn.consultarBDD(query)
+        print("\tID\t\tNombre\t\t\tValor\t\t\tIGV")
+        for row in resConn:
+            print(f"\t{str(row[0])}\t\t{str(row[1])}\t\t{str(row[2])}\t\t{str(row[3])}")
 
+        print("Si desea continuar escriba 1, para salir 2")
+        input("Ingrese su opción: ")
+        print(resConn)
+    elif(resMenuCliente == 2):
+        log.debug("buscamos producto")
+        conn = conexion.conexionBDD(1)
+        query = "select idproductos as ID, nombrecliente as Nombre, valorproducto as Valor, igvproducto as IGV from productos;"
+        resConn = conn.consultarBDD(query)
+        print("Elija el ID del producto que desea modificar")
+        print("\tID\t\tNombre\t\t\tValor\t\t\tIGV")
+        for row in resConn:
+            print(f"\t{str(row[0])}\t\t{str(row[1])}\t\t{str(row[2])}\t\t{str(row[3])}")
+
+        idproductos = input()
+        print("Escriba el nuevo valor para Nombre")
+        nombre = input()
+        print("Escriba el nuevo valor para Valor")
+        valor = input()
+        print("Escriba el nuevo valor para IGV")
+        igv = input()
+        query = f"update clientes set nombreproducto = '{nombre}',valorproducto = '{valor}', igvproducto = '{igv}' where idproductos = {idproductos};"
+        resConn = conn.ejecutarBDD(query)
+        if(resConn):
+            print("Se ejecuto correctamente.")
+        else:
+            print("Hubo un error. Intente nuevamente.")
+
+        print("Si desea continuar escriba 1, para salir 2")
+        input("Ingrese su opción: ")
+    elif(resMenuCliente == 3):
+        print("##Creacion de un Producto##")
+        print("Escriba el ID del Producto")
+        ide = input()
+        print("Escriba el Nombre del Producto")
+        nombre = input()
+        print("Escriba el Valor del Producto")
+        valor = input()
+        print("Escriba el IGV del Producto")
+        igv = input()
+        conn = conexion.conexionBDD(1)
+        query = f"insert into productos (idproductos,nombreproducto,valorproducto,igvproducto) values('{ide}','{nombre}','{valor}','{igv}');"
+        resConn = conn.ejecutarBDD(query)
+        if(resConn):
+            print("Se ejecuto correctamente.")
+        else:
+            print("Hubo un error. Intente nuevamente.")
+        
+        print("Si desea continuar escriba 1, para salir 2")
+        input("Ingrese su opción: ")
+    elif(resMenuCliente == 4):
+        log.debug("eliminamos producto")
+        conn = conexion.conexionBDD(1)
+        query = "select idproductos as ID, nombreproducto as Nombre, valorproducto as Valor, igvproducto as IGV from productos;"
+        resConn = conn.consultarBDD(query)
+        print("Escoja el ID del cliente que desea eliminar")
+        print("\tID\t\tNombre\t\t\tDNI\t\t\tValor\t\t\tIGV")
+        for row in resConn:
+            print(f"\t{str(row[0])}\t\t{str(row[1])}\t\t{str(row[2])}\t\t{str(row[3])}\t\t{str(row[4])}")
+
+        idproductos = input()
+        
+        query = f"delete from productos where idproductos = {idproductos} ;"
+        resConn = conn.ejecutarBDD(query)
+        if(resConn):
+            print("Se ejecuto correctamente.")
+        else:
+            print("Hubo un error, intente nuevamente.")
+        
+        input("desea continuar???")
 
 stopMenuInicio = True
 while stopMenuInicio:

@@ -1,7 +1,4 @@
-import empresa
-import productos
-import tipopago
-import clientes
+import app.init
 
 cliente
     id_cliente = clientes.nombreCliente
