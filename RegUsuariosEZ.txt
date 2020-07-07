@@ -1,1 +1,0 @@
-{'NomCliente': 'd', 'ApellidoCliente': 'd', 'UsuarioCod': 'd', 'PasswordCliente': 'd'}

@@ -134,6 +134,7 @@ CREATE TABLE IF NOT EXISTS salon(
    ON DELETE NO ACTION
    ON UPDATE NO ACTION
    
+   
 -- crear constraint(restricci�n) fk_notas_Alumno1
    alter table notas
    add CONSTRAINT fk_notas_Alumno1

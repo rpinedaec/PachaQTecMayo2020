@@ -18,6 +18,7 @@ UPDATE notas SET descnotas = '16'
 	--verificar
 	select * from notas
 	
+	
 --eliminar datos de tabla notas
 delete from notas where idnotas = 3
 

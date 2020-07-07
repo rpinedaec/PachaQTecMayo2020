@@ -8,11 +8,13 @@
   PRIMARY KEY (idalumno))
 
 
+
 --insertar datos en la tabla
 insert into alumno(nombrealumno, edadalumno,correoalumno) 
 	values ('Sebastian', 20, 'sebas@hotmail.com'),
 			('lucia', 17, 'lucia@hotmail.com');
-			
+	
+  		
 --leer datos de la tabla
 select * from alumno
 

@@ -12,6 +12,7 @@ select * from profesor
 UPDATE profesor SET nombreprofesor = 'Ernesto Padilla' 
 	WHERE nombreprofesor= 'Ernesto';
 
+
 --eliminar datos de tabla
 DELETE FROM profesor WHERE nombreprofesor = 'Ernesto Padilla';
 
