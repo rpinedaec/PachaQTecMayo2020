@@ -1,6 +1,9 @@
 import utils
 import conexion
 import cliente
+import empresa
+import productos
+import tipopago
 
 log = utils.log("INIT")
 log.info("inicio del programa")
@@ -14,11 +17,42 @@ def cargarObjetos():
     query = "select idCliente, nombreCliente as Nombre, nroIdentificacionCliente as ID, direccionCliente as Direccion from clientes;"
     resconn = conn.consultarBDD(query)
     for row in resconn:
-        cliente = clientes.clientes(row[0],row[1],row[2],row[3])
-        lstClientes.append(cliente)
+        clientes = cliente.cliente(row[0],row[1],row[2],row[3])
+        lstClientes.append(clientes)
 
     for obj in lstClientes:
         print(obj.nombreCliente)
+    
+    conn = conexion.conexionBDD(1)
+    query = "SELECT idempresa, rucEmpresa as RUC, nombreEmpresa as Nombre FROM empresa;"
+    resconn = conn.consultarBDD(query)
+    for row in resconn:
+        empresas = empresa.empresa(row[0],row[1],row[2])
+        lstEmpresa.append(empresas)
+
+    for obj in lstEmpresa:
+        print(obj.nombreEmpresa)
+    
+
+    conn = conexion.conexionBDD(1)
+    query = "SELECT idproducto, nombreProducto as Nombre, valorProducto as Precio, igvProducto as IGV FROM productos;"
+    resconn = conn.consultarBDD(query)
+    for row in resconn:
+        producto = productos.productos(row[0],row[1],row[2],row[3])
+        lstProductos.append(producto)
+
+    for obj in lstProductos:
+        print(obj.nombreProducto)
+
+    conn = conexion.conexionBDD(1)
+    query = "SELECT idtipoPago, descTipoPago as Descripcion FROM tipopago;"
+    resconn = conn.consultarBDD(query)
+    for row in resconn:
+        tipopagos = tipopago.tipopago(row[0],row[1])
+        lstTipoPago.append(tipopagos)
+
+    for obj in lstTipoPago:
+        print(obj.descTipoPago)
     input("continuar")
 
 def mantenimientoCliente():
