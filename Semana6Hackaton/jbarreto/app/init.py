@@ -5,6 +5,8 @@ import productos
 import empresa
 import tipopago
 import facturadetalle
+from datetime import datetime
+from time import sleep
 
 log = utils.log("INIT")
 log.info("inicio del programa")
@@ -34,50 +36,54 @@ def crearFactura():
     igvFacCabecera = 0.00
     subtotalFac = 0.00
     totalFac = 0.00
+    fecha = datetime.today().strftime('%Y-%m-%d')
 
-    idcliente = input("escribe el codigo del Cliente")
-    idtipopago = input("ingrese el codigo de tipo de pago")
-    fecha = input("Ingrese la fecha de la factura")
+    print(f"La fecha de hoy es: {fecha}")
+    idcliente = input("escribe el codigo del Cliente: ")
+    idtipopago = input("ingrese el codigo de tipo de pago: ")
+    #fecha = input("Ingrese la fecha de la factura (yyyy-mm-dd): ")
+
     
     log.debug("crear factura")
     conn = conexion.conexionBDD(1)
 
     stopIngreso = True
     while stopIngreso:
-        idproducto = input("ingrese el codigo de  producto")
-        cantFacDetalle = input("ingrese la cantidad")
-        masProducto = input("Desea ingresar otro producto Si:1 / No:0?")
-        if masProducto == 0:
+        idproducto = input("ingrese el codigo de  producto: ")
+        cantFacDetalle = input("ingrese la cantidad: ")
+        masProducto = input("Desea ingresar otro producto Si (1) / No (0): ")
+        if masProducto != '1':
             stopIngreso = False
-        #select * from productos where idproducto
         query = f"select idproducto, valorProducto, igvProducto from productos where idproducto = {idproducto};"
         resconn = conn.consultarBDD(query)
         for row in resconn:
             valorProducto = row[1]
             igvProducto = row[2]
 
-        facturadetalle = facturadetalle.facturadetalle(1, 1, idproducto, cantFacDetalle, valorProducto)
-        lstFacDetalle.append(facturadetalle)
+        factdetalle = facturadetalle.facturadetalle(1, 1, idproducto, cantFacDetalle, valorProducto)
+        lstFacDetalle.append(factdetalle)
 
-        subtotalFac = valorProducto * cantFacDetalle
+        subtotalFac = valorProducto * int(cantFacDetalle)
         if igvProducto == 1:
-            igvFacCabecera += subtotalFac * igv
+            igvFacCabecera += float(subtotalFac) * float(igv)
 
-    totalFac = subtotalFac + igvFacCabecera
+    totalFac = float(subtotalFac) + igvFacCabecera
 
     if  totalFac > 0:
         query = "insert into faccabecera (idempresa, idcliente, idtipoPago, fechaFacCabecera, igvFacCabecera, subtotalFacCabecera, totalFacCabecera, estadoFactura) " 
-        query += f"values('1', {idcliente}, {idtipopago}, {fecha}, {igvFacCabecera}, {subtotalFac}, {totalFac}, '1');"
+        query += f"values(1, {idcliente}, {idtipopago}, '{fecha}', {igvFacCabecera}, {subtotalFac}, {totalFac}, '1');"
         resConn = conn.ejecutarBDD(query)
         if(resConn):
             print("Se ejecuto correctamente registro de factura")
         else:
             print("Hubo un error")
+        sleep(5)
 
-        query = f"select MAX(idfacCabecera) AS 'idFactura' from faccabecera where fechaFacCabecera = {fecha};"
+        query = f"select MAX(idfacCabecera) AS 'idFactura' from faccabecera where fechaFacCabecera = '{fecha}';"
         resconn = conn.consultarBDD(query)
         for row in resconn:
-            idfacCabecera = row[0]
+            print(row[0])
+            idfacCabecera = int(row[0])
 
         if idfacCabecera > 0:
             for obj in  lstFacDetalle:
@@ -88,7 +94,7 @@ def crearFactura():
                 print("Se ejecuto correctamente registro de factura detalle")
             else:
                 print("Hubo un error")
-
+            sleep(5)
      
 
 def mantenimientoCliente():
