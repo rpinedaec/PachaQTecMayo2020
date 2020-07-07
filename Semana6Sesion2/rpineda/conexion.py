@@ -45,7 +45,7 @@ class conexionBDD:
             
 
     def consultarBDD(self, query): 
-        try:
+        try:    
             conexion = self.conexion()
             cur = conexion.cursor()
             cur.execute(query)
