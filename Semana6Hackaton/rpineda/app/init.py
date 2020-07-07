@@ -103,6 +103,7 @@ def mantenimientoCliente():
         print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
         for row in resConn:
             print(f"\t{str(row[0])}\t\t{str(row[1])}\t\t{str(row[2])}\t\t{str(row[3])}")
+            
 
         idcliente = input()
         
