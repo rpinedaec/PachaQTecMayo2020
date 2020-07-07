@@ -45,7 +45,7 @@ def mantenimientoCliente():
         print("escribe el numero de DNI")
         dni = input()
         conn = conexion.conexionBDD(1)
-        query = f"select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes where nroIdentidicacionCliente = '{dni}';"
+        query = f"select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes where nroIdentidicacionCliente = {dni};"
         resConn = conn.consultarBDD(query)
         print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
         for row in resConn:
