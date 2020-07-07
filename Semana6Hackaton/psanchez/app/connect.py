@@ -5,7 +5,7 @@ class conexionBDD:
     def __init__(self,intBDD):
         self.intBDD= intBDD
 
-    def conexion(self, conn):
+    def conexion(self):
         try:
             conn = mysql.connector.connect(user='root',
                             password='pachaqtec',
