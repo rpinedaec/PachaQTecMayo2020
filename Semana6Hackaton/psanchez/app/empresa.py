@@ -1,5 +1,5 @@
 class empresa:
-    def __init__(self,idempresa, rucEmpresa,nombreEmpresa):
+    def __init__(self,idempresa, rucempresa,nombreempresa):
         self.idempresa =idempresa
-        self.rucEmpresa=rucEmpresa
-        self.nombreEmpresa =nombreEmpresa
+        self.rucempresa=rucempresa
+        self.nombreempresa =nombreempresa
