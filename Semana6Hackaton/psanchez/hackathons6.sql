@@ -12,7 +12,8 @@ insert into productos (idproductos, nombreproducto, valorproducto, igvproducto) 
 insert into tipodepago (idtipodepago, desctipopago) values ('1001','Transferencia');
 insert into tipodepago (idtipodepago, desctipopago) values ('1002','Efectivo');
 insert into tipodepago (idtipodepago, desctipopago) values ('1003','Credito');
-select * from empresa;
+insert into facdetalle (idfacdetalle, idfaccabecera, idproducto, cantfacdetalle, valorfacdetalle) values ('1','001','103','1','2.50');
+select * from facdetalle;
 select idclientes, nombrecliente as Nombre, nroIdentidicacioncliente as ID, direccioncliente as Direccion from clientes;
 SELECT idclientes, nroidentificacioncliente, nombrecliente, direccioncliente from clientes where nroidentificacioncliente = '1010001';
 update clientes set nombrecliente = 'Roberto', nroidentificacioncliente = '70040071',direccioncliente = 'Lince' where idclientes = "1";
