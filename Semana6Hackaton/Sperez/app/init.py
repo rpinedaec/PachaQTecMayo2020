@@ -445,6 +445,241 @@ while stopMenuInicio:
     resMenuInicio = menuInicio.mostrarMenu()
     if(resMenuInicio == 1):
         log.debug("Mostramos el Menu crear Factura")
+             
+        #Si no existe el cliente volver a pedir id
+        OpcionMenuFacturaCliente = True
+        while OpcionMenuFacturaCliente:
+        #Listamos a todos los clientes
+            query = querys.Querys(NombreBD)
+            SqlClientes = query.SelectAllClientes()
+            Clientes = ConecBDMysql.consultarBDD(SqlClientes)
+            #Cabecera
+            print("ID", "Nombre\t", "DNI\t", "Direccion", sep="\t")
+            #Mostrar Datos
+            for tplCliente in Clientes:
+            print(tplCliente[0], tplCliente[1], tplCliente[2], tplCliente[3], sep="\t")
+            IdCliente = input("Ingrese Id del Cliente:\n")
+            try:
+                SqlClientes = query.SelectIdCliente(IdCliente)
+                ResulClientes = ConecBDMysql.consultarBDD(SqlClientes)
+                lstCliente = []
+                lstEmpresa = []
+                lstProducto = []
+                lstTipo = []
+                lstCabecera = []
+                #Si no existe el cliente volver a pedir id
+                if ResulClientes:
+                    #Insertamos los datos al Objeto Cliente
+                    for tplCliente in ResulClientes:
+                        ObjCliente = clientes.clientes(tplCliente[0], tplCliente[1], tplCliente[2], tplCliente[3])
+                        lstCliente.append(ObjCliente)
+                        __log.debug("Se ingreso bien el ObjCliente")            
+                      
+                    OpcionMenuFacturaEmpresa = True
+                    while OpcionMenuFacturaEmpresa:
+                        #Ingreso de la empresa
+                        SqlEmpresas = query.SelectAllEmpresas()
+                        Empresas = ConecBDMysql.consultarBDD(SqlEmpresas)
+                        #Cabecera
+                        print("ID", "Numero Ruc", "Nombre\t", sep="\t")
+                        #Mostrar Datos
+                        for tplEmpresa in Empresas:
+                          print(tplEmpresa[0], tplEmpresa[1], tplEmpresa[2], sep="\t")          
+                        IdEmpresa = input("Ingrese Id de la Empresa:\n")
+                        SqlEmpresas = query.SelectIdEmpresa(IdEmpresa)
+                        ResulEmpresas = ConecBDMysql.consultarBDD(SqlEmpresas)
+                        if ResulEmpresas:
+                          for tplEmpresa in ResulEmpresas:
+                            ObjEmpresa = empresa.empresa(tplEmpresa[0], tplEmpresa[1], tplEmpresa[2])
+                            lstEmpresa.append(ObjEmpresa)
+                            __log.debug("Se ingreso bien el ObjEmpresa")
+                          
+                          OpcionMenuFacturaTipo = True
+                          while OpcionMenuFacturaTipo:
+                            SqlTipo = query.SelectAllTipos()
+                            Tipos = ConecBDMysql.consultarBDD(SqlTipo)
+                            #Cabecera
+                            print("ID", "Nombre\t", sep="\t")
+                            #Mostrar Datos
+                            for tplTipo in Tipos:
+                              print(tplTipo[0], tplTipo[1], sep="\t")
+                            IdTipo = input("Ingrese Id del tipo de pago:\n")
+                            SqlTipo = query.SelectIdTipo(IdTipo)
+                            ResulTipo = ConecBDMysql.consultarBDD(SqlTipo)
+                            if ResulTipo:
+                              for tplTipo in ResulTipo:
+                                ObjTipo = tipopago.tipopago(tplTipo[0], tplTipo[1])
+                                lstTipo.append(ObjTipo)
+                                __log.debug("Se ingreso bien el ObjTipo")
+                              #Recorrer datos 
+                              for datosEmpresa in lstEmpresa:
+                                idEmp = datosEmpresa.idempresa
+                                __log.info(f"El id Empresa es {idEmp}")
+                              for datosCliente in lstCliente:
+                                idClie = datosCliente.idCliente
+                                __log.info(f"El id Cliente es {idClie}")
+                              for datosTipo in lstTipo:
+                                idTip = datosTipo.idtipopago
+                                __log.info(f"El id Tipo es {idTip}")
+                              #Insertar a la tabla faccabecera
+                              igvProd = 0
+                              subTotal = 0
+                              Total = 0
+                              SqlFacCabecera = query.InsertCabecera(str(idEmp), str(idClie), str(idTip), str(igvProd), str(subTotal), str(Total))
+                              ConecBDMysql.ejecutarBDD(SqlFacCabecera)
+                              #Mostrar todas las Cabeceras
+                              SqlAllCabecera = query.SelectAllCabecera()
+                              ResulAllCabecera = ConecBDMysql.consultarBDD(SqlAllCabecera)
+                              print("ID", "Empresa\t", "Cliente\t", "Tipo Pago", sep="\t")
+                              for tplCabecera in ResulAllCabecera:
+                                print(tplCabecera[0], tplCabecera[1], "", tplCabecera[2], tplCabecera[3], sep="\t")
+                              #Solicitamos ID cabecera
+                              IdCab = input("Ingrese Id de Cabecera a llenar:\n")                                                         
+                              OpcionMenuFacturaProducto = True
+                              while OpcionMenuFacturaProducto:
+                                #Todos los productos
+                                SqlProducto = query.SelectAllProductos()
+                                Productos = ConecBDMysql.consultarBDD(SqlProducto)
+                                #Cabecera
+                                print("ID", "Nombre\t", "Valor", "Igv", sep="\t")
+                                #Mostrar Datos
+                                for tplProducto in Productos:
+                                  print(tplProducto[0], tplProducto[1]+"\t", tplProducto[2], tplProducto[3], sep="\t")
+                                IdProducto = input("Ingrese Id del producto:\n")
+                                SqlProducto = query.SelectIdProducto(IdProducto)
+                                ResulProducto = ConecBDMysql.consultarBDD(SqlProducto)
+                                if ResulProducto:
+                                  for tplProducto in ResulProducto:
+                                    ObjProducto = productos.productos(tplProducto[0], tplProducto[1], tplProducto[2], tplProducto[3])
+                                    lstProducto.append(ObjProducto)
+                                    __log.debug("Se ingreso bien el ObjProducto")
+                                  #Producto elegido
+                                  for datosProductos in lstProducto:
+                                    nombreproducto = datosProductos.nombreProducto
+                                    idProd = datosProductos.idProducto
+                                    igvProd = datosProductos.igvProducto
+                                    valorProd = datosProductos.valorProducto     
+                                    __log.debug("Datos del producto en cada variable")
+                                  #Buscar Cabecera
+                                  SqlIdCabecera = query.SelectIdCabecera(IdCab)
+                                  ResulIdCab = ConecBDMysql.consultarBDD(SqlIdCabecera)
+                                  #Llenamos obj Cabecera
+                                  for tplCabecera in ResulIdCab:
+                                    ObjCabecera = factura.factura(tplCabecera[0], tplCabecera[1], tplCabecera[2], tplCabecera[3], tplCabecera[4], tplCabecera[5], tplCabecera[6], tplCabecera[7])
+                                    lstCabecera.append(ObjCabecera)
+                                    __log.debug("Se ingreso bien el ObjCabecera")
+                                  for datosCabecera in lstCabecera:
+                                    idCabe = datosCabecera.idCabecera
+                                    nomEmp = datosCabecera.nombreEmp
+                                    nomCli = datosCabecera.nombreClie
+                                    tippago = datosCabecera.tipo
+                                    igvCab = datosCabecera.igv
+                                    __log.debug(f"Datos de la cabecera en cada variable")                             
+                                  #Cantidad de productos
+                                  CantProducto = int(input(f"¿Cuantos {nombreproducto} desea?\n"))  
+                                  __log.info(type(valorProd))
+                                  valorTotal = float(valorProd) * CantProducto
+                                  __log.info(type(valorTotal))
+                                  #Insertar facdetalle
+                                  SqlFacDetalle = query.InsertDetalle(idCabe, idProd, CantProducto, valorTotal)
+                                  ConecBDMysql.ejecutarBDD(SqlFacDetalle)
+                                  igvProducto = float(igvCab)
+                                  if igvProd == 1:
+                                    igvProducto = (valorTotal * 0.18) + igvProducto
+                                  else:
+                                    igvProducto += 0
+                                  #Modificar facCabecera
+                                  SqlModiCabcera = query.UpdateCabecera(idCabe, igvProducto)
+                                  ConecBDMysql.ejecutarBDD(SqlModiCabcera)
+                                  __log.info("Se agrego correctamente")
+                                  #Buscar Cabecera
+                                  ResulIdCab = ConecBDMysql.consultarBDD(SqlIdCabecera)
+                                  #Llenamos obj Cabecera
+                                  for tplCabecera in ResulIdCab:
+                                    ObjCabecera = factura.factura(tplCabecera[0], tplCabecera[1], tplCabecera[2], tplCabecera[3], tplCabecera[4], tplCabecera[5], tplCabecera[6], tplCabecera[7])
+                                    lstCabecera.append(ObjCabecera)
+                                    __log.debug("Se ingreso bien el ObjCabecera")
+                                  #Actualiza los datos de la cabecera a mostrar(IGV, SUBTOTAL Y TOTAL)
+                                  for datosCabecera in lstCabecera:
+                                    fechaCab = datosCabecera.fecha
+                                    igvCab = datosCabecera.igv
+                                    subtotalCab = datosCabecera.subtotal
+                                    totalCab = datosCabecera.total
+                                    __log.debug(f"Datos de la cabecera en cada variable")
+                                  op = True
+                                  while op:
+                                    #Preguntar si quiere agregar mas productos
+                                    CondProd = input("¿Desea ingresar otro producto? S/N \n")
+                                    if CondProd == "S" or CondProd == "s":
+                                      OpcionMenuFacturaProducto = True
+                                      op = False
+                                    elif CondProd == "N" or CondProd == "n":
+                                      __log.info("Mostrar Factura")
+                                      print(f"Empresa: {nomEmp} \t\t Fecha: {fechaCab}")
+                                      print(f"Cliente: {nomCli}")
+                                      print(f"Tipo de Pago: {tippago}")
+                                      SqlDetalle = query.SelectDetalle(idCabe)
+                                      ResulDetalle = ConecBDMysql.consultarBDD(SqlDetalle)
+                                      print("Cantidad", "Producto", "Valor Unit.", "Valor Total", sep="\t")
+                                      for tplDetalle in ResulDetalle:
+                                        print(tplDetalle[0], tplDetalle[1], tplDetalle[2], tplDetalle[3], sep="\t\t")
+                                      print(f"\tSubtotal: {subtotalCab}")
+                                      print(f"\tIgv:\t {igvCab}")
+                                      print(f"\tTotal:\t {totalCab}")
+                                      sleep(3)
+                                      opfin = True
+                                      while opfin:
+                                        fin = input("Nueva Factura (N).\nRegresar (R).\nSalir(S).\nIngrese Opcion: ")
+                                        #Ingresar Nueva Factura
+                                        if fin == "N" or fin == "n":
+                                          opfin = False
+                                          op = False
+                                          OpcionMenuFacturaProducto = False
+                                          OpcionMenuFacturaTipo = False
+                                          OpcionMenuFacturaEmpresa = False
+                                          OpcionMenuFacturaCliente = True
+                                        #Regresar al menu operaciones
+                                        elif fin == "R" or fin == "r":
+                                          opfin = False
+                                          op = False
+                                          OpcionMenuFacturaProducto = False
+                                          OpcionMenuFacturaTipo = False
+                                          OpcionMenuFacturaEmpresa = False
+                                          OpcionMenuFacturaCliente = False
+                                          OpcionMenuMysql = True
+                                        #Salir del Sistema
+                                        elif fin == "S" or fin == "s":
+                                          utils.Salir()
+                                        else:
+                                          print("Ingrese una opcion valida\a")
+                                          opfin= True
+                                          sleep(1)
+                                    else:
+                                      print("Ingrese una opcion valida\a")
+                                      op = True
+                                      sleep(1)
+                                else:
+                                  print("Ingrese un producto de la lista\a")
+                                  OpcionMenuFacturaProducto = True
+                                  sleep(1)
+                            else:
+                              print("Ingrese un tipo de pago de la lista\a")
+                              OpcionMenuFacturaTipo = True
+                              sleep(1)
+                        else:
+                          print("Ingrese una empresa de la lista\a")
+                          OpcionMenuFacturaEmpresa = True
+                          sleep(1)
+                    for datosCliente in lstCliente:
+                        print(datosCliente.nombreCliente)
+                        OpcionMenuFacturaCliente = False
+                    else:
+                      print("El cliente no existe:\n")
+                      OpcionMenuFacturaCliente = True
+                      sleep(1)
+            except Exception as e:
+                __log.info(e)
+                OpcionMenuFacturaCliente = True
         cargarObjetos()
     elif(resMenuInicio == 2):
         log.debug("Mostramos los Mantenimientos")
