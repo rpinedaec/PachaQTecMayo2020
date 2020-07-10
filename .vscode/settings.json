@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "python.formatting.provider": "autopep8",
     "python.jediEnabled": false,
@@ -5,3 +6,5 @@
     "python.languageServer": "Microsoft",
     "python.linting.enabled": true
 }
+=======
+>>>>>>> upstream/develop

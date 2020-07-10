@@ -1,0 +1,60 @@
+2020-07-07 02:06:24,095 - INIT - INFO - inicio del programa
+2020-07-07 02:06:26,371 - INIT - DEBUG - Mostramos los Mantenimientos
+2020-07-07 02:06:27,123 - INIT - DEBUG - escogio 1 - Clientes
+2020-07-07 02:06:28,307 - INIT - DEBUG - mostrando cliente
+2020-07-07 02:06:34,139 - INIT - DEBUG - mostrando cliente
+2020-07-07 02:06:36,823 - INIT - DEBUG - buscamos cliente por DNI
+2020-07-07 02:06:41,595 - INIT - DEBUG - buscamos cliente
+2020-07-07 02:07:14,148 - INIT - DEBUG - mostrando cliente
+2020-07-07 02:07:32,986 - INIT - DEBUG - mostrando cliente
+2020-07-07 02:07:35,483 - INIT - DEBUG - buscamos cliente
+2020-07-07 02:07:46,746 - INIT - DEBUG - mostrando cliente
+2020-07-07 02:07:50,100 - INIT - DEBUG - eliminamos cliente
+2020-07-07 02:07:54,491 - INIT - DEBUG - mostrando cliente
+2020-07-07 02:07:58,030 - INIT - DEBUG - escogio 2 - Productos
+2020-07-07 02:07:59,825 - INIT - DEBUG - mostrando productos
+2020-07-07 02:08:22,179 - INIT - DEBUG - mostrando productos
+2020-07-07 02:08:24,579 - INIT - DEBUG - buscamos Producto por nombre
+2020-07-07 02:08:27,806 - INIT - DEBUG - mostrando productos
+2020-07-07 02:08:31,098 - INIT - DEBUG - buscamos Producto por nombre
+2020-07-07 02:08:44,661 - INIT - DEBUG - mostrando productos
+2020-07-07 02:08:47,459 - INIT - DEBUG - actualizar producto
+2020-07-07 02:09:00,104 - INIT - DEBUG - mostrando productos
+2020-07-07 02:09:03,729 - INIT - DEBUG - eliminamos producto
+2020-07-07 02:09:07,121 - INIT - DEBUG - mostrando productos
+2020-07-07 02:09:10,264 - INIT - DEBUG - escogio 3 - Empresa
+2020-07-07 02:09:13,236 - INIT - DEBUG - mostrando empresas
+2020-07-07 02:09:23,523 - INIT - DEBUG - mostrando empresas
+2020-07-07 02:09:27,360 - INIT - DEBUG - actualizar empresa
+2020-07-07 02:09:35,595 - INIT - DEBUG - mostrando empresas
+2020-07-07 02:09:46,067 - INIT - DEBUG - mostrando empresas
+2020-07-07 02:09:47,649 - INIT - DEBUG - eliminamos empresa
+2020-07-07 02:09:50,391 - INIT - DEBUG - mostrando empresas
+2020-07-07 02:09:54,577 - INIT - DEBUG - escogio 4 - Tipo Pago
+2020-07-07 02:09:56,784 - INIT - DEBUG - mostrando tipo pago
+2020-07-07 02:10:14,154 - INIT - DEBUG - mostrando tipo pago
+2020-07-07 02:10:16,401 - INIT - DEBUG - buscamos tipo de pago
+2020-07-07 02:10:19,083 - INIT - DEBUG - buscamos tipo de pago
+2020-07-07 02:10:22,385 - INIT - DEBUG - actualizar tipo pago
+2020-07-07 02:10:26,801 - INIT - DEBUG - mostrando tipo pago
+2020-07-07 02:10:29,099 - INIT - DEBUG - eliminamos tipo pago
+2020-07-07 02:10:37,644 - INIT - DEBUG - Mostramos el Menu crear Factura
+2020-07-07 02:10:39,782 - INIT - DEBUG - escogio 1 - Listar
+2020-07-07 02:10:42,040 - INIT - DEBUG - escogio 2 - Buscar
+2020-07-07 02:10:46,266 - INIT - DEBUG - escogio 3 - Crear
+2020-07-07 02:11:10,987 - INIT - DEBUG - escogio 1 - Listar
+2020-07-07 02:11:23,108 - INIT - DEBUG - finalizar Programa
+2020-07-07 02:12:16,407 - INIT - INFO - inicio del programa
+2020-07-07 02:12:19,625 - INIT - DEBUG - Mostramos el Menu crear Factura
+2020-07-07 02:12:24,016 - INIT - DEBUG - escogio 3 - Crear
+2020-07-07 02:12:49,111 - INIT - DEBUG - finalizar Programa
+2020-07-07 02:12:53,735 - INIT - INFO - inicio del programa
+2020-07-07 02:12:55,585 - INIT - DEBUG - Mostramos el Menu crear Factura
+2020-07-07 02:12:57,297 - INIT - DEBUG - escogio 3 - Crear
+2020-07-07 02:16:31,068 - INIT - DEBUG - finalizar Programa
+2020-07-07 02:16:37,611 - INIT - INFO - inicio del programa
+2020-07-07 02:16:39,552 - INIT - DEBUG - Mostramos el Menu crear Factura
+2020-07-07 02:16:41,345 - INIT - DEBUG - escogio 3 - Crear
+2020-07-07 02:16:52,315 - INIT - DEBUG - escogio 1 - Listar
+2020-07-07 02:16:55,185 - INIT - DEBUG - escogio 2 - Buscar
+2020-07-07 02:17:03,568 - INIT - DEBUG - finalizar Programa
