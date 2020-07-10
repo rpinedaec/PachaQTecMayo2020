@@ -14,9 +14,10 @@ coll = conn.leerRegistros("tipopago",data)
 for obj in coll:
     print(obj)
 
-dataActualizar = {"nombreTipoPago": "Credito 180 dias"}
+dataActualizar = {"nombreTipoPago": "Credito 60 dias"}
 coll = conn.actualizarResgistro("tipopago",data,dataActualizar)
 print (coll)
 data = {}
 coll = conn.leerRegistros("tipopago",data)
-print (coll)
+for obj in coll:
+    print(obj)
