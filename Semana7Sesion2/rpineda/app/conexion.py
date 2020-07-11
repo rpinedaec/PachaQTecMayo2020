@@ -80,13 +80,15 @@ class conexionBDD:
         except Exception as identifier:
             return False
 
+
+
     def insertarRegistro(self, collection, data):
         conexion = self.conexion()
         doc = conexion[str(f"{collection}")]
         res = doc.insert_one(data).inserted_id
         return res
 
-    def insertarResgistros(self, collection, data):
+    def insertarRegistros(self, collection, data):
         conexion = self.conexion()
         doc = conexion[str(f"{collection}")]
         res = doc.insert_many(data).inserted_ids
@@ -104,7 +106,7 @@ class conexionBDD:
         res = doc.find(data)
         return res
 
-    def actualizarResgistro(self, collection, condicion, cambio):
+    def actualizarRegistro(self, collection, condicion, cambio):
         try:
             conexion = self.conexion()
             doc = conexion[str(f"{collection}")]
@@ -114,4 +116,23 @@ class conexionBDD:
             self.__log.debug(error)
             return False
     
+    def eliminarRegistro(self, collection, eliminar):
+        try:
+            conexion = self.conexion()
+            doc = conexion[str(f"{collection}")]
+            doc.delete_one(eliminar)
+            return True
+        except Exception as error:
+            self.__log.debug(error);
+            return False
+    
+    def eliminarRegistros(self, collection,  eliminar):
+        try:
+            conexion = self.conexion()
+            doc = conexion[str(f"{collection}")]
+            doc.delete_many(eliminar)
+            return True
+        except Exception as error:
+            self.__log.debug(error);
+            return False
 
