@@ -18,6 +18,7 @@ listaProductos = list()
 class Empleado:
 	idEmpleado = ""
 	apellidoP = ""
+	apellidoM = ""
 	nombres = ""
 	salario = ""
 
