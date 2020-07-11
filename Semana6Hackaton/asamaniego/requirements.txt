@@ -1,0 +1,3 @@
+json2json==0.1.0
+math1==1.0
+psycopg2==2.8.5

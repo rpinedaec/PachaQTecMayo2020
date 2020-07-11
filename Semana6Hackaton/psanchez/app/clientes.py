@@ -1,6 +1,6 @@
 class clientes:
-    def __init__(self, idCliente, nombreCliente, nroIdentidicacionCliente, direccionCliente):
-        self.idCliente = idCliente
-        self.nombreCliente = nombreCliente
-        self.nroIdentidicacionCliente = nroIdentidicacionCliente
-        self.direccionCliente = direccionCliente
+    def __init__(self, idclientes, nombrecliente, nroidentificacioncliente, direccioncliente):
+        self.idclientes = idclientes
+        self.nombrecliente = nombrecliente
+        self.nroidentificacioncliente = nroidentificacioncliente
+        self.direccioncliente = direccioncliente
