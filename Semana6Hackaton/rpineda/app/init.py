@@ -4,6 +4,7 @@ import clientes
 
 log = utils.log("INIT")
 log.info("Inicio del programa")
+log.info("Inicio del programa")
 lstClientes = []
 lstTipoPago = []
 lstEmpresa = []

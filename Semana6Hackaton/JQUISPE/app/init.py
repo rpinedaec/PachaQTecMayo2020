@@ -12,7 +12,7 @@ lstTipoPago = []
 lstEmpresa = []
 lstProductos = []
 
-def cargarObjetos():
+def cargarClientes():
     conn = conexion.conexionBDD(1)
     query1 = "select idClientes, nombreCliente as Nombre, nroIdentificacionCliente as ID, direccionCliente as Direccion from clientes"
     resconn = conn.consultarBDD(query1)
@@ -20,13 +20,13 @@ def cargarObjetos():
     for row in resconn:
         cliente = clientes.clientes(row[0],row[1],row[2],row[3])
         lstClientes.append(cliente)
-        print(lstClientes)
+    print(lstClientes)
     for obj in lstClientes:
         print(obj.nombreCliente)
     input("continuar")
 
 def mantenimientoCliente():
-    dicMenuCliente = {  "\t- Buscar Cliente Todos": 1,
+    dicMenuCliente = {  "\t- Listar todos los clientes": 1,
                         "\t- Buscar Cliente por DNI": 2,
                         "\t- Modificar Cliente por ID": 3,
                         "\t- Crear Cliente": 4,
@@ -433,7 +433,146 @@ while stopMenuInicio:
     resMenuInicio = menuInicio.mostrarMenu()
     if(resMenuInicio == 1):
         log.debug("Mostramos el Menu crear Factura")
-        cargarObjetos()
+        ###INGRESAMOS LOS DATOS DEL CLIENTE; SI EL CLIENTE EXISTE EN LA BASE DE DATOS, EL PROGRAMA TRAERA TODOS LOS DATOS DEL CLIENTE, DE LO CONTRARIO CREARA UN NUEVO CLIENTE Y ALMACENARA EN LA BASE DE DATOS
+        print("Escriba el numero de DNI")
+        dni = input()
+        conn = conexion.conexionBDD(1)
+        query = f"SELECT idClientes, nombreCliente as Nombre, nroIdentificacionCliente as ID, direccionCliente as Direccion FROM clientes WHERE nroIdentificacionCliente = '{dni}';"
+        resConn = conn.consultarBDD(query)
+        if resConn==[]:
+            print("Ingrese el nombre del cliente")
+            nombreCliente=input()
+            print("Ingrese la direccion del cliente")
+            direccionCliente=input()
+            query = f"INSERT INTO clientes (nombreCliente, nroIdentificacionCliente,direccionCliente) VALUES('{nombreCliente}','{dni}','{direccionCliente}');"
+            resConn = conn.ejecutarBDD(query)
+            query = f"SELECT * FROM clientes"
+            resConn = conn.consultarBDD(query)
+            idCliente = resConn[-1][0]
+        else:
+            idCliente = resConn[0][0]
+            nombreCliente = resConn[0][1]
+            direccionCliente = resConn[0][3]
+        ###INGRESAMOS LOS DATOS DE LA EMPRESA
+        print("Ingrese el RUC de la empresa")
+        ruc = input()
+        conn = conexion.conexionBDD(1)
+        query = f"SELECT idempresa, rucEmpresa as RUC, nombreEmpresa as Nombre FROM empresa WHERE rucEmpresa = '{ruc}';"
+        resConn = conn.consultarBDD(query)
+        if resConn == []:
+            print("Ingrese el nombre de la empresa")
+            nombreEmpresa = input()
+            query = f"INSERT INTO empresa (rucEmpresa, nombreEmpresa) VALUES('{ruc}','{nombreEmpresa}')"
+            resConn =conn.ejecutarBDD(query)
+            query = f"SELECT * FROM empresa"
+            resConn = conn.consultarBDD(query)
+            idEmpresa=resConn[-1][0]
+        else:
+            idEmpresa=resConn[0][0]
+            nombreEmpresa=resConn[0][2]
+        #AGREGANDO EL METODO DE PAGO
+        print("INGRESE EL METODO DE PAGO")
+        log.debug("Mostramos los Metodos de Pago")
+        print("""MENU DEL METODO DE PAGO
+        \nEscoja una opción\n- Efectivo: 1, \n- Credito: 2""")
+        nnn = int(input ())
+        if nnn == 1:
+            print("Se escogio el metodo de pago Efectivo")
+            tipopago = "Efectivo"
+            idtipopago = 2
+        elif nnn == 2:
+            print("Se escogio el metodo de pago a Credito")
+            tipopago = "Credito"
+            idtipopago = 3
+        #AGREGANDO EL ESTADO DE LA FACTURA
+        log.debug("Mostramos los posibles estados de la factura")
+        print("""MENU DEL ESTADO DE LA FACTURA
+        \nEscoja una opción\n- Pagada: 1, \n- Por cobrar: 2""")
+        nnn = int(input ())
+        if nnn == 1:
+            print("Se escogio el estado de Factura Pagada")
+            estadofactura = 0
+        elif nnn == 2:
+            print("Se escogio el estado de factura por Cobrar")
+            estadofactura = 1
+        
+        #COMENZAREMOS A CARGAR EL DETALLE DE LAS FACTURAS;
+        subtotal=0.00
+        igv=0.00
+        listDetalle=[]
+        jjj=True
+        while jjj == True:
+            nombreProducto=input("Ingrese el producto a facturar: ")
+            #conn = conexion.conexionBDD(1)
+            query = f"SELECT * FROM productos WHERE nombreProducto = '{nombreProducto}';"
+            resConn = conn.consultarBDD(query)
+            if resConn == []:
+                valorProducto=float(input("Ingrese el valor del producto: "))
+                print("¿El producto tiene IGV?")
+                print("""1. El producto esta exonerado del IGV\n 2. El producto tributa el IGV""")
+                nnn=int(input("Ingrese su opción: "))
+                if nnn == 1:
+                    igvProducto = 0
+                elif nnn == 2:
+                    igvProducto = 1
+                query = f"INSERT INTO productos (nombreProducto, valorProducto,igvProducto) VALUES('{nombreProducto}','{valorProducto}','{igvProducto}');"
+                resConn =conn.ejecutarBDD(query)
+                query = f"SELECT * FROM productos WHERE nombreProducto = '{nombreProducto}'"
+                resConn = conn.consultarBDD(query)
+                valorProducto=float(resConn[0][2])
+                idProductos=resConn[0][0]
+            else:
+                print("El precio por unidad del producto seleccionado es: ",resConn[0][2])
+                valorProducto=float(resConn[0][2])
+                igvProducto=resConn[0][3]
+                idProductos=resConn[0][0]
+
+            cantFacDetalle=float(input("Ingrese la cantidad del producto a facturar: "))
+            valorFacDetalle=cantFacDetalle*valorProducto
+    
+            #AGREGAMOS ELEMENTOS A LA LISTA
+            listDetalle.append([cantFacDetalle,valorFacDetalle,idProductos])
+
+            if igvProducto == 0:
+                igvProducto = 0
+            elif igvProducto == 1:
+                igvProducto = valorFacDetalle*0.18
+
+            subtotal=subtotal+valorFacDetalle
+            igv = igv + igvProducto    
+
+            print("Seleccione una opción?\n1.-Agregar más productos\n2.-Finalizar")
+            opcion=int(input("Ingrese su opción: "))
+            if opcion == 1:
+                jjj=True
+            else:
+                jjj=False
+
+        #AQUI ENTREGA LOS DATOS DE LA FACTURA
+        print("El subtotal de la factura es: ",subtotal)
+        print("El igv de la factura es: ",igv)
+        total=subtotal+igv
+        print("El total de la factura es: ",total)
+        #DEBEMOS CREAR LA FACTURA CABECERA
+        #### ESTA PARTE SE IRA A PROBAR ###
+        query = f"INSERT INTO faccabecera (igvFacCabecera,subtotalFacCabecera,totalFacCabecera,estadoFactura,idCliente,idtipoPago,idempresa) VALUES ('{igv}','{subtotal}','{total}','{estadofactura}','{idCliente}','{idtipopago}','{idEmpresa}');"
+        resConn =conn.ejecutarBDD(query)
+        query = f"SELECT * FROM faccabecera"
+        resConn = conn.consultarBDD(query)
+        idFacCabecera=resConn[-1][0]
+
+        #####Comencemos a agregar los detalles de la factura, primero modificamos la lista, agregando el idFacCabecera.
+        i=0
+        for listDetalle[i] in listDetalle:
+            listDetalle[i].insert(2,idFacCabecera)
+            cantFacDetalle=listDetalle[i][0]
+            valorFacDetalle=listDetalle[i][1]
+            idProductos=listDetalle[i][3]
+            query=f"INSERT INTO facdetalle (cantFacDetalle, valorFacDetalle,idfacCabecera,idproductos) VALUES ('{cantFacDetalle}','{valorFacDetalle}','{idFacCabecera}','{idProductos}');"
+            resConn =conn.ejecutarBDD(query)
+        print("SE CREARON LA FACTURA CABECERA Y LA FACTURA DETALLE CORRECTAMENTE")
+        input("desea continuar???")
+    
     elif(resMenuInicio == 2):
         log.debug("Mostramos los Mantenimientos")
         dicMenuMantenimiento = {"\t- Clientes": 1, "\t- Productos": 2,
