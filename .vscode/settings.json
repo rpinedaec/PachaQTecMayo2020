@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+{
+    "python.formatting.provider": "autopep8",
+    "python.jediEnabled": false,
+    "python.pythonPath": "/Users/aldosamaniego/.pyenv/versions/3.7.6/bin/python",
+    "python.languageServer": "Microsoft",
+    "python.linting.enabled": true
+}
+=======
+>>>>>>> upstream/develop
