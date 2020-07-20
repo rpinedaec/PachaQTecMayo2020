@@ -1,6 +1,7 @@
 import conexion
 
 manager = conexion.conexionBDD(1)
+
 query = "SELECT * FROM alumno;"
 datos = manager.consultarBDD(query)
 query = "INSERT INTO alumno (aliasAlumno, edadAlumno, mailAlumno) values('Roberto','36','rpineda@pachaqtec.edu.pe')"
