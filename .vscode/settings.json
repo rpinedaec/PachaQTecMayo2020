@@ -2,7 +2,7 @@
 {
     "python.formatting.provider": "autopep8",
     "python.jediEnabled": false,
-    "python.pythonPath": "/Users/aldosamaniego/.pyenv/versions/3.7.6/bin/python",
+    "python.pythonPath": "C:\\Users\\BRYAN\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
     "python.languageServer": "Microsoft",
     "python.linting.enabled": true
 }
