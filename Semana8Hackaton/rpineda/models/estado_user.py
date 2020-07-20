@@ -2,5 +2,4 @@ from orator import Model
 
 
 class EstadoUser(Model):
-
-    pass
+    __table__ = 'estadouser'
