@@ -1,0 +1,56 @@
+Instalar orator
+pip install orator
+ 
+Creamos los modelos
+orator make:model Libro
+orator make:model User
+orator make:model Biblioteca
+orator make:model TipoDocumento
+orator make:model EstadoLibro
+orator make:model EstadoUser
+orator make:model Prestamo
+orator make:model Autor
+
+
+Creamos las migraciones
+orator make:migration create_tipo_documento_table
+orator make:migration create_estado_libro_table
+orator make:migration create_estado_user_table
+orator make:migration create_autor_table
+orator make:migration create_users_table
+orator make:migration create_libros_table
+orator make:migration create_bibliotecas_table
+orator make:migration create_prestamos_table
+
+Creamos los seedes
+orator make:seed estado_user_table_seeder
+orator make:seed tipo_documento_table_seeder
+orator make:seed estado_libro_table_seeder
+orator make:seed autor_table_seeder
+
+
+ejecutar:
+	orator migrate -c db.py 
+	donde: db es el archivo de configuracion
+
+revisar:
+	orator migrate:status -c db.py 
+
+
+ejecutar seeder:
+orator db:seed -c db.py
+
+
+refrescar orator:
+orator migrate:refresh --seed -c db.py
+
+
+
+
+
+caso necesite el mysqlclient
+	pip install mysqlclient
+
+
+
+
