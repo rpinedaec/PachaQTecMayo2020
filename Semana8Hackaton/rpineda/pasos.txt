@@ -17,8 +17,8 @@ orator make:migration create_tipo_documento_table
 orator make:migration create_estado_libro_table
 orator make:migration create_estado_user_table
 orator make:migration create_autor_table
-orator make:migration create_users_table
 orator make:migration create_libros_table
+orator make:migration create_users_table
 orator make:migration create_bibliotecas_table
 orator make:migration create_prestamos_table
 
@@ -37,6 +37,7 @@ orator make:seed autor_table_seeder
 
 Ejecutar Seeder
 orator  db:seed -c db.py
+
 
 
 
