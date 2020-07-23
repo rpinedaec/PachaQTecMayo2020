@@ -13,12 +13,12 @@ class Registros:
     __log = log("Registros")
     def registroLibros(self):
         self.__log.info("Ingresando al Registro de Libros")
-        opcionesRegistroLibros = {"\t- Registrar Libros":1,"\t- Listar Libros":2,"\t- Registrar Lector":3,"\t- Listar Lectores":4}
-        menuRegistroLibros = Menu("Registro de Libros",opcionesRegistroLibros)
-        resmenuRegistroLibros = menuRegistroLibros.mostrarMenu()
+        opcionesRegistro = {"\t- Registrar Libros":1,"\t- Listar Libros":2,"\t- Registrar Lector":3,"\t- Listar Lectores":4}
+        menuRegistro = Menu("Registro de Libros",opcionesRegistro)
+        resmenuRegistro = menuRegistro.mostrarMenu()
         stopMenu = True
         while stopMenu:
-            if resmenuRegistroLibros == 1:
+            if resmenuRegistro == 1:
                 self.__log.info("Entrando al registro de libros")
                 print("Registrar Libros")
                 nuevoLibro = Libro()
@@ -44,7 +44,7 @@ class Registros:
                 nuevoLibro.estado_libro_id = estadoLibro
                 nuevoLibro.save()
                 stopMenu = False
-            if resmenuRegistroLibros == 2:
+            if resmenuRegistro == 2:
                 self.__log.info("Entrando a listar libros")
                 print("Listar libros")
                 libros=Libro()
@@ -54,7 +54,7 @@ class Registros:
 
                 stopMenu = False
 
-            if resmenuRegistroLibros == 3:
+            if resmenuRegistro == 3:
                 self.__log.info("Entrando al registro de lectores")
                 print("Registrar Lectores")
                 nuevoUser = User()
@@ -85,7 +85,7 @@ class Registros:
                 nuevoUser.save()
                 stopMenu = False
 
-            if resmenuRegistroLibros == 4:
+            if resmenuRegistro == 4:
                 self.__log.info("Entrando a listar lector")
                 print("Listar lectores")
                 Usuarios=User()
@@ -95,50 +95,6 @@ class Registros:
 
                 stopMenu = False
 
-            elif resmenuRegistroLibros == 9:
+            elif resmenuRegistro == 9:
                 self._log.info("Saliendo")
 
-    def registroLectores(self):
-        self.__log.info("Ingresando al Registro de Libros")
-        opcionesRegistroLibros = {"\t- Registrar Libros":1,"\t- Listar Libros":2}
-        menuRegistroLibros = Menu("Registro de Libros",opcionesRegistroLibros)
-        resmenuRegistroLibros = menuRegistroLibros.mostrarMenu()
-        stopMenu = True
-        while stopMenu:
-            if resmenuRegistroLibros == 1:
-                self.__log.info("Entrando al registro de libros")
-                print("Registrar Libros")
-                nuevoLibro = Libro()
-                nombreLibro = input("escriba el nombre del Libro \n")
-                isbnLibro = input("escriba en ISBN del libro \n")
-
-                autores = Autor()
-                print(f"\t Codigo\t Nombre\t Tipo")
-                for obj in autores.all():
-                    print(f"\t {obj.id}\t {obj.nombre}\t {obj.tipo}")
-                print("Escriba el id del Autor de la siguiente lista")
-                autor_idLibro = input()
-                estados = EstadoLibro()
-                print(f"\t Codigo\t Estado")
-                for obj in estados.all():
-                    print(f"\t {obj.id}\t {obj.descripcion}")
-                print("Escriba el id del Estado del Libro de la siguiente lista")
-                estadoLibro = input()
-
-                nuevoLibro.nombre = nombreLibro
-                nuevoLibro.isbn = isbnLibro
-                nuevoLibro.autor_id = autor_idLibro
-                nuevoLibro.estado_libro_id = estadoLibro
-                nuevoLibro.save()
-                stopMenu = False
-            if resmenuRegistroLibros == 2:
-                self.__log.info("Entrando a listar libros")
-                print("Listar libros")
-                libros=Libro()
-                print(f"\t Codigo\t Nombre\t ISBN")
-                for obj in libros.all():
-                    print(f"\t {obj.id}\t {obj.nombre}\t {obj.isbn}")
-
-                stopMenu = False    
-            elif resmenuRegistroLibros == 9:
-                self._log.info("Saliendo")
