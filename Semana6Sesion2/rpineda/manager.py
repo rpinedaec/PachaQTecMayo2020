@@ -1,11 +1,15 @@
 import conexion
 
+<<<<<<< HEAD
 manager = conexion.conexionBDD(3)
 
 
+=======
+manager = conexion.conexionBDD(1)
+>>>>>>> upstream/develop
 query = "SELECT * FROM alumno;"
 datos = manager.consultarBDD(query)
-query = "INSERT INTO alumno (nombreAlumno, edadAlumno, correoAlumno) values('Roberto','36','rpineda@pachaqtec.edu.pe')"
+query = "INSERT INTO alumno (aliasAlumno, edadAlumno, mailAlumno) values('Roberto','36','rpineda@pachaqtec.edu.pe')"
 datos = manager.ejecutarBDD(query)
 if(datos):
     print("Se ejecuto correctamente")
@@ -16,7 +20,7 @@ query = "SELECT * FROM alumno;"
 datos = manager.consultarBDD(query)
 print(datos)
 
-query = "Update  alumno set nombreAlumno = 'Karen' where idalumno = 1"
+query = "Update  alumno set aliasAlumno = 'Karen' where idalumno = 1"
 datos = manager.ejecutarBDD(query)
 if(datos):
     print("Se ejecuto correctamente")

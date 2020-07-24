@@ -3,7 +3,8 @@ import conexion
 import clientes
 
 log = utils.log("INIT")
-log.info("inicio del programa")
+log.info("Inicio del programa")
+log.info("Inicio del programa")
 lstClientes = []
 lstTipoPago = []
 lstEmpresa = []
@@ -11,7 +12,7 @@ lstProductos = []
 
 def cargarObjetos():
     conn = conexion.conexionBDD(1)
-    query = "select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes;"
+    query = "select idCliente, nombreCliente as Nombre, nroIdentCliente as ID, direccionCliente as Direccion, created_at as creado, updated_at as actualizado from clientes"
     resconn = conn.consultarBDD(query)
     for row in resconn:
         cliente = clientes.clientes(row[0],row[1],row[2],row[3])
@@ -19,7 +20,7 @@ def cargarObjetos():
 
     for obj in lstClientes:
         print(obj.nombreCliente)
-    input("continuar")
+    input("Continuar")
 
 def mantenimientoCliente():
     dicMenuCliente = {  "\t- Buscar Cliente Todos": 1,
@@ -45,7 +46,7 @@ def mantenimientoCliente():
         print("escribe el numero de DNI")
         dni = input()
         conn = conexion.conexionBDD(1)
-        query = f"select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes where nroIdentidicacionCliente = '{dni}';"
+        query = f"select idCliente, nombreCliente as Nombre, nroIdentidicacionCliente as ID, direccionCliente as Direccion from clientes where nroIdentidicacionCliente = {dni};"
         resConn = conn.consultarBDD(query)
         print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
         for row in resConn:

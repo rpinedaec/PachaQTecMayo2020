@@ -1,0 +1,38 @@
+SQL Code:
+        CREATE TABLE IF NOT EXISTS `jacaton6avellaneda`.`facCabecera` (
+          `idfacCabecera` INT(11) NOT NULL AUTO_INCREMENT,
+          `idempresa` INT(11) NOT NULL,
+          `idtipoPago` INT(11) NOT NULL,
+          `idclientes` INT(11) NOT NULL,
+          `fechaFacCabecera` DATETIME NOT NULL,
+          `idclientes` DECIMAL NOT NULL,
+          `subtotalFacCabecera` DECIMAL NOT NULL,
+          `idclientes` DECIMAL NOT NULL,
+          `estadoFactura` CHAR(1) NOT NULL,
+          PRIMARY KEY (`idfacCabecera`),
+          INDEX `fk_facCabecera_tipoPago1_idx` (`idtipoPago` ASC) VISIBLE,
+          INDEX `fk_facCabecera_empresa1_idx` (`idempresa` ASC) VISIBLE,
+          INDEX `fk_facCabecera_clientes1_idx` (`idclientes` ASC) VISIBLE,
+          CONSTRAINT `fk_facCabecera_tipoPago1`
+            FOREIGN KEY (`idtipoPago`)
+            REFERENCES `jacaton6avellaneda`.`tipoPago` (`idtipoPago`)
+            ON DELETE NO ACTION
+            ON UPDATE NO ACTION,
+          CONSTRAINT `fk_facCabecera_empresa1`
+            FOREIGN KEY (`idempresa`)
+            REFERENCES `jacaton6avellaneda`.`empresa` (`idempresa`)
+            ON DELETE NO ACTION
+            ON UPDATE NO ACTION,
+          CONSTRAINT `fk_facCabecera_clientes1`
+            FOREIGN KEY (`idclientes`)
+            REFERENCES `jacaton6avellaneda`.`clientes` (`idclientes`)
+            ON DELETE NO ACTION
+            ON UPDATE NO ACTION)
+        ENGINE = InnoDB
+        DEFAULT CHARACTER SET = utf8
+
+SQL script execution finished: statements: 7 succeeded, 1 failed
+
+Fetching back view definitions in final form.
+Nothing to fetch
+
