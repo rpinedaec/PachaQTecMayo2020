@@ -1,0 +1,44 @@
+1.- Creo las carpetas de cada framework
+2.- Ingreso a la carpeta de django
+3.- Creo el entorno virtual
+    python -m venv djenv
+4.- Activo el entorno virtual
+    . djenv/Scripts/activate
+5.- Revisar pip list
+6.- Instalar django
+    pip install django
+7.- Verificar instalacion
+    python -m django --version
+8.- Inicializamos el Proyecto
+    django-admin startproject minimarket
+9.- Configurar la base de datos
+    Reemplazar la variable DATABASES con esto
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djbdd',
+        'USER': 'postgres',
+        'PASSWORD': 'pachaqtec',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+        }
+    }
+10.- instalamos psycopg2
+    pip install psycopg2
+11.- Realizar la migracion inicial de django
+    python manage.py migrate
+12.- Crear el super usuario
+    python manage.py createsuperuser
+13.- Lanzar la aplicacion
+    python manage.py runserver
+14.- Creamos las aplicaciones
+    python manage.py startapp cajero
+    python manage.py startapp administrador
+    python manage.py startapp almacen
+15.- Creamos los modelos
+
+16.- Creamos la migracion
+    python manage.py makemigrations almacen
+17.- Ejecutamos la migracion
+    python manage.py migrate
+

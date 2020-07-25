@@ -2,5 +2,4 @@ from orator import Model
 
 
 class TipoDocumento(Model):
-
-    pass
+    __table__ = 'tipodocumento'
