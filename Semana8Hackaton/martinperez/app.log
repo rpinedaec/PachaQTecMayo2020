@@ -1,0 +1,795 @@
+2020-07-19 17:11:04,430 - INIT - INFO - Inicando programa
+2020-07-19 17:11:10,406 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:11:10,406 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:27:49,217 - INIT - INFO - Inicando programa
+2020-07-19 17:27:52,710 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:27:52,710 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:27:55,865 - Registros - INFO - Entrando al registro de libros
+2020-07-19 17:28:33,960 - INIT - INFO - Inicando programa
+2020-07-19 17:28:40,375 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:28:40,375 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:28:41,486 - Registros - INFO - Entrando al registro de libros
+2020-07-19 17:29:08,372 - INIT - INFO - Inicando programa
+2020-07-19 17:29:16,583 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:29:16,583 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:29:17,791 - Registros - INFO - Entrando al registro de libros
+2020-07-19 17:30:22,052 - INIT - INFO - Inicando programa
+2020-07-19 17:30:55,404 - INIT - INFO - Inicando programa
+2020-07-19 17:31:00,630 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:31:00,630 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:31:05,630 - Registros - INFO - Entrando al registro de libros
+2020-07-19 17:31:18,684 - Registros - INFO - Saliendo
+2020-07-19 17:31:19,334 - INIT - INFO - Saliendo
+2020-07-19 17:36:13,143 - INIT - INFO - Inicando programa
+2020-07-19 17:36:17,103 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:36:17,103 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:36:18,326 - Registros - INFO - Saliendo
+2020-07-19 17:36:19,616 - INIT - INFO - Saliendo
+2020-07-19 17:36:23,228 - INIT - INFO - Inicando programa
+2020-07-19 17:36:24,215 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:36:24,215 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:36:25,855 - Registros - INFO - Entrando al registro de libros
+2020-07-19 17:37:04,753 - Registros - INFO - Saliendo
+2020-07-19 17:37:07,684 - INIT - INFO - Saliendo
+2020-07-19 17:37:13,651 - INIT - INFO - Inicando programa
+2020-07-19 17:37:47,486 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:37:47,486 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:37:48,827 - Registros - INFO - Entrando al listar de libros
+2020-07-19 17:37:53,335 - Registros - INFO - Entrando al listar de libros
+2020-07-19 17:37:58,748 - Registros - INFO - Saliendo
+2020-07-19 17:37:59,214 - INIT - INFO - Saliendo
+2020-07-19 17:49:31,161 - INIT - INFO - Inicando programa
+2020-07-19 17:49:37,118 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:49:37,118 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:49:38,960 - Registros - INFO - Entrando al listar de libros
+2020-07-19 17:49:41,520 - Registros - INFO - Saliendo
+2020-07-19 17:49:41,967 - INIT - INFO - Saliendo
+2020-07-19 17:56:35,371 - INIT - INFO - Inicando programa
+2020-07-19 17:56:36,760 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:56:36,760 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:56:37,712 - Registros - INFO - Entrando al listar de libros
+2020-07-19 17:56:44,128 - Registros - INFO - Saliendo
+2020-07-19 17:56:44,608 - INIT - INFO - Saliendo
+2020-07-19 17:57:56,888 - INIT - INFO - Inicando programa
+2020-07-19 17:57:58,184 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 17:57:58,184 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 17:57:59,240 - Registros - INFO - Entrando al listar de libros
+2020-07-19 17:58:06,029 - Registros - INFO - Saliendo
+2020-07-19 17:58:06,407 - INIT - INFO - Saliendo
+2020-07-19 18:03:12,584 - INIT - INFO - Inicando programa
+2020-07-19 18:03:13,726 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:03:13,726 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:03:14,806 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:03:17,391 - Registros - INFO - Saliendo
+2020-07-19 18:03:17,889 - INIT - INFO - Saliendo
+2020-07-19 18:05:04,604 - INIT - INFO - Inicando programa
+2020-07-19 18:05:06,136 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:05:06,136 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:05:09,865 - Menu - DEBUG - No escoje opion
+2020-07-19 18:05:12,918 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-07-19 18:05:12,919 - Menu - DEBUG - No escoje opion
+2020-07-19 18:05:16,888 - Registros - INFO - Saliendo
+2020-07-19 18:05:17,384 - INIT - INFO - Saliendo
+2020-07-19 18:06:34,421 - INIT - INFO - Inicando programa
+2020-07-19 18:06:38,016 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:06:38,016 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:06:39,358 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:06:54,040 - Registros - INFO - Entrando al registro de libros
+2020-07-19 18:07:30,476 - Registros - INFO - Saliendo
+2020-07-19 18:07:31,048 - INIT - INFO - Saliendo
+2020-07-19 18:07:59,394 - INIT - INFO - Inicando programa
+2020-07-19 18:08:01,295 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:08:01,296 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:08:02,094 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:08:25,039 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:08:27,463 - Registros - INFO - Saliendo
+2020-07-19 18:08:27,864 - INIT - INFO - Saliendo
+2020-07-19 18:13:50,289 - INIT - INFO - Inicando programa
+2020-07-19 18:13:51,646 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:13:51,647 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:14:44,988 - INIT - INFO - Inicando programa
+2020-07-19 18:14:48,164 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:14:48,164 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:16:20,110 - INIT - INFO - Inicando programa
+2020-07-19 18:16:21,503 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:16:21,503 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:16:57,289 - INIT - INFO - Inicando programa
+2020-07-19 18:16:59,094 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:16:59,094 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:24:43,203 - INIT - INFO - Inicando programa
+2020-07-19 18:24:44,984 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:24:44,985 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:24:57,568 - INIT - INFO - Inicando programa
+2020-07-19 18:24:58,911 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:24:58,912 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:25:01,575 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:26:12,623 - INIT - INFO - Inicando programa
+2020-07-19 18:26:14,030 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:26:14,030 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:26:25,776 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:26:31,335 - Registros - INFO - Saliendo
+2020-07-19 18:26:32,431 - INIT - INFO - Saliendo
+2020-07-19 18:28:19,719 - INIT - INFO - Inicando programa
+2020-07-19 18:28:22,046 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:28:22,046 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:29:49,252 - INIT - INFO - Inicando programa
+2020-07-19 18:29:51,102 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:29:51,102 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:29:58,584 - INIT - INFO - Inicando programa
+2020-07-19 18:29:59,720 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:29:59,720 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:31:40,945 - INIT - INFO - Inicando programa
+2020-07-19 18:31:44,431 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:31:44,432 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:31:46,150 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:31:50,686 - Registros - INFO - Entrando al registro de libros
+2020-07-19 18:32:01,388 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:32:04,022 - Registros - INFO - Entrando al registro de libros
+2020-07-19 18:32:14,502 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:32:17,736 - Registros - INFO - Entrando al registro de libros
+2020-07-19 18:32:35,697 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:32:43,424 - Registros - INFO - Entrando al registro de libros
+2020-07-19 18:32:53,279 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:33:02,752 - Registros - INFO - Entrando al registro de libros
+2020-07-19 18:33:17,592 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:33:54,687 - Registros - INFO - Entrando al listar de libros
+2020-07-19 18:34:01,592 - Registros - INFO - Saliendo
+2020-07-19 18:34:08,864 - INIT - INFO - Saliendo
+2020-07-19 18:36:29,191 - INIT - INFO - Inicando programa
+2020-07-19 18:36:31,296 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:36:31,296 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:36:32,552 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 18:37:26,865 - INIT - INFO - Inicando programa
+2020-07-19 18:37:29,636 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:37:29,638 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:37:31,168 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 18:37:35,996 - Registros - INFO - Saliendo
+2020-07-19 18:37:36,424 - INIT - INFO - Saliendo
+2020-07-19 18:48:49,825 - INIT - INFO - Inicando programa
+2020-07-19 18:48:52,575 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:48:52,575 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:48:54,575 - Registros - INFO - Saliendo
+2020-07-19 18:48:55,064 - INIT - INFO - Saliendo
+2020-07-19 18:49:34,043 - INIT - INFO - Inicando programa
+2020-07-19 18:49:35,991 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:49:35,991 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:49:37,177 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 18:50:27,952 - INIT - INFO - Inicando programa
+2020-07-19 18:50:29,424 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:50:29,424 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:50:31,095 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 18:52:09,551 - INIT - INFO - Inicando programa
+2020-07-19 18:52:11,334 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:52:11,334 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:52:12,431 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 18:52:47,702 - INIT - INFO - Inicando programa
+2020-07-19 18:52:51,207 - INIT - INFO - Saliendo
+2020-07-19 18:53:39,208 - INIT - INFO - Inicando programa
+2020-07-19 18:53:40,486 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:53:40,486 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:53:41,656 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 18:54:27,401 - INIT - INFO - Inicando programa
+2020-07-19 18:54:30,615 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio3/PachaQTecMayo2020/Semana8Hackaton/martinperez/init.py'
+2020-07-19 18:54:30,616 - Menu - DEBUG - No escoje opion
+2020-07-19 18:54:35,280 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:54:35,281 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:54:36,568 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 18:57:14,282 - INIT - INFO - Inicando programa
+2020-07-19 18:57:16,582 - Menu - ERROR - invalid literal for int() with base 10: 'C:/Users/MARTIN/AppData/Local/Programs/Python/Python37/python.exe e:/BACKEND-PAQ/git-repositorio3/PachaQTecMayo2020/Semana8Hackaton/martinperez/init.py'
+2020-07-19 18:57:16,582 - Menu - DEBUG - No escoje opion
+2020-07-19 18:57:20,240 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:57:20,240 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:57:21,519 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 18:58:01,858 - INIT - INFO - Inicando programa
+2020-07-19 18:58:03,528 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:58:03,528 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:58:04,006 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 18:59:26,131 - INIT - INFO - Inicando programa
+2020-07-19 18:59:28,519 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:59:28,519 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:59:30,720 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 18:59:50,923 - INIT - INFO - Inicando programa
+2020-07-19 18:59:53,319 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 18:59:53,320 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 18:59:54,710 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 19:02:31,177 - INIT - INFO - Inicando programa
+2020-07-19 19:02:32,599 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:02:32,599 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:02:33,862 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 19:03:04,038 - INIT - INFO - Inicando programa
+2020-07-19 19:03:05,134 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:03:05,134 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:03:05,878 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 19:03:18,039 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 19:03:21,288 - Registros - INFO - Saliendo
+2020-07-19 19:03:21,783 - INIT - INFO - Saliendo
+2020-07-19 19:10:07,480 - INIT - INFO - Inicando programa
+2020-07-19 19:10:09,006 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:10:09,006 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:10:11,920 - Registros - INFO - Entrando al listar de libros
+2020-07-19 19:10:18,880 - Registros - INFO - Saliendo
+2020-07-19 19:10:19,312 - INIT - INFO - Saliendo
+2020-07-19 19:11:19,014 - INIT - INFO - Inicando programa
+2020-07-19 19:11:21,960 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:11:21,960 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:11:23,832 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:12:52,128 - INIT - INFO - Inicando programa
+2020-07-19 19:12:55,799 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:12:55,800 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:12:57,447 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:13:22,404 - INIT - INFO - Inicando programa
+2020-07-19 19:13:23,615 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:13:23,616 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:13:24,584 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:13:27,217 - Registros - INFO - Entrando al registro de Bibliotecas
+2020-07-19 19:15:58,024 - INIT - INFO - Inicando programa
+2020-07-19 19:16:00,960 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:16:00,960 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:16:02,110 - Registros - INFO - Entrando al listar de libros
+2020-07-19 19:16:05,230 - Registros - INFO - Entrando al registro de libros
+2020-07-19 19:16:20,384 - Registros - INFO - Entrando al registro de libros
+2020-07-19 19:16:38,384 - Registros - INFO - Entrando al listar de libros
+2020-07-19 19:16:42,631 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 19:16:44,911 - Registros - INFO - Entrando al registro de Biblioteca
+2020-07-19 19:17:02,873 - INIT - INFO - Inicando programa
+2020-07-19 19:17:05,023 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:17:05,023 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:17:06,776 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 19:17:08,574 - Registros - INFO - Entrando al registro de Biblioteca
+2020-07-19 19:17:41,703 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 19:17:46,703 - Registros - INFO - Saliendo
+2020-07-19 19:17:47,216 - INIT - INFO - Saliendo
+2020-07-19 19:19:49,990 - INIT - INFO - Inicando programa
+2020-07-19 19:19:54,335 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:19:54,335 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:19:56,118 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 19:19:57,847 - Registros - INFO - Entrando al registro de Biblioteca
+2020-07-19 19:35:11,776 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:35:14,663 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 19:35:18,119 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:35:19,963 - Registros - INFO - Entrando al registro de Bibliotecas
+2020-07-19 19:38:35,478 - INIT - INFO - Inicando programa
+2020-07-19 19:38:38,404 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:38:38,404 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:38:43,536 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:38:45,559 - Registros - INFO - Entrando al registro de Bibliotecas
+2020-07-19 19:39:06,767 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:39:09,900 - Registros - INFO - Saliendo
+2020-07-19 19:41:21,697 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:41:21,697 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:41:23,592 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:41:25,559 - Registros - INFO - Saliendo
+2020-07-19 19:41:28,848 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:41:28,848 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:41:30,776 - Registros - INFO - Entrando al registro de Bibliotecas
+2020-07-19 19:41:55,105 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:42:06,152 - Registros - INFO - Saliendo
+2020-07-19 19:42:06,615 - INIT - INFO - Saliendo
+2020-07-19 19:45:31,013 - INIT - INFO - Inicando programa
+2020-07-19 19:45:32,463 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:45:32,463 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:45:33,582 - Registros - INFO - Entrando al listar de libros
+2020-07-19 19:45:36,159 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 19:45:37,568 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:45:41,233 - Registros - INFO - Entrando al registro de libros
+2020-07-19 19:45:56,126 - Registros - INFO - Entrando al listar de libros
+2020-07-19 19:46:02,119 - Menu - DEBUG - No escoje opion
+2020-07-19 19:46:05,867 - Registros - INFO - Saliendo
+2020-07-19 19:46:06,440 - INIT - INFO - Saliendo
+2020-07-19 19:46:22,639 - INIT - INFO - Inicando programa
+2020-07-19 19:46:35,031 - INIT - INFO - Entrando al Modulo de Resistro
+2020-07-19 19:46:35,031 - Registros - INFO - Ingresando al Registro de Libros
+2020-07-19 19:46:35,878 - Registros - INFO - Entrando al listar de libros
+2020-07-19 19:46:37,326 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 19:46:39,366 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:46:42,384 - Registros - INFO - Entrando al registro de libros
+2020-07-19 19:46:52,031 - Registros - INFO - Entrando al listar de libros
+2020-07-19 19:46:54,312 - Registros - INFO - Entrando al registro de Usuario
+2020-07-19 19:47:14,608 - Registros - INFO - Entrando al listar de Usuarios
+2020-07-19 19:47:17,743 - Registros - INFO - Entrando al registro de Bibliotecas
+2020-07-19 19:47:28,584 - Registros - INFO - Entrando al listar de Bibliotecas
+2020-07-19 19:47:31,376 - Registros - INFO - Saliendo
+2020-07-19 19:47:32,263 - INIT - INFO - Saliendo
+2020-07-19 20:23:23,493 - INIT - INFO - Inicando programa
+2020-07-19 20:23:32,900 - INIT - INFO - Saliendo
+2020-07-19 20:24:38,095 - INIT - INFO - Inicando programa
+2020-07-19 20:24:41,716 - INIT - INFO - Saliendo
+2020-07-19 20:24:51,447 - INIT - INFO - Inicando programa
+2020-07-19 20:24:53,524 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:24:53,524 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:24:53,524 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:24:58,859 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:24:58,859 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:25:02,286 - Registros - INFO - Entrando al listar de Devoluciones
+2020-07-19 20:25:02,286 - Registros - INFO - Entrando al listar de Devoluciones
+2020-07-19 20:25:04,471 - Registros - INFO - Entrando al registro de Prestamo
+2020-07-19 20:25:04,471 - Registros - INFO - Entrando al registro de Prestamo
+2020-07-19 20:25:23,901 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:25:23,901 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:25:30,663 - Registros - INFO - Saliendo
+2020-07-19 20:25:30,663 - Registros - INFO - Saliendo
+2020-07-19 20:25:31,463 - INIT - INFO - Saliendo
+2020-07-19 20:26:25,727 - INIT - INFO - Inicando programa
+2020-07-19 20:26:27,182 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:26:27,182 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:26:27,182 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:26:29,723 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 20:26:29,723 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 20:27:44,676 - INIT - INFO - Inicando programa
+2020-07-19 20:27:46,668 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:27:46,668 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:27:46,668 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:27:49,140 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 20:27:49,140 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 20:28:00,590 - Registros - INFO - Entrando al listar de Devoluciones
+2020-07-19 20:28:00,590 - Registros - INFO - Entrando al listar de Devoluciones
+2020-07-19 20:28:03,110 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:28:03,110 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:28:04,835 - Registros - INFO - Saliendo
+2020-07-19 20:28:04,835 - Registros - INFO - Saliendo
+2020-07-19 20:28:05,412 - INIT - INFO - Saliendo
+2020-07-19 20:33:43,900 - INIT - INFO - Inicando programa
+2020-07-19 20:33:46,807 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:33:46,807 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:33:46,807 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:33:50,294 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:33:50,294 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:34:18,291 - Registros - INFO - Saliendo
+2020-07-19 20:34:18,291 - Registros - INFO - Saliendo
+2020-07-19 20:34:18,766 - INIT - INFO - Saliendo
+2020-07-19 20:36:45,381 - INIT - INFO - Inicando programa
+2020-07-19 20:36:49,668 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:36:49,670 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:36:49,670 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:36:50,582 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:36:50,582 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:37:08,494 - Registros - INFO - Saliendo
+2020-07-19 20:37:08,494 - Registros - INFO - Saliendo
+2020-07-19 20:37:09,838 - INIT - INFO - Saliendo
+2020-07-19 20:44:58,187 - INIT - INFO - Inicando programa
+2020-07-19 20:45:01,710 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:45:01,710 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:45:01,710 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:45:03,004 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:45:03,004 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:45:18,670 - Registros - INFO - Entrando al listar de Devoluciones
+2020-07-19 20:45:18,670 - Registros - INFO - Entrando al listar de Devoluciones
+2020-07-19 20:45:21,566 - Registros - INFO - Saliendo
+2020-07-19 20:45:21,566 - Registros - INFO - Saliendo
+2020-07-19 20:45:22,003 - INIT - INFO - Saliendo
+2020-07-19 20:50:22,032 - INIT - INFO - Inicando programa
+2020-07-19 20:50:26,283 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:50:26,283 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:50:26,283 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:50:28,319 - Registros - INFO - Entrando al registro de Prestamo
+2020-07-19 20:50:28,319 - Registros - INFO - Entrando al registro de Prestamo
+2020-07-19 20:50:42,710 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:50:42,710 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:51:21,598 - INIT - INFO - Inicando programa
+2020-07-19 20:51:23,072 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:51:23,072 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:51:23,072 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:51:26,222 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:51:26,222 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:52:27,488 - INIT - INFO - Inicando programa
+2020-07-19 20:52:29,915 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:52:29,915 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:52:29,915 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:52:30,891 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:52:30,891 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:53:32,125 - INIT - INFO - Inicando programa
+2020-07-19 20:53:34,548 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:53:34,549 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:53:34,549 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:53:35,723 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:53:35,723 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:55:32,632 - INIT - INFO - Inicando programa
+2020-07-19 20:55:34,555 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:55:34,555 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:55:34,555 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:55:35,462 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:55:35,462 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:56:38,190 - INIT - INFO - Inicando programa
+2020-07-19 20:56:42,115 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:56:42,115 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:56:42,115 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:56:42,732 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:56:42,732 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:58:07,172 - INIT - INFO - Inicando programa
+2020-07-19 20:58:10,742 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:58:10,743 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:58:10,743 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:58:11,862 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:58:11,862 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:58:21,390 - Registros - INFO - Saliendo
+2020-07-19 20:58:21,390 - Registros - INFO - Saliendo
+2020-07-19 20:58:21,814 - INIT - INFO - Saliendo
+2020-07-19 20:58:47,957 - INIT - INFO - Inicando programa
+2020-07-19 20:58:49,942 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:58:49,942 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:58:49,942 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:58:50,851 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:58:50,851 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:58:57,766 - Registros - INFO - Saliendo
+2020-07-19 20:58:57,766 - Registros - INFO - Saliendo
+2020-07-19 20:58:58,327 - INIT - INFO - Saliendo
+2020-07-19 20:59:38,677 - INIT - INFO - Inicando programa
+2020-07-19 20:59:42,684 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 20:59:42,684 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:59:42,684 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 20:59:44,780 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 20:59:44,780 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:00:00,203 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:00:00,203 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:00:05,828 - Registros - INFO - Saliendo
+2020-07-19 21:00:05,828 - Registros - INFO - Saliendo
+2020-07-19 21:00:06,262 - INIT - INFO - Saliendo
+2020-07-19 21:00:56,513 - INIT - INFO - Inicando programa
+2020-07-19 21:00:58,390 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:00:58,391 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:00:58,391 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:00:59,380 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:00:59,380 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:01:11,036 - Registros - INFO - Saliendo
+2020-07-19 21:01:11,036 - Registros - INFO - Saliendo
+2020-07-19 21:01:11,422 - INIT - INFO - Saliendo
+2020-07-19 21:02:40,529 - INIT - INFO - Inicando programa
+2020-07-19 21:02:44,013 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:02:44,014 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:02:44,014 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:02:48,598 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:02:48,598 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:03:00,337 - Registros - INFO - Saliendo
+2020-07-19 21:03:00,337 - Registros - INFO - Saliendo
+2020-07-19 21:03:00,695 - INIT - INFO - Saliendo
+2020-07-19 21:04:00,841 - INIT - INFO - Inicando programa
+2020-07-19 21:04:03,339 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:04:03,339 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:04:03,339 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:04:06,858 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:04:06,858 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:04:13,174 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:04:13,174 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:04:16,750 - Registros - INFO - Saliendo
+2020-07-19 21:04:16,750 - Registros - INFO - Saliendo
+2020-07-19 21:04:17,182 - INIT - INFO - Saliendo
+2020-07-19 21:04:33,914 - INIT - INFO - Inicando programa
+2020-07-19 21:04:36,004 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:04:36,006 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:04:36,006 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:04:37,020 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:04:37,020 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:04:47,630 - Registros - INFO - Saliendo
+2020-07-19 21:04:47,630 - Registros - INFO - Saliendo
+2020-07-19 21:04:48,013 - Menu - ERROR - invalid literal for int() with base 10: ''
+2020-07-19 21:04:48,014 - Menu - DEBUG - No escoje opion
+2020-07-19 21:04:51,694 - INIT - INFO - Saliendo
+2020-07-19 21:05:22,200 - INIT - INFO - Inicando programa
+2020-07-19 21:05:24,967 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:05:24,967 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:05:24,967 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:05:25,952 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:05:25,952 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:05:32,846 - Registros - INFO - Saliendo
+2020-07-19 21:05:32,846 - Registros - INFO - Saliendo
+2020-07-19 21:05:33,246 - INIT - INFO - Saliendo
+2020-07-19 21:05:51,654 - INIT - INFO - Inicando programa
+2020-07-19 21:05:53,243 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:05:53,243 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:05:53,243 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:05:54,159 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:05:54,159 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:05:58,086 - Registros - INFO - Saliendo
+2020-07-19 21:05:58,086 - Registros - INFO - Saliendo
+2020-07-19 21:05:58,483 - INIT - INFO - Saliendo
+2020-07-19 21:06:27,311 - INIT - INFO - Inicando programa
+2020-07-19 21:06:29,345 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:06:29,345 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:06:29,345 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:06:30,956 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:06:30,956 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:06:37,214 - Registros - INFO - Entrando al registro de Prestamo
+2020-07-19 21:06:37,214 - Registros - INFO - Entrando al registro de Prestamo
+2020-07-19 21:06:48,374 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:06:48,374 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:07:02,494 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:07:02,494 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:07:09,851 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:07:09,851 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:07:34,542 - Registros - INFO - Saliendo
+2020-07-19 21:07:34,542 - Registros - INFO - Saliendo
+2020-07-19 21:07:34,948 - INIT - INFO - Saliendo
+2020-07-19 21:09:12,894 - INIT - INFO - Inicando programa
+2020-07-19 21:09:15,508 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:09:15,510 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:09:15,510 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:09:16,500 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:09:16,500 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:09:27,390 - Registros - INFO - Entrando al registro de Prestamo
+2020-07-19 21:09:27,390 - Registros - INFO - Entrando al registro de Prestamo
+2020-07-19 21:09:36,003 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:09:36,003 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:09:41,695 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:09:41,695 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:09:52,619 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:09:52,619 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:10:00,062 - Registros - INFO - Saliendo
+2020-07-19 21:10:00,062 - Registros - INFO - Saliendo
+2020-07-19 21:10:00,456 - INIT - INFO - Saliendo
+2020-07-19 21:11:36,746 - INIT - INFO - Inicando programa
+2020-07-19 21:11:40,107 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:11:40,107 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:11:40,107 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:11:42,404 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:11:42,404 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:12:06,822 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:12:06,822 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:12:27,382 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:12:27,382 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:13:14,102 - Registros - INFO - Saliendo
+2020-07-19 21:13:14,102 - Registros - INFO - Saliendo
+2020-07-19 21:13:14,518 - INIT - INFO - Saliendo
+2020-07-19 21:17:18,444 - INIT - INFO - Inicando programa
+2020-07-19 21:17:19,894 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:17:19,894 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:17:19,894 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:17:21,180 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:17:21,180 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:30:30,927 - INIT - INFO - Inicando programa
+2020-07-19 21:30:33,766 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:30:33,766 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:30:33,766 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:30:34,308 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:30:34,308 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:30:37,124 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:30:37,124 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:31:41,148 - INIT - INFO - Inicando programa
+2020-07-19 21:31:43,030 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:31:43,030 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:31:43,030 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:31:44,462 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:31:44,462 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:32:44,621 - INIT - INFO - Inicando programa
+2020-07-19 21:32:47,080 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:32:47,081 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:32:47,081 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:32:47,844 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:32:47,844 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:34:31,278 - INIT - INFO - Inicando programa
+2020-07-19 21:34:32,726 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:34:32,727 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:34:32,727 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:34:33,387 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:34:33,387 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:34:36,254 - Registros - INFO - Entrando al registro de Prestamo
+2020-07-19 21:34:36,254 - Registros - INFO - Entrando al registro de Prestamo
+2020-07-19 21:34:43,971 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:34:43,971 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:34:46,836 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:34:46,836 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:36:02,559 - INIT - INFO - Inicando programa
+2020-07-19 21:36:04,628 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:36:04,628 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:36:04,628 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:36:05,859 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:36:05,859 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:37:41,164 - INIT - INFO - Inicando programa
+2020-07-19 21:37:43,726 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:37:43,726 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:37:43,726 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:37:45,022 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:37:45,022 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:37:46,686 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:37:46,686 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:38:42,111 - INIT - INFO - Inicando programa
+2020-07-19 21:38:44,502 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:38:44,502 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:38:44,502 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:38:45,947 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:38:45,947 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:39:25,744 - INIT - INFO - Inicando programa
+2020-07-19 21:39:28,476 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:39:28,476 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:39:28,476 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:39:29,742 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:39:29,742 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:42:03,095 - INIT - INFO - Inicando programa
+2020-07-19 21:42:04,460 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:42:04,460 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:42:04,460 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:42:05,622 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:42:05,622 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:43:22,544 - INIT - INFO - Inicando programa
+2020-07-19 21:43:24,108 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:43:24,108 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:43:24,108 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:43:24,831 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:43:24,831 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:45:07,098 - INIT - INFO - Inicando programa
+2020-07-19 21:45:08,966 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:45:08,967 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:45:08,967 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:45:10,054 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:45:10,054 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:45:36,766 - INIT - INFO - Inicando programa
+2020-07-19 21:45:38,254 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:45:38,255 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:45:38,255 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:45:38,817 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:45:38,817 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:45:41,295 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:45:41,295 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:46:11,296 - INIT - INFO - Inicando programa
+2020-07-19 21:46:13,087 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:46:13,088 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:46:13,088 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:46:14,166 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:46:14,166 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:47:07,358 - INIT - INFO - Inicando programa
+2020-07-19 21:47:09,958 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:47:09,959 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:47:09,959 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:47:11,052 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:47:11,052 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:50:26,337 - INIT - INFO - Inicando programa
+2020-07-19 21:50:29,366 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:50:29,367 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:50:29,367 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:50:30,622 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:50:30,622 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:50:57,470 - INIT - INFO - Inicando programa
+2020-07-19 21:50:59,276 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:50:59,276 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:50:59,276 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:51:00,166 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:51:00,166 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:51:26,366 - INIT - INFO - Inicando programa
+2020-07-19 21:51:27,780 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:51:27,780 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:51:27,780 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:51:28,609 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:51:28,609 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:52:27,383 - INIT - INFO - Inicando programa
+2020-07-19 21:52:29,055 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:52:29,055 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:52:29,055 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:52:30,092 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:52:30,092 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:53:15,069 - INIT - INFO - Inicando programa
+2020-07-19 21:53:16,948 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:53:16,950 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:53:16,950 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:53:17,789 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:53:17,789 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:53:38,687 - INIT - INFO - Inicando programa
+2020-07-19 21:53:41,367 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:53:41,367 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:53:41,367 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:53:42,276 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:53:42,276 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:54:44,424 - INIT - INFO - Inicando programa
+2020-07-19 21:54:46,558 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:54:46,558 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:54:46,558 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:54:47,483 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:54:47,483 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:55:40,281 - INIT - INFO - Inicando programa
+2020-07-19 21:55:42,798 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:55:42,798 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:55:42,798 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:55:43,556 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:55:43,556 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:56:44,960 - INIT - INFO - Inicando programa
+2020-07-19 21:56:46,812 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:56:46,812 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:56:46,812 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:56:47,220 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:56:47,220 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 21:56:48,422 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:56:48,422 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:57:14,796 - INIT - INFO - Inicando programa
+2020-07-19 21:57:16,950 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:57:16,950 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:57:16,950 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:57:17,831 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:57:17,831 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:58:20,612 - INIT - INFO - Inicando programa
+2020-07-19 21:58:21,958 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 21:58:21,959 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:58:21,959 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 21:58:22,740 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 21:58:22,740 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:00:08,712 - INIT - INFO - Inicando programa
+2020-07-19 22:00:11,444 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:00:11,444 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:00:11,444 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:00:12,166 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:00:12,166 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:00:52,684 - INIT - INFO - Inicando programa
+2020-07-19 22:00:54,286 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:00:54,287 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:00:54,287 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:00:54,940 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:00:54,940 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:01:40,580 - INIT - INFO - Inicando programa
+2020-07-19 22:01:42,444 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:01:42,444 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:01:42,444 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:01:43,523 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:01:43,523 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:01:51,516 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 22:01:51,516 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 22:01:56,190 - Registros - INFO - Saliendo
+2020-07-19 22:01:56,190 - Registros - INFO - Saliendo
+2020-07-19 22:01:56,619 - INIT - INFO - Saliendo
+2020-07-19 22:04:12,808 - INIT - INFO - Inicando programa
+2020-07-19 22:04:14,211 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:04:14,211 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:04:14,211 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:04:15,182 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:04:15,182 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:04:18,276 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 22:04:18,276 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 22:04:23,803 - Registros - INFO - Saliendo
+2020-07-19 22:04:23,803 - Registros - INFO - Saliendo
+2020-07-19 22:04:24,211 - INIT - INFO - Saliendo
+2020-07-19 22:04:50,865 - INIT - INFO - Inicando programa
+2020-07-19 22:04:52,470 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:04:52,470 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:04:52,470 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:04:53,294 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:04:53,294 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:04:57,687 - Registros - INFO - Saliendo
+2020-07-19 22:04:57,687 - Registros - INFO - Saliendo
+2020-07-19 22:04:58,119 - INIT - INFO - Saliendo
+2020-07-19 22:07:15,160 - INIT - INFO - Inicando programa
+2020-07-19 22:07:16,676 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:07:16,676 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:07:16,676 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:07:17,462 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:07:17,462 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:08:12,481 - INIT - INFO - Inicando programa
+2020-07-19 22:08:17,735 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:08:17,736 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:08:17,736 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:08:18,676 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:08:18,676 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:09:36,595 - INIT - INFO - Inicando programa
+2020-07-19 22:09:40,707 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:09:40,707 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:09:40,707 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:09:41,496 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:09:41,496 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:12:02,726 - INIT - INFO - Inicando programa
+2020-07-19 22:12:04,412 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:12:04,412 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:12:04,412 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:12:05,654 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:12:05,654 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:13:45,690 - INIT - INFO - Inicando programa
+2020-07-19 22:13:48,207 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:13:48,207 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:13:48,207 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:13:49,483 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:13:49,483 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:15:20,934 - INIT - INFO - Inicando programa
+2020-07-19 22:15:23,427 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:15:23,427 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:15:23,427 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:15:25,325 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:15:25,325 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:17:06,948 - INIT - INFO - Inicando programa
+2020-07-19 22:17:09,302 - INIT - INFO - Entrando al Modulo de Prestamos
+2020-07-19 22:17:09,302 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:17:09,302 - Registros - INFO - Ingresando al Registro de Prestamos
+2020-07-19 22:17:10,043 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:17:10,043 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:17:21,052 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 22:17:21,052 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 22:17:26,108 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:17:26,108 - Registros - INFO - Entrando al registro de Devoluciones
+2020-07-19 22:17:31,700 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 22:17:31,700 - Registros - INFO - Entrando al listar de Prestamos
+2020-07-19 22:17:34,288 - Registros - INFO - Saliendo
+2020-07-19 22:17:34,288 - Registros - INFO - Saliendo
+2020-07-19 22:17:34,814 - INIT - INFO - Saliendo
