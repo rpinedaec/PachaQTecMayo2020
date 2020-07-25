@@ -31,3 +31,14 @@
     python manage.py createsuperuser
 13.- Lanzar la aplicacion
     python manage.py runserver
+14.- Creamos las aplicaciones
+    python manage.py startapp cajero
+    python manage.py startapp administrador
+    python manage.py startapp almacen
+15.- Creamos los modelos
+
+16.- Creamos la migracion
+    python manage.py makemigrations almacen
+17.- Ejecutamos la migracion
+    python manage.py migrate
+
