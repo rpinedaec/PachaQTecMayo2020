@@ -1,6 +1,18 @@
 import utils.utils
 from views import registros 
-
+from orator import Model,DatabaseManager
+config = {
+    'mysql': {
+        'driver': 'mysql',
+        'host': 'localhost',
+        'database': 'biblioteca',
+        'user': 'root',
+        'password': 'pachaqtec',
+        'prefix': ''
+    }
+}
+db = DatabaseManager(config)
+Model.set_connection_resolver(db)
 
 
 log = utils.utils.log("INIT")

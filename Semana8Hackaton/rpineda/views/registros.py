@@ -3,20 +3,7 @@ from utils.utils import Menu
 from models.libro import Libro
 from models.autor import Autor
 from models.estado_libro import EstadoLibro
-from orator import Model,DatabaseManager
 
-config = {
-    'mysql': {
-        'driver': 'mysql',
-        'host': 'localhost',
-        'database': 'biblioteca',
-        'user': 'root',
-        'password': 'pachaqtec',
-        'prefix': ''
-    }
-}
-db = DatabaseManager(config)
-Model.set_connection_resolver(db)
 
 
 class Registros:
