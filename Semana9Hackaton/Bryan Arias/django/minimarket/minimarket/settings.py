@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'almacen.apps.AlmacenConfig',
+    'cajero.apps.CajeroConfig',
+    'administrador.apps.AdministradorConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
