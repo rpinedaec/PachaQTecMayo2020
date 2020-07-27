@@ -53,8 +53,13 @@ class conexionBDD:
                 return False
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     def consultarBDD(self, query): 
         try:    
+=======
+    def consultarBDD(self, query):
+        try:
+>>>>>>> upstream/develop
 =======
     def consultarBDD(self, query):
         try:
