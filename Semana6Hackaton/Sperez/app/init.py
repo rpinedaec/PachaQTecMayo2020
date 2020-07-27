@@ -4,6 +4,8 @@ import cliente
 import empresa
 import productos
 import tipopago
+import psycopg2
+import query
 
 log = utils.log("INIT")
 log.info("inicio del programa")
@@ -450,18 +452,20 @@ while stopMenuInicio:
         OpcionMenuFacturaCliente = True
         while OpcionMenuFacturaCliente:
         #Listamos a todos los clientes
-            query = querys.Querys(NombreBD)
-            SqlClientes = query.SelectAllClientes()
-            Clientes = ConecBDMysql.consultarBDD(SqlClientes)
+            conn = conexion.conexionBDD(1)
+            
+            querys = query.Querys()
+            SqlClientes = querys.SelectAllClientes()
+            Clientes = conn.consultarBDD(SqlClientes)
             #Cabecera
             print("ID", "Nombre\t", "DNI\t", "Direccion", sep="\t")
             #Mostrar Datos
             for tplCliente in Clientes:
-            print(tplCliente[0], tplCliente[1], tplCliente[2], tplCliente[3], sep="\t")
+                print(tplCliente[0], tplCliente[1], tplCliente[2], tplCliente[3], sep="\t")
             IdCliente = input("Ingrese Id del Cliente:\n")
             try:
-                SqlClientes = query.SelectIdCliente(IdCliente)
-                ResulClientes = ConecBDMysql.consultarBDD(SqlClientes)
+                SqlClientes = querys.SelectIdCliente(IdCliente)
+                ResulClientes = conn.consultarBDD(SqlClientes)
                 lstCliente = []
                 lstEmpresa = []
                 lstProducto = []
@@ -478,7 +482,7 @@ while stopMenuInicio:
                     OpcionMenuFacturaEmpresa = True
                     while OpcionMenuFacturaEmpresa:
                         #Ingreso de la empresa
-                        SqlEmpresas = query.SelectAllEmpresas()
+                        SqlEmpresas = querys.SelectAllEmpresas()
                         Empresas = ConecBDMysql.consultarBDD(SqlEmpresas)
                         #Cabecera
                         print("ID", "Numero Ruc", "Nombre\t", sep="\t")
@@ -486,7 +490,7 @@ while stopMenuInicio:
                         for tplEmpresa in Empresas:
                           print(tplEmpresa[0], tplEmpresa[1], tplEmpresa[2], sep="\t")          
                         IdEmpresa = input("Ingrese Id de la Empresa:\n")
-                        SqlEmpresas = query.SelectIdEmpresa(IdEmpresa)
+                        SqlEmpresas = querys.SelectIdEmpresa(IdEmpresa)
                         ResulEmpresas = ConecBDMysql.consultarBDD(SqlEmpresas)
                         if ResulEmpresas:
                           for tplEmpresa in ResulEmpresas:
@@ -496,7 +500,7 @@ while stopMenuInicio:
                           
                           OpcionMenuFacturaTipo = True
                           while OpcionMenuFacturaTipo:
-                            SqlTipo = query.SelectAllTipos()
+                            SqlTipo = querys.SelectAllTipos()
                             Tipos = ConecBDMysql.consultarBDD(SqlTipo)
                             #Cabecera
                             print("ID", "Nombre\t", sep="\t")
@@ -504,7 +508,7 @@ while stopMenuInicio:
                             for tplTipo in Tipos:
                               print(tplTipo[0], tplTipo[1], sep="\t")
                             IdTipo = input("Ingrese Id del tipo de pago:\n")
-                            SqlTipo = query.SelectIdTipo(IdTipo)
+                            SqlTipo = querys.SelectIdTipo(IdTipo)
                             ResulTipo = ConecBDMysql.consultarBDD(SqlTipo)
                             if ResulTipo:
                               for tplTipo in ResulTipo:
@@ -525,10 +529,10 @@ while stopMenuInicio:
                               igvProd = 0
                               subTotal = 0
                               Total = 0
-                              SqlFacCabecera = query.InsertCabecera(str(idEmp), str(idClie), str(idTip), str(igvProd), str(subTotal), str(Total))
+                              SqlFacCabecera = querys.InsertCabecera(str(idEmp), str(idClie), str(idTip), str(igvProd), str(subTotal), str(Total))
                               ConecBDMysql.ejecutarBDD(SqlFacCabecera)
                               #Mostrar todas las Cabeceras
-                              SqlAllCabecera = query.SelectAllCabecera()
+                              SqlAllCabecera = querys.SelectAllCabecera()
                               ResulAllCabecera = ConecBDMysql.consultarBDD(SqlAllCabecera)
                               print("ID", "Empresa\t", "Cliente\t", "Tipo Pago", sep="\t")
                               for tplCabecera in ResulAllCabecera:
@@ -538,7 +542,7 @@ while stopMenuInicio:
                               OpcionMenuFacturaProducto = True
                               while OpcionMenuFacturaProducto:
                                 #Todos los productos
-                                SqlProducto = query.SelectAllProductos()
+                                SqlProducto = querys.SelectAllProductos()
                                 Productos = ConecBDMysql.consultarBDD(SqlProducto)
                                 #Cabecera
                                 print("ID", "Nombre\t", "Valor", "Igv", sep="\t")
@@ -546,7 +550,7 @@ while stopMenuInicio:
                                 for tplProducto in Productos:
                                   print(tplProducto[0], tplProducto[1]+"\t", tplProducto[2], tplProducto[3], sep="\t")
                                 IdProducto = input("Ingrese Id del producto:\n")
-                                SqlProducto = query.SelectIdProducto(IdProducto)
+                                SqlProducto = querys.SelectIdProducto(IdProducto)
                                 ResulProducto = ConecBDMysql.consultarBDD(SqlProducto)
                                 if ResulProducto:
                                   for tplProducto in ResulProducto:
@@ -561,7 +565,7 @@ while stopMenuInicio:
                                     valorProd = datosProductos.valorProducto     
                                     __log.debug("Datos del producto en cada variable")
                                   #Buscar Cabecera
-                                  SqlIdCabecera = query.SelectIdCabecera(IdCab)
+                                  SqlIdCabecera = querys.SelectIdCabecera(IdCab)
                                   ResulIdCab = ConecBDMysql.consultarBDD(SqlIdCabecera)
                                   #Llenamos obj Cabecera
                                   for tplCabecera in ResulIdCab:
@@ -581,7 +585,7 @@ while stopMenuInicio:
                                   valorTotal = float(valorProd) * CantProducto
                                   __log.info(type(valorTotal))
                                   #Insertar facdetalle
-                                  SqlFacDetalle = query.InsertDetalle(idCabe, idProd, CantProducto, valorTotal)
+                                  SqlFacDetalle = querys.InsertDetalle(idCabe, idProd, CantProducto, valorTotal)
                                   ConecBDMysql.ejecutarBDD(SqlFacDetalle)
                                   igvProducto = float(igvCab)
                                   if igvProd == 1:
@@ -589,7 +593,7 @@ while stopMenuInicio:
                                   else:
                                     igvProducto += 0
                                   #Modificar facCabecera
-                                  SqlModiCabcera = query.UpdateCabecera(idCabe, igvProducto)
+                                  SqlModiCabcera = querys.UpdateCabecera(idCabe, igvProducto)
                                   ConecBDMysql.ejecutarBDD(SqlModiCabcera)
                                   __log.info("Se agrego correctamente")
                                   #Buscar Cabecera
@@ -618,7 +622,7 @@ while stopMenuInicio:
                                       print(f"Empresa: {nomEmp} \t\t Fecha: {fechaCab}")
                                       print(f"Cliente: {nomCli}")
                                       print(f"Tipo de Pago: {tippago}")
-                                      SqlDetalle = query.SelectDetalle(idCabe)
+                                      SqlDetalle = querys.SelectDetalle(idCabe)
                                       ResulDetalle = ConecBDMysql.consultarBDD(SqlDetalle)
                                       print("Cantidad", "Producto", "Valor Unit.", "Valor Total", sep="\t")
                                       for tplDetalle in ResulDetalle:
