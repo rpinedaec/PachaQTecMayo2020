@@ -7,7 +7,7 @@ config = {
         'host': 'localhost',
         'database': 'biblioteca',
         'user': 'root',
-        'password': 'pachaqtec',
+        'password': '3179billace',
         'prefix': ''
     }
 }

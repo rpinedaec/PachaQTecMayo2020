@@ -48,7 +48,10 @@ class conexionBDD:
 
     def consultarBDD(self, query):
         try:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 58a7ca5f5a3baddeeecf202a3157f57c1776c4f5
             conexion = self.conexion()
             cur = conexion.cursor()
             cur.execute(query)
