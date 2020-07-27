@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'minimarket.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'djbdd',
+        'NAME': 'admin',
         'USER': 'postgres',
-        'PASSWORD': 'pachaqtec',
+        'PASSWORD': '3179billace',
         'HOST': '127.0.0.1',
         'PORT': '5432',
         }
