@@ -5,16 +5,12 @@ from mysql.connector import errorcode
 #Posgres
 import psycopg2
 from psycopg2 import Error
-#sqlite
-
 import sqlite3 
 
 
 class conexionBDD:
     def __init__(self, intBDD):
         self.intBDD = intBDD
-
-#si es 1 conectarnos a Mysql, si es 2 conectarnos a postgres y si 3 conectarnos sqlite
 
     def conexion(self):
         if(self.intBDD == 1):
@@ -46,12 +42,9 @@ class conexionBDD:
             except Exception as error:
                 return False
 
-    def consultarBDD(self, query):
-        try:
-<<<<<<< HEAD
 
-=======
->>>>>>> 58a7ca5f5a3baddeeecf202a3157f57c1776c4f5
+    def consultarBDD(self, query): 
+        try:    
             conexion = self.conexion()
             cur = conexion.cursor()
             cur.execute(query)
