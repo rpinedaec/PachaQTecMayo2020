@@ -5,46 +5,58 @@ from mysql.connector import errorcode
 #Posgres
 import psycopg2
 from psycopg2 import Error
-import sqlite3 
+#sqlite
+import sqlite3
+from pymongo import MongoClient, errors
 
-
-class conexionBDD:
-    def __init__(self, intBDD):
-        self.intBDD = intBDD
-
+class conexionBDD:   
+    def __init__(self,intBDD):
+        self.intBDD= intBDD
+#si es 1 conectarnos a Mysql, si es 2 conectarnos a postgres y si 3 conectarnos sqlite
+    
     def conexion(self):
         if(self.intBDD == 1):
             try:
                 conn = mysql.connector.connect(user='root',
-                                               password="1984RICARDO2011PAPO",
-                                               host="localhost",
-                                               port="3306",
-                                               database="avellaneda")
+                                password='pachaqtec',
+                                host="localhost",
+                                port="3306",
+                                database="rpineda")
                 return conn
             except(mysql.connector.Error, Exception) as error:
                 return False
-
+            
         elif(self.intBDD == 2):
             try:
                 conn = psycopg2.connect(user='postgres',
-                                        password="1984RICARDO2011PAPO",
-                                        host="localhost",
-                                        port="5432",
-                                        database="avellaneda")
+                            password='pachaqtec',
+                            host="localhost",
+                            port="5432",
+                            database="rpineda")
                 return conn
             except Exception as error:
                 return False
+        
+        elif(self.intBDD ==3):
+            uri = 'mongodb://localhost:27017'
+            database = 'ezagastizabal'
+            try:
+                conn = MongoClient(uri,database)
+                db = conn [strf("{database}")]
+                return conn
+            except (Exception, errors):
+                return False
 
+            
         else:
             try:
                 conn = sqlite3.connect('rpineda.db')
                 return conn
             except Exception as error:
                 return False
-
-
+            
     def consultarBDD(self, query): 
-        try:    
+        try:
             conexion = self.conexion()
             cur = conexion.cursor()
             cur.execute(query)
@@ -52,7 +64,7 @@ class conexionBDD:
             return records
         except Error as error:
             return False
-
+    
     def ejecutarBDD(self, query):
         try:
             conexion = self.conexion()
@@ -63,3 +75,8 @@ class conexionBDD:
             return exito
         except Exception as identifier:
             return False
+    
+    def insetarMongo(self, collection, data):
+        conexion = self.conexion()
+        call = conexion[collecion]
+        call.insert_one(data)
