@@ -3,11 +3,22 @@ from pathlib import Path
 from dotenv import load_dotenv
 from markupsafe import escape
 from utils.utils import log
+from flask_orator import Orator
+from models.user import User
 
 app = Flask(__name__)
-app.logger.debug('A value for debugging')
-__log = log(__name__)
-__log.debug("un log")
+app.config['ORATOR_DATABASES'] = {
+    'development': {
+        'driver': 'postgres',
+        'host': 'localhost',
+        'database': 'flbdd',
+        'user': 'postgres',
+        'password': 'pachaqtec',
+        'prefix': ''
+    }
+}
+
+db = Orator(app)
 env_path = Path('.')/'.env'
 load_dotenv(dotenv_path = env_path)
 
@@ -45,3 +56,10 @@ def operaciones(operacion, n1, n2):
     except Exception as error:
         return "hay otro tipo de error"
     return f"Hola Roberto la {operacion} de los numero es: {resultado}"
+
+@app.route('/user/<username>')
+def addUser(username):
+    strUser = str(username)
+    app.logger.debug(f"usuario: {strUser}")
+    user = User.create(name='admin',email="no@mail.com")
+    return "Usuario Creado"

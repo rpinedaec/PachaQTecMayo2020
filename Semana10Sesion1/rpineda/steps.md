@@ -16,5 +16,10 @@
 
 8.- Lanzamos la aplicacion
     flask run
+9.- Instalamos orator
+    pip install flask-orator
+10.- Instalamos conector de la base de datos (postgres)
+    pip install psycopg2
+    
 
 
