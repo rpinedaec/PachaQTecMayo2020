@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'fpcz7+0w1$-ibo_he&5cx9kok(-yy#^&n@1k&+-(yrw*(&!f=0'
+SECRET_KEY = '&8$bf(ky=)d+8cqhig2499w1b2u&yt^*lyg2dhw5ra_owh8vy9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -77,13 +77,13 @@ WSGI_APPLICATION = 'minimarket.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'djbdd',
+        'NAME': 'admin',
         'USER': 'postgres',
-        'PASSWORD': 'pachaqtec',
+        'PASSWORD': '3179billace',
         'HOST': '127.0.0.1',
         'PORT': '5432',
+        }
     }
-}
 
 
 # Password validation
