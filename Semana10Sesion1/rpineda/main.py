@@ -61,5 +61,14 @@ def operaciones(operacion, n1, n2):
 def addUser(username):
     strUser = str(username)
     app.logger.debug(f"usuario: {strUser}")
-    user = User.create(name='admin',email="no@mail.com")
+    user = User()
+    user.name = username
+    user.email='no@email.com'
+    user.save()
     return "Usuario Creado"
+
+@app.route('/users/')
+def getUsers():
+    users = User.all()
+    for obj in users:
+        
