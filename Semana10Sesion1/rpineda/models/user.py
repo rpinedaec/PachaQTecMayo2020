@@ -1,6 +1,6 @@
 from orator import Model
 
 
-class Libro(Model):
+class User(Model):
 
     pass
