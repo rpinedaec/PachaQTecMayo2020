@@ -1,0 +1,55 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container" style="width: 100%; padding: 20px;">
+    <div class="row justify-content-left"
+        style="background-color:slategrey; color: white; font-weight: bold;
+        padding: 10px; font-size: large;">
+        <p>PRODUCTOS</p>
+    </div>
+</div>
+<div class="container">
+    <a href="{{ url_for('addProducto') }}" class='btn btn-primary btn-block' 
+        style="width: 120px; line-height: normal; height:3em;">Agregar</a>
+    <h2>Lista detallada:</h2>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Stock</th>
+                        <th>Precio</th>
+                        <th>Categoria</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in productos %} 
+                    <tr>
+                        <th scope="row">{{ item.id }}</th>
+                        <td>{{ item.nombre }}</td>
+                        <td>{{ item.stock }}</td>
+                        <td>{{ item.precio }}</td>
+                        <td> 
+                            {% for cate in categorias %} 
+                                {% if cate.id == item.categoria_id %}
+                                    {{ cate.nombre }}
+                                {% endif %} 
+                            {% endfor %} 
+                        </td>
+                    </tr>
+                    {% endfor %}  
+                </tbody>
+                </table>
+            </div>    
+        </div>
+    </div>
+</div>
+{% endblock %}
+
