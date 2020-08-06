@@ -6,8 +6,8 @@ from flask_login import logout_user
 from flask_login import login_required
 from flask import request
 from werkzeug.urls import url_parse
-from app.models import User
-from app.forms import RegistrationForm
+from app.models import User,Producto, Categoria
+from app.forms import RegistrationForm, AddProductoForm
 from app import db
 
 @app.route('/')
@@ -72,3 +72,22 @@ def register():
         flash('Congratulations, you are now a registered user!')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
+
+@app.route('/productos', methods=['GET', 'POST'])
+def getProductos():
+    prodcutos = Producto.query.all()
+    return render_template('productos.html', title='Productos', productos=prodcutos)
+
+@app.route('/producto/add', methods=['GET', 'POST'])
+def addProducto():
+    form = AddProductoForm()
+    categorias = Categoria.query.all()
+    if form.validate_on_submit():
+        producto = Producto(nombre=form.nombre.data,stock = form.stock.data, 
+         precio=form.precio.data,categoria_id=form.categoria_id.data)
+        
+        db.session.add(producto)
+        db.session.commit()
+        flash('Producto creado!')
+        return redirect(url_for('getProductos'))
+    return render_template('AddProducto.html', title='Crear Producto', form=form, categorias = categorias)

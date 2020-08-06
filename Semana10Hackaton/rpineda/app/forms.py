@@ -1,5 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
+from wtforms import IntegerField, DecimalField
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
 from app.models import User
 
@@ -27,3 +28,10 @@ class RegistrationForm(FlaskForm):
         user = User.query.filter_by(email=email.data).first()
         if user is not None:
             raise ValidationError('Mail registrado usa otro email.')
+
+class AddProductoForm(FlaskForm):
+    nombre = StringField('Nombre de Producto', validators=[DataRequired()])
+    stock = IntegerField('Stock Inicial', validators=[DataRequired()])
+    precio = DecimalField('Precio Inicial',places=2, validators=[DataRequired()])
+    categoria_id =IntegerField('Categoria', validators=[DataRequired()])
+    submit = SubmitField('Guardar')
