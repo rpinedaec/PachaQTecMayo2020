@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Hi, <span style="color: blueviolet;"></div>{{ current_user.username }}!</span> </h1>
+    {% for post in posts %}
+    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+    {% endfor %}
+    <table>
+        <tr>
+            <td colspan="3" style="color: blueviolet; font-weight: bold;">Mantenimiento</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Producto:</td>
+            <td></td>
+            <td><a href="/producto/add">Agregar</a> &#124; <a href="/productos">Listar</a></td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Cliente:</td>
+            <td></td>
+            <td><a href="/cliente/add">Agregar</a> &#124; <a href="/clientes">Listar</a></td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Comprobante<br/> de pago:</td>
+            <td></td>
+            <td><a href="/comprobante/add">Agregar</a> &#124; <a href="/comprobantes">Listar</a></td>
+        </tr>
+    </table>
+{% endblock %}
