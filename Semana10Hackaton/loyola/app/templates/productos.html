@@ -1,0 +1,8 @@
+{% extends "productspage.html" %}
+
+{% block content %}
+    <h1>List of Products:</h1>
+    {% for item in productos %}
+    <div><p>{{ item.productos }} </p></div>
+    {% endfor %}
+{% endblock %}
