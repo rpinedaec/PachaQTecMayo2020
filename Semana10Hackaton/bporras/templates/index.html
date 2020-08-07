@@ -1,0 +1,112 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="row">
+    <div class="col-md-5">
+
+        {% with mesagges = get_flashed_messages() %}
+        {% if mesagges %}
+        {% for message in mesagges %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{message}}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+        AGREGAR NUEVO PRODUCTO
+        <div class="card card-body">
+            <form action="/addProducto" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="stock" placeholder="Stock" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="price" placeholder="Price" class="form-control">
+                </div>  
+                <div class="form-group">
+                    <input type="text" name="category" placeholder="Category" class="form-control">
+                </div> 
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-5">
+        CREAR NUEVA CATEGORIA
+        <div class="card card-body">
+            <form action="/addProducto" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <table class="table table-striped table-borderes bg-white table-sm">
+            PRODUCTOS
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Stock</td>
+                    <td>Price</td>   
+                    <td>Category</td>     
+                </tr>
+            </thead>
+            <tbody>
+                {% for producto in productos %}
+                    <tr>
+                        <td>{{ producto.nombre }}</td>
+                        <td>{{ producto.stock }}</td>
+                        <td>{{ producto.precio }}</td>
+                        <td>{{ producto.categoria_id }}</td>
+                        <td>
+                            <a href="/editProducto/{{producto.id}}" class="btn btn-secundary">Edit</a> 
+                            <a href="/deleteProducto/{{producto.id}}" class="btn btn-danger">Delete</a> 
+                        </td>    
+                    </tr>
+                {% endfor %}
+        
+            </tbody>
+        </table>
+        <table class="table table-striped table-borderes bg-white table-sm">
+            CATEGORIAS
+            <thead>
+                <tr>
+                    <td>Id</td>   
+                    <td>Name</td>   
+                </tr>
+            </thead>
+            <tbody>
+                {% for categoria in categorias %}
+                    <tr>
+                        <td>{{ categoria.id }}</td>
+                        <td>{{ categoria.nombre }}</td>
+                        <td>
+                            <a href="/editCategoria/{{categoria.id}}" class="btn btn-secundary">Edit</a> 
+                            <a href="/deleteCategoria/{{categoria.id}}" class="btn btn-danger">Delete</a> 
+                        </td>    
+                    </tr>
+                {% endfor %}
+        
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+{% endblock %}

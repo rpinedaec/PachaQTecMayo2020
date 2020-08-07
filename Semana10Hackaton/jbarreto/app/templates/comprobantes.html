@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Esta es la lista de comprobantes:</h1>
+    <table style="margin: 10px; padding: 10px;">
+        <tr style="font-weight: bold;">
+            <td style="padding-right: 50px;">Fecha</td>
+            <td style="padding-right: 20px;">Tipo comprobante</td>
+            <td style="padding-right: 20px;">Nº comprobante</td>
+            <td style="padding-right: 20px;">IGV</td>
+            <td style="padding-right: 20px;">Total</td>
+        </tr>
+        {% for item in cabComprobantes %}     
+        <tr>
+            <td>{{ item.fecha }}</td>
+            {% if item.tipo_comprobante_id == 1 %}
+                <td>Factura</td>
+            {% else %}
+                <td>Boleta</td>
+            {% endif %}
+            <td>{{ item.nro_comprobante }}</td>
+            <td style="text-align: right;">{{ item.igv }}</td>
+            <td style="text-align: right;">{{ item.total }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

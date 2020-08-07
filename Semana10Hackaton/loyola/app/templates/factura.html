@@ -1,0 +1,37 @@
+{% extends "cajero.html" %}
+
+{% block content %}
+    <h1>Recipt</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.nombre.label }}<br>
+            {{ form.nombre(size=50) }}<br>
+            {% for error in form.nombre.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.stock.label }}<br>
+            {{ form.stock }}<br>
+            {% for error in form.stock.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.precio.label }}<br>
+            {{ form.precio }}<br>
+            {% for error in form.precio.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            <select name="categoria_id">
+                {% for categoria in categorias %}
+                    <option value="{{ categoria.id }}">{{ categoria.nombre }}</option>
+                {% endfor %}
+                 </select>
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
