@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2><span class="font-italic">Lista de productos:</span></h2>
+    <a href="/Producto/add" title="Agregar Categoria">
+        <button type="button" class="btn btn-lg">
+            <i class="fa fa-plus-square" aria-hidden="true"> Agregar Producto</i>
+        </button>
+    </a>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id Producto</th>
+                <th>Producto</th>
+                <th>Stock</th>
+                <th>Precio Unidad</th>
+                <th>Precio Total</th>
+                <th>Categoria</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p, c in productos %}
+            <tr>
+                <td>{{ p.id }}</td>
+                <td>{{ p.nombre }}</td>
+                <td>{{ p.stock }}</td>
+                <td>{{ p.precio }}</td>                 
+                <td>{{ p.precio * p.stock }}</td>                
+                <td>{{ c.nombre }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+{% endblock %}

@@ -1,0 +1,88 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            {% if current_user.is_anonymous %}
+                <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('login') }}">Iniciar Sesión <span class="sr-only">(current)</span></a>
+                </li>
+            {% else %}
+            <div class="row">
+                <div style="float: left;">
+                    <h1>Hola, {{ current_user.username }}!</h1>
+                    {% for post in posts %}
+                    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row">
+                <div style="float: left;">
+                    <div class="card" style="width: 18rem;"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Productos</h5> 
+                            <p class="card-text">
+                                <a href="{{ url_for('getProductos') }}" 
+                                class='btn btn-success btn-block' style="width: 200px;">Listar</a> 
+    
+                                <a href="{{ url_for('addProducto') }}" 
+                                class='btn btn-success btn-block' style="width: 200px;">Agregar</a> 
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div style="float: left;">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Categorias</h5>
+                          <p class="card-text">
+                            <a href="{{ url_for('getCategoria') }}" 
+                            class='btn btn-primary btn-block' style="width: 200px;">Listar</a> 
+                    
+                            <a href="{{ url_for('addCategoria') }}" 
+                            class='btn btn-primary btn-block' style="width: 200px;">Agregar</a> 
+                          </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div style="float: left;">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Clientes</h5>
+                          <p class="card-text">
+                            <a href="{{ url_for('getCliente') }}" 
+                            class='btn btn-primary btn-block' style="width: 200px;">Listar</a> 
+                    
+                            <a href="{{ url_for('addCliente') }}" 
+                            class='btn btn-primary btn-block' style="width: 200px;">Agregar</a> 
+                          </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div style="float: left;">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Facturas</h5>
+                          <p class="card-text">
+                            <a href="{{ url_for('getCompra') }}" 
+                            class='btn btn-primary btn-block' style="width: 200px;">Listar</a> 
+                    
+                            <a href="{{ url_for('addCompra') }}" 
+                            class='btn btn-primary btn-block' style="width: 200px;">Agregar</a> 
+                          </p> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+ 
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}
+
