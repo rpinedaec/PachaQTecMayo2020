@@ -1,0 +1,11 @@
+{% extends "login.html" %}
+
+{% block content %}
+    <h1>Hi, {{ current_user.username }}!</h1>
+    <body>
+        Options:
+        <a href="{{ url_for('Productos') }}">Almacen</a>
+        <a href="{{ url_for('Cajero') }}">Cajero</a>
+        <a href="{{ url_for('Administrador') }}">Administrador</a>
+    </body>
+{% endblock %}
