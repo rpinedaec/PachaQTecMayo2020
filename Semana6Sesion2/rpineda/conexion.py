@@ -5,6 +5,7 @@ from mysql.connector import errorcode
 #Posgres
 import psycopg2
 from psycopg2 import Error
+<<<<<<< HEAD
 #sqlite
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -17,6 +18,8 @@ class conexionBDD:
 =======
 
 >>>>>>> rpineda/master
+=======
+>>>>>>> rpineda/develop
 import sqlite3 
 
 
@@ -24,11 +27,14 @@ class conexionBDD:
     def __init__(self, intBDD):
         self.intBDD = intBDD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> upstream/develop
 =======
 
 >>>>>>> rpineda/master
 #si es 1 conectarnos a Mysql, si es 2 conectarnos a postgres y si 3 conectarnos sqlite
+=======
+>>>>>>> rpineda/develop
 
     def conexion(self):
         if(self.intBDD == 1):
@@ -63,6 +69,7 @@ class conexionBDD:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     def consultarBDD(self, query): 
         try:    
 =======
@@ -78,6 +85,11 @@ class conexionBDD:
         try:
 
 >>>>>>> rpineda/master
+=======
+
+    def consultarBDD(self, query): 
+        try:    
+>>>>>>> rpineda/develop
             conexion = self.conexion()
             cur = conexion.cursor()
             cur.execute(query)

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2><span class="font-italic">Detalle de Factura:</span></h2>
+{% for df, f, p, c in cliente %}
+<div class="form-row">
+    <div class="col-md-2">
+        <label>Cliente: </label>
+    </div>
+    <div class="col-md-5">
+        {{ c.nombre }} {{ c.apellido_pat }} {{ c.apellido_mat }}
+    </div>
+</div>
+<div class="form-row">
+    <div class="col-md-2">
+        <label>Fecha: </label>
+    </div>
+    <div class="col-md-5">
+        {{ f.fecha }}
+    </div>
+</div>
+{% endfor %}
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Precio Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for df, f, p, c in factura %}
+        {% set total = p.precio * df.cantidad %}
+        <tr>
+            <td>{{ p.nombre }}</td>
+            <td>{{ df.cantidad }}</td>
+            <td>{{ p.precio }}</td>
+            <td>{{ total }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+{% endblock %}

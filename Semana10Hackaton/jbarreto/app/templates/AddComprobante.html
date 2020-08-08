@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Agregar Comprobante</h1><br/>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <table>
+            <tr>
+                <td>{{ form.fecha.label }} (dd/mm/yyyy)</td>
+                <td>{{ form.fecha(size=10) }}</td>
+            </tr>
+            <tr>
+                {% for error in form.fecha.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>{{ form.tipo_comprobante_id.label }}</td>
+                <td>
+                    <select name="tipo_comprobante_id">
+                        <option value="1">Factura</option>
+                        <option value="2">Boleta</option>
+                    </select>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>{{ form.nro_comprobante.label }}</td>
+                <td>{{ form.nro_comprobante }}</td>
+            </tr>
+            <tr>
+                {% for error in form.nro_comprobante.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </tr>
+
+            <tr>
+                <td>{{ form.cliente_id.label }}</td>
+                <td>
+                    <select name="cliente_id">
+                        {% for cliente in clientes %}
+                            <option value="{{ cliente.id }}">{{ cliente.nombre }}, {{ cliente.apellidos }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>{{ form.igv.label }}</td>
+                <td>{{ form.igv }}</td>
+            </tr>
+            <tr>
+                {% for error in form.igv.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>{{ form.total.label }}</td>
+                <td>{{ form.total }}</td>
+            </tr>
+            <tr>
+                {% for error in form.total.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <td>{{ form.item.label }}</td>
+                <td>{{ form.producto_id.label }}</td>
+                <td>{{ form.cantidad.label }}</td>
+                <td>{{ form.precio.label }}</td>
+                <td>{{ form.subtotal.label }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="item" name="item" required="" type="text" value="1" style="width: 30px;"><!-- {{ form.item }} -->
+                </td>
+                <td>
+                    <select name="producto_id">
+                        {% for producto in productos %}
+                            <option value="{{ producto.id }}">{{ producto.nombre }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>{{ form.cantidad }}</td>
+                <td>{{ form.precio }}</td>
+                <td>{{ form.subtotal }}</td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    {% for error in form.producto_id.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    {% for error in form.cantidad.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    {% for error in form.precio.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    {% for error in form.subtotal.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
