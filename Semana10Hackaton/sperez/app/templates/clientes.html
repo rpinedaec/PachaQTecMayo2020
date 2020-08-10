@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2><span class="font-italic">Lista de clientes:</span></h2>
+    <a href="/Cliente/add" title="Agregar Clientes">
+        <button type="button" class="btn btn-lg">
+            <i class="fa fa-plus-square" aria-hidden="true"> Agregar Clientes</i>
+        </button>
+    </a>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id Cliente</th>
+                <th>Nombre Completo Cliente</th>
+                <th>Tipo de Documento</th>
+                <th>Numero de Documento</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for c, t in clientes %}
+            <tr>
+                <td>{{ c.id }}</td>
+                <td>{{ c.nombre }} {{ c.apellido_pat }} {{ c.apellido_mat }}</td>                 
+                <td>{{ t.descripcion }}</td>                
+                <td>{{ c.numero_documento }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+{% endblock %}
