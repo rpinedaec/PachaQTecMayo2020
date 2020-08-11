@@ -1,4 +1,9 @@
 {
     "python.linting.pylintEnabled": true,
+<<<<<<< HEAD
     "python.linting.enabled": true
+=======
+    "python.linting.enabled": true,
+    "python.pythonPath": "C:\\Users\\rpineda.IPAE\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+>>>>>>> upstream/develop
 }

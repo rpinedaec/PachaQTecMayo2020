@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2><span class="font-italic">Agregar Categoria</span></h2>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <div class="form-row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                {{ form.nombre.label }}<br>
+                {{ form.nombre(class_='form-control form-control-sm') }}<br>
+                {% for error in form.nombre.errors %}
+                <span class="text-danger">[{{ error }}]</span>
+                {% endfor %}
+            <p>{{ form.submit(class_='btn btn-sm btn-primary') }}</p>
+            </div>
+        </div>
+        
+    </form>
+{% endblock %}
