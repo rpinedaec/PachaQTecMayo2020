@@ -38,6 +38,7 @@ def sendPerros():
     r = requests.get('https://dog.ceo/api/breeds/image/random')
     data = r.json()
     #msg.PersistentAction=['geo:37.787890,-122.391664|375 Beale St']
+    msg.persistent_action=['geo:37.787890,-122.391664|375 Beale St'],
     msg.media(data['message'])
     return str(resp)
 def sendNoticias():
