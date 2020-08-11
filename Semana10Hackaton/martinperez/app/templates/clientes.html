@@ -1,0 +1,48 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container" style="width: 100%; padding: 20px;">
+    <div class="row justify-content-left"
+        style="background-color:slategrey; color: white; font-weight: bold;
+        padding: 10px; font-size: large;">
+        <p>CLIENTES</p>
+    </div>
+</div>
+<div class="container">
+    <a href="{{ url_for('addCliente') }}" class='btn btn-primary btn-block' 
+        style="width: 120px; line-height: normal; height:3em;">Agregar</a>
+    <h2>Lista detallada:</h2>
+</div>
+ 
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th> 
+                        <th>Ruc</th> 
+                        <th>Dirección</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in Clientes %} 
+                    <tr>
+                        <th scope="row">{{ item.id }}</th>
+                        <td>{{ item.nombre }}</td> 
+                        <td>{{ item.ruc }}</td> 
+                        <td>{{ item.direccion }}</td> 
+                    </tr>
+                    {% endfor %}  
+                </tbody>
+                </table>
+            </div>    
+        </div>
+    </div>
+</div>
+{% endblock %}
+
