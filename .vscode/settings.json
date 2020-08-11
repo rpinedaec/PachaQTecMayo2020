@@ -1,5 +1,4 @@
 {
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.pythonPath": "Semana10Sesion3\\rpineda\\flenv\\Scripts\\python.exe"
+    "python.linting.enabled": true
 }
