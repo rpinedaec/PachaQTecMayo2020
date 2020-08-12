@@ -1,21 +1,20 @@
 from orator.migrations import Migration
 
 
-class CreateUsersTable(Migration):
+class CreateProductoTable(Migration):
 
     def up(self):
         """
         Run the migrations.
         """
-        with self.schema.create('users') as table:
-            table.string('name').unique()
-            table.string('email').unique()
+        with self.schema.create('producto') as table:
             table.increments('id')
+            table.string('nombre')
+            table.decimal('precio',5,2)
             table.timestamps()
-
 
     def down(self):
         """
         Revert the migrations.
         """
-        self.schema.drop('users')
+        self.schema.drop('producto')
