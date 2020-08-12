@@ -9,7 +9,6 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(64), index=True, unique=True)
     email = db.Column(db.String(120), index=True, unique=True)
     password_hash = db.Column(db.String(128))
-    posts = db.relationship('Post', backref='author', lazy='dynamic')
 
     def __repr__(self):
         return '<User {}>'.format(self.username)  
@@ -19,15 +18,6 @@ class User(UserMixin, db.Model):
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password) 
-    
-class Post(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    body = db.Column(db.String(140))
-    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-
-    def __repr__(self):
-        return '<Post {}>'.format(self.body)
 
 @login.user_loader
 def load_user(id):
@@ -35,13 +25,47 @@ def load_user(id):
 
 class Categoria(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    nombre = db.Column(db.String(64), index=True)
+    nombreCategoria = db.Column(db.String(64), index=True)
     producto = db.relationship('Producto', backref='product', lazy='dynamic')
+
+class Cliente(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nombreCliente = db.Column(db.String(100), index=True)
+    dniCliente = db.Column(db.String(100), index=True)
+    direcccionCliente = db.Column(db.String(100), index=True)
+    facturacabecera = db.relationship('FacturaCabecera', backref='facturacabecera', lazy='dynamic')
+
+class Empresa(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nombreEmpresa = db.Column(db.String(100), index=True)
+    direcccionEmpresa = db.Column(db.String(100), index=True)
+    facturacabecera = db.relationship('FacturaCabecera', backref='facturacabecera', lazy='dynamic')
 
 class Producto(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    nombre = db.Column(db.String(100), index=True)
+    nombreProducto = db.Column(db.String(100), index=True)
     stock = db.Column(db.Integer)
     precio = db.Column(db.Numeric(10,2))
     categoria_id = db.Column(db.Integer, db.ForeignKey('categoria.id'))
-    
+    facturadetalle = db.relationship('FacturaDetalle', backref='facturadetalle', lazy='dynamic')
+
+class FacturaCabecera(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    fecha = db.Column(db.DateTime)
+    subtotal = db.Column(db.Numeric(10,2))
+    igvTotal = db.Column(db.Numeric(10,2))
+    total = db.Column(db.Numeric(10,2))
+    cliente_id = db.Column(db.Integer, db.ForeignKey('cliente.id'))
+    empresa_id = db.Column(db.Integer, db.ForeignKey('empresa.id'))
+    facturadetalle = db.relationship('FacturaDetalle', backref='facturadetalle', lazy='dynamic')
+
+class FacturaDetalle(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    cantidad = db.Column(db.Integer)
+    valor = db.Column(db.Numeric(10,2))
+    producto_id = db.Column(db.Integer, db.ForeignKey('producto.id'))
+    facturacabecera_id = db.Column(db.Integer, db.ForeignKey('factura_cabecera.id'))
+
+class VentaDiaria(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    venta = db.Column(db.Numeric(10,2))
