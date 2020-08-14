@@ -72,8 +72,8 @@ def detallePedido(body):
     mipedido = Pedido.find(int(pedido))
     app.logger.debug(jsonify(mipedido))
     resp = MessagingResponse()
-    account_sid = 'AC0e345cf7fa8a72b6e64728a9dede5264'
-    auth_token = '5a6cfc20a750a9a303c0e950962e0041'
+    account_sid = 'ACf5ebfc5b4a18baba7d4d214eb4b15c6c'
+    auth_token = '973d56c8a71d7a4eaf008dab78b73e92'
     client = Client(account_sid, auth_token)
 
     message = client.messages \
@@ -81,7 +81,7 @@ def detallePedido(body):
             from_='whatsapp:+14155238886',
             body='Twilio HQ',
             persistent_action=[f'{mipedido.ubicacion}'],
-            to='whatsapp:+51926902137'
+            to='whatsapp:+51959364540'
     )
     msg = resp.message()
     msg.body("Procesando")
@@ -120,7 +120,7 @@ def findPedidos(nroFrom):
 def msgDefault():
     resp = MessagingResponse()
     msg = resp.message()
-    msg.body('Hola bienvenido al sistema de control de pedidos de Roberto Pineda escribe *menu* para ver tus opciones')
+    msg.body('Hola bienvenido al sistema de control de pedidos de Sergio Perez escribe *menu* para ver tus opciones')
     return str(resp)
 
 def sendMenu():

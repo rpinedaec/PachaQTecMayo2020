@@ -8,8 +8,8 @@ class ClienteTableSeeder(Seeder):
         Run the database seeds.
         """
         self.db.table('clientes').insert({
-            'nombre': 'Roberto Pineda',
+            'nombre': 'Sergio Perez',
             'email': 'john@doe.com',
-            'telefono': '+51916730940'
+            'telefono': '+51959364540'
         })
 
