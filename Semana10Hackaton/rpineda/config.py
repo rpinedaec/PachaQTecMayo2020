@@ -3,5 +3,5 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
-    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:pachaqtec@localhost/s10hackaton'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:3179billace@localhost/10Hackaton'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
