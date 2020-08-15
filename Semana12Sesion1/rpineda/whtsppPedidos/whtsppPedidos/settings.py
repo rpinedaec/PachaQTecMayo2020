@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'tlgrm.apps.TlgrmConfig',
     'pdds.apps.PddsConfig',
     'mssngr.apps.MssngrConfig',
+    'lndng.apps.LndngConfig',
 ]
 
 MIDDLEWARE = [
