@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2><span class="font-italic">Agregar Factura</span></h2>
+    <form action="" method="post">
+        {{ form1.hidden_tag() }}
+        <div class="form-row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <input type="hidden" class="form-control form-control-sm" id="cli" name="cli" value="{{ cliente.id }}">
+                <input type="hidden" class="form-control form-control-sm" id="factura" name="factura" value="{{ fac.id }}">
+                <input type="text" class="form-control form-control-sm" value="{{ cliente.nombre }} {{ cliente.apellido_pat }} {{ cliente.apellido_mat }}" readonly>
+                    {{ form1.producto.label }}
+                    {{ form1.producto(class_="form-control form-control-sm") }}
+                    {{ form1.cantidad.label }}
+                    {{ form1.cantidad(class_="form-control form-control-sm") }}
+                    <a href="/Producto/add" title="Agregar Producto">
+                        <button type="button" class="btn">
+                            <i class="fa fa-plus-square" aria-hidden="true"> Agregar Producto</i>
+                        </button>
+                    </a>
+                {{ form1.enviar(class_="btn btn-sm btn-primary") }}
+            </div>
+        </div>        
+    </form>
+    <form action="" method="post">
+        <input type="hidden" class="form-control form-control-sm" id="factura" name="factura" value="{{ fac.id }}">
+        {{ form2.hidden_tag() }}
+        {{ form2.visualizar(class_="btn btn-sm btn-primary") }}
+    </form>                
+{% endblock %}
