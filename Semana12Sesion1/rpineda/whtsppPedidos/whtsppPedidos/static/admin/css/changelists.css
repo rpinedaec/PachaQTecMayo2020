@@ -21,7 +21,7 @@
 
 .change-list .filtered .results, .change-list .filtered .paginator,
 .filtered #toolbar, .filtered div.xfull {
-    margin-right: 280px;
+    /* margin-right: 280px; */
     width: auto;
 }
 
@@ -42,12 +42,13 @@
     border-bottom: 1px solid #eee;
     background: #fff;
     overflow: hidden;
+    padding: 2em !important;
 }
 
 /* CHANGELIST TABLES */
 
 #changelist table thead th {
-    padding: 0;
+    /* padding: 0; */
     white-space: nowrap;
     vertical-align: middle;
 }
@@ -122,7 +123,7 @@
 
 #changelist-filter {
     position: absolute;
-    top: 0;
+    /* top: 0; */
     right: 0;
     z-index: 1000;
     width: 240px;
@@ -155,6 +156,7 @@
 
 #changelist-filter ul:last-child {
     border-bottom: none;
+    padding-bottom: none;
 }
 
 #changelist-filter li {
@@ -184,12 +186,6 @@
 #changelist-filter li.selected a:focus,
 #changelist-filter li.selected a:hover {
     color: #036;
-}
-
-#changelist-filter #changelist-filter-clear a {
-    font-size: 13px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eaeaea;
 }
 
 /* DATE DRILLDOWN */
@@ -231,12 +227,13 @@
 
 .paginator a:link, .paginator a:visited {
     padding: 2px 6px;
-    background: #79aec8;
+    background: #343a40;
     text-decoration: none;
     color: #fff;
 }
 
 .paginator a.showall {
+    padding: 0;
     border: none;
     background: none;
     color: #5b80b2;
@@ -266,7 +263,7 @@
 /* ACTIONS */
 
 .filtered .actions {
-    margin-right: 280px;
+    /* margin-right: 280px; */
     border-right: none;
 }
 
@@ -307,7 +304,7 @@
     border-bottom: none;
 }
 
-#changelist .actions select {
+ .aselect {
     vertical-align: top;
     height: 24px;
     background: none;
@@ -326,22 +323,12 @@
 
 #changelist .actions label {
     display: inline-block;
-    vertical-align: middle;
-    font-size: 13px;
 }
 
 #changelist .actions .button {
-    font-size: 13px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 -15px 20px -10px rgba(0, 0, 0, 0.15) inset;
-    cursor: pointer;
-    height: 24px;
-    line-height: 1;
-    padding: 4px 8px;
-    margin: 0;
-    color: #333;
+    height: 30px;
+    padding: 0 10px 0 10px ;
+    margin: 0px;
 }
 
 #changelist .actions .button:focus, #changelist .actions .button:hover {

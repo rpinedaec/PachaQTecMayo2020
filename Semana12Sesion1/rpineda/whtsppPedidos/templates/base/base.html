@@ -10,8 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>SocialPedidos | {% block titulo %}
-  {% endblock titulo %}</title>
+  <title>SocialPedidos | {% block titulo %} {% endblock titulo %}</title>
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{% static 'admin-lte/plugins/fontawesome-free/css/all.min.css'%}">
@@ -19,6 +18,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{% static 'admin-lte/dist/css/adminlte.min.css'%}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+{% block styles %}
+{% endblock styles %}
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -31,7 +32,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+        <a href="index.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -151,7 +152,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <a href="index3.html" class="brand-link">
       <img src="{% static 'admin-lte/dist/img/AdminLTELogo.png'%}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">SocialPedidos</span>
     </a>
 
     <!-- Sidebar -->
@@ -217,12 +218,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Starter Page</h1>
+            <h1 class="m-0 text-dark">{% block pageHeader %} {% endblock pageHeader %}</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
+              <li class="breadcrumb-item active">{% block pageActive %} {% endblock pageActive %}</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -269,5 +270,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{% static 'admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
 <!-- AdminLTE App -->
 <script src="{% static 'admin-lte/dist/js/adminlte.min.js'%}"></script>
+{% block scripts %}
+{% endblock scripts %}
 </body>
 </html>
