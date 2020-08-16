@@ -1,21 +1,19 @@
 from orator.migrations import Migration
 
 
-class CreateAutorTable(Migration):
+class CreateTipodedocumentoTable(Migration):
 
     def up(self):
         """
         Run the migrations.
         """
-        with self.schema.create('autor') as table:
+        with self.schema.create('tipodedocumento') as table:
             table.increments('id')
-            table.string('nombre')
-            table.string('correo')
-            table.enum('tipo', ['Autor', 'Editorial'])
+            table.string('descripcion')
             table.timestamps()
 
     def down(self):
         """
         Revert the migrations.
         """
-        self.schema.drop('autor')
+        self.schema.drop('tipodedocumento')

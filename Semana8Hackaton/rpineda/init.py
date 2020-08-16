@@ -5,7 +5,7 @@ config = {
     'mysql': {
         'driver': 'mysql',
         'host': 'localhost',
-        'database': 'biblioteca',
+        'database': 'hackathons8',
         'user': 'root',
         'password': '3179billace',
         'prefix': ''

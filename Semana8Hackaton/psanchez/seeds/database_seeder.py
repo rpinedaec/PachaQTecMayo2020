@@ -1,5 +1,8 @@
 from orator.seeds import Seeder
-
+from .estadousuario_table_seeder import *
+from .autor_table_seeder import *
+from .estadolibro_table_seeder import *
+from .tipodedocumento_table_seeder import *
 
 class DatabaseSeeder(Seeder):
 
@@ -7,5 +10,8 @@ class DatabaseSeeder(Seeder):
         """
         Run the database seeds.
         """
-        pass
+        self.call(EstadousuarioTableSeeder)
+        self.call(AutorTableSeeder)
+        self.call(EstadolibroTableSeeder)
+        self.call(TipodedocumentoTableSeeder)
 

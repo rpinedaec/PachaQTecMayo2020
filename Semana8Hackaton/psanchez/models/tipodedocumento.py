@@ -1,6 +1,6 @@
 from orator import Model
 
 
-class Autor(Model):
+class tipodedocumento(Model):
 
     pass
