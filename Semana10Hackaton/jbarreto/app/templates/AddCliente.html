@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Agregar Cliente</h1><br/>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <table>
+            <tr>
+                <td>{{ form.dni.label }}</td>
+                <td>{{ form.dni(size=8) }}</td>
+            </tr>
+            <tr>
+                {% for error in form.dni.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>{{ form.nombre.label }}</td>
+                <td>{{ form.nombre(size=50) }}</td>
+            </tr>
+            <tr>
+                {% for error in form.nombre.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>{{ form.apellidos.label }}</td>
+                <td>{{ form.apellidos(size=50) }}</td>
+            </tr>
+            <tr>
+                {% for error in form.apellidos.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </tr>
+        </table>
+        <br/>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}

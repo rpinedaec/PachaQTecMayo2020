@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <h1>Hi, {{ current_user.username }}!</h1>
+    <body>
+        Select an option:
+        <div><a href="{{ url_for('getProductos') }}">List of Products</a></div>
+        <div><a href="{{ url_for('addProducto') }}">Add Products</a></div>
+        <div><a href="{{ url_for('DeleteProducto') }}">Delete Products</a></div>
+    </body>
+{% endblock %}
