@@ -27,9 +27,10 @@
 }
 
 .selector-chosen h2 {
-    background: #79aec8;
+    background-color: #007bff !important;
     color: #fff;
 }
+
 
 .selector .selector-available h2 {
     background: #f8f8f8;
@@ -211,11 +212,6 @@ a.active.selector-clearall:focus, a.active.selector-clearall:hover {
 }
 
 .stacked .active.selector-add {
-    background-position: 0 -32px;
-    cursor: pointer;
-}
-
-.stacked .active.selector-add:focus, .stacked .active.selector-add:hover {
     background-position: 0 -48px;
     cursor: pointer;
 }
@@ -226,11 +222,6 @@ a.active.selector-clearall:focus, a.active.selector-clearall:hover {
 }
 
 .stacked .active.selector-remove {
-    background-position: 0 0px;
-    cursor: pointer;
-}
-
-.stacked .active.selector-remove:focus, .stacked .active.selector-remove:hover {
     background-position: 0 -16px;
     cursor: pointer;
 }
@@ -423,7 +414,7 @@ span.clearable-file-input label {
 }
 
 .calendar td.selected a {
-    background: #79aec8;
+    background: #007bff;
     color: #fff;
 }
 
@@ -445,7 +436,7 @@ span.clearable-file-input label {
 
 .calendar td a:focus, .timelist a:focus,
 .calendar td a:hover, .timelist a:hover {
-    background: #79aec8;
+    background: #007bff;
     color: white;
 }
 
