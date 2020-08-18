@@ -13,6 +13,7 @@
     python manage.py startapp mssngr
     python manage.py startapp tlgrm
     python manage.py startapp pdds
+    python manage.py startapp lndng
 7. Modificamos los settings.py para usar postgres
 
 8. Ejecutamos las migracions de django
