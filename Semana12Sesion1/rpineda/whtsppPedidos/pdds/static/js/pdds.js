@@ -14,9 +14,6 @@ $( "#addCliente" ).on( "click", function(){
         showCancelButton: true
         
       })
-      
-     
-
 } );
 
 
