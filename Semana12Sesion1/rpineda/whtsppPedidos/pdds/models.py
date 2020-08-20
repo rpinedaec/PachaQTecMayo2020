@@ -1,7 +1,9 @@
 from django.db import models
 
 # Create your models here.
-class tipoClientes(models.Model):
+class tipoCliente(models.Model):
+    def __str__(self):
+        return f"{self.descripcion}, {self.isActivo}"
     ACTIVO = 'AC'
     INACTIVO = 'IA'
     descripcion = models.CharField(max_length=200)
@@ -12,7 +14,9 @@ class tipoClientes(models.Model):
         default=ACTIVO,
     )
 
-class tipoDocumentos(models.Model):
+class tipoDocumento(models.Model):
+    def __str__(self):
+        return f"{self.descripcion}, {self.isActivo}"
     ACTIVO = 'AC'
     INACTIVO = 'IA'
     descripcion = models.CharField(max_length=200)
@@ -22,7 +26,9 @@ class tipoDocumentos(models.Model):
         choices=isActivoEnum,
         default=ACTIVO,
     )
-class tipoProductos(models.Model):
+class tipoProducto(models.Model):
+    def __str__(self):
+        return f"{self.descripcion}, {self.isActivo}"
     ACTIVO = 'AC'
     INACTIVO = 'IA'
     descripcion = models.CharField(max_length=200)
@@ -33,12 +39,14 @@ class tipoProductos(models.Model):
         default=ACTIVO,
     )
 
-class transportistas(models.Model):
+class transportista(models.Model):
+    def __str__(self):
+        return f"{self.nombres} {self.apellidos}, {self.isActivo}"
     ACTIVO = 'AC'
     INACTIVO = 'IA'
     nombres = models.CharField(max_length=200)
     apellidos = models.CharField(max_length=200)
-    tipoDocumento = models.ForeignKey(tipoDocumentos, on_delete=models.CASCADE)
+    tipoDocumento = models.ForeignKey(tipoDocumento, on_delete=models.CASCADE)
     documento = models.CharField(max_length=15)
     isActivoEnum = ((ACTIVO,'Activo'),(INACTIVO,'Inactivo'))
     isActivo = models.CharField(
@@ -47,11 +55,11 @@ class transportistas(models.Model):
         default=ACTIVO,
     )
 
-class productos(models.Model):
+class producto(models.Model):
     ACTIVO = 'AC'
     INACTIVO = 'IA'
     nombre = models.CharField(max_length=200)
-    tipoproducto = models.ForeignKey(tipoProductos, on_delete=models.CASCADE)
+    tipoproducto = models.ForeignKey(tipoProducto, on_delete=models.CASCADE)
     igv = models.BooleanField()
     costo = models.DecimalField(max_digits=10,decimal_places=2)
     isActivoEnum = ((ACTIVO,'Activo'),(INACTIVO,'Inactivo'))
@@ -61,14 +69,14 @@ class productos(models.Model):
         default=ACTIVO,
     )
 
-class clientes(models.Model):
+class cliente(models.Model):
     ACTIVO = 'AC'
     INACTIVO = 'IA'
-    tipocliente = models.ForeignKey(tipoClientes,on_delete=models.CASCADE)
-    tipodocumento = models.ForeignKey(tipoDocumentos, on_delete=models.CASCADE)
+    tipocliente = models.ForeignKey(tipoCliente,on_delete=models.CASCADE)
+    tipodocumento = models.ForeignKey(tipoDocumento, on_delete=models.CASCADE)
     nombres = models.CharField(max_length=200)
     apellidos = models.CharField(max_length=200)
-    docmento = models.CharField(max_length=15)
+    documento = models.CharField(max_length=15)
     email = models.EmailField()
     telefono = models.CharField(max_length=50)
     isActivoEnum = ((ACTIVO,'Activo'),(INACTIVO,'Inactivo'))
@@ -78,16 +86,17 @@ class clientes(models.Model):
         default=ACTIVO,
     )
 
-class pedidos(models.Model):
-    cliente = models.ForeignKey(tipoClientes,on_delete=models.CASCADE)
-    transportista = models.ForeignKey(transportistas, on_delete=models.CASCADE)
+class pedido(models.Model):
+    cliente = models.ForeignKey(cliente,on_delete=models.CASCADE)
+    transportista = models.ForeignKey(transportista, on_delete=models.CASCADE)
     fecha = models.DateTimeField()
     subtotal = models.DecimalField(max_digits=10,decimal_places=2)
     igv = models.DecimalField(max_digits=10,decimal_places=2)
     total = models.DecimalField(max_digits=10,decimal_places=2)
     ubicacion = models.CharField(max_length=500)
+    estado = models.CharField(max_length=30,default='Recibido')
 
 class detallePedido(models.Model):
-    pedido = models.ForeignKey(pedidos, on_delete=models.CASCADE)
-    producto = models.ForeignKey(productos, on_delete=models.CASCADE)
+    pedido = models.ForeignKey(pedido, on_delete=models.CASCADE)
+    producto = models.ForeignKey(producto, on_delete=models.CASCADE)
     cantidad = models.IntegerField()
