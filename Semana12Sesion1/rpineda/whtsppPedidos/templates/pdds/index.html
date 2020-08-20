@@ -149,6 +149,9 @@ clientes = [];
         clientes.push(cliente);
     {% endfor %}
 console.log(clientes)
+var today = new Date();
+var fecha = today.toISOString().substring(0, 10);
+$("#lblFecha").text(fecha);
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
