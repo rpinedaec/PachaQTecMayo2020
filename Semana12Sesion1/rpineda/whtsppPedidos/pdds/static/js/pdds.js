@@ -3,17 +3,36 @@ $(document).ready(function() {
 });
 
 $( "#addCliente" ).on( "click", function(){
+
+  clientes.forEach(element => {
+    $('#cmbCliente').append(new Option(element.id, element.nombres))
+  });
+
     console.log("Agregar Cliente")
     Swal.fire({
-        title: 'Agrega un cliente',
-        input: 'select',
-        inputOptions: {
-          clientes
-        },
-        inputPlaceholder: 'Selecciona un cliente',
-        showCancelButton: true
-        
-      })
+      title: 'Escoje el cliente',
+      text: "Escoja un cliente",
+      icon: 'success',
+      html:
+        '<select name="hall" id="cmbCliente"></select>',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Guardar'
+    }).then((result) => {
+      if (result.value) {
+        Swal.fire(
+          'Guardado!',
+          'Tu cliente se ha guardado',
+          'success'
+        )
+      }
+    })
+    clientes.forEach(element => {
+      console.log(element);
+      $('#cmbCliente').append(new Option(element.nombre,element.id))
+    });
+  
 } );
 
 
