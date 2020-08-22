@@ -36,24 +36,15 @@ Inicio
                 <div class="col-sm-4 invoice-col">
                   <b>Cliente</b>
                   <a href="#" id="addCliente" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-plus-sign"></span> Agregar Cliente</a>
-                  <address style="display: none;">
-                    <strong>Admin, Inc.</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
-                    Phone: (804) 123-5432<br>
-                    Email: info@almasaeedstudio.com
+                  <address id="addressCliente" style="display: none;">
                   </address>
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-4 invoice-col">
                   <b>Transportista</b>
                   <a href="#" id="addTrasportista" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-plus-sign"></span> Agregar Transportista</a>
-                  <address style="display: none;">
-                    <strong>John Doe</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
-                    Phone: (555) 539-1037<br>
-                    Email: john.doe@example.com
+                  <address id="addressTransportista" style="display: none;">
+                    
                   </address>
                 </div>
                 <!-- /.col -->
@@ -101,15 +92,15 @@ Inicio
                     <table class="table">
                       <tr>
                         <th style="width:50%">Subtotal:</th>
-                        <td>$250.30</td>
+                        <td><label id="subtotal"></label></td>
                       </tr>
                       <tr>
                         <th>IGV (18%)</th>
-                        <td>$10.34</td>
+                        <td><label id="igv"></label></td>
                       </tr>
                       <tr>
                         <th>Total:</th>
-                        <td>$265.24</td>
+                        <td><label id= "total"></label></td>
                       </tr>
                     </table>
                   </div>
@@ -122,7 +113,7 @@ Inicio
               <div class="row no-print">
                 <div class="col-12">
                   <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
-                  <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
+                  <button type="button" id="sendPedido" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
                     Payment
                   </button>
                   <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
@@ -145,10 +136,42 @@ clientes = [];
     {% for cliente in clientes %}
         cliente = {};
         cliente.id = {{cliente.id}};
-        cliente.nombre = "{{cliente.nombres}}";
+        cliente.nombres = "{{cliente.nombres}}";
+        cliente.apellidos = "{{clientes.apellidos}}"
+        cliente.documento = "{{cliente.documento}}"
+        cliente.direccion = "{{cliente.direccion}}"
+        cliente.email = "{{cliente.email}}"
+        cliente.telefono = "{{cliente.telefono}}"
         clientes.push(cliente);
     {% endfor %}
-console.log(clientes)
+ 
+
+{% if trasportistas %}
+Transportistas = [];
+  {% for objTransportista in trasportistas %}  
+          Transportista = {};
+          Transportista.id = {{objTransportista.id}}
+          Transportista.nombres = "{{objTransportista.nombres}}"
+          Transportistas.push(Transportista)
+  {%endfor%}
+{%endif%}
+
+{%if productos%}
+Productos = [];
+  {%for objProducto in productos%}
+    Producto = {};
+    Producto.id = {{objProducto.id}}
+    Producto.nombre = "{{objProducto.nombre}}"
+    {%if objProducto.igv%}
+      Producto.igv = true
+    {%else%}
+    Producto.igv = false
+    {%endif%}
+     
+    Producto.costo = {{objProducto.costo}}
+    Productos.push(Producto)
+    {%endfor%}
+{%endif%}
 var today = new Date();
 var fecha = today.toISOString().substring(0, 10);
 $("#lblFecha").text(fecha);
@@ -156,11 +179,11 @@ $("#lblFecha").text(fecha);
     <p>No polls are available.</p>
 {% endif %}
 </script>
-<script src="{% static '/js/sweetalert2.js'%}"></script>
+<script src="{% static 'pdds/js/sweetalert2.js'%}"></script>
 <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
-<script src="{% static '/js/pdds.js'%}"></script>
+<script src="{% static 'pdds/js/pdds.js'%}"></script>
 {% endblock scripts %}
 {% block styles %}
-<link rel="stylesheet" href="{% static '/css/sweetalert2.css'%}">
+<link rel="stylesheet" href="{% static 'pdds/css/sweetalert2.css'%}">
 <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
 {% endblock styles %}
