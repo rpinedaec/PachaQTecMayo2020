@@ -59,12 +59,24 @@ def whtspp():
     app.logger.debug(nroFrom)
     if body == 'menu':
         return sendMenu()
+    elif body == 'productos':
+        return Productos(body)
     elif body == 'pedidos':
         return findPedidos(nroFrom)
     elif body.startswith('mipedido'):
         return detallePedido(body)
     else:
         return msgDefault()
+
+def Productos(body):
+    resp = MessagingResponse()
+    msg = resp.message()
+    msg.body('Nuestros Productos: ')
+    r = request.get(Producto)
+    data = r.json()
+    for obj in data:
+        app.logger.debug(obj.get('nombre'))
+    return str(resp)
 
 def detallePedido(body):
     pedido = body.replace('mipedido', '')
@@ -74,7 +86,7 @@ def detallePedido(body):
     app.logger.debug(jsonify(mipedido))
     resp = MessagingResponse()
     account_sid = 'AC84e4419e70ff440ea1d46e8166d9b9d3'
-    auth_token = 'ea715c72685e9aac85bdeb12352ea5c9'
+    auth_token = 'a183f27be1e25efc54f86f1c6b25f5be'
     client = Client(account_sid, auth_token)
 
     message = client.messages \
