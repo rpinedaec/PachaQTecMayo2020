@@ -34,8 +34,9 @@ $( "#addCliente" ).on( "click", function(){
     });
   
 } );
-
+var idClienteSeleccionado;
 function dibujarCliente(idCliente){
+  idClienteSeleccionado = idCliente
 clientes.forEach(element => {
   if(element.id == idCliente){
     $("#addressCliente").html("<strong>"+element.nombres + element.apellidos +"</strong><br>"+
@@ -80,8 +81,9 @@ $( "#addTrasportista" ).on( "click", function(){
   });
 
 } );
-
+var idTransportistaSeleccionado;
 function dibujarTransportista(idTransportista){
+  idTransportistaSeleccionado = idTransportista
   Transportistas.forEach(element => {
 if(element.id == idTransportista){
   $("#addressTransportista").html("<strong>"+element.nombres + element.apellidos +"</strong><br>"+
@@ -128,7 +130,10 @@ $( "#addProducto" ).on( "click", function(){
   });
 
 } );
-
+var dataDetalle=[]
+var total = 0.0
+var subtotal = 0.0
+var igv = 0.0 
 function dibujarProducto(idProducto){
   Productos.forEach(element => {
 if(element.id == idProducto){
@@ -140,11 +145,27 @@ if(element.id == idProducto){
       cant: cantidad,
       name: element.nombre,
       price: '$' + element.costo,
-      total: cantidad * element.costo
+      total: cantidad * element.costo, 
+      igv: element.igv
     }
   })
-  console.log("Encontre el productp!!!!!")
-  console.log(element.nombre)
+  
+  dataDetalle = $table.bootstrapTable('getData')
+  console.log(dataDetalle)
+   total = 0.0
+   subtotal = 0.0
+   igv = 0.0 
+  dataDetalle.forEach(element => {
+    console.log(element)
+    subtotal += element.total
+    if(element.igv){
+      igv += element.total * 0.18
+    }
+    total = subtotal + igv
+  });
+$("#subtotal").text(subtotal)
+$("#igv").text(igv)
+$("#total").text(total)
  
 }
 });
@@ -170,3 +191,45 @@ $('#table').bootstrapTable({
     }]
   })
   var $table = $('#table')
+
+  $( "#sendPedido" ).on( "click", function(){
+    pedido = {}
+    
+    cab = {
+      cliente : idClienteSeleccionado,
+      transportista : idTransportistaSeleccionado,
+      fecha : fecha,
+      subtotal : subtotal,
+      igv : igv,
+      total : total
+    }
+    dataDetalle = $table.bootstrapTable('getData')
+    pedido.det = dataDetalle
+    pedido.cab = cab
+    console.log(JSON.stringify(pedido))
+    var url = "setPedido"
+    
+     $.ajax({
+      type: "POST",
+      url: url,
+      data: JSON.stringify(pedido),
+      success: function(data){
+        console.log(data)
+        if(!data.error){
+          Swal.fire(
+            'Exito!',
+            'se creo el pedido.'+ data.data,
+            'success'
+          )
+        }else{
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'No se pudo procesar tu pedido!',
+           
+          })
+        }
+      }
+    });
+
+  });
