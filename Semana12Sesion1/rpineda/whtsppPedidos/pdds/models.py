@@ -77,6 +77,7 @@ class cliente(models.Model):
     nombres = models.CharField(max_length=200)
     apellidos = models.CharField(max_length=200)
     documento = models.CharField(max_length=15)
+    direccion = models.TextField(max_length=1000, null=True)
     email = models.EmailField()
     telefono = models.CharField(max_length=50)
     isActivoEnum = ((ACTIVO,'Activo'),(INACTIVO,'Inactivo'))
