@@ -94,7 +94,7 @@ class pedido(models.Model):
     subtotal = models.DecimalField(max_digits=10,decimal_places=2)
     igv = models.DecimalField(max_digits=10,decimal_places=2)
     total = models.DecimalField(max_digits=10,decimal_places=2)
-    ubicacion = models.CharField(max_length=500)
+    ubicacion = models.CharField(max_length=500, null= True)
     estado = models.CharField(max_length=30,default='Recibido')
 
 class detallePedido(models.Model):
