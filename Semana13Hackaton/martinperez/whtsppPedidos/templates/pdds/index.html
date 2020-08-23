@@ -1,0 +1,123 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Inicio
+{% endblock titulo %}
+
+{% block pageHeader %}
+Pedidos
+{% endblock pageHeader %}
+ 
+
+{% block pageActive %}
+listar
+{% endblock pageActive %}
+ 
+{% block classMenu1 %}
+  nav-link active
+{% endblock %}
+{% block classMenu2 %}
+  nav-link
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12"> 
+        <!-- Main content -->
+        <div class="invoice p-3 mb-3">
+          <!-- title row -->
+          <div class="row">
+            <div class="col-12">
+              <h4>
+                <i class="fas fa-globe"></i> SocialPedidos, Inc.
+                <small class="float-right">Date: <label id="lblFecha"></label></small>
+              </h4>
+            </div>
+            <!-- /.col -->
+          </div> 
+
+          <!-- Table row -->
+          <div class="row">
+            <div class="col-12 table-responsive">
+              <table id="table"></table>
+            </div> 
+          </div>
+          <!-- /.row -->
+ 
+ 
+        </div>
+        <!-- /.invoice -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+
+{% endblock content %}
+
+{% block scripts %}
+<script>
+ 
+
+{% if clientes %} 
+    clientes = [];
+    {% for cliente in clientes %}
+      cliente = {};
+      cliente.id = {{cliente.id}};
+      cliente.nombres = "{{cliente.nombres}}";
+      cliente.apellidos = "{{clientes.apellidos}}"
+      cliente.documento = "{{cliente.documento}}" 
+      clientes.push(cliente);
+    {% endfor %}
+  
+
+    {% if trasportistas %}
+    Transportistas = [];
+      {% for objTransportista in trasportistas %}  
+              Transportista = {};
+              Transportista.id = {{objTransportista.id}}
+              Transportista.nombres = "{{objTransportista.nombres}}"
+              Transportista.apellidos = "{{objTransportista.apellidos}}"
+              Transportista.documento = "{{objTransportista.documento}}"
+              Transportistas.push(Transportista)
+      {%endfor%}
+    {%endif%}
+
+
+    {%if productos%}
+      Productos = [];
+      {%for objProducto in productos%}
+        Producto = {};
+        Producto.id = {{objProducto.id}}
+        Producto.nombre = "{{objProducto.nombre}}"
+        {%if objProducto.igv%}
+          Producto.igv = true
+        {%else%}
+        Producto.igv = false
+        {%endif%}
+        
+        Producto.costo = {{objProducto.costo}}
+        Productos.push(Producto)
+        {%endfor%}
+    {%endif%}
+
+ 
+    var today = new Date();
+    var fecha = today.toISOString().substring(0, 10);
+    $("#lblFecha").text(fecha);
+    $("#lblFecha2").text(fecha);
+    
+  {% else %}
+    <p>No existen clientes.</p>
+  {% endif %}
+  </script>
+  <script src="{% static '/pdds/js/sweetalert2.js'%}"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+  <script src="{% static '/pdds/js/pddsListar.js'%}"></script>
+{% endblock scripts %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{% static '/pdds/css/sweetalert2.css'%}">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+{% endblock styles %}
+ 
