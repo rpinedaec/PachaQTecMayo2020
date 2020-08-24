@@ -1,7 +1,7 @@
 """whtsppPedidos URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.1/topics/http/urls/
+    https://docs.djangoproject.com/en/3.0/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -13,9 +13,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import url, include
 from django.contrib import admin
 from django.urls import path
+from .views import mssngr
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^mssngr/', include('mssngr.urls')),
+    url(r'^66d2b8f4a09cd35cb23076a1da5d51529136a3373fd570b122/?$', mssngr.as_view()) 
 ]
