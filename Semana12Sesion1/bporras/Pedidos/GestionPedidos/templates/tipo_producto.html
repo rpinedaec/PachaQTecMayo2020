@@ -1,0 +1,20 @@
+<html>
+
+<head>
+
+<title>Tipo_Producto</title>
+  
+</head>
+<body>
+    <h1>Tipo de productos</h1>
+    <form action="/tipoproducto/" method="POST"> {% csrf_token %}
+
+        <p>Descripción: <input type="text" name="descripcion"> </p>
+        <p>AC/IA: <input type="text" name="estado"> </p>
+        <input type="submit" value="Enviar">
+         
+    </form>
+</body>
+
+
+</html>
