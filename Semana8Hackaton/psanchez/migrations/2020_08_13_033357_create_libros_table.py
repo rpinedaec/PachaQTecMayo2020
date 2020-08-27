@@ -7,10 +7,18 @@ class CreateLibrosTable(Migration):
         """
         Run the migrations.
         """
-        pass
+        with self.schema.create('libros') as table:
+            table.increments('id')
+            table.string('nombre')
+            table.string('isbn')
+            table.integer('autor_id').unsigned()
+            table.foreign('autor_id').references('id').on('autor')
+            table.integer('estadolibro_id').unsigned()
+            table.foreign('estadolibro_id').references('id').on('estadolibro')
+            table.timestamps()
 
     def down(self):
         """
         Revert the migrations.
         """
-        pass
+        self.schema.drop('libros')

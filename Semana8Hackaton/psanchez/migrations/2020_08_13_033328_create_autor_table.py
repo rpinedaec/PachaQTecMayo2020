@@ -7,10 +7,15 @@ class CreateAutorTable(Migration):
         """
         Run the migrations.
         """
-        pass
+        with self.schema.create('autor') as table:
+            table.increments('id')
+            table.string('nombre')
+            table.string('correo')
+            table.enum('tipo', ['Autor', 'Editorial'])
+            table.timestamps()
 
     def down(self):
         """
         Revert the migrations.
         """
-        pass
+        self.schema.drop('autor')
