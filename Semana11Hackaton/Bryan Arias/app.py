@@ -116,7 +116,7 @@ def detallePedido(body):
     resp = MessagingResponse()
     app.logger.debug(resp)
     account_sid = 'ACc508aaa6f2b09adc129fd28ec456deef'# Accont_sid Twilio personal
-    auth_token = '86001932c3e41b844a2dd17b79f600c2'#Auth_token Twilio personal
+    auth_token = '7cefac024e8676cbece0d88026bf1c32'#Auth_token Twilio personal
     client = Client(account_sid, auth_token)
 
     message = client.messages \
@@ -124,7 +124,7 @@ def detallePedido(body):
             from_='whatsapp:+14155238886',
             body='Twilio HQ',
             persistent_action=[f'{mipedido.ubicacion}'],
-            to='whatsapp:+51917750571'
+            to='whatsapp:+51935818679'
     )
     msg = resp.message()
     msg.body("Procesando")
