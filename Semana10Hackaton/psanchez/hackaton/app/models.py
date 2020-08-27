@@ -42,11 +42,6 @@ class Producto(db.Model):
     nombre = db.Column(db.String(100), index=True)
     stock = db.Column(db.Integer)
     precio = db.Column(db.Numeric(10,2))
-    igv = Column(db.Numeric(10,2))
+    igv = db.Column(db.Numeric(10,2))
     categoria_id = db.Column(db.Integer, db.ForeignKey('categoria.id'))
 
-    def precio_final(self):
-        if (self.igv == 0):
-            return self.precio
-        else:
-            return self.precio*self.igv/100

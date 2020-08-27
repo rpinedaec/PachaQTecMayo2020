@@ -7,5 +7,13 @@ class EstadolibroTableSeeder(Seeder):
         """
         Run the database seeds.
         """
-        pass
+        self.db.table('estadolibro').insert({
+            'descripcion': 'D'
+        })
+        self.db.table('estadolibro').insert({
+            'descripcion': 'R'
+        })
+        self.db.table('estadolibro').insert({
+            'descripcion': 'P'
+        })
 

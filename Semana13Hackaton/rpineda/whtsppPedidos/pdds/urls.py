@@ -1,7 +1,10 @@
 from django.urls import path, include
 from pdds.views import index, getClientes, getTransportistas, getProductos, estadoPedido, ubicacionPedido, setPedido
+
+app_name = 'pedidos'
+
 urlpatterns = [
-    path('', index),
+    path('', index, name = 'index'),
     path('getClientes', getClientes),
     path('getTransportistas', getTransportistas),
     path('getProductos', getProductos),

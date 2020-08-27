@@ -7,10 +7,20 @@ class CreateUsuarioTable(Migration):
         """
         Run the migrations.
         """
-        pass
+        with self.schema.create('usuario') as table:
+            table.increments('id')
+            table.string('nombre')
+            table.string('correo')
+            table.integer('tipodedocumento_id').unsigned()
+            table.foreign('tipodedocumento_id').references('id').on('tipodedocumento')
+            table.string('documento')
+            table.integer('estadousuario_id').unsigned()
+            table.foreign('estadousuario_id').references('id').on('estadousuario')
+            table.timestamps()
+
 
     def down(self):
         """
         Revert the migrations.
         """
-        pass
+        self.schema.drop('usuario')
