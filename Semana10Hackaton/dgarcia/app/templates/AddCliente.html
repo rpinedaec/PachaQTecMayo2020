@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2><span class="font-italic">Agregar Cliente</span></h2>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <div class="form-row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                    {{ form.nombre.label }}
+                    {{ form.nombre(class_="form-control form-control-sm") }}
+                    {% for error in form.nombre.errors %}
+                    <span class="text-danger">[{{ error }}]</span>
+                    {% endfor %}
+
+                    {{ form.apellido.label }}
+                    {{ form.apellido(class_="form-control form-control-sm") }}
+                    {% for error in form.apellido.errors %}
+                    <span class="text-danger">[{{ error }}]</span>
+                    {% endfor %}
+
+                    {{ form.numero_documento.label }}
+                    {{ form.numero_documento(class_="form-control form-control-sm") }}
+                    {% for error in form.numero_documento.errors %}
+                    <span class="text-danger">[{{ error }}]</span>
+                    {% endfor %}
+
+                    {{ form.documento.label }}
+                    {{ form.documento(class_="form-control form-control-sm") }}
+                    <a href="/TipoDocumento/add" title="Agregar Tipo de Documento">
+                        <button type="button" class="btn">
+                            <i class="fa fa-plus-square" aria-hidden="true"> Agregar Tipo de Documento</i>
+                        </button>
+                    </a>
+                <p>{{ form.submit(class_="btn btn-sm btn-primary") }}</p>
+            </div>
+        </div>
+        
+    </form>
+{% endblock %}

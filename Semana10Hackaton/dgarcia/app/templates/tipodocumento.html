@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2><span class="font-italic">Lista de Tipo de Documento:</span></h2>
+    <a href="/TipoDocumento/add" title="Agregar Tipo Documento">
+        <button type="button" class="btn btn-lg">
+            <i class="fa fa-plus-square" aria-hidden="true"> Agregar Tipo de Documento</i>
+        </button>
+    </a>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id Tipo Documento</th>
+                <th>Tipo de Documento</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in tipodocumento %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.descripcion }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+{% endblock %}
