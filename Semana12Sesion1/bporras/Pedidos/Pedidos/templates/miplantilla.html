@@ -1,0 +1,23 @@
+<html>
+<body>
+
+    {% include "superior/barra.html" %}
+<h2>
+Primera plantilla
+</h2>
+<p>El nombre del profesor es : {{nombre_persona.upper}} {{apellido_persona.upper}}</p>
+<p><strong>Temas del curso:</strong></p>
+<p>
+    <ul>
+    {% if temas %}
+        {% for tema in temas %}
+        <li>{{tema}}</li>
+        {% endfor %}
+    {% else %}
+       <p>No hay elementos que mostrar</p> 
+    {% endif %}
+    </ul>
+</p>
+
+</body>
+</html>
