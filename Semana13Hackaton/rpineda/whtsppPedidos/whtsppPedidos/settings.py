@@ -26,7 +26,7 @@ SECRET_KEY = '+%rj@*lzt&3=-llo3zsruqdw1thp-hhwyk*=@yga3au4#h0lb*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['108779a84891.ngrok.io', 'localhost','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'pdds.apps.PddsConfig',
     'mssngr.apps.MssngrConfig',
     'lndng.apps.LndngConfig',
+    'authenticate.apps.AuthenticateConfig',
 ]
 
 MIDDLEWARE = [
@@ -135,4 +136,3 @@ USE_TZ = True
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATIC_URL = '/static/'
-
