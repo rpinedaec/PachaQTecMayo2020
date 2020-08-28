@@ -3,4 +3,4 @@ from orator import Model
 
 class Biblioteca(Model):
 
-    __table__ = 'biblioteca'
+    pass

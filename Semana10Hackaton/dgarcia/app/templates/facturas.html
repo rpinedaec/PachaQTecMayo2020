@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2><span class="font-italic">Lista de Facturas:</span></h2>
+    <a href="/Factura/add" title="Agregar Factura">
+        <button type="button" class="btn btn-lg">
+            <i class="fa fa-plus-square" aria-hidden="true"> Agregar Factura</i>
+        </button>
+    </a>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id Factura</th>
+                    <th>Cliente</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for df, f, p, c in facturas %}
+                <tr>
+    <form action="" method="POST">
+    {{ form2.hidden_tag() }}
+                    <input type="hidden" id="factura" name="factura" value="{{ df.id }}">
+                    <td>{{ f.id }}</td>
+                    <td>{{ c.nombre }}</td>
+                    <td>{{ form2.visualizar(class_="btn btn-sm btn-primary") }}</td>
+    </form>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}

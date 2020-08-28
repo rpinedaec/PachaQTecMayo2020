@@ -7,10 +7,13 @@ class CreateEstadolibroTable(Migration):
         """
         Run the migrations.
         """
-        pass
+        with self.schema.create('estadolibro') as table:
+           table.increments('id')
+           table.string('descripcion')
+           table.timestamps()
 
     def down(self):
         """
         Revert the migrations.
         """
-        pass
+        self.schema.drop('estadolibro')

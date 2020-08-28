@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2><span class="font-italic">Agregar Factura</span></h2>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <div class="form-row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                    {{ form.cliente_id.label }}
+                    {{ form.cliente_id(class_="form-control form-control-sm") }}
+                    <a href="/Cliente/add" title="Agregar Cliente">
+                        <button type="button" class="btn">
+                            <i class="fa fa-plus-square" aria-hidden="true"> Agregar Cliente</i>
+                        </button>
+                    </a>
+                <p>{{ form.submit(class_="btn btn-sm btn-primary") }}</p>
+            </div>
+        </div>
+        
+    </form>
+{% endblock %}

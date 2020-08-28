@@ -62,7 +62,7 @@ class Menu:
             for (key, value) in self.listaOpciones.items():
                 print(key, "\t:: ", value)
             opcion = 100
-            print("\t- Salir \t\t::  9")
+            print("\t- Salir \t::  9")
             try:
                 print(color.CYAN+"Escoge tu opcion"+color.CEND)
                 opcion = int(input())
