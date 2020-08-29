@@ -5,7 +5,8 @@ from django.core import serializers
 from django.views.decorators.csrf import csrf_exempt
 import json
 from django.utils.dateparse import parse_date
-
+from django.views.decorators.http import require_http_methods
+from .forms import tipoClienteForm
 
 def index(request):
     allClientes = cliente.objects.all()
@@ -104,3 +105,18 @@ def setPedido(request):
             return JsonResponse({"data": idPedido, "error":False})
         except Exception as e:
             return JsonResponse({"error": e})
+
+@require_http_methods(["GET", "POST"])
+def setTipoCliente(request):
+    if request.method == 'POST':
+        tipo_ClienteForm = tipoClienteForm(request.POST)
+        if tipo_ClienteForm.isValid():
+            tipo_ClienteForm.save()
+            return redirect("index")
+        
+    else:
+        tipo_ClienteForm = tipoClienteForm()
+
+    return render(request,"pdds/tipoCliente.html",{"tipoClienteForm": tipo_ClienteForm} )
+
+            
