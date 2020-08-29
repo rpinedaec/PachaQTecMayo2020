@@ -29,7 +29,7 @@
 11. Creamos los models
 
 12. Inicializamos las migraciones
-    python  manage.py makemigrations
+    python manage.py makemigrations
 13. Ejecutamos las migraciones
     python manage.py migrate
 14. Instalamos django-adminlte
