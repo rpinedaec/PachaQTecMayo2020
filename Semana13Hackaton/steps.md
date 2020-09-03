@@ -32,7 +32,7 @@
     python  manage.py makemigrations
 13. Ejecutamos las migraciones
     python manage.py migrate
-14. Instalamos django-adminlte
+14. Instalamos django-adminlte3
     pip install django-adminlte3
 15. Instalar el collctstics
     python manage.py collectstatic
