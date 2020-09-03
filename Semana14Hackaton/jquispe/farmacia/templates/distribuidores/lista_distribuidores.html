@@ -1,0 +1,84 @@
+{% extends "distribuidores/base_distribuidores.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %}    
+    <div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>            
+            Distribuidores
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="{% url 'users_app:home' %}"><i class="fa fa-dashboard"></i>Inicio</a></li>
+            <li class="active">Distribuidores</li>
+            <li><a href="{% url 'distribuidores_app:create_distribuidor' %}">Nuevo Distribuidor</a></li>
+            
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-xs-12">
+
+                <div class="box box-primary">
+                  <div class="box-header with-border">
+                    <h3 class="box-title"><a href="{% url 'distribuidores_app:create_distribuidor' %}" class="btn btn-success">
+                      Nuevo Distribuidor
+                    </a></h3>
+                    <div class="box-tools pull-right">
+                      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div><!-- /.box-tools -->
+                  </div><!-- /.box-header -->
+                  <div class="box-body">
+                  <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                     <tr>
+                        <th>N°</th>                      
+                        <th>Nombre</th> 
+                        <th>Ruc</th>                              
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                        <th>Acciones</th>                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                    
+                     {% for d in distribuidores %} 
+                        <tr> 
+                          <td>{{ forloop.counter}}</td>                         
+                          <td>{{ d.nombre }} </td> 
+                          <td>{{ d.ruc }}</td>                              
+                          <td>{{ d.direccion}}</td>
+                          <td>{{d.telefono}}</td>
+                          <td class="text-right">
+                                  {% if user.is_authenticated %}
+                                  <a href="{% url 'distribuidores_app:detalle_distribuidores' d.id %} " class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                  {% endif %}
+
+                                  <a href="{% url 'distribuidores_app:actualizar_distribuidores' d.id  %}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span></a>
+                                  {% for group in user.groups.all %}
+                                     {% if group.name == 'administrador' %}
+                                  <a href="{% url 'distribuidores_app:eliminar_distribuidor' d.id %}" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a> 
+                                  {% endif %}
+                                  {% endfor %}
+                            </td>                      
+                              
+                          </tr>
+                      {% endfor %}
+                    </tbody>
+
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}

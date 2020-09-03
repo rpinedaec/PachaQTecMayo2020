@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style >
+        @page {
+            size: landscape;
+            @frame header_frame{
+                -pdf-frame-content: headerContent;
+                left: 5pt;
+                top: 10pt;
+                height: 100pt;
+                }
+
+            @frame content_frame {
+                    left: 40pt; width: 760pt; top: 90pt; height: 460pt;
+            }
+
+            @frame footer {
+                -pdf-frame-content: footerContent;
+                bottom: 1cm;
+                margin-left: 1cm;
+                margin-right: 1cm;
+                height: 0cm;
+                }
+        }
+    </style>
+</head>
+<body>
+
+<div id="headerContent">
+    <center> <h2>MI LOGO</h2></center>
+</div>
+
+<div id="footerContent">
+    Página: <pdf:pagenumber> de <pdf:pagecount>
+</div>
+
+<br>
+<table style="border:1px solid black;border-collapse:collapse;">
+    <tr>
+        <th style="border:1px solid black; padding: 2px;">Item</th>
+        <th style="border:1px solid black; padding: 2px;">Lote</th>
+        <th style="border:1px solid black; padding: 2px;">Presentación</th>
+        <th style="border:1px solid black; padding: 2px;">Tipo</th>        
+        <th style="border:1px solid black; padding: 2px;">Nombre</th>
+        <th style="border:1px solid black; padding: 2px;">Componente</th>
+        <th style="border:1px solid black; padding: 2px;">Concentracion</th>  
+        <th style="border:1px solid black; padding: 2px;">Sanitario</th>  
+        <th style="border:1px solid black; padding: 2px;">Fecha Expiración</th>
+        <th style="border:1px solid black; padding: 2px;">Fecha Producción</th>
+        <th style="border:1px solid black; padding: 2px;">Precio Compra</th>
+        <th style="border:1px solid black; padding: 2px;">Precio Venta</th>
+        <th style="border:1px solid black; padding: 2px;">Stock</th>
+
+
+    </tr>
+     {% for c in medicamentos%}
+            
+        <tr>
+        <td width= 40 style="border:1px solid black; padding: 3px;">{{forloop.counter}}</td>
+         <td width= 55 style="border:1px solid black; padding: 3px;">{{c.lote}}</td>
+         <td width= 120 style="border:1px solid black; padding: 3px;"><center>{{c.presentacion}}</center></td>
+         <td width= 70 style="border:1px solid black; padding: 3px;">{{c.tipo}}</td>
+         <td width=140 style="border:1px solid black; padding: 3px;"><center>{{c.nombre}}</center></td>
+         <td width =80 style="border:1px solid black; padding: 3px;"><center>{{c.componente}}</center></td>
+         <td width= 80 style="border:1px solid black; padding: 3px;"><center>{{c.concentracion}}</center></td>
+         <td width= 50 style="border:1px solid black; padding: 3px;"><center>{{c.sanitario}}</center></td>
+         <td width= 70 style="border:1px solid black; padding: 3px;"><center>{{c.fecha_expiracion|date:"SHORT_DATE_FORMAT"}}</center></td>
+         <td width= 70 style="border:1px solid black; padding: 3px;"><center>{{c.fecha_produccion|date:"SHORT_DATE_FORMAT"}}</center></td> 
+         <td width= 60 style="border:1px solid black; padding: 3px;"><center>{{c.precio_Compra}}</center></td>
+         <td width= 70 style="border:1px solid black; padding: 3px;"><center>{{c.precio_venta}}</center></td>
+         <td width= 70 style="border:1px solid black; padding: 3px;"><center>{{c.stock}}</center></td>
+        </tr>         
+              
+    {% endfor %} 
+    <td colspan="11" width= 70 style="border:1px solid black; padding: 3px;"><center>TOTAL</center></td>
+
+    <td  width= 70 style="border:1px solid black; padding: 3px;"><center>{{total_precio_compra}}</center></td>
+        <td width= 70 style="border:1px solid black; padding: 3px;"><center>{{total_precio_venta}}</center></td>  
+
+</table>
+
+<br />
+<table style="border:1px solid black;border-collapse:collapse;">
+<tr>
+   <th colspan="2" style="border:1px solid black; padding: 2px;">Resumen</th>   
+ </tr>
+
+<tr>
+
+<td width= 55 style="border:1px solid black; padding: 3px;">Precio Venta</td>
+     <td width= 40 style="border:1px solid black; padding: 3px;">{{total_precio_venta}}</td>
+</tr>   
+
+<tr>
+    <td width= 55 style="border:1px solid black; padding: 3px;">Precio Compra</td>
+    <td width= 55 style="border:1px solid black; padding: 3px;">{{total_precio_compra}}</td>
+</tr>
+<tr>
+    <td width= 55 style="border:1px solid black; padding: 3px;">Ganancia</td>
+    <td width= 55 style="border:1px solid black; padding: 3px;">{{ganancia}}</td>
+</tr>
+    
+</table>
+
+</body>
+</html>
+

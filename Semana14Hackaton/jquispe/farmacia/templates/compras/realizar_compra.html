@@ -1,0 +1,190 @@
+{% extends "medicamentos/base_medicamentos1.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %}    
+    <div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>            
+            Compras
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="{% url 'users_app:home' %}"><i class="fa fa-dashboard"></i>Inicio</a></li>
+            <li><a href="{% url 'compras_app:lista_compras' %}">Compras</a></li>
+            <li>Nuevo</li>
+            
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-xs-12">
+
+                <div class="box box-primary">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">
+                      <a href="{% url 'compras_app:lista_compras' %}" class="btn btn-success">
+                      Regresar</a>
+                    </h3>
+                    <div class="box-tools pull-right">
+                      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div><!-- /.box-tools -->
+                  </div><!-- /.box-header -->
+                  <div class="box-body">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Code adapted from http://djangosnippets.org/snippets/1389/
+
+  function updateElementIndex(el, prefix, ndx) {
+    var id_regex = new RegExp('(' + prefix + '-\\d+-)');
+    var replacement = prefix + '-' + ndx + '-';
+    if ($(el).attr("for")) $(el).attr("for", $(el).attr("for").replace(id_regex,
+ replacement));
+    if (el.id) el.id = el.id.replace(id_regex, replacement);
+    if (el.name) el.name = el.name.replace(id_regex, replacement);
+  }
+
+  function deleteForm(btn, prefix) {
+    var formCount = parseInt($('#id_' + prefix + '-TOTAL_FORMS').val());
+
+    if (formCount > 1) {
+      // Delete the item/form
+      $(btn).parents('.item').remove();
+
+      var forms = $('.item'); // Get all the forms
+
+      // Update the total number of forms (1 less than before)
+      $('#id_' + prefix + '-TOTAL_FORMS').val(forms.length);
+
+      var i = 0;
+      // Go through the forms and set their indices, names and IDs
+      for (formCount = forms.length; i < formCount; i++) {
+        $(forms.get(i)).children().children().each(function() {
+          updateElementIndex(this, prefix, i);
+        });
+      }
+
+    } // End if
+    else {
+        alert("You have to enter at least one todo item!");
+    }
+    return false;
+  }
+
+
+  function addForm(btn, prefix) {
+    var formCount = parseInt($('#id_' + prefix + '-TOTAL_FORMS').val());
+
+    // You can only submit a maximum of 10 todo items 
+    if (formCount < 100) {
+      // Clone a form (without event handlers) from the first form
+      var row = $(".item:first").clone(false).get(0);
+      // Insert it after the last form
+      $(row).removeAttr('id').hide().insertAfter(".item:last").slideDown(300);
+      
+      // Remove the bits we don't want in the new row/form
+      // e.g. error messages
+      $(".errorlist", row).remove();
+      $(row).children().removeClass('error');
+      
+      // Relabel/rename all the relevant bits
+      $(row).children().children().each(function() {
+        updateElementIndex(this, prefix, formCount);
+        if ( $(this).attr('type') == 'text' )
+          $(this).val('');
+      });
+      
+      // Add an event handler for the delete item/form link 
+      $(row).find('.delete').click(function() {
+        return deleteForm(this, prefix);
+      });
+
+      // Update the total form count
+      $('#id_' + prefix + '-TOTAL_FORMS').val(formCount + 1); 
+
+    } // End if
+    else {
+      alert("Sorry, you can only enter a maximum of ten items.");
+    }
+    return false;
+  }
+
+  // Register the click event handlers
+  $("#add").click(function() {
+    return addForm(this, 'form');
+  });
+  
+  $(".delete").click(function() {
+    return deleteForm(this, 'form');
+  });
+});
+</script>
+
+                      <form class="form-horizontal" method="post">{% csrf_token %}  
+                        <div class="section">
+                           <div class="form-group has-success has-feedback  {% if todo_list_form.codigo.errors %} has-error {% endif %}">
+                                     <label class="control-label col-sm-1" for="inputSuccess3">{{ todo_list_form.codigo.label_tag }}
+                                     </label>                                     
+                                     <div class="col-sm-2">
+                                        {{ todo_list_form.codigo }}
+                                    </div>
+
+                                    <label class="control-label col-sm-1" for="inputSuccess3">{{ todo_list_form.distribuidor.label_tag }}
+                                     </label>
+                                    <div class="col-sm-2">
+                                        {{ todo_list_form.distribuidor }}                                        
+                                    </div>
+                                    <div class="col-sm-1">        
+                                      <a href="{% url 'distribuidores_app:create_distribuidor' %}" class="btn btn-success">+
+                                      </a> 
+                                    </div>  
+                                    <label class="control-label col-sm-1" for="inputSuccess3">{{ todo_list_form.laboratorio.label_tag }}
+                                     </label>
+                                    <div class="col-sm-2">
+                                        {{ todo_list_form.laboratorio }}
+                                    </div>
+                                    <div class="col-sm-1">        
+                                      <a href="{% url 'distribuidores_app:create_distribuidor' %}" class="btn btn-success">+
+                                      </a> 
+                                    </div>
+                            </div>                         
+                        </div>
+
+                        
+                        
+                          <div class="panel-body"> 
+                            <div class="row">    
+                              <h2>Agregar Medicamentos</h2>
+                              {{ todo_item_formset.management_form }}
+                              {% for form in todo_item_formset.forms %}
+                                <div class="item col-sm-2 color1">
+                                    {{ form.as_p}}
+                                    <p style=""><a class="delete" href="#">ELiminar</a></p>
+                                </div>
+
+                                </div>
+                              {% endfor %}
+                              </div>
+
+                        <p><a id="add" href="#">Agregar</a></p>
+                            <input type="submit" value=" Realizar Compra " class="btn btn-sm btn-primary">
+                    </form>
+
+           
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}

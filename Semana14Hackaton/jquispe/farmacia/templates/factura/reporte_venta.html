@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imprimir</title>
+    <link rel="stylesheet" href="{% static 'css/custom/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom/imprimir.css' %}" media="print">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body class="imprimir">
+	<a href="" onclick="window.print()" class="boton-imprimir">IMPRIMIR</a>
+	<section class="form-general datos-generales">
+		<div class="d-contenedor">
+			<h2>"BOTICA FARMA SALUD"</2>
+			<div class="cnt-inputs">
+				<ul>
+					<li>
+						<h3>RUC: 1234123414</h3>
+						<h3>Serie: {{compra.serie}}</h3>
+						<h3>Número:{{compra.numero}}</h3>
+						<h3>Cliente: {{compra.cliente}} </h3>						
+						<h3>Fecha: {{compra.fecha}}</h3>
+						<h3>Trabajador: {{compra.vendedor}}</h3>
+					</li>	
+				</ul>
+			</div>
+
+		</div>
+
+
+	<div class="d-contenedor">
+			
+	<div class="cnt-inputs">
+		<table border=0>
+		------------------------------------------------------------------------------------------------------------------------
+			<tr>
+			<th><h2>item</h2></th>
+			<th><h2>Medicamentos</h2></th>
+			<th><h2>Precio</h2></th>
+			<th><h2>cantidad</h2></th>
+			<th><h2>total</h2></th>			
+			</tr>
+
+			{%for a in medicamentos%}
+				<tr>
+				<td><h2>{{forloop.counter}}</h2></td> 
+				<td><h2>{{a.producto.nombre}}</h2></td>
+				<td><h2>{{a.producto.precio_venta}}</h2></td>
+				<td><h2>{{a.cantidad}}</h2></td>	
+				<td><center><h2>{{a.suma}}</h2></center></td>			
+			</tr>
+			{% endfor %}
+			<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+			<div class="total">
+				<label for="">Total</label>
+				<input disabled type="text" value="{{compra.total}}" class="input-peq">
+			</div></td>
+			</tr>
+		</table>
+			------------------------------------------------------------------------------------------------------------------------
+			<div class="cnt-inputs">
+				<ul>
+					<li>
+						<h3>Impreso a las: {{ hora|date:"P"}}</h3>						
+						<h3>Trabajador: {{compra.vendedor}}</h3>
+						<h3>Dirección: Av. Los Alamos - Villa El Salvador</h3>
+						<h3>Teléfono: 968445020</h3>
+						
+					</li>	
+				</ul>
+			</div>
+			<center> <h1> GRACIAS </h1></center>
+
+			</div>
+
+		</div>
+	<section>
+</html>
