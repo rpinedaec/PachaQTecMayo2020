@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('pedidos/', include('pdds.urls')),
     path('', include('lndng.urls')),
     path('fbmssgr/', include('mssngr.urls')),

@@ -19,8 +19,8 @@ class productoAdmin(admin.ModelAdmin):
 
 
 class clienteAdmin(admin.ModelAdmin):
-    list_display = ('tipocliente', 'tipodocumento', 'nombres',
-                    'apellidos', 'documento', 'email', 'telefono', 'isActivo')
+    list_display = ( 'nombres',
+                    'apellidos', 'documento', 'email', 'telefono', 'isActivo', 'tipocliente', 'tipodocumento')
 
 
 class transportistaAdmin(admin.ModelAdmin):
