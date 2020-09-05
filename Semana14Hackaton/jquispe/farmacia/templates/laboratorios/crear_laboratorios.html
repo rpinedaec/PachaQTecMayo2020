@@ -1,0 +1,99 @@
+{% extends "laboratorios/base_laboratorios.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %} 
+<div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+         <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>            
+            Laboratorio
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="{% url 'users_app:home' %}"><i class="fa fa-dashboard"></i>Inicio</a></li>
+            <li><a href="{% url 'laboratorios_app:lista_laboratorios' %}">Laboratorios</a></li>
+            <li class="active">Nuevo Laboratorio</li>
+          </ol>
+        </section>
+        <!-- Main content -->
+    <section class="content">          
+      <!-- START ALERTS AND CALLOUTS -->     
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-info">
+            <div class="box-header with-border">
+             
+            <div class="box-tools pull-right">
+                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            </div><!-- /.box-tools -->
+                       
+            </div><!-- /.box-header -->
+              <div class="box-body"> 
+    
+    <div class="row">
+      <div class="col-lg-12">
+        <form class="form-horizontal" method="post">
+                {% csrf_token %}    
+                <div class="panel panel-primary">
+                   <div class="panel-heading">Laboratorio</div>
+                    <div class="panel-body">
+                        <div class="page-header">                            
+                        <h4>
+                            <a href="{% url 'laboratorios_app:lista_laboratorios' %}" class="btn btn-success">
+                            <span class="glyphicon glyphicon-chevron-left"></span> Regresar
+                            </a>
+                            
+                        </h4>
+                        </div><!-- page-header -->
+                        <div class="row">                              
+                            <div class="col-xs-12 col-sm-10">                               
+                                <div class="form-group has-success has-feedback  {% if form.codigo.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-2" for="inputSuccess3">{{ form.codigo.label_tag }}</label>
+                                        <div class="col-sm-2">                                        
+                                        <input type="number" id="disabledTextInput" name="codigo" class="form-control" value='{% if form.codigo.value %}{{ form.codigo.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.codigo.errors.as_text}}' autofocus='true' >                                         
+                                        </div>
+                                  </div> 
+                                <div class="form-group has-success has-feedback  {% if form.nombre.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-2" for="inputSuccess3">{{ form.nombre.label_tag }}</label>
+                                        <div class="col-sm-6">                                        
+                                        <input type="text" id="disabledTextInput" name="nombre" class="form-control" value='{% if form.nombre.value %}{{ form.nombre.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.nombre.errors.as_text}}' autofocus='true'>                                       
+                                        </div>
+                                  </div>  
+                                <div class="form-group has-success has-feedback  {% if form.sanitario.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-2" for="inputSuccess3">{{ form.sanitario.label_tag }}</label>
+                                        <div class="col-sm-6">                                        
+                                        <input type="text" id="disabledTextInput" name="sanitario" class="form-control" value='{% if form.sanitario.value %}{{ form.sanitario.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.sanitario.errors.as_text}}' autofocus='true'>                                       
+                                        </div>
+                                  </div> 
+                                <div class="form-group has-success has-feedback  {% if form.autorizacion.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-2" for="inputSuccess3">{{ form.autorizacion.label_tag }}</label>
+                                        <div class="col-sm-6">                                        
+                                        <input type="text" id="disabledTextInput" name="autorizacion" class="form-control" value='{% if form.autorizacion.value %}{{ form.autorizacion.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.autorizacion.errors.as_text}}' autofocus='true'>                                       
+                                        </div>
+                                  </div>                                   
+                            </div>                                                        
+                        </div> <!--<div class="row"> -->
+                        
+                        <div class="panel-footer color-footer">
+                            <button type="submit" class="btn btn-primary">
+                                 Grabar
+                            </button>
+                        </div>
+ 
+
+                    </div>
+                </div>
+        </form>
+      </div>
+  </div><!--/.row-->
+</div><!-- /.box body -->
+          </div><!-- /.box info -->
+          </div><!--col-->
+        </div><!-- /.row -->
+    </section><!-- /.content -->
+  </div><!-- /.content-wrapper -->
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}

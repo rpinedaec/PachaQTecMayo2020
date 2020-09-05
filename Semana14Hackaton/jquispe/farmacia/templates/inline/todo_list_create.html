@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .item,.header_info{clear:left;display:block;}
+        .item p,.errorlist,.header_info p{float:left; display:block; height:30px; line-height:30px; padding:0;margin:0;}
+        .errorlist{color:red}
+        .button,.danger{
+        display:block;
+        cursor:hand;
+        background-color:#1999ff;
+        text-decoration:none;
+        color:white;
+        height:20px;
+        line-height:20px;
+        border:solid 1px #1999ff;
+        border-radius:4px;
+        padding: 0 4px 0  4px;
+        margin-top:5px;
+        font-family:arial;
+        font-size:12px;
+        font-weight:normal;
+        float:left;
+        }
+        .danger{background-color:red; color:white;}
+    </style>
+    <script src="{{STATIC_URL}}jquery.js"></script>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+    <div class="header_info">
+        <p>{{form.name.label_tag}}{{form.name}}{{form.name.errors}}</p>
+        <p><a href="/todolist/" target="_self" class="button">back to list</a></p>
+                <input type="submit" value=" Submit " class="danger" />
+
+    </div>
+
+    {{ item_form.management_form }}
+    {{ item_form.non_form_errors }}
+
+    <br><br><hr>
+    <b>todo items below:</b><br>
+    {% for form in item_form %}
+    <div class="item">
+        <p>{{form.id}}</p>
+        <p style="display:none">{{form.DELETE}}</p>
+        <p>{{form.name.label_tag}}</p>
+        <p>{{form.name}}</p>
+        <p>{{form.name.errors}}</p>
+        <p>{{form.content.label_tag}}</p>
+        <p>{{form.content}}</p>
+        <p>{{form.content.errors}}</p>
+        <p style=""><a class="button" href="#" name="delete">Delete</a></p>
+    </div>
+    {% endfor %}
+    <br><br><br>
+
+        <input type="button" value="add" id="add" class="button" />
+
+
+
+
+
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function () {
+    // Code adapted from http://djangosnippets.org/snippets/1389/
+    function updateElementIndex(el, prefix, ndx) {
+        var id_regex = new RegExp('(' + prefix + '-\\d+-)');
+        var replacement = prefix + '-' + ndx + '-';
+        if ($(el).attr("for")) $(el).attr("for", $(el).attr("for").replace(id_regex,
+        replacement));
+        if (el.id) el.id = el.id.replace(id_regex, replacement);
+        if (el.name) el.name = el.name.replace(id_regex, replacement);
+    }
+
+    function deleteForm(btn, prefix) {
+        var formCount = parseInt($('#id_' + prefix + '-TOTAL_FORMS').val());
+        if (formCount > 1) {
+            // Delete the item/form
+            $(btn).parents('.item').remove();
+            var forms = $('.item'); // Get all the forms
+            // Update the total number of forms (1 less than before)
+            $('#id_' + prefix + '-TOTAL_FORMS').val(forms.length);
+            var i = 0;
+            // Go through the forms and set their indices, names and IDs
+            for (formCount = forms.length; i < formCount; i++) {
+                $(forms.get(i)).children().children().each(function () {
+                    if ($(this).get(0).tagName == 'INPUT' ) updateElementIndex(this, prefix, i);
+                });
+            }
+        } // End if
+        else {
+            alert("You have to enter at least one todo item!");
+        }
+        return false;
+    }
+
+    function addForm(btn, prefix) {
+        var formCount = parseInt($('#id_' + prefix + '-TOTAL_FORMS').val());
+        // You can only submit a maximum of 10 todo items
+        if (formCount < 10) {
+            // Clone a form (without event handlers) from the first form
+            var row = $(".item:first").clone(false).get(0);
+            // Insert it after the last form
+            $(row).removeAttr('id').hide().insertAfter(".item:last").slideDown(300);
+
+            // Remove the bits we don't want in the new row/form
+            // e.g. error messages
+            $(".errorlist", row).remove();
+            $(row).children().removeClass("error");
+
+            // Relabel or rename all the relevant bits
+            $(row).children().children().each(function () {
+                updateElementIndex(this, prefix, formCount);
+                $(this).val("");
+            });
+
+            // Add an event handler for the delete item/form link
+            $(row).find("[name=delete]").click(function () {
+                return deleteForm(this, prefix);
+            });
+            // Update the total form count
+            $("#id_" + prefix + "-TOTAL_FORMS").val(formCount + 1);
+        } // End if
+        else {
+            alert("Sorry, you can only enter a maximum of ten items.");
+        }
+        return false;
+    }
+    // Register the click event handlers
+    $("#add").click(function () {
+        return addForm(this, "todo_item_set");
+    });
+
+    $("[name='delete']").click(function () {
+        return deleteForm(this, "todo_item_set");
+    });
+});
+</script>
+

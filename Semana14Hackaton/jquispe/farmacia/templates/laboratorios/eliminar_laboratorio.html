@@ -1,0 +1,29 @@
+{% extends "clientes/base_clientes.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %}  
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">     
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li class="active">Clientes</li>
+      </ol>
+    </div><!--/.row-->
+    
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row"> 
+			<div class="col-xs-12 col-sm-6">
+				<h1> Eliminar</h1>
+			<form method="POST">
+				{% csrf_token %}
+				<p class="coloreliminar">¿Desea eliminar al Laboratorios "{{ object.nombre }}?</p>
+			       <input type="submit" value="Sí" class="btn btn-danger"> 
+			       <a href="{% url 'laboratorios_app:lista_laboratorios' %}" class="btn btn-default">No</a>
+			 </form>
+		</div>	
+      </div>
+  </div><!--/.row-->
+{% endblock producto %}
+{% endblock content %}

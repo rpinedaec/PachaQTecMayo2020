@@ -1,0 +1,76 @@
+{% extends "compras/base_compras.html" %}
+{% block title %}{{title}}{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+
+<br><br><br>
+<article>
+	<div class="container">
+	<form id="form" class="form-horizontal" method="post">
+                    {% csrf_token %}
+					<div class="row">	
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">  
+                            <div class="form-group has-success has-feedback  {% if form.codigo.errors %} has-error {% endif %}">
+    							    <label class="control-label col-sm-3" for="inputSuccess3">codigo
+                                     </label>
+        						<div class="col-sm-4"> 
+									 <input type="text" class="form-control" placeholder="codigo">  
+        					 	</div>
+    						</div> 
+    						<div class="form-group has-success has-feedback  {% if form.codigo.errors %} has-error {% endif %}">
+    							    <label class="control-label col-sm-3" for="inputSuccess3">distribuidor
+                                     </label>
+        						<div class="col-sm-4"> 
+									 <input type="text" class="form-control" placeholder="distribuidor">
+        					 	</div>
+                    
+
+    						</div>
+    						<div class="form-group has-success has-feedback  {% if form.codigo.errors %} has-error {% endif %}">
+    							    <label class="control-label col-sm-3" for="inputSuccess3">laboratorio
+                                     </label>
+        						<div class="col-sm-4"> 
+									 <input type="text" class="form-control" placeholder="laboratorio">
+        					 	</div>
+    						</div>                               
+    						<div class="form-group has-success has-feedback  {% if form.codigo.errors %} has-error {% endif %}">
+    							    <label class="control-label col-sm-3" for="inputSuccess3">fecha
+                                     </label>
+        						<div class="col-sm-4"> 
+									 <input type="text" class="form-control" placeholder="fecha">	
+        					 	</div>
+    						</div>  
+                        </div>   
+                     </div>
+                      <div class="row">	
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">  
+                            <table class="table">
+						    <thead>
+						        <tr>
+						            <th>Medicamentos</th>
+						            <th>Cantidad</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+						        <tr>
+						            <td>{{form.medicamento}}</td>
+						            <td>Balboa</td>
+						        </tr>
+						    </tbody>
+						</table>
+                        </div>                                                  
+                     </div>
+                     <div class="pull-right">
+                            <div class="btn-group">
+                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i>Guardar</button>
+                            </div>
+                        </div>                         
+            </form> 				
+			</div>
+		</div>
+	</div>
+</article>	
+
+
+
+{% endblock content %}

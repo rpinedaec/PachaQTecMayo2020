@@ -1,0 +1,85 @@
+{% extends "clientes/base_cliente_lista.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %}    
+    <div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>            
+            Clientes
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="{% url 'users_app:home' %}"><i class="fa fa-dashboard"></i>Inicio</a></li>
+            <li class="active">Clientes</li>
+            <li><a href="{% url 'clientes_app:create_clientes' %}">Nuevo Clientes</a></li>
+            
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-xs-12">
+
+                <div class="box box-primary">
+                  <div class="box-header with-border">
+                    <h3 class="box-title"><a href="{% url 'clientes_app:create_clientes' %}" class="btn btn-success">
+                      Nuevo Cliente
+                    </a></h3>
+                    <div class="box-tools pull-right">
+                      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div><!-- /.box-tools -->
+                  </div><!-- /.box-header -->
+                  <div class="box-body">
+                  <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                     <tr>
+                        <th>N°</th>
+                        <th>DNI</th>                       
+                        <th>Nombre</th> 
+                        <th>Apellidos</th>                              
+                        <th>Teléfono</th>
+                        <th>Acciones</th>                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                    
+                     {% for clientes in clientes %}          
+
+                        <tr> 
+                          <td>{{ forloop.counter}}</td>
+                          <td>{{ clientes.dni }}</td>
+                          <td>{{ clientes.nombre }} </td> 
+                          <td>{{ clientes.apellidos }}</td>                              
+                          <td>{{ clientes.telefono}}</td>
+                          <td class="text-right">
+                                  {% if user.is_authenticated %}
+                                  <a href="{% url 'clientes_app:detalle_cliente' clientes.id %} " class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                  {% endif %}
+
+                                  <a href="{% url 'clientes_app:actualizar_clientes' clientes.id  %}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span></a>
+                                  {% for group in user.groups.all %}
+                                     {% if group.name == 'administrador' %}
+                                  <a href="{% url 'clientes_app:eliminar_cliente' clientes.id %}" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a> 
+                                   {% endif %}
+                                   {% endfor %}
+                            </td>                      
+                              
+                          </tr>
+                      {% endfor %}
+                    </tbody>
+
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}

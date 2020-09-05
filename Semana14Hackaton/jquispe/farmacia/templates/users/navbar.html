@@ -1,0 +1,132 @@
+<!--
+<nav class=" navbar-personalizado">
+          <div class="container">
+            <div class="navbar-header">
+              <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                <span class="icon-bar app-bar"></span>
+                <span class="icon-bar app-bar"></span>
+                <span class="icon-bar app-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand link-personalizado">FarmSistem</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="nav navbar-nav navbar-right nav-personalizado">
+              </ul>
+              <div class="collapse navbar-collapse">        
+                {% if user.is_authenticated %}
+                <ul class="nav navbar-nav pull-right">
+                    <li><p class="navbar-text">Bienvenido, <a href="#" class="navbar-link">{{ user.username|capfirst }} <img src="{{ MEDIA_URL }}{{ user.avatar }}" height="20" width="20"> </a></p></li>
+                    <li><a href="{% url 'users_app:logout' %}">Logout</a></li>
+                </ul>
+                {% endif %}
+            </div>
+            </div>
+          </div>
+        </nav>nav-collapse -->
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><span>SystemFarm</span></a>
+        <ul class="user-menu">
+          <li class="dropdown pull-right">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> User <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+              
+    </div><!-- /.container-fluid -->
+  </nav>
+    
+  <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+    <form role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+    </form>
+    <ul class="nav menu">
+    <li class="parent ">
+        <a href="#">
+          <span class="glyphicon glyphicon-list"></span> Clientes <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+        </a>
+        <ul class="children collapse" id="sub-item-2">
+          <li>
+            <a class="" href="#">
+              <span class="glyphicon glyphicon-share-alt"></span> Lista Clientes
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <span class="glyphicon glyphicon-share-alt"></span> Registrar Cliente
+            </a>
+          </li>
+
+        </ul>
+    </li>
+
+    <li class="parent ">
+        <a href="#">
+          <span class="glyphicon glyphicon-list"></span> Medicamentos <span data-toggle="collapse" href="#sub-item-3" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+        </a>
+        <ul class="children collapse" id="sub-item-3">
+          <li>
+            <a class="" href="#">
+              <span class="glyphicon glyphicon-share-alt"></span> Medicamentos
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <span class="glyphicon glyphicon-share-alt"></span> Registrar
+            </a>
+          </li>
+
+        </ul>
+    </li>
+
+
+      <li class="active"><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+      <li><a href="widgets.html"><span class="glyphicon glyphicon-th"></span> Widgets</a></li>
+      <li><a href="charts.html"><span class="glyphicon glyphicon-stats"></span> Charts</a></li>
+      <li><a href="tables.html"><span class="glyphicon glyphicon-list-alt"></span> Tables</a></li>
+      <li><a href="forms.html"><span class="glyphicon glyphicon-pencil"></span> Forms</a></li>
+      <li><a href="panels.html"><span class="glyphicon glyphicon-info-sign"></span> Alerts &amp; Panels</a></li>
+      <li class="parent ">
+        <a href="#">
+          <span class="glyphicon glyphicon-list"></span> Dropdown <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+        </a>
+        <ul class="children collapse" id="sub-item-1">
+          <li>
+            <a class="" href="#">
+              <span class="glyphicon glyphicon-share-alt"></span> Sub Item 1
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <span class="glyphicon glyphicon-share-alt"></span> Sub Item 2
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <span class="glyphicon glyphicon-share-alt"></span> Sub Item 3
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li role="presentation" class="divider"></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login Page</a></li>
+    </ul>
+  </div><!--/.sidebar-->

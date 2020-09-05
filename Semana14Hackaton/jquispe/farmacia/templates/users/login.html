@@ -1,0 +1,59 @@
+{% extends "users/base_users.html" %}
+{% block title %}Sign-up / Login{% endblock title %}
+{% block content %}
+
+        <!-- start Login box -->
+        <div class="container color1" id="login-block">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4">
+        
+                   <div class="login-box clearfix animated flipInY">
+                        <div class="login-logo">
+                            <!--<a href="#"><img src="img/login-logo.png" alt="Company Logo" /></a>-->
+                            <h1>FarmSistem</h1>
+                        </div> 
+                        <hr />
+                        <div class="login-form">
+                            <div class="alert alert-error hide">
+                                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                  <h4>Error!</h4>
+                                   Your Error Message goes here
+                            </div>
+                            <form role="form" method="POST">{% csrf_token %}
+                                
+                                <div class="form-group">          
+                                    {{ login_form.username }}
+                                    {{ login_form.username.errors }}
+                                </div>
+                                <div class="form-group">
+                               
+                                    {{ login_form.password }}
+                                    {{ login_form.password.errors }}
+                                </div>
+                                <button type="submit" name="login_form" class="btn btn-red ">INGRESAR</button>
+                             </form>
+            
+                        </div>                      
+                   </div>
+                    
+                   <div class="social-login row">
+                            <div class="fb-login col-lg-6 col-md-12 animated flipInX">
+                                <a href="https://www.facebook.com/redliw.zednanreh" class="btn btn-facebook btn-block">Siguenos en <strong>Facebook</strong></a>
+                            </div>
+                           <!-- <div class="twit-login col-lg-6 col-md-12 animated flipInX">
+                                <a href="#" class="btn btn-twitter btn-block">Siguenos en<strong>Twitter</strong></a>
+                            </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <!-- End Login box -->
+        <footer class="container color1">
+            <p id="footer-text"><small>Copyright &copy; 2015 </small></p>
+        </footer>
+      
+
+
+
+{% endblock content %}

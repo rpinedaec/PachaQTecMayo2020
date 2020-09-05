@@ -1,0 +1,65 @@
+
+{% extends "medicamentos/base_medicamentos1.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %} 
+<div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+         <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>            
+            Clientes
+          </h1>
+           <ol class="breadcrumb">
+              <li><a href="{% url 'users_app:home' %}"><i class="fa fa-dashboard"></i>Inicio</a></li>
+              <li><a href="{% url 'medicamentos_app:create_medicamentos' %}">Nuevo Medicamento</a></li>
+           </ol>
+        </section>
+        <!-- Main content -->
+    <section class="content">          
+      <!-- START ALERTS AND CALLOUTS -->     
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-info">
+            <div class="box-header with-border">
+            <a href="{% url 'medicamentos_app:create_medicamentos' %}" class="btn btn-success">
+                    <span class="glyphicon glyphicon-chevron-left"></span> Regresar
+            </a>             
+            <div class="box-tools pull-right">
+                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            </div><!-- /.box-tools -->
+                       
+            </div><!-- /.box-header -->
+
+              <div class="box-body">     
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">  
+                      <form action="" method="post">{% csrf_token %}
+                                <div class="form-group has-success has-feedback  {% if form.nombre.errors %} has-error {% endif %}">
+                                     <label class="control-label col-sm-2" for="inputSuccess3">{{ form.nombre.label_tag }}
+                                     </label>
+                                     <div class="col-sm-6">
+                                        {{ form.nombre }}
+                                    </div>
+                                 </div>                         
+                              
+                               <div class="pull-right">
+                            <div class="btn-group">
+                            <button type="submit" class="btn btn-lg btn-info"><i class="fa fa-floppy-o"></i></button>
+                        </div>
+                        </div>  
+                          </form>
+                      </div>
+                    </div><!--/.row-->
+            </div><!-- /.box body -->
+          </div><!-- /.box info -->
+          </div><!--col-->
+        </div><!-- /.row -->
+    </section><!-- /.content -->
+  </div><!-- /.content-wrapper -->
+  
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}

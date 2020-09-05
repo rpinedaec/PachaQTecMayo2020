@@ -1,0 +1,828 @@
+body.error-500 {
+  background: #888;
+}
+body.error-500 .h3 {
+  color: #fff !important;
+}
+.color-panel a {
+  color: #117088;
+  font-weight: 400;
+}
+body {
+  font-size: 12px;
+}
+.inline-unidades {
+  margin-top: 20px;
+}
+.unidad-operativa .total-unidad {
+  display: inline-block;
+  margin-bottom: 0px;
+  background: #a11f1d;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0px 10px;
+}
+.logo-tpp {
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  height: 55px;
+  line-height: 30px;
+}
+.logo-tpp strong {
+  font-size: 11px;
+}
+.logo-front {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  background: #a11f1d;
+  margin-bottom: 10px;
+}
+.logo-front img {
+  width: 130px;
+  height: auto;
+  text-align: center;
+}
+.form-control {
+  font-size: 12px;
+  width: 95%;
+}
+.icono-perfil {
+  font-size: 28px !important;
+}
+.cnt-titulo-unidad {
+  padding: 12px 10px;
+  font-size: 16px;
+}
+/* UTIL */
+.left {
+  float: left !important;
+}
+.right {
+  float: right !important;
+}
+.hide,
+.ninja {
+  display: none;
+}
+.block {
+  display: block !important;
+}
+.animation-pulseSlow {
+  width: 100%;
+}
+th {
+  background: #f2f2f2 !important;
+  font-size: 12px !important;
+  color: #000 !important;
+}
+/* GENERAL */
+.panel-body {
+  padding: 0;
+}
+.block-title h1,
+.block-title h2,
+.block-title h3 {
+  height: 24px;
+}
+.block-title-custom {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  min-height: 50px;
+}
+.table-responsive {
+  overflow: hidden;
+}
+.block-title-secondary {
+  background: #fff;
+}
+.block-title-secondary .block-left {
+  padding-left: 0;
+}
+.block-title-secondary .block-left select,
+.block-title-secondary .block-left button {
+  float: left;
+  height: 32px;
+  width: auto;
+  margin-right: 10px;
+}
+.block-title-secondary .block-left select {
+  max-width: 230px;
+}
+.block-options .btn {
+  margin-right: -5px;
+}
+.block-options .dropdown .btn {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  position: relative;
+  top: -4px;
+}
+.pager .active a {
+  background-color: #888;
+  color: #fff;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  height: 28px;
+  padding: 3px 12px;
+}
+textarea {
+  border: 1px solid #dbe1e8 !important;
+  border-radius: 5px !important;
+  padding-left: 5px !important;
+  height: 115px;
+  width: 95% !important;
+}
+.area-entre {
+  height: 98px !important;
+}
+.desplegable {
+  display: none;
+}
+.add-operativa {
+  margin-top: 40px;
+}
+.valor-inlines {
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  z-index: 9;
+  font-size: 13px;
+  padding: 4px 10px;
+  background: #888;
+  border-radius: 50%;
+  color: #fff;
+}
+.position-r {
+  position: relative;
+}
+.cnt-img {
+  margin: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  height: 300px;
+  z-index: 10;
+}
+.cnt-img img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+.cnt-img .codigo {
+  background: #888;
+  text-align: center;
+}
+.cnt-img .codigo h2 {
+  color: #fff !important;
+  color: #1bbae1;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0px;
+  padding: 8px 0px;
+}
+.lbl-area {
+  height: 110px;
+}
+.lbl-area-1 {
+  height: 130px;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: 28px;
+  font-size: 100px;
+  text-align: right;
+  opacity: 0;
+  outline: none;
+  background: #fff;
+  cursor: inherit;
+  display: block;
+}
+.label-file {
+  width: 200px;
+  height: 28px !important;
+  display: inline;
+}
+/* table */
+.table thead > tr > th {
+  font-size: 15px;
+}
+.table thead > tr > th,
+.table thead > tr > td,
+.table tfoot > tr > th,
+.table tfoot > tr > td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.table-condensed>thead>tr>th,
+.table-condensed>tbody>tr>th,
+.table-condensed>tfoot>tr>th,
+.table-condensed>thead>tr>td,
+.table-condensed>tbody>tr>td,
+.table-condensed>tfoot>tr>td {
+  padding: 4px;
+}
+.table-options {
+  margin: 0;
+  padding: 0;
+}
+tbody td div.check {
+  min-height: 30px;
+}
+.table-no-checkbox tr {
+  height: 37px;
+}
+/* fullscreen */
+.block.block-fullscreen {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* botón para eliminar inline */
+.delete-inline,
+td.delete {
+  cursor: pointer;
+}
+/* sección de los titulos*/
+.header-section {
+  padding: 10px 20px;
+}
+.header-section h1 i {
+  font-size: 36px;
+  line-height: 42px;
+}
+/* select2 */
+.select2-container {
+  width: 100%;
+}
+/* buscar */
+.btn-icon-search {
+  cursor: pointer;
+}
+/* FORMULARIOS */
+.form-horizontal .form-group {
+  padding: 0 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.form-control {
+  padding: 4px 6px;
+  height: 28px;
+}
+fieldset {
+  padding: 0;
+  border: 1px solid #dfdfdf;
+  background: #f9fafc;
+  margin: 10px;
+}
+fieldset legend {
+  padding: 10px 20px;
+  border: 0;
+}
+.btn-inline-add {
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.inline-delete {
+  font-size: 16px;
+  color: #b04e4e;
+  padding-top: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  cursor: pointer;
+}
+.slide-toggle:first-child .titulo-formset {
+  margin-top: 30px !important;
+}
+.titulo-formset {
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px 0px;
+  padding-left: 45px;
+  padding-right: 45px;
+  background: #f5f4f4;
+  color: #000;
+}
+.titulo-formset i {
+  font-size: 18px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.titulo-general {
+  margin: 0px;
+  margin: 10px 10px 0px 10px;
+}
+.titulo-general legend {
+  border-bottom: none;
+  margin-bottom: 0px !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+.observaciones .dk-pad {
+  padding-bottom: 5px !important;
+  padding-top: 7px !important;
+}
+.pager li {
+  display: inline-block;
+  margin: 5px;
+}
+.clase-general label {
+  margin-bottom: 0px !important;
+}
+.clase-general .form-group {
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.clase-general .col-md-12 {
+  padding-left: 15px;
+}
+.clase-general fieldset .row:first-child .dk-pad {
+  padding-top: 10px;
+}
+.clase-general fieldset .row:first-child .control-label {
+  padding-bottom: 16px !important;
+  padding-top: 16px !important;
+}
+.clase-general fieldset .row:last-child .control-label {
+  border-bottom: none;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+.clase-general fieldset .row:last-child .dk-pad {
+  padding-bottom: 10px;
+}
+.clase-general fieldset .row .dk-pad {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.clase-general fieldset .row .control-label {
+  background: #f5f4f4;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  padding-top: 12px;
+  border-bottom: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+}
+.clase-general .border-fieldset {
+  border-radius: 5px;
+}
+.grupo-registrar {
+  border-top: 1px dashed #eaedf1;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 5px;
+  background-color: #f9fafc;
+}
+.horario {
+  height: 28px;
+}
+.horario i {
+  vertical-align: top;
+}
+figure {
+  margin: 0px;
+}
+ul li {
+  list-style: none;
+}
+.d-contenedor {
+  max-width: 680px;
+  margin: auto;
+}
+.input_fecha {
+  width: 100px !important;
+  display: inline-block !important;
+}
+/* trabajador: codigo */
+.block-codigo-center {
+  width: 40%;
+}
+.block-codigo-center p {
+  font-size: 14px;
+}
+@media (max-width: 960px) {
+  .block-codigo-center {
+    width: 60%;
+  }
+}
+@media (max-width: 480px) {
+  .block-codigo-center {
+    width: 100%;
+  }
+}
+/* fin: trabajador: codigo */
+/* sidebar */
+.sidebar-visible-lg-mini .logo-front img {
+  width: 0;
+}
+body.imprimir {
+  margin: 0px;
+}
+body.imprimir .cnt-horizontal {
+  max-width: 1020px;
+  margin: auto;
+}
+body.imprimir .w650 {
+  width: 650px;
+}
+body.imprimir .w700 {
+  width: 700px;
+}
+body.imprimir .wauto {
+  width: auto !important;
+}
+body.imprimir h5.auto-height {
+  height: auto !important;
+  display: inline-block;
+  margin: 0px;
+  font-size: 13px;
+}
+body.imprimir .sin-border {
+  border: none !important;
+}
+body.imprimir .sin-border h4 {
+  width: 130px !important;
+}
+body.imprimir .sin-border ul li {
+  margin: 0px 10px 0px 5px !important;
+}
+body.imprimir .mt-10 {
+  margin-top: 8px;
+}
+body.imprimir .mb-8 {
+  margin-bottom: 8px;
+}
+body.imprimir .margin-b {
+  margin-bottom: 20px;
+}
+body.imprimir .sin_margin {
+  margin-bottom: 0px !important;
+}
+body.imprimir .input-med {
+  width: 100px;
+}
+body.imprimir .input-ular {
+  width: 240px;
+}
+body.imprimir .input-medio {
+  width: 150px;
+}
+body.imprimir .input_h5 {
+  width: 165px;
+}
+body.imprimir .input-dosular {
+  width: 420px;
+}
+body.imprimir .input-lar {
+  width: 150px;
+}
+body.imprimir .input-peq {
+  width: 67px;
+}
+body.imprimir .input-mpeq {
+  width: 30px;
+}
+body.imprimir input {
+  color: #000;
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  padding-left: 3px;
+  height: 25px;
+}
+body.imprimir h1,
+body.imprimir h2,
+body.imprimir h3,
+body.imprimir h4,
+body.imprimir h5 {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+body.imprimir h4 {
+  font-size: 11px;
+}
+body.imprimir h3 {
+  font-size: 13px;
+}
+body.imprimir .firmas_imprimir {
+  color: #000 !important;
+  border-top: 1px solid #000;
+  padding: 0px 25px;
+  font-size: 12px !important;
+}
+body.imprimir .over {
+  overflow: hidden;
+}
+body.imprimir .total {
+  margin-top: 10px;
+  float: right;
+}
+body.imprimir .total label {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+body.imprimir .total input {
+  border: 1px solid #000;
+}
+body.imprimir header,
+body.imprimir .header {
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+body.imprimir header .codigo_unidad,
+body.imprimir .header .codigo_unidad {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+body.imprimir header .logo,
+body.imprimir .header .logo {
+  margin: auto;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+body.imprimir header .logo img,
+body.imprimir .header .logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+body.imprimir header .titulo-horizontal,
+body.imprimir .header .titulo-horizontal {
+  margin-left: 100px;
+}
+body.imprimir header .titulo,
+body.imprimir .header .titulo {
+  width: 360px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+body.imprimir header .titulo h2,
+body.imprimir .header .titulo h2 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+body.imprimir .boton-regresar {
+  background: #dbe1e8;
+  color: #394263;
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  left: 800px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  width: 90px;
+  padding: 5px;
+  transition: 0.2s ease all;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+body.imprimir .boton-imprimir {
+  background: #1bbae1;
+  color: #fff;
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  left: 800px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  width: 90px;
+  padding: 5px;
+  transition: 0.2s ease all;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+body.imprimir .texto-terminos {
+  border-top: 1px solid #000;
+}
+body.imprimir .texto-terminos p {
+  text-align: justify;
+  line-height: 15px;
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+}
+body.imprimir .firmas {
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body.imprimir .firmas .texto-terminos {
+  margin-bottom: 30px;
+}
+body.imprimir .firmas .texto-terminos p {
+  font-size: 11px;
+}
+body.imprimir .firmas .cnt-huella {
+  float: left;
+  text-align: center;
+}
+body.imprimir .firmas .cnt-huella .caja-huella {
+  border: 1px solid #000;
+  width: 140px;
+  height: 140px;
+}
+body.imprimir .firmas .cnt-huella h4 {
+  padding-top: 5px;
+  width: 140px;
+}
+body.imprimir .firmas .firma-portuario {
+  margin-left: 50px;
+  float: right;
+  width: 150px;
+  text-align: center;
+  margin-top: 140px;
+}
+body.imprimir .firmas .firma-portuario h4 {
+  padding-top: 5px;
+  border-top: 1px solid #000;
+}
+body.imprimir .firmas .cnt-firma {
+  margin-right: 70px;
+  float: right;
+  width: 150px;
+  text-align: center;
+  margin-top: 140px;
+}
+body.imprimir .firmas .cnt-firma h4 {
+  padding-top: 5px;
+  border-top: 1px solid #000;
+}
+body.imprimir .datos-generales .cnt-inputs {
+  width: 485px;
+  margin-right: 15px;
+}
+body.imprimir .parientes {
+  margin-top: 80px;
+}
+body.imprimir .nacionalidad .cnt-inputs {
+  margin-right: 0px;
+  width: 665px;
+}
+body.imprimir .titulo-constancia {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+body.imprimir .titulo-constancia h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+body.imprimir .cnt-texto-constancia p {
+  text-align: justify;
+  line-height: 14px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+}
+body.imprimir .form-general {
+  margin-bottom: 30px;
+}
+body.imprimir .form-general table {
+  width: 100%;
+  margin-top: 2px;
+  border-collapse: collapse;
+}
+body.imprimir .form-general table tr th {
+
+  font-family: 'Lato', sans-serif;
+  
+  font-size: 11px;
+  font-weight: 700;
+  padding: 10px 10px;
+  text-align: center;
+}
+body.imprimir .form-general table tr td {
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+  
+  padding: 8px 0px 8px 8px;
+}
+body.imprimir .form-general h3 {
+  font-size: 16px;
+  
+}
+body.imprimir .form-general figure {
+  text-align: center;
+  width: 150px;
+  margin-top: -14px;
+  display: inline-block;
+  vertical-align: top;
+}
+body.imprimir .form-general figure h2 {
+  color: #731713;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+body.imprimir .form-general figure h4 {
+  margin-bottom: 2px;
+}
+body.imprimir .form-general figure img {
+  margin: auto;
+  width: 120px;
+  height: auto;
+  display: block;
+}
+body.imprimir .form-general .cnt-inputs {
+  padding: 4px;
+  margin-top: 5px;
+  display: inline-block;
+  vertical-align: top;
+ 
+}
+body.imprimir .form-general .cnt-inputs ul {
+  padding: 0px;
+  margin: 0px;
+}
+body.imprimir .form-general .cnt-inputs ul li {
+  margin: 5px 10px 5px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+body.imprimir .form-general .cnt-inputs ul li h4 {
+  width: 88px;
+  display: inline-block;
+  vertical-align: top;
+}
+body.imprimir .form-general .cnt-inputs ul li input {
+  border: 1px solid #222121;
+  font-size: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+body.imprimir .cnt-tablas table tr {
+  border: 1px solid #000;
+}
+body.imprimir .inlines_tablas:first-child {
+  margin-left: 0px;
+}
+body.imprimir .inlines_tablas {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+.link_externo_consulta {
+  padding-top: 12px;
+  display: inline-block;
+}
+.formTrabajador .tab-pane {
+  min-height: 200px;
+}
+.trabajador-list .block-options .btn-group {
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+table,
+figure {
+  page-break-inside: avoid;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  page-break-after: avoid;
+}
+.themed-califica {
+  background-color: #f2f2f2 !important;
+}
+.themed-califica small {
+  color: #5a5a5a !important;
+}
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+.sin_padding {
+  padding: 0px !important;
+}
