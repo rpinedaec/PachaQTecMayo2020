@@ -21,13 +21,6 @@ def index(request):
     }
     return render(request, "productos/index.html", context)
 
-def lista(request):
-    allProductos = Producto.objects.all()
-    context = {
-        "productos": allProductos,
-    }
-    return render(request, "productos/lista.html", context)
-
 def getClientes(request):
     queryset = Cliente.objects.all().values()
     return JsonResponse({"clientes": list(queryset)})
