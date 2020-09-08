@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
-from rest_framework import viewsets
-from rest_framework import permissions
+from rest_framework import viewsets, permissions
 from CarsApp.serializers import UserSerializer, GroupSerializer, AutoSerializer, MarcaSerializer, TipoSerializer
 from CarsApp.models import Auto, Marca, Tipo
 
