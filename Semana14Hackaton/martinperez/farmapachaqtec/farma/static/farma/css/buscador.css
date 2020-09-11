@@ -1,0 +1,88 @@
+ 
+#container{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.ui-helper-hidden-accessible{ display:none!important; }
+
+.search{
+	background: #f1f1f1;
+	border-bottom: 1px solid #CCCCCC;
+	border-radius: 4px;
+	padding: 10px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.search .searchbox{
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 10px;
+}
+
+.search .searchbox label{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.search .searchbox .info{
+	color: #000;
+	display: block;
+	font-size: medium;
+}
+
+.search .searchbox input{
+	border-radius: 0;
+	border: 1px solid #DDD;
+	border-bottom-width: 2px;
+	color: #000;
+	font-weight: bold;
+	font-size: medium;
+	padding: 7px 10px; 
+}
+
+.search .results{
+	border-top: 1px solid #FFFFFF;
+	min-height: 20px;
+}
+
+.search .results .error{
+	display: none;
+	font-size: small;
+}
+
+.search .results .wrapper{ 
+	overflow: auto;
+}
+
+.Cantidad{
+	width: 100%;
+	text-align: left;
+}
+.mensajeError{
+	color: red;
+	font-weight: bold;
+	float: right;
+}
+.mensajeErrorGeneral{
+	color: red;
+	font-weight: bold;
+	float: right;
+}
+
+/*
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+*/

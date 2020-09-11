@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block css %}
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="/static/css/datepicker3.css" rel="stylesheet">
+    <link href="/static/css/styles.css" rel="stylesheet">
+
+    <!--calendario-->
+    <!--<link href="/static/css/bootstrap.css" rel="stylesheet">-->
+    <link href="/static/css/jquery-ui.css"rel="stylesheet">
+<!--endcalendario-->
+
+{% endblock css %}
+
+{% block js %}
+    <script src="/static/js/main.js/"></script>
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/chart.min.js"></script>
+    <script src="/static/js/chart-data.js"></script>
+    <script src="/static/js/easypiechart.js"></script>
+    <script src="/static/js/easypiechart-data.js"></script>
+    <script src="/static/js/bootstrap-datepicker.js"></script>
+
+    <!-- calenadario -->
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/js/jquery-ui.js"></script>
+    {%block scripts%}
+    {%endblock scripts%}
+<!--endcalendario-->
+{% endblock js %}

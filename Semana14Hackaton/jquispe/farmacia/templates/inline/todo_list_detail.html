@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+         <style type="text/css">
+        .item{clear:left;display:block;}
+        .item p,.errorlist{float:left; display:block; height:30px; line-height:30px; padding:0;margin:0;}
+        .errorlist{color:red}
+        .button{
+        display:block;
+        cursor:hand;
+        background-color:#1999ff;
+        text-decoration:none;
+        color:white;
+        height:20px;
+        line-height:20px;
+        border:solid 1px #1999ff;
+        border-radius:4px;
+        padding: 0 4px 0  4px;
+        margin-top:5px;
+        font-family:arial;
+        font-size:12px;
+        font-weight:normal;
+        max-width:120px;
+        text-align:center;
+        width:auto;
+        }
+    </style>
+</head>
+<body>
+<a href="/todolist/" target="_self" class="button">back to list</a>
+<hr>
+   {{ object.name }} - {{object.content}}
+   <br><b>list:</b><br>
+   {% for item in object.todo_item_set.all %}
+     <ul>{{item.name}} - {{item.content}}</ul>
+   {% endfor %}
+</body>
+</html>

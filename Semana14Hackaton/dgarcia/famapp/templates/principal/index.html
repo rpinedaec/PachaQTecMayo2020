@@ -1,0 +1,23 @@
+{% extends 'body/auth.html' %}
+
+{% block titulo %}
+--- Sistema de Inventario ---
+{% endblock titulo %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mt-1">
+        <div class="col-md-1 col-lg-4 "></div>
+        <div class="col-sm-12 col-md-10 col-lg-4 rounded-lg bg-light card">
+            <ul class="nav nav-pills ml-n3 mr-n3 rounded-lg" style="background: #abdde5" role="tablist">
+                    <button class="btn btn-block"><a class="nav-link" href="/administrador">Administrador</a></button>
+                    <br>
+                    <button class="btn btn-block"><a class="nav-link" href="/administrador">Tecnico</a></button>
+                    <br>
+                    <button class="btn btn-block"><a class="nav-link" href="/cliente">Cliente</a></button>
+                    <br>
+            </ul>
+        </div>
+    </div>
+</div>            
+{% endblock content %}

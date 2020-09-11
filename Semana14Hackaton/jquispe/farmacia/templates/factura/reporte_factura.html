@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style >
+        @page {
+            size: landscape;
+            @frame header_frame{
+                -pdf-frame-content: headerContent;
+                left: 5pt;
+                top: 30pt;
+                height: 100pt;
+                }
+
+            @frame content_frame {
+                    left: 250pt; width: 760pt; top: 120pt; height: 460pt;
+            }
+
+            @frame footer {
+                -pdf-frame-content: footerContent;
+                bottom: 1cm;
+                margin-left: 1cm;
+                margin-right: 1cm;
+                height: 0cm;
+                }
+        }
+    </style>
+</head>
+<body>
+
+<div id="headerContent">
+    <center> <h1>FARMA SALUD</h1>
+    <h3>Direccion: av. 2 de mayo cdra. 4 los claveles, Lima</h3>
+    <h3>Télefono: 99945453</h3>
+   <h3>RUC: 99945453</h3>
+   </div>
+   <h3>----------------------------------------------------------------------------------------------------------------------------------------</h3></center>
+
+<div id="footerContent">
+    Página: <pdf:pagenumber> de <pdf:pagecount>
+</div>
+
+<table style="border:0px solid black;border-collapse:collapse;">
+    <tr>
+        <th style="border:1px solid black; padding: 2px;">items</th>
+        <th style="border:1px solid black; padding: 2px;">Serie</th>
+        <th style="border:1px solid black; padding: 2px;">Vendedor</th>        
+        <th style="border:1px solid black; padding: 2px;">Cliente</th>
+        <th style="border:1px solid black; padding: 2px;">Fecha</th>
+        <th style="border:1px solid black; padding: 2px;">Total</th>  
+    </tr>
+     {% for c in rango%}            
+        <tr>
+         <td width= 40 style="border:1px solid black; padding: 3px;">{{forloop.counter}}</td>
+         <td width=50 style="border:1px solid black; padding: 3px;"><center>{{c.serie}}</center></td>
+         <td width= 50 style="border:1px solid black; padding: 3px;">{{c.vendedor}}</td>
+         <td width=50 style="border:1px solid black; padding: 3px;"><center>{{c.cliente}}</center></td>
+
+         <td width =100 style="border:1px solid black; padding: 3px;"><center>{{c.fecha}}</center></td>
+         <td style="border:1px solid black; padding: 3px;"><center>{{c.total}}</center></td>
+                      
+        </tr>
+
+    {% endfor %} 
+    <td colspan="5" width= 70 style="border:1px solid black; padding: 3px;"><center><strong>TOTAL</strong></center></td>
+
+        <td width= 70 style="border:1px solid black; padding: 3px;"><center>{{total}}</center></td>       
+
+</table>
+
+
+
+</body>
+</html>
+

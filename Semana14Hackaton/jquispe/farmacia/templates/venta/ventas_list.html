@@ -1,0 +1,100 @@
+{% extends "venta/base_ventas.html" %}
+
+{% block title %}Productos{% endblock title %}
+
+{% block content %}
+
+{% include "venta/nav.html" %}
+
+<br>
+<br>
+<br>
+
+<!-- Datatables Content -->
+<div class="block full">
+    <!-- primer grupo de opciones -->
+    <div class="block-title block-title-custom">
+        <!-- botones de nuevo, eliminar y expandir -->
+        <a href="#" id='btn-nuevo' class="btn btn-primary"><i class="fa fa-plus"></i> Nuevo</a>
+
+        <button id='delete-button' type="button" class="btn btn-danger" data-redirect="#"><i class="fa fa-remove"></i> Eliminar </button>
+
+        <div class="block-options right">
+            <a href="javascript:void(0)" class="btn btn-sm btn-default right" data-toggle="block-toggle-fullscreen"><i class="fa fa-expand"></i></a>
+        </div>
+    </div>
+
+    <!-- segundo grupo de opciones -->
+    <div class="block-title block-title-custom block-title-secondary">
+        <div class='row table-options'>
+            <!-- bloque izquierdo -->
+
+            <!-- bloque derecho -->
+            <div class='col-sm-6 col-md-6 right block-right'>
+                <div class="row">
+                    <div class="col-sm-5 col-md-6 input-group right">
+                        <input id='search-input' autofocus type="search" class="form-control col-md-4" placeholder="Buscar" value="{% if q %}{{ q }}{% else %}{% endif %}"><span class="input-group-addon"><i class="fa fa-search"></i></span>
+                    </div>
+
+                    <div class="col-sm-3 col-md-3 right">
+                        <select id="input_num_pag" class="form-control" data-page='{{ pages }}'>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-body">
+        <div class="table-responsive">
+
+            <table id='datatable' class="table table-vcenter table-condensed table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th style="width: 80px;" class="text-center"><input type="checkbox"></th>
+                        <th>codigo</th>
+                        <th>Cliente</th>
+                        <th>Medicamentos</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in object_list %}
+                    <tr data-id='{{ item.pk }}'>
+                        <td class="text-center"><input type="checkbox"></td>
+                        <td><a href="#">{{ item.codigo }}</a></td>
+                        <td>{{ item.codigo }}</td>
+                        <td>{{ item.cliente }}</td>
+                      
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>No se han encontrado coincidencias</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <!-- paginación -->
+            <div>
+                <ul class="pager text-center">
+                    {% for page in paginator.page_range %}
+                    <li class="{% if page_obj.number == page %} active {% endif %}"><a href='#' class='pag' data-page="{{ page }}">{{ page }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- END paginación -->
+        </div>
+    </div>
+</div>
+
+<!-- END Datatables Content -->
+
+{% endblock content %}

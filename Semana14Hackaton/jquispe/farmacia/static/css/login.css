@@ -1,0 +1,243 @@
+.color1{
+	background: #2D576F;
+}
+.alert{
+	margin: 20px auto;
+	width: 70%;
+}
+#login-block{	 
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+#login-block h3{
+	color: #FFF;
+	text-align: center;
+	font-size:1.5em;
+	 opacity: 0.8;
+	text-shadow: 2px 2px 2px #000;
+	font-weight: normal;
+ 
+}
+
+.login-box{
+	max-width:480px;	
+	background: transparent url(../img/login-bg.png) repeat;
+	border:7px solid rgba(255, 255, 255, 0.31);
+	-webkit-background-clip: padding-box; /* for Safari */
+	-moz-background-clip: padding-box; /* for old Firefox */
+	-o-background-clip: padding-box; /* for old Firefox */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	padding-bottom: 20px;
+}
+
+.login-logo{
+	 text-align: center;
+	 padding: 15px 0 10px;
+}
+
+.login-logo img{
+	border:0;
+}
+.login-form form p{
+	width:80%;
+	margin: 5px auto 10px;
+	text-align: center;
+}
+/* for logo animation */
+.login-logo a{
+	opacity: 0.7; 
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease; 
+}
+.login-logo a:hover{
+	opacity: 1; 
+}
+
+.login-box hr{
+	margin:10px auto 20px;
+	width:70%;
+	border-top:1px solid #dddbda;
+	border-bottom:1px solid #FFF;
+}
+
+/* Login Form */
+.login-form input{
+	display: block;
+	margin:0 auto 15px;
+	width:70%;
+	background: #d6d6d6;
+	border:1px solid #bfbfbf;
+	color:#6c6c6c;
+	padding: 8px;
+	
+}
+
+/* Login Button */
+.btn.btn-red {
+	width: 120px;
+	display:block;
+	margin: 20px auto 20px;
+	color: white;
+	text-transform:uppercase ;	
+	text-shadow: 1px 2px 2px #c44c4c;
+	background: #e75a5a; 
+	border: 1px solid #953a3a;
+	-webkit-box-shadow: inset 0 1px 2px #ff8c8c;
+	-moz-box-shadow: inset 0 1px 2px #ff8c8c;
+	box-shadow: inset 0 1px 2px #ff8c8c;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+	
+}
+.btn.btn-red:hover {	 
+	background: #d94444; 
+} 
+.btn.btn-red.btn-reset{
+	width: 180px;
+}
+.login-links{
+	text-align: center;
+}
+.login-links a{
+	color: #6c6c6c; 
+	display:inline-block;
+	padding:5px;
+	 
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;;
+}
+.login-links a:hover{
+	text-decoration: none;
+	color:#e13c3c;
+}
+
+label.checkbox {
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+label.checkbox input{
+	width:25px;
+	margin: 4px 0 0;
+	padding: 0;
+	background: none;
+	border: 0;
+}
+#footer-text, #footer-text a{
+	text-align: center;
+	color:#FFF;
+	opacity: 1;
+	text-shadow: 1px 1px 1px #000;
+}
+
+/* Social Login */
+.social-login{
+	margin:10px 0 5px;
+}
+.social-login .btn{ 
+   text-align: center;
+    margin: 5px auto;
+    color:#FFF;
+    text-shadow: 1px 1px 1px #333;
+    width:90%
+    -webkit-box-shadow:  0px 0px 10px #FFF;
+	-moz-box-shadow:  0px 0px 10px #FFF;
+	box-shadow: 0px 0px 10px #FFF;
+}
+ 
+.btn.btn-facebook {
+	border: 1px solid #2D4479;
+	-webkit-box-shadow: inset 0 1px 2px #5272BF, 0px 0px 15px #FFF;
+	-moz-box-shadow: inset 0 1px 2px #5272bf, 0px 0px 15px #FFF;
+	box-shadow: inset 0 1px 2px #5272BF, 0px 0px 15px #FFF;
+	background: #385496;
+	background-size: 100%;
+	background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#4365B4),color-stop(100%,#385496));
+	background-image: -webkit-linear-gradient(top,#4365B4,#385496);
+	background-image: -moz-linear-gradient(top,#4365B4,#385496);
+	background-image: -o-linear-gradient(top,#4365B4,#385496);
+	background-image: linear-gradient(top,#4365B4,#385496);
+	font-size:12px;
+}
+.btn.btn-facebook:hover {
+	background: #365293;
+	background-size: 100%;
+	background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#4365B4),color-stop(100%,#365293));
+	background-image: -webkit-linear-gradient(top,#4365B4,#365293);
+	background-image: -moz-linear-gradient(top,#4365B4,#365293);
+	background-image: -o-linear-gradient(top,#4365B4,#365293);
+	background-image: linear-gradient(top,#4365B4,#365293);
+	-webkit-transition: box-shadow .05s ease-in-out;
+	-moz-transition: box-shadow .05s ease-in-out;
+	-o-transition: box-shadow .05s ease-in-out;
+	transition: box-shadow .05s ease-in-out;
+}
+
+.btn.btn-twitter {
+	border: 1px solid #2189FF;
+	-webkit-box-shadow: inset 0 1px 2px #8DC2FF, 0px 0px 15px #FFF;
+	-moz-box-shadow: inset 0 1px 2px #8dc2ff, 0px 0px 15px #FFF;
+	box-shadow: inset 0 1px 2px #8DC2FF, 0px 0px 15px #FFF;
+	background: #4A9EFF;
+	background-size: 100%;
+	background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#73B4FF),color-stop(100%,#4A9EFF));
+	background-image: -webkit-linear-gradient(top,#73B4FF,#4A9EFF);
+	background-image: -moz-linear-gradient(top,#73B4FF,#4A9EFF);
+	background-image: -o-linear-gradient(top,#73B4FF,#4A9EFF);
+	background-image: linear-gradient(top,#73B4FF,#4A9EFF);
+	font-size:12px;
+}
+
+.btn.btn-twitter:hover {
+	background: #459CFF;
+	background-size: 100%;
+	background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#73B4FF),color-stop(100%,#459CFF));
+	background-image: -webkit-linear-gradient(top,#73B4FF,#459CFF);
+	background-image: -moz-linear-gradient(top,#73B4FF,#459CFF);
+	background-image: -o-linear-gradient(top,#73B4FF,#459CFF);
+	background-image: linear-gradient(top,#73B4FF,#459CFF);
+	-webkit-transition: box-shadow .05s ease-in-out;
+	-moz-transition: box-shadow .05s ease-in-out;
+	-o-transition: box-shadow .05s ease-in-out;
+	transition: box-shadow .05s ease-in-out;
+}
+
+.fb-login, .twit-login{
+	-webkit-animation-delay: .8s;
+	-moz-animation-delay: .8s;
+	-o-animation-delay: .8s;
+	animation-delay: .8s;
+}
+
+ 
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+=================================================================== */
+@media only screen and (max-width: 479px) {
+	#login-block{	 
+		padding-top: 10px;
+		padding-bottom: 25px;
+	}
+	
+}
+
+/* Tablet Portrait Size to Tablet Landscape Size (devices and browsers)
+=================================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	#login-block {	 
+		margin: 0 auto;
+		width: 420px;
+	}
+	
+}
+

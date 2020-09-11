@@ -1,0 +1,264 @@
+{% extends 'factura/base_factura.html' %}
+{% block titulo %}Factura de Venta {% endblock %}
+{% block content %}
+{% include "nav.html" %}
+{% load humanize %}
+<div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+        <!-- Main content -->
+         <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>            
+            Factura
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="{% url 'factura_app:lista_ventas' %}">Ventas</a></li>
+            <li class="active">Crear Ventas</li>
+          </ol>
+        </section>
+
+    <section class="content">          
+      <!-- START ALERTS AND CALLOUTS -->     
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-info">
+          
+            <div class="box-header with-border">                            
+                    <div class="box-tools pull-right">
+                      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div><!-- /.box-tools -->            
+            </div><!-- /.box-header -->
+              <div class="box-body">
+
+
+
+    {% if user.is_authenticated %}
+        {% if messages %}{% for message in messages %}
+          <div class="alert alert-danger alert-dismissable">
+          <i class="fa fa-info"></i>
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                    <b>Alert!</b> {{ message }}
+          </div>
+      {% endfor %}{% endif %}
+
+        <!-- Main content -->
+        <section class="content invoice">                    
+            <!-- title row -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="page-header">
+                        <i class="fa fa-globe"></i> FarmaSalud.
+                        <small class="pull-right">Fecha: {% now "d/m/Y" %}</small>
+                    </h2>                            
+                </div><!-- /.col -->
+            </div>
+            <!-- info row -->
+            <div class="row invoice-info">
+                <div class="col-sm-4 invoice-col">
+                    <b>Factura</b> <br/>
+
+                    Serie:<input name="p-serie" id="p-serie" placeholder="Serie" type="text" required="true"><br/>
+                    Num:<input name="p-num" id="p-num" placeholder="Numero" type="text" required="true">
+                    <br/>
+                    <b>Fecha de compra:</b> {% now "d/m/Y" %}<br/><br/>
+                    
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="buscarProductoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span aria-hidden="true">&times;</span>
+                                        <span class="sr-only">Cancelar</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">Buscar Medicamentos</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group">
+                                        <input name="producto" id="producto-id" class="form-control" placeholder="Ingrese nombre del medicamento" type="text">
+                                        <span class="input-group-btn">
+                                            <button name="seach" id="p-buscar" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                        </span>
+                                    </div>
+                                    <div id="producto-resultado"></div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                                        Cancelar
+                                    </button>
+                                    <button type="button" class="btn btn-primary" id="p-seleccionar" disabled>
+                                        Seleccionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#buscarProductoModal">
+                        Seleccionar Medicamentos
+                    </button>
+
+                </div><!-- /.col -->
+
+                <div class="col-sm-4 invoice-col">
+                    <strong>Cliente</strong>
+                    <!-- Modal -->
+                    <div class="modal fade" id="buscarClienteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span aria-hidden="true">&times;</span>
+                                        <span class="sr-only">Cancelar</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">Buscar Cliente</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group">
+                                        <input name="cliente" id="cliente-id" class="form-control" placeholder="Ingrese numero de dni" type="text">
+                                        <span class="input-group-btn">
+                                            <button name="seach" id="c-buscar" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                        </span>
+                                    </div>
+                                    <div id="cliente-resultado"></div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                                        Cancelar
+                                    </button>
+                                    <button type="button" class="btn btn-primary" id="c-seleccionar" disabled>
+                                        Seleccionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-toggle="modal" data-target="#buscarClienteModal">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <div class="modal fade" id="crearProductoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span aria-hidden="true">&times;</span>
+                                        <span class="sr-only">Cancelar</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">Crear Producto</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="/factura/venta" method="post">
+                                        {% csrf_token %}
+                                        {{ form }}
+                                        <input type="submit" value="Guardar" />
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                                        Cancelar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <br>
+                    Identificación: <span id="c-id"></span><br/>                    
+                    nombre: <span id="c-nombre"></span><br/>
+                    direccion: <span id="c-direccion"></span><br/>
+                    telefono: <span id="c-telefono"></span><br/>
+                </div><!-- /.col -->
+
+
+                <div class="col-sm-4 invoice-col">
+                    <strong>Despachador</strong><br>
+                    Apellido: {{user.last_name}}<br>
+                    Nombre: {{user.first_name}}<br>
+                    
+                </div><!-- /.col -->
+                
+            </div><!-- /.row -->
+
+            <!-- Table row -->
+            <div class="row">
+                <div class="col-xs-12 table-responsive">
+                    <table class="table table-striped" id="tb-detalle">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Producto</th>
+                                <th>Serial #</th>
+                                <th>precio_venta</th>
+                                <th>Cantidad</th>
+                                <th>IGV</th>
+                                <th>Subtotal</th>
+                            </tr>                                    
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>                            
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+
+            <div class="row">
+                <!-- accepted payments column -->
+                <div class="col-xs-6">
+                    <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
+                        No se realiza cambio ni devolución de dinero por los productos adquiridos, por favor verifique el estado de cada uno de los items de su compra.
+                    </p>
+                </div><!-- /.col -->
+                <div class="col-xs-6">
+                    <p class="lead">Totales de la compra</p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tr>
+                                <th style="width:50%">Subtotal:</th>
+                                <td align="center"> <label id='sum-subtotal'>.00</label></td>
+                            </tr>
+                            <tr>
+                                <th>Igv(18%)</th>
+                                <td align="center"><label id='sum-tax'>.00</label></td>
+                            </tr>
+                            <tr>
+                                <th>Total: $</th>
+                                <td align="center"><label id='sum-total'>.00</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+
+            <!-- this row will not appear when printing -->
+            <div class="row no-print">
+                <div class="col-xs-12">
+                    <form action="/factura/venta" method="post" onsubmit="onEnviar()">
+                        {% csrf_token %}
+                        <input id="proceso" name="proceso" type="hidden" />
+                        <button class="btn btn-success pull-right" id="comprar"><i class="fa fa-credit-card"></i> Realizar Venta</button>  
+                    </form>
+                    <button class="btn btn-primary pull-right"
+                        style="margin-right: 5px;" onclick="window.print();"><i
+                            class="fa fa-download"></i>Imprimir </button>
+                </div>
+            </div>
+
+        </form>
+        </section><!-- /.content -->
+
+                {% else %}
+
+
+                {% endif %}
+                              
+              </div><!-- /.box -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+    </section><!-- /.content -->
+  </div><!-- /.content-wrapper -->
+
+
+{% endblock content%}

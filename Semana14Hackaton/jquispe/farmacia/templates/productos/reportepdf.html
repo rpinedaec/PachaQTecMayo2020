@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+</head>
+<body >
+
+<h1> Relacion de Productos </h1>
+
+<div>            
+                <table border=0.01  >
+                  <thead style="background:#80BFFF">
+                      <tr>
+                        <th >Codigo</th>
+                        <th>Nombre</th>                       
+                        <th>Categoria</th> 
+                        <th>Existencia</th>
+                        <th>Precio</th>                       
+                     </tr>
+                  </thead>
+                <tbody> 
+                {% for productos in productos %}          
+
+                    <tr  BGCOLOR="yellow" width=100 VALIGN=TOP>                        
+                        <td>{{ productos.codigo }}</td>
+                        <td> {{ productos.nombre }} </td> 
+                        <td>{{ productos.categoria }}</td> 
+                        <td>{{ productos.stock}}</td> 
+                        <td>{{ productos.precio_venta }}</td>  
+
+                    </tr>
+                     {% endfor %}
+                    
+                    </tbody>
+                </table>          
+        </div><!-- /row -->
+
+
+	
+</body>
+</html>
