@@ -1,0 +1,23 @@
+.boton-imprimir{
+	display: none !important;}
+body.imprimir .texto-terminos p{
+	font-size: 11px !important;
+}
+body.imprimir .form-general table tr th{
+	background: #731713 !important;
+}
+body.imprimir .titulo-constancia h1{
+	font-size: 14px !important;
+}
+body.imprimir .cnt-texto-constancia p{
+	font-size: 11px !important;
+}
+body.imprimir .inlines_tablas{
+	margin-left: 6px;
+}
+.imp_bottom{
+	margin-bottom: 300px !important;
+}
+body.imprimir .mb_imprimir{
+	margin-bottom: 100px !important;
+}

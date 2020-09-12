@@ -1,0 +1,112 @@
+{% extends "medicamentos/base_medicamentos1.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %}    
+    <div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>            
+            Medicamentos
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="{% url 'users_app:home' %}"><i class="fa fa-dashboard"></i>Inicio</a></li>
+            <li  class="active">Medicamentos</li>
+            <li> <a href="{% url 'medicamentos_app:create_medicamentos'%}">Nuevo Medicamento</a> </li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-xs-12">
+
+                <div class="box box-primary">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">
+                      <a href="{% url 'medicamentos_app:create_medicamentos' %}" class="btn btn-success">
+                      Nuevo
+                      </a>
+                      {% for group in user.groups.all %}
+                        {% if group.name == 'administrador' %}
+                      <a  class="btn btn-primary pull-right" href="/medicamentos/reporte">imprimir</a>
+                       {% endif %}
+                       {% endfor %}
+                      
+                    </h3>
+                    <div class="box-tools pull-right">
+                      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div><!-- /.box-tools -->
+                  </div><!-- /.box-header -->
+                  <div class="box-body">
+              <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                             <th>N°</th>                                                     
+                              <th>Presentacion</th> 
+                              <th>Tipo</th>                              
+                              <th>Nombre</th> 
+                              <th>Precio</th>
+                              <th>Vencimiento Dias - Fecha</th> 
+                              <th>Stock</th>
+                               <th>Acciones</th>                        
+                           </tr>
+                        </thead>
+                      <tbody> 
+                      {% for m in medicamentos %}          
+
+                          <tr> 
+                              <td>{{ forloop.counter}}</td>                             
+                              <td>{{ m.presentacion }} </td> 
+                              <td>{{ m.tipo }}</td>                              
+                              <td>{{ m.nombre|lower}}</td> 
+                              <td>{{m.precio_venta}}</td>
+                              {% if m.estadomedicamentos > 30 %}
+                                  <td><b style="color:green;">{{m.estadomedicamentos}} - {{m.fecha_expiracion|date:'d/m/Y' }}</b></td>
+                              {% elif m.estadomedicamentos <= 30 and m.estadomedicamentos > 0 %}
+                                  <td><b style="color:rgb(243, 156, 18);">{{m.estadomedicamentos}} - {{m.fecha_expiracion|date:'d/m/Y' }}</b></td>
+                              {% else %}
+                              <td><b style="color:red;">{{m.estadomedicamentos}} - {{m.fecha_expiracion|date:'d/m/Y' }}</b></td>
+                              {% endif %}   
+
+                              {% if m.stock > 0 and m.stock < 10 %}                             
+                              <td><b style="color:red;">{{ m.stock}}</b></td>   
+                              {% elif m.stock > 10 and m.stock < 50 %}
+                               <td><b style="color:rgb(243, 156, 18);">{{ m.stock}}</b></td>
+                               {% else %}
+                               <td><b style="color:green;">{{ m.stock}}</b></td>
+
+                              {% endif %}
+                              <td class="text-right">
+                                  <a href="{% url 'medicamentos_app:detalle_medicamentos' m.id %} " class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                  <a href="{% url 'medicamentos_app:actualizar_medicamentos' m.id  %}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span></a>
+                                  {% for group in user.groups.all %}
+                                    {% if group.name == 'administrador' %}
+
+                                  <a href="{% url 'medicamentos_app:eliminar_medicamentos' m.id %}" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a> 
+                                  {% endif %}
+                                  {% endfor %}
+                              </td>
+                          </tr>
+                      {% endfor %}
+                          
+                          </tbody>
+                      </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}
+
+
+
+
+
+

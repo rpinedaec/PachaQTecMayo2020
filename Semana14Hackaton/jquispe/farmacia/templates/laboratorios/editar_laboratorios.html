@@ -1,0 +1,73 @@
+
+{% extends "laboratorios/base_laboratorios.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %}  
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">     
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li class="active">Laboratorios</li>
+      </ol>
+    </div><!--/.row-->
+    
+    <div class="row">
+      <div class="col-lg-12">
+        <form class="form-horizontal" method="post">
+                {% csrf_token %}    
+                <div class="panel panel-primary">
+                   <div class="panel-heading">Actualizar Laboratorios</div>
+                    <div class="panel-body">
+                        <div class="page-header">                            
+                        <h4>
+                            <a href="{% url 'laboratorios_app:lista_laboratorios' %}" class="btn btn-success">
+                            <span class="glyphicon glyphicon-chevron-left"></span> Regresar
+                            </a>
+                            
+                        </h4>
+                        </div><!-- page-header -->
+                        <div class="row">                              
+                            <div class="col-xs-12 col-sm-10">                               
+                                <div class="form-group has-success has-feedback  {% if form.codigo.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-2" for="inputSuccess3">{{ form.codigo.label_tag }}</label>
+                                        <div class="col-sm-6">               
+                                        <input type="text" name="codigo" class="form-control" value='{% if form.codigo.value %}{{ form.codigo.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.codigo.errors.as_text}}' autofocus='true' id="disabledInput" type="text" disabled >                                          
+                                        </div>
+                                  </div> 
+                                <div class="form-group has-success has-feedback  {% if form.nombre.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-2" for="inputSuccess3">{{ form.nombre.label_tag }}</label>
+                                        <div class="col-sm-6">                                        
+                                        <input type="text" id="disabledTextInput" name="nombre" class="form-control" value='{% if form.nombre.value %}{{ form.nombre.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.nombre.errors.as_text}}' autofocus='true'>                                       
+                                        </div>
+                                  </div>  
+                                <div class="form-group has-success has-feedback  {% if form.sanitario.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-2" for="inputSuccess3">{{ form.sanitario.label_tag }}</label>
+                                        <div class="col-sm-6">                                        
+                                        <input type="text" id="disabledTextInput" name="sanitario" class="form-control" value='{% if form.sanitario.value %}{{ form.sanitario.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.sanitario.errors.as_text}}' autofocus='true'>                                       
+                                        </div>
+                                  </div> 
+                                <div class="form-group has-success has-feedback  {% if form.autorizacion.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-2" for="inputSuccess3">{{ form.autorizacion.label_tag }}</label>
+                                        <div class="col-sm-6">                                        
+                                        <input type="text" id="disabledTextInput" name="autorizacion" class="form-control" value='{% if form.autorizacion.value %}{{ form.autorizacion.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.autorizacion.errors.as_text}}' autofocus='true'>                                       
+                                        </div>
+                                  </div> 
+                                                            
+                            </div>                                                        
+                        </div> <!--<div class="row"> -->
+                        
+                        <div class="panel-footer color-footer">
+                            <button type="submit" class="btn btn-primary">
+                                 Grabar
+                            </button>
+                        </div>
+ 
+
+                    </div>
+                </div>
+ </form>
+      </div>
+  </div><!--/.row-->
+{% endblock producto %}
+{% endblock content %}

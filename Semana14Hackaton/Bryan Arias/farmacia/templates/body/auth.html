@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>{% block titulo %} {% endblock titulo %}</title>
+
+  {% load bootstrap4 %}
+  {% bootstrap_css %}
+  
+<!------ Include the above in your HEAD tag ---------->
+{% block styles %}
+{% endblock styles %}
+</head>
+<body class="bg-light">
+  <div class="container-fluid">
+    <div class="form-row bg-white">
+      <div class="col-3"></div>
+      <div class="col-6 text-center"><h1>Bienvenido al Sistema</h1></div>
+      <div class="col-3"></div>
+    </div>
+  </div>
+    <div class="content">
+      {% block content%}
+      {% endblock %}
+    </div>
+
+
+{% block scripts %}
+{% endblock scripts %}
+{% bootstrap_javascript jquery='full' %}
+</body>
+</html>

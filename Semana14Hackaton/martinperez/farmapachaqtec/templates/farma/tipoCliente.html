@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block titulo %}
+Tipos de Cliente
+{% endblock titulo %}
+{% block pageHeader %}
+Tipos de Cliente
+{% endblock pageHeader %}
+{% block pageActive %}
+Tipos de Cliente
+{% endblock pageActive %}
+{% block content %}
+
+<form action="{% url 'farma:setTipoCliente' %}"  method="POST">{% csrf_token %}
+    {{tipoClienteForm.as_table}}
+    <button type = 'summit' class="btn btm-primary">Guardar</button>
+</form>
+
+
+{% endblock content %}
+

@@ -1,0 +1,69 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.logo i {
+	font-size: 31px;
+	margin-right: 4px;
+	word-spacing: 14px;
+}
+.logo{
+	color: white;
+	margin: 0;
+	font-size: 20px;
+	padding: 4px 0;
+	padding-bottom: 15px;
+
+}
+.login-bottom-text{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+	color: white;
+	line-height: 19px;
+}
+
+header{
+	background: #3b5998;
+	padding-top: 20px;
+}
+header .form-group{
+	margin-bottom: 0px;
+}
+header .btn-header-login{
+	margin-bottom: 15px;	
+}
+.login-main{
+	margin-top: 130px;
+}
+.multibox{
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+.login-main span{
+	font-size: 12px;
+} 
+
+
+
+footer hr{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.footer-options ul{
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+.footer-options ul li{
+	float:left;
+	list-style: none;
+	padding: 5px;
+	font-size: 12px;
+}
+.footer-options ul li a{
+	text-decoration: none;
+	color: #000;
+}
+.copyrights{
+	margin-top: 25px;
+}

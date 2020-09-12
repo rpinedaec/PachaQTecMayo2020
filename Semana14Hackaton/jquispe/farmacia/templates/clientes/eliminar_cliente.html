@@ -1,0 +1,37 @@
+{% extends "clientes/base_cliente_lista.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %} 
+<div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+        <!-- Main content -->
+    <section class="content">          
+      <!-- START ALERTS AND CALLOUTS -->     
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <i class="fa fa-bullhorn"></i>             
+            </div><!-- /.box-header -->
+              <div class="box-body">
+                  <div class="callout callout-danger">                    
+                    <h1> Eliminar</h1>
+                    <form method="POST">
+                    {% csrf_token %}
+                      <p class="coloreliminar">¿Desea eliminar al cliente "{{ object.nombre }}?</p>
+                      <input type="submit" value="Sí" class="btn btn-warning"> 
+                      <a href="{% url 'clientes_app:lista_clientes' %}" class="btn btn-info">No</a>
+                    </form>                        
+                  </div>                                   
+              </div><!-- /.box -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+    </section><!-- /.content -->
+  </div><!-- /.content-wrapper -->
+
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}
+

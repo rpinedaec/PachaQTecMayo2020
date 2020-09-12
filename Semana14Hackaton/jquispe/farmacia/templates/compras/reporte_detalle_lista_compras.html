@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style >
+        @page {
+            size: landscape;
+            @frame header_frame{
+                -pdf-frame-content: headerContent;
+                left: 5pt;
+                top: 10pt;
+                height: 100pt;
+                }
+
+            @frame content_frame {
+                    left: 40pt; width: 760pt; top: 90pt; height: 460pt;
+            }
+
+            @frame footer {
+                -pdf-frame-content: footerContent;
+                bottom: 1cm;
+                margin-left: 1cm;
+                margin-right: 1cm;
+                height: 0cm;
+                }
+        }
+    </style>
+</head>
+<body>
+
+<div id="headerContent">
+    <center> <h2>MI LOGO</h2></center>
+</div>
+
+<div id="footerContent">
+    Página: <pdf:pagenumber> de <pdf:pagecount>
+</div>
+
+<br>
+<table style="border:1px solid black;border-collapse:collapse;">
+    <tr>
+        <th style="border:1px solid black; padding: 2px;">items</th>
+        <th style="border:1px solid black; padding: 2px;">Nombre trabajador</th>
+        <th style="border:1px solid black; padding: 2px;">Código</th>        
+        <th style="border:1px solid black; padding: 2px;">Distribuidor</th>
+        <th style="border:1px solid black; padding: 2px;">Laboratorio</th>
+        <th style="border:1px solid black; padding: 2px;">Fecha</th>  
+    </tr>
+     {% for c in rango%}
+            
+        <tr>
+         <td width= 380 style="border:1px solid black; padding: 3px;">{{forloop.counter}}</td>
+         <td style="border:1px solid black; padding: 3px;"><center>{{c.trabajador}}</center></td>
+           <td width= 380 style="border:1px solid black; padding: 3px;">{{c.codigo}}</td>
+           <td width=220 style="border:1px solid black; padding: 3px;"><center>{{c.distribuidor}}</center></td>
+
+            <td width =220 style="border:1px solid black; padding: 3px;"><center>{{c.laboratorio}}</center></td>
+            <td style="border:1px solid black; padding: 3px;"><center>{{c.fecha}}</center>
+                      
+        </tr>
+    {% endfor %}      
+
+</table>
+
+</body>
+</html>
+

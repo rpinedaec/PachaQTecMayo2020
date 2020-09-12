@@ -1,0 +1,182 @@
+{% extends "medicamentos/base_medicamentos1.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %} 
+
+
+<div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+         <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>            
+            Añadir Medicamentos
+          </h1>
+           <ol class="breadcrumb">
+              <li><a href="{% url 'users_app:home' %}"><i class="fa fa-dashboard"></i>Inicio</a></li>
+              <li><a href="{% url 'medicamentos_app:lista_medicamentos' %}">Medicamentos</a></li>
+              <li class="active">Nuevo Medicamento</li>
+            </ol>
+        </section>
+        <!-- Main content -->
+    <section class="content">          
+      <!-- START ALERTS AND CALLOUTS -->     
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-info">
+            <div class="box-header with-border">            
+            <div class="box-tools pull-right">
+                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            </div><!-- /.box-tools -->
+                       
+            </div><!-- /.box-header -->
+
+              <div class="box-body">     
+                    <div class="row" id ="contenido">
+                      <div class="col-lg-12">
+                      <form id="form" class="form-horizontal" method="post">
+                    {% csrf_token %}
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">  
+                                <div class="form-group has-success has-feedback  {% if form.lote.errors %} has-error {% endif %}">
+                                     <label class="control-label col-sm-3" for="inputSuccess3">{{ form.lote.label_tag }}
+                                     </label>
+                                     <div class="col-sm-4">
+                                        {{ form.lote }}
+                                    </div>
+                                 </div>
+                                 <div class="form-group has-success has-feedback  {% if form.categoria.errors %} has-error {% endif %}">
+                                     <label class="control-label col-sm-3" for="inputSuccess3">{{ form.categoria.label_tag }}
+                                     </label>
+                                     <div class="col-sm-5">
+                                        {{ form.categoria }}
+                                    </div>
+                                 </div>
+                                 <div class="form-group has-success has-feedback  {% if form.presentacion.errors %} has-error {% endif %}">
+                                     <label class="control-label col-sm-3" for="inputSuccess3">{{ form.presentacion.label_tag }}
+                                     </label>
+                                     <div class="col-sm-5">
+                                        {{ form.presentacion }}
+                                    </div>
+                                    <div class="col-sm-4">                                        
+                                          <a href="{% url 'medicamentos_app:create_presentacion' %}" class="btn btn-success">+
+                                          </a> 
+                                    </div>
+                                 </div>
+
+                                 <div class="form-group has-success has-feedback  {% if form.tipo.errors %} has-error {% endif %}">
+                                     <label class="control-label col-sm-3" for="inputSuccess3">{{ form.tipo.label_tag }}
+                                     </label>
+                                     <div class="col-sm-6">
+                                        {{ form.tipo }}
+                                    </div>
+                                 </div> 
+                                <div class="form-group has-success has-feedback  {% if form.nombre.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-3" for="inputSuccess3">{{ form.nombre.label_tag }}</label>
+                                    <div class="col-sm-6">               
+                                     <input type="text" id="disabledTextInput" name="nombre" class="form-control" value='{% if form.nombre.value %}{{ form.nombre.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.nombre.errors.as_text}}' autofocus='true'> 
+                                    </div>
+                                </div> 
+                                <div class="form-group has-success has-feedback  {% if form.componente.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-3" for="inputSuccess3">{{ form.componente.label_tag }}</label>
+                                    <div class="col-sm-6">                                 
+                                        <input type="text" id="disabledTextInput" name="componente" class="form-control" value='{% if form.componente.value %}{{ form.componente.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.componente.errors.as_text}}' autofocus='true'>                   
+                                    </div>
+                                </div> 
+                              
+
+                                <div class="form-group has-success has-feedback  {% if form.concentracion.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-3" for="inputSuccess3">{{ form.concentracion.label_tag }}</label>
+                                    <div class="col-sm-6">                 
+                                        <input type="text" id="disabledTextInput" name="concentracion" class="form-control" value='{% if form.concentracion.value %}{{ form.concentracion.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.concentracion.errors.as_text}}' autofocus='true'>                    
+                                    </div>
+                                </div>
+                                <div class="form-group has-success has-feedback  {% if form.sanitario.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-3" for="inputSuccess3">{{ form.sanitario.label_tag }}</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" id="disabledTextInput" name="sanitario" class="form-control" value='{% if form.sanitario.value %}{{ form.sanitario.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.sanitario.errors.as_text}}' autofocus='true'>
+                                    </div>
+                                </div> 
+                               
+
+                                <div class="form-group has-success has-feedback  {% if form.fecha_expiracion.errors %} has-error {% endif %}">
+                                  <label class="col-md-2 control-label" for="Date">{{ form.fecha_expiracion.label_tag }}</label>
+                                  <div class="col-md-7">
+                                      <div class="input-group">
+                                          <div class="input-group-addon">
+                                              <i class="fa fa-calendar"></i>
+                                          </div>
+                                          {{ form.fecha_expiracion }}
+                                          </div>
+                                  </div>
+                                </div>
+
+                                <div class="form-group has-success has-feedback  {% if form.fecha_produccion.errors %} has-error {% endif %}">
+                                  <label class="col-md-2 control-label" for="Date">{{ form.fecha_produccion.label_tag }}</label>
+                                  <div class="col-md-7">
+                                      <div class="input-group">
+                                          <div class="input-group-addon">
+                                              <i class="fa fa-calendar"></i>
+                                          </div>
+                                          {{ form.fecha_produccion }}
+                                      </div>
+                                  </div>
+                                </div>
+
+                                </div>                             
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">  
+                                 
+                                <div class="form-group has-success has-feedback  {% if form.descripcion.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-3" for="inputSuccess3">{{ form.descripcion.label_tag }}</label>
+                                    <div class="col-sm-7">
+                                        <div class="form-group">
+                                         {{ form.descripcion }}
+                                        </div>                                       
+                                    </div>
+                                </div> 
+                                <div class="form-group has-success has-feedback  {% if form.stock.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-3" for="inputSuccess3">{{ form.stock.label_tag }}</label>
+                                    <div class="col-sm-6">
+                                        <input type="number" id="disabledTextInput" name="stock" class="form-control" value='{% if form.stock.value %}{{ form.stock.value }}{% endif %}' data-toggle="tooltip" data-placement="top" title='{{ form.stock.errors.as_text}}' autofocus='true'> 
+                                    </div>
+                                </div> 
+
+                                <div class="form-group has-success has-feedback  {% if form.precio_Compra.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-3" for="inputSuccess3">{{ form.precio_Compra.label_tag }}</label>
+                                    <div class="col-sm-6">  
+                                        {{ form.precio_Compra}}              
+                                    </div>
+                                </div>  
+                                <div class="form-group has-success has-feedback  {% if form.precio_venta.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-3" for="inputSuccess3">{{ form.precio_venta.label_tag }}</label>
+                                    <div class="col-sm-6">  
+                                         {{ form.precio_venta}}              
+                                    </div>
+                                </div>
+                                
+                               <div class="form-group has-success has-feedback  {% if form.igv.errors %} has-error {% endif %}">
+                                    <label class="control-label col-sm-3" for="inputSuccess3">{{ form.igv.label_tag }}</label>
+                                    <div class="col-sm-6">  
+                                         {{ form.igv}}              
+                                    </div>
+                                </div>                               
+                        </div>
+                        <div class="pull-right">
+                            <div class="btn-group">
+                            <button type="submit" class="btn btn-lg btn-info"><i class="fa fa-floppy-o"></i></button>
+                        </div>
+                        </div>  
+                    </form>  
+                        
+                      </div>
+                    </div><!--/.row-->
+            </div><!-- /.box body -->
+          </div><!-- /.box info -->
+          </div><!--col-->
+        </div><!-- /.row -->
+    </section><!-- /.content -->
+  </div><!-- /.content-wrapper -->
+  
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}
