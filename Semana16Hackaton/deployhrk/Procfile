@@ -1,0 +1,1 @@
+web: gunicorn hrkprj.wsgi --log-file -
