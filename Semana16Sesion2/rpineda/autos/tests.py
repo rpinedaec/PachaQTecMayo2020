@@ -109,7 +109,7 @@ class TestViewSet:
                           content_type='application/json',
                           data=json.dumps(data))
 
-        #mocker.patch.object(Car, 'save')
+        mocker.patch.object(Car, 'save')
         # Renderizamos la vista con nuestro request.
         response = CarViewSet.as_view({'post': 'create'})(request).render()
 
@@ -135,8 +135,8 @@ class TestViewSet:
         # para omitir el acceso a BD
         # Lo mismo para el motodo save() de nuestro modelo Car
         
-        #mocker.patch.object(CarViewSet, 'get_object', return_value=car)
-        #mocker.patch.object(Car, 'save')
+        mocker.patch.object(CarViewSet, 'get_object', return_value=car)
+        mocker.patch.object(Car, 'save')
 
         response = CarViewSet \
             .as_view({'patch': 'partial_update'})(request).render()
