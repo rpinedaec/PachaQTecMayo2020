@@ -1,0 +1,22 @@
+{
+  "name": "Musicapp en Django",
+  "description": "A music app for Heroku",
+  "image": "heroku/python",
+  "repository": "https://github.com/dgarciasayan/PachaQTecMayo2020-1",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "3c9hkbi7vl64f0f#iu40ee1a95^^)0(27x7w^zuqu86re%j_x-",
+      "generator": "secret"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}
