@@ -1,0 +1,8 @@
+django
+gunicorn
+django-heroku
+djangorestframework
+django-filter
+markdown
+coverage
+pytest-django
