@@ -1,0 +1,15 @@
+{
+  "name": "MartinPerez on Heroku: Python",
+  "description": "proyecto para Hackaton16",
+  "image": "heroku/python",
+  "repository": "https://github.com/perez13lo/MartinHackaton16.git",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "vvqyuhm-00s0h@ux$fy_f$hscj=jyfkers9my!34=wsbqkzalp",
+      "generator": "secret"
+    }
+  }
+}
+
