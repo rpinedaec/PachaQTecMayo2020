@@ -1,0 +1,1 @@
+web: gunicorn musicproject.wsgi --log-file -
