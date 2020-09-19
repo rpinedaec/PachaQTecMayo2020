@@ -1,5 +1,5 @@
 """
-ASGI config for neoautos project.
+ASGI config for autos project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'neoautos.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'autos.settings')
 
 application = get_asgi_application()
