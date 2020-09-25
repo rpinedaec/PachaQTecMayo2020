@@ -1,0 +1,98 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block titulo %}
+Compras
+{% endblock titulo %}
+{% block pageHeader %}
+Compras
+{% endblock pageHeader %}
+{% block pageActive %}
+Compras
+{% endblock pageActive %}
+{% block content %}
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12"> 
+      <a href="{% url 'farma:nuevo'%}" class="btn btn-success">NUEVA COMPRA</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            {% comment %} <div class="callout callout-info">
+              <h5><i class="fas fa-info"></i> Note:</h5>
+              This page has been enhanced for printing. Click the print button at the bottom of the invoice to test.
+            </div> {% endcomment %}
+
+
+            <!-- Main content -->
+            <div class="invoice p-3 mb-3"> 
+            
+
+              <!-- Table row -->
+              <div class="row" style="padding-bottom:35px">
+                <div class="col-12 table-responsive">
+                  <table id="table"></table>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+
+              <!-- this row will not appear when printing -->
+              <div class="row no-print">
+                <div class="col-12">
+                  <a href="#" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
+                  <!--button type="button" id="sendPedido" class="btn btn-success float-right">
+                    <i class="far fa-credit-card"></i> GUARDAR
+                  </button-->
+                  <!--button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
+                    <i class="fas fa-download"></i> Generate PDF
+                  </button-->
+                </div>
+              </div>
+            </div>
+            <!-- /.invoice -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+
+{% endblock content %}
+{% block scripts %}
+<script>
+
+{% if pedidos %}
+  pedidos = [];
+  {% for objpedido in pedidos %}  
+          Pedido = {};
+          Pedido.id = {{objpedido.id}}
+          Pedido.fecha = "{{objpedido.fecha|date:'d/m/Y' }}"
+          Pedido.subtotal = "{{objpedido.subtotal}}" 
+          Pedido.igv = "{{objpedido.igv}}"
+          Pedido.total = "{{objpedido.total}}"
+          Pedido.cliente_id = "{{objpedido.cliente.nombres}} {{objpedido.cliente.apellidos}}"
+          Pedido.transportista_id = "{{objpedido.transportista.nombres}} {{objpedido.transportista.apellidos}}"
+          pedidos.push(Pedido)
+  {%endfor%}
+  
+
+  var today = new Date();
+  var fecha = today.toISOString().substring(0, 10);
+  $("#lblFecha").text(fecha);
+{%endif%}
+ 
+
+</script>
+<script src="{% static 'farma/js/sweetalert2.js'%}"></script>
+<script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+<script src="{% static 'farma/js/listar.js'%}"></script>
+{% endblock scripts %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'farma/css/sweetalert2.css'%}">
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+{% endblock styles %}

@@ -1,0 +1,42 @@
+{% extends "venta/base_ventas.html" %}
+
+{% block title %}Productos{% endblock title %}
+
+{% block content %}
+
+{% include "nav.html" %}
+<br>
+<br><br><br><br>
+          <div class="container">
+            <div class="row">            
+            <div class="col-md-12">
+                <table class="table table-hover" >
+                  <thead>
+                      <tr>
+                        <th class="info"> N°</th>
+                        <th class="info">Código</th>
+                        <th class="info">Cliente</th>            
+                        <th class="info">Fecha</th>                                         
+                        <th class="info">Accion</th>                       
+                     </tr>
+                  </thead>
+                <tbody> 
+
+                {%  for ventas in ticket %} 
+                    <tr>   
+                        <td>{{forloop.counter }}</td>                     
+                        <td>{{ ventas.codigo }}</td>
+                        <td>{{ ventas.cliente }}</td>                          
+                        <td>{{ ventas.fecha }}</td>  
+                         <td>
+                            <a href="{% url 'ventas_app:detalle_venta' ventas.id %}" class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        </td> 
+                    </tr>
+                     {% endfor %}
+                    
+                    </tbody>
+                </table>            
+        </div>
+        </div>
+
+{% endblock content %}

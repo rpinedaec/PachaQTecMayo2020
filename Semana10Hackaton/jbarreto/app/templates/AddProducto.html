@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Agregar Producto</h1><br/>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <table>
+            <tr>
+                <td>{{ form.nombre.label }}</td>
+                <td>{{ form.nombre(size=50) }}</td>
+            </tr>
+            <tr>
+                {% for error in form.nombre.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>{{ form.stock.label }}</td>
+                <td>{{ form.stock }}</td>
+            </tr>
+            <tr>
+                {% for error in form.stock.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>{{ form.precio.label }}</td>
+                <td>{{ form.precio }}</td>
+            </tr>
+            <tr>
+                {% for error in form.precio.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>{{ form.categoria_id.label }}</td>
+                <td>
+                    <select name="categoria_id">
+                        {% for categoria in categorias %}
+                            <option value="{{ categoria.id }}">{{ categoria.nombre }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}

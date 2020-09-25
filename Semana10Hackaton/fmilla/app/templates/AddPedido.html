@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Agregar Pedido</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            <select name="producto_id">
+                {% for producto in productos %}
+                    <option value="{{ producto.id }}">{{ producto.nombre }}</option>
+                {% endfor %}
+                 </select>
+        </p>
+        <p>
+            {{ form.cantidad.label }}<br>
+            {{ form.cantidad }}<br>
+            {% for error in form.cantidad.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p><p>{{ form.submit1() }}</p>
+    </form>
+{% endblock %}

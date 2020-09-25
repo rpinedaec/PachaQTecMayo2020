@@ -1,0 +1,76 @@
+{% extends "users/base_users.html" %}
+
+{% block title %}Panel{% endblock title %}
+
+{% block content %}
+
+{% include "users/base_users.html" %}
+
+<br>
+<br>
+<br>
+    <div class="container">
+
+        <div class="page-header">
+            <h4>
+                <a href="{% url 'ventas_app:ventas' %}" class="btn btn-success">
+                    <span class="glyphicon glyphicon-chevron-left"></span> Regresar
+                </a>                
+            </h4>
+        </div><!-- page-header -->
+        <div class="row">              
+            <div class="col-md-4">
+                <table class="table table-hover">                    
+                    <tbody>              
+                            <tr>                                
+                                <td>codigo</td>                                 
+                                <td>{{cantidad}}</td>
+                          </tr>
+                          <tr>                                
+                                <td>CLiente</td>                                   
+                          </tr>                                    
+                    </tbody>
+                </table>                
+
+            </div><!-- col-md-12 -->
+        </div><!-- /row -->
+
+        <div class="row">              
+            <div class="col-md-6">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="info">N°</th>
+                            <th class="info">Medicamento</th>
+                            <th class="info" >cantidad</th>  
+                            <th class="info" >Precio</th>                         
+                            <th class="info"> total</th>                                           
+                         </tr>
+                    </thead>
+                    <tbody>
+                     {% for a in detalle %}
+                            <tr> 
+                                <td>{{forloop.counter}}</td>                              
+                                <td>{{a.medicamento}}</td>
+                                <td>{{a.cantidad}}</td>
+                                <td>{{a.medicamento.precio_venta}}</td>
+                                <td>{{a.total_venta}}</td>
+                          </tr>
+                     {% endfor %}                       
+                    </tbody>
+                </table>
+                <thead>
+                    <tr>
+                    <th>total</th> 
+                    <th>{{totalt}}</th>              
+                    </tr>
+                </thead>
+            </div><!-- col-md-12 -->
+        </div><!-- /row -->
+        <div class="row">              
+            <div class="col-md-9">
+            <p>fecha</p>
+            </div><!-- col-md-12 -->
+        </div><!-- /row -->
+    </div><!-- /container -->
+{% endblock content %}

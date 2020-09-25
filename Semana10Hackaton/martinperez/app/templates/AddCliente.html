@@ -1,0 +1,72 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container" style="width: 100%; padding: 20px;">
+  <div class="row justify-content-left"
+    style="background-color:slategrey; color: white; font-weight: bold;
+    padding: 10px; font-size: large;">
+    <p>AGREGAR CLIENTE</p>
+  </div>
+</div>
+<div class="container">
+    <a href="{{ url_for('getCliente') }}" class='btn btn-primary btn-block' 
+        style="width: 120px; line-height: normal; height:3em;">Ver todos</a>
+    <h2>Agregar Cliente:</h2>
+</div>
+ 
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="card" style="width: 100%;">
+        <div class="card-body">
+
+          <form action="" method="post">
+              {{ form.hidden_tag() }}
+
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">
+                      {{ form.nombre.label }}
+                    </span>
+                  </div>            
+                  {{ form.nombre(size=50) }}
+                  {% for error in form.nombre.errors %}
+                  <span style="color: red;">[{{ error }}]</span>
+                  {% endfor %}
+              </div>
+
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">
+                      {{ form.ruc.label }}
+                    </span>
+                  </div>            
+                  {{ form.ruc }}
+                  {% for error in form.ruc.errors %}
+                  <span style="color: red;">[{{ error }}]</span>
+                  {% endfor %}
+              </div>
+              
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">
+                      {{ form.direccion.label }}
+                    </span>
+                  </div>            
+                  {{ form.direccion(size=70)  }}
+                  {% for error in form.direccion.errors %}
+                  <span style="color: red;">[{{ error }}]</span>
+                  {% endfor %}
+              </div>
+              
+              <!--<p>{{ form.submit() }}</p>-->
+              <input type=submit class='btn btn-success btn-block' 
+                style="width: 120px;" value="GUARDAR">
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
+

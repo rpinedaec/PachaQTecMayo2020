@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2><span class="font-italic">Agregar Producto</span></h2>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <div class="form-row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                    {{ form.nombre.label }}
+                    {{ form.nombre(class_="form-control form-control-sm") }}
+                    {% for error in form.nombre.errors %}
+                    <span class="text-danger">[{{ error }}]</span>
+                    {% endfor %}
+
+                    {{ form.stock.label }}
+                    {{ form.stock(class_="form-control form-control-sm") }}
+                    {% for error in form.stock.errors %}
+                    <span class="text-danger">[{{ error }}]</span>
+                    {% endfor %}
+
+                    {{ form.precio.label }}
+                    {{ form.precio(class_="form-control form-control-sm") }}
+                    {% for error in form.precio.errors %}
+                    <span class="text-danger">[{{ error }}]</span>
+                    {% endfor %}
+
+                    {{ form.categoria.label }}
+                    {{ form.categoria(class_="form-control form-control-sm") }}
+                    <a href="/Categoria/add" title="Agregar Categoria">
+                        <button type="button" class="btn">
+                            <i class="fa fa-plus-square" aria-hidden="true"> Agregar Categoria</i>
+                        </button>
+                    </a>
+
+                <p>{{ form.submit(class_="btn btn-sm btn-primary") }}</p>
+            </div>
+        </div>
+        
+    </form>
+{% endblock %}

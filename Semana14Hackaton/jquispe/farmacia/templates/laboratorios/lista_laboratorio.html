@@ -1,0 +1,83 @@
+{% extends "laboratorios/base_laboratorios.html"%}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %}    
+    <div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>            
+            Laboratorios
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="{% url 'users_app:home' %}"><i class="fa fa-dashboard"></i>Inicio</a></li>
+            <li class="active">Laboratorios</li>
+            <li><a href="{% url 'laboratorios_app:create_laboratorios' %}">Nuevo Laboratorio</a></li>
+            
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-xs-12">
+
+                <div class="box box-primary">
+                  <div class="box-header with-border">
+                    <h3 class="box-title"><a href="{% url 'laboratorios_app:create_laboratorios' %}" class="btn btn-success">
+                      Nuevo Laboratorio
+                    </a></h3>
+                    <div class="box-tools pull-right">
+                      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div><!-- /.box-tools -->
+                  </div><!-- /.box-header -->
+                  <div class="box-body">
+                  <table id="example1" class="table table-bordered table-striped">
+                   <thead>
+                            <tr>
+                             <th>N°</th>
+                              <th>Código</th>                       
+                              <th>Nombre</th> 
+                              <th>Sanitario</th>                              
+                              <th>Autorizacion</th> 
+                              <th>Acciones</th>                      
+                           </tr>
+                        </thead>
+                    <tbody>
+                    
+                     {% for l in laboratorios %}          
+
+                          <tr> 
+                              <td>{{ forloop.counter}}</td>
+                              <td>{{ l.codigo }}</td>
+                              <td>{{ l.nombre }} </td> 
+                              <td>{{ l.sanitario }}</td>                              
+                              <td>{{ l.autorizacion}}</td>                      
+                              <td class="text-right">
+                                  {% if user.is_authenticated %}
+                                  <a href="{% url 'laboratorios_app:detalle_laboratorios' l.id %} " class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                  {% endif %}
+
+                                  <a href="{% url 'laboratorios_app:actualizar_laboratorios' l.id  %}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span></a>
+                                  {% for group in user.groups.all %}
+                                      {% if group.name == 'administrador' %}
+                                  <a href="{% url 'laboratorios_app:eliminar_laboratorios' l.id %}" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a> 
+                                    {% endif %}
+                                    {% endfor %}
+                              </td>
+                          </tr>
+                      {% endfor %}
+                    </tbody>
+
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}

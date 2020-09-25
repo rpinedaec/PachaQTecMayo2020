@@ -1,0 +1,60 @@
+
+{% extends "clientes/base_cliente_lista.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %} 
+<div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+        <!-- Main content -->
+    <section class="content">          
+      <!-- START ALERTS AND CALLOUTS -->     
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-info">
+          
+            <div class="box-header with-border">
+          		<a href="{% url 'clientes_app:lista_clientes' %}" class="btn btn-success">
+            		<span class="glyphicon glyphicon-chevron-left"></span> Regresar
+                </a>              
+              		<div class="box-tools pull-right">
+                      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div><!-- /.box-tools -->            
+            </div><!-- /.box-header -->
+              <div class="box-body">
+                  <table class="table table-striped table table-hover ">
+	                    <tbody> 
+	                          <tr class="success"> 
+	                          	  <td><strong>DNI:</strong></td>                           
+	                              <td>{{ object.dni }}</td>
+	                          </tr>
+	                          <tr class="success">
+	                          	  <td><strong>Nombre:</strong></td>
+	                              <td>{{ object.nombre }} </td> 
+	                           </tr>
+	                           <tr class="success">
+	                           	  <td><strong>Apellidos:</strong></td>
+	                              <td>{{ object.apellidos }}</td>                              
+	                           </tr>
+	                           	                           <tr class="success">
+	                           	  <td><strong>Dirección:</strong></td>
+	                              <td>{{ object.direccion }}</td>                              
+	                           </tr>
+	                           <tr class="success">
+	                           	  <td><strong>Teléfono:</strong> </td>
+	                              <td>{{ object.telefono}}</td>                  
+	                           </tr>                           
+	                    </tbody>
+	               	</table>                                 
+              </div><!-- /.box -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+    </section><!-- /.content -->
+  </div><!-- /.content-wrapper -->
+
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}
+
+

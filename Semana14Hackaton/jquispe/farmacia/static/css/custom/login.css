@@ -1,0 +1,24 @@
+#login-container .login-title {
+  background: rgba(51,51,51,0.6) !important;
+}
+#login-container .login-title .bloque-logo-l {
+  width: 20%;
+  float: left;
+}
+#login-container .login-title .bloque-logo-l img {
+  width: 80%;
+  max-width: 80px;
+}
+#login-container .login-title .bloque-logo-r {
+  width: 80%;
+  float: left;
+}
+#login-container .login-title .bloque-logo-r h1 {
+  margin: 0;
+  text-align: left;
+}
+#login-container .login-title .bloque-logo-r h1 small {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}

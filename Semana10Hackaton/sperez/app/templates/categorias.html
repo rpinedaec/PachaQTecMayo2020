@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2><span class="font-italic">Lista de Categorias:</span></h2>
+    <a href="/Categoria/add" title="Agregar Categoria">
+        <button type="button" class="btn btn-lg">
+            <i class="fa fa-plus-square" aria-hidden="true"> Agregar Categoria</i>
+        </button>
+    </a>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id Categoria</th>
+                <th>Categoria</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in categorias %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.nombre }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+{% endblock %}

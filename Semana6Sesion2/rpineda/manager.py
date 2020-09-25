@@ -1,7 +1,27 @@
 import conexion
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 manager = conexion.conexionBDD(1)
 
+=======
+>>>>>>> rpineda/develop
+<<<<<<< HEAD
+manager = conexion.conexionBDD(3)
+
+
+=======
+manager = conexion.conexionBDD(1)
+>>>>>>> upstream/develop
+<<<<<<< HEAD
+=======
+manager = conexion.conexionBDD(1)
+
+>>>>>>> rpineda/master
+=======
+>>>>>>> 58a7ca5f5a3baddeeecf202a3157f57c1776c4f5
+>>>>>>> rpineda/develop
 query = "SELECT * FROM alumno;"
 datos = manager.consultarBDD(query)
 query = "INSERT INTO alumno (aliasAlumno, edadAlumno, mailAlumno) values('Roberto','36','rpineda@pachaqtec.edu.pe')"

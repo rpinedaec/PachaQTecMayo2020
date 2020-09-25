@@ -1,0 +1,22 @@
+{
+  "name": "Pachaqtec Test Heroku",
+  "description": "Descripcion",
+  "image": "heroku/python",
+  "repository": "https://github.com/rpinedaec/PachaQTecMayo2020",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "!__mnm1@$#9a3iducr%%uxw)*8%)qdz#=&*6^e8w@%(6%*d+8h",
+      "generator": "secret"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}

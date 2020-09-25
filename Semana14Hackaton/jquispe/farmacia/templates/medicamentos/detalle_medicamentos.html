@@ -1,0 +1,100 @@
+
+{% extends "clientes/base_cliente_lista.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %} 
+<div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+        <!-- Main content -->
+    <section class="content">          
+      <!-- START ALERTS AND CALLOUTS -->     
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-info">
+          
+            <div class="box-header with-border">
+          		<a href="{% url 'medicamentos_app:lista_medicamentos' %}" class="btn btn-success">
+            		<span class="glyphicon glyphicon-chevron-left"></span> Regresar
+                </a>              
+              		<div class="box-tools pull-right">
+                      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div><!-- /.box-tools -->            
+            </div><!-- /.box-header -->
+              <div class="box-body">
+                  <table class="table table-striped table table-hover ">
+	                        <thead>
+	                            <tr>
+	                             <th><h2> Medicamento: {{ object.nombre }}</h2></th>           
+	                           </tr>
+	                        </thead>
+	                      <tbody> 
+	                          <tr class="success"> 
+	                          	  <td><strong>Lote:</strong></td>                           
+	                              <td>{{ object.lote }}</td>
+	                          </tr>
+	                          <tr class="success">
+	                          	  <td><strong>Presentación:</strong></td>
+	                              <td>{{ object.presentacion }} </td> 
+	                           </tr>
+	                           <tr class="success">
+	                           	  <td><strong>Tipo:</strong></td>
+	                              <td>{{ object.tipo }}</td>                              
+	                           </tr>
+	                           <tr class="success">
+	                           	  <td><strong>Nombre:</strong></td>
+	                              <td>{{ object.nombre }}</td>                              
+	                           </tr>
+	                           <tr class="success">
+	                           	  <td><strong>Componente:</strong></td>
+	                              <td>{{ object.componente }}</td>                              
+	                           </tr>
+	                           <tr class="success">
+	                           	  <td><strong>Concentración:</strong></td>
+	                              <td>{{ object.concentracion }}</td>                              
+	                           </tr>
+	                           <tr class="success">
+	                           	  <td><strong>Sanitario:</strong></td>
+	                              <td>{{ object.sanitario }}</td>                              
+	                           </tr>
+	                           <tr class="success">
+	                           	  <td><strong>Fecha Expiración:</strong> </td>
+	                              <td>{{ object.fecha_expiracion}}</td>                  
+	                           </tr> 
+	                           <tr class="success">
+	                           	  <td><strong>Fecha Producción:</strong> </td>
+	                              <td>{{ object.fecha_produccion}}</td>                  
+	                           </tr> 
+	                           <tr class="success">
+	                           	  <td><strong>Descripción:</strong> </td>
+	                              <td>{{ object.descripcion}}</td>                  
+	                           </tr>
+	                           <tr class="success">
+	                           	  <td><strong>Precio Compra:</strong> </td>
+	                              <td>{{ object.precio_Compra}}</td>                  
+	                           </tr>
+
+	                           <tr class="success">
+	                           	  <td><strong>Precio Venta:</strong> </td>
+	                              <td>{{ object.precio_venta}}</td>                  
+	                           </tr> 
+	                           <tr class="success">
+	                           	  <td><strong>Stock:</strong> </td>
+	                              <td>{{ object.stock}}</td>                  
+	                           </tr> 
+
+
+	                       </tbody>
+	                </table>                             
+              </div><!-- /.box -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+    </section><!-- /.content -->
+  </div><!-- /.content-wrapper -->
+
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}
+
+

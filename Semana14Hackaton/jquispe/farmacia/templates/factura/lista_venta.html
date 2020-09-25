@@ -1,0 +1,84 @@
+{% extends "medicamentos/base_medicamentos1.html" %}
+{% block title %}Productos{% endblock title %}
+{% block content %}
+{% include "nav.html" %}
+{% block producto %}    
+    <div class="wrapper"> 
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>            
+            Ventas
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="{% url 'users_app:home' %}"><i class="fa fa-dashboard"></i>Inicio</a></li>
+            <li class="active">Ventas</li>
+            <li><a href="{% url 'factura_app:factura_venta' %}">Nuevo</a></li>         
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-xs-12">
+
+                <div class="box box-primary">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">
+                      <a href="{% url 'factura_app:factura_venta' %}" class="btn btn-success">
+                      Nuevo</a>
+                    </h3>
+                    <div class="box-tools pull-right">
+                      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div><!-- /.box-tools -->
+                  </div><!-- /.box-header -->
+                  <div class="box-body">
+                  <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                             <th>serie</th>
+                              <th>Numero</th>                       
+                              <th>cliente</th> 
+                              <th>trabajador</th> 
+                              <th>fecha</th> 
+                              <th>total</th>
+                              <th> acciones</th>
+                           </tr>
+                        </thead>
+                      <tbody> 
+                      {% for c in compras %}
+                          <tr> 
+                              <td>{{ c.serie }}</td>
+                              <td>{{ c.numero }} </td>
+                              <td>{{ c.cliente }}</td>
+                              <td>{{c.vendedor}}</td>                               
+                              <td>{{ c.fecha|date:'d/m/Y'}}</td> 
+                              <td>{{ c.total}}</td>                      
+                              <td class="text-right">
+                                  {% if user.is_authenticated %}
+                                  <a href="{% url 'factura_app:reporte_ventas' c.id  %}" class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                  {% endif %} 
+                              </td>
+                          </tr>
+                      {% endfor %}
+                          
+                          </tbody>
+                      </table>
+
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+{% include "footer.html" %}    
+ {% endblock producto %}
+{% endblock content %}
+
+
+
+
+
+
