@@ -1,0 +1,14 @@
+{
+  "name": "Pachaqtec Test Heroku",
+  "description": "Descripcion",
+  "image": "heroku/python",
+  "repository": "https://github.com/rpinedaec/pacha4Grupo1.git",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "!__mnm1@$#9a3iducr%%uxw)*8%)qdz#=&*6^e8w@%(6%*d+8h",
+      "generator": "secret"
+    }
+  }
+}
