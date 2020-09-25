@@ -1,7 +1,4 @@
 #!/usr/bin/env python
-#Es un archivo que ayuda con la administración del sitio. 
-# Con él podremos iniciar un servidor web en nuestro ordenador.
-#Para iniciar el servidor web debemos ejecutar "python manage.py runserve"
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
@@ -9,7 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'neoautos.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'autos.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
