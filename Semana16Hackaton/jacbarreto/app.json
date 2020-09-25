@@ -1,0 +1,23 @@
+{
+  "name": "Pachaqtec Test Heroku",
+  "description": "Descripcion",
+  "image": "heroku/python",
+  "repository": "https://github.com/jacquelinebm/canciones",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "$!*o_drv7bj3&9bly+v+_6z8x3)s_5t^m(dzzhh@w+2t_%mapf",
+      "generator": "secret" 
+    }
+    
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}
