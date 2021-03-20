@@ -4,7 +4,7 @@ blinker==1.4
 cleo==0.6.8
 Django==3.1.1
 django-filter==2.3.0
-djangorestframework==3.11.1
+djangorestframework==3.11.2
 djangorestframework-simplejwt==4.4.0
 Faker==0.8.18
 inflection==0.3.1
