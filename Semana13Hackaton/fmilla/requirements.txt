@@ -1,6 +1,6 @@
 asgiref==3.2.10
 autopep8==1.5.4
-Django==3.1
+Django==3.1.12
 django-adminlte3==0.1.6
 psycopg2==2.8.5
 pycodestyle==2.6.0
