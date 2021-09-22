@@ -2,7 +2,7 @@ asgiref==3.2.10
 backpack==0.1
 blinker==1.4
 cleo==0.6.8
-Django==3.1.1
+Django==3.1.13
 django-filter==2.3.0
 djangorestframework==3.11.1
 djangorestframework-simplejwt==4.4.0
